@@ -1,0 +1,163 @@
+[
+  {
+    "phase": "before_warm",
+    "generation": 0,
+    "elapsed_seconds": 0.45582817200920545,
+    "memory_limit": 67108864,
+    "configured_memory_swap_limit": -1,
+    "cgroup_memory_limit": "67108864",
+    "memory_current": 16625664,
+    "memory_peak": 19804160,
+    "swap_current": 0,
+    "swap_max": "max",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "oom_killed": false,
+    "file_bytes": 9007104,
+    "file_count": 1
+  },
+  {
+    "phase": "after_warm",
+    "generation": 0,
+    "elapsed_seconds": 0.48968258599052206,
+    "memory_limit": 67108864,
+    "configured_memory_swap_limit": -1,
+    "cgroup_memory_limit": "67108864",
+    "memory_current": 16523264,
+    "memory_peak": 19804160,
+    "swap_current": 0,
+    "swap_max": "max",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "oom_killed": false,
+    "file_bytes": 9007104,
+    "file_count": 1
+  },
+  {
+    "phase": "after_append",
+    "generation": 0,
+    "elapsed_seconds": 4.918451807985548,
+    "memory_limit": 67108864,
+    "configured_memory_swap_limit": -1,
+    "cgroup_memory_limit": "67108864",
+    "memory_current": 63799296,
+    "memory_peak": 67108864,
+    "swap_current": 0,
+    "swap_max": "max",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 774,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "oom_killed": false,
+    "file_bytes": 177401856,
+    "file_count": 1
+  },
+  {
+    "phase": "after_query",
+    "generation": 0,
+    "elapsed_seconds": 5.655728045006981,
+    "memory_limit": 67108864,
+    "configured_memory_swap_limit": -1,
+    "cgroup_memory_limit": "67108864",
+    "memory_current": 66977792,
+    "memory_peak": 67108864,
+    "swap_current": 0,
+    "swap_max": "max",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 2734,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "oom_killed": false,
+    "file_bytes": 177401856,
+    "file_count": 1
+  },
+  {
+    "phase": "before_crash",
+    "generation": 0,
+    "elapsed_seconds": 6.0423897319997195,
+    "memory_limit": 67108864,
+    "configured_memory_swap_limit": -1,
+    "cgroup_memory_limit": "67108864",
+    "memory_current": 66998272,
+    "memory_peak": 67108864,
+    "swap_current": 0,
+    "swap_max": "max",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 3731,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "oom_killed": false,
+    "file_bytes": 177467392,
+    "file_count": 1
+  },
+  {
+    "phase": "after_restart",
+    "generation": 1,
+    "elapsed_seconds": 6.427051300008316,
+    "memory_limit": 67108864,
+    "configured_memory_swap_limit": -1,
+    "cgroup_memory_limit": "67108864",
+    "memory_current": 2674688,
+    "memory_peak": 5324800,
+    "swap_current": 0,
+    "swap_max": "max",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "oom_killed": false,
+    "file_bytes": 177467392,
+    "file_count": 1
+  },
+  {
+    "phase": "after_recovery",
+    "generation": 1,
+    "elapsed_seconds": 7.335806971997954,
+    "memory_limit": 67108864,
+    "configured_memory_swap_limit": -1,
+    "cgroup_memory_limit": "67108864",
+    "memory_current": 66748416,
+    "memory_peak": 67108864,
+    "swap_current": 0,
+    "swap_max": "max",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 1378,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "oom_killed": false,
+    "file_bytes": 177467392,
+    "file_count": 1
+  }
+]

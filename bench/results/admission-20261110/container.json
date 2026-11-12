@@ -1,0 +1,14 @@
+{
+  "mount": {
+    "Type": "bind",
+    "Source": "/mnt/d/Codex/MiniVectorDB/data/official-jsonl/vectordb-data-68f554aa",
+    "Destination": "/data",
+    "Mode": "",
+    "RW": true,
+    "Propagation": "rprivate"
+  },
+  "image": "sha256:df51f7631fcf2e9ff44f93234eb64d0ed5132441e490e50cf5b7e8e528e87321",
+  "memory": 2147483648,
+  "swap": -1,
+  "readonly": true
+}

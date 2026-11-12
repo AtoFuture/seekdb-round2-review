@@ -1,0 +1,12 @@
+WARNING: Your kernel does not support swap limit capabilities or the cgroup is not mounted. Memory limited without swap.
+Test project /build
+    Start 34: protocol_adversarial
+1/3 Test #34: protocol_adversarial .............   Passed    0.63 sec
+    Start 35: sql_adversarial
+2/3 Test #35: sql_adversarial ..................   Passed   45.95 sec
+    Start 36: storage_adversarial
+3/3 Test #36: storage_adversarial ..............   Passed  254.94 sec
+
+100% tests passed, 0 tests failed out of 3
+
+Total Test time (real) = 301.52 sec

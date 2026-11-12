@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "seed": 548219,
+  "checks": 1344,
+  "rows_initial": 584,
+  "transaction_cycles": 56,
+  "coverage": [
+    "4096-byte spill sort",
+    "multi-distance expressions",
+    "distance ties",
+    "INT64 extreme keys",
+    "LIMIT extremes",
+    "Unicode/control VARCHAR",
+    "quoted identifiers",
+    "2 indexes/table",
+    "cross-table snapshots",
+    "index/table rollback/recreation",
+    "failed multirow inserts",
+    "failed DDL",
+    "snapshot invalidation",
+    "shutdown rollback",
+    "reopen"
+  ]
+}

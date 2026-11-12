@@ -1,0 +1,113 @@
+name: MiniVectorDB round2 verification
+
+"on":
+  workflow_dispatch:
+  push:
+    branches: [2026-competition-round2, 'codex/round2-*']
+  pull_request:
+    branches: [2026-competition-round2]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: minivectordb-round2-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      OFFICIAL_PACKAGE: bench/vendor/seekdb-round2-f4d4e26
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Record exact source and environment
+        run: |
+          set -euo pipefail
+          export TMPDIR="$RUNNER_TEMP/mvdb-tmp"
+          echo "TMPDIR=$TMPDIR" >> "$GITHUB_ENV"
+          mkdir -p ci-results "$TMPDIR" "$RUNNER_TEMP/mvdb-data"
+          # The container drops DAC_OVERRIDE; make only its isolated scratch
+          # directory writable, as the public protocol harness does.
+          chmod 0777 "$RUNNER_TEMP/mvdb-data"
+          git rev-parse HEAD > ci-results/source-commit.txt
+          uname -a > ci-results/host.txt
+          test "$(uname -m)" = x86_64
+          docker version > ci-results/docker-version.txt
+          sha256sum Dockerfile agent/conversation.json conversation.json > ci-results/input-sha256.txt
+
+      - name: Check material packaging and unchanged official test files
+        run: |
+          set -euo pipefail
+          python3 -B scripts/check-submission-contract.py --check-internal-references > ci-results/material.json
+          python3 -B - <<'PY' | tee ci-results/vendor-integrity.txt
+          import hashlib, json, os
+          from pathlib import Path
+          root = Path(os.environ['OFFICIAL_PACKAGE'])
+          lock = json.loads((root / 'upstream-lock.json').read_text())
+          for name, entry in lock['files'].items():
+              data = (root / name).read_bytes()
+              assert len(data) == entry['bytes'], name
+              assert hashlib.sha256(data).hexdigest() == entry['sha256'], name
+          print('Verified', len(lock['files']), 'official files at', lock['commit'])
+          PY
+          python3 -B tests/learning_selection_tests.py 2>&1 | tee ci-results/selection-tests.log
+          python3 -B scripts/check-learning-material.py > ci-results/material-integrity.json
+          python3 -B tests/submission_contract_tests.py 2>&1 | tee ci-results/material-checker-tests.log
+          python3 -B tests/contract_benchmark_tests.py 2>&1 | tee ci-results/benchmark-helper-tests.log
+
+      - name: Build test and runtime images from this checkout
+        run: |
+          set -euo pipefail
+          docker build --progress=plain --target test -t mvdb:test . 2>&1 | tee ci-results/build-test.log
+          docker build --progress=plain --target runtime -t mvdb:runtime . 2>&1 | tee ci-results/build-runtime.log
+          docker image inspect mvdb:test mvdb:runtime > ci-results/images.json
+          docker run --rm --network none --read-only --entrypoint sha256sum mvdb:test /build/minivectordb > ci-results/test-binary.txt
+          docker run --rm --network none --read-only --entrypoint sha256sum mvdb:runtime /usr/local/bin/minivectordb > ci-results/runtime-binary.txt
+          test "$(cut -d' ' -f1 ci-results/test-binary.txt)" = "$(cut -d' ' -f1 ci-results/runtime-binary.txt)"
+
+      - name: Run internal SQL, storage, transaction and crash regressions
+        run: |
+          set -euo pipefail
+          docker run --rm --network none --cpus 2 --memory 2g --memory-swap 2g --pids-limit 128 \
+            --cap-drop ALL --security-opt no-new-privileges \
+            --mount "type=bind,src=$RUNNER_TEMP/mvdb-data,dst=/data" \
+            --env TMPDIR=/data --env PYTHONDONTWRITEBYTECODE=1 \
+            mvdb:test ctest --test-dir /build --output-on-failure 2>&1 | tee ci-results/ctest.log
+
+      - name: Verify default runtime handshake and public SQL cases
+        run: |
+          set -euo pipefail
+          python3 -B "$OFFICIAL_PACKAGE/protocol_check/run.py" --image mvdb:runtime \
+            --handshake-only --output ci-results/handshake
+          python3 -B "$OFFICIAL_PACKAGE/protocol_check/run.py" --image mvdb:runtime \
+            --output ci-results/public
+
+      - name: State verification scope
+        if: always()
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<'TEXT'
+          Linux x86_64 verification of the recorded source commit.
+          Inspect each step and the artifacts for build, material, internal regression and public-case results.
+          This workflow does not run the hidden admission suite, submit to the competition,
+          calculate the official performance score, or evaluate the Prompt score.
+          Shared-runner timings are not official performance measurements.
+          TEXT
+
+      - name: Preserve results even on failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: minivectordb-${{ github.sha }}-${{ github.run_attempt }}
+          path: ci-results/
+          if-no-files-found: error
+          retention-days: 14

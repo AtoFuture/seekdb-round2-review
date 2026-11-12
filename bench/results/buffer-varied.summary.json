@@ -1,0 +1,360 @@
+{
+  "source": "250375570ff8b4f4db747b6ab6dc5b667163b9e1",
+  "rows": 2000,
+  "queries": 40,
+  "rounds": 3,
+  "diagnostic": false,
+  "medians": {
+    "ordered": {
+      "data0-scan1048576": {
+        "write_ms": 247.313448,
+        "query_total_ms": 118.91185,
+        "first_query_ms": 4.229849,
+        "write_cpu_ms": 79.534,
+        "query_cpu_ms": 118.958,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 3534848,
+        "insert_file_growth_bytes": 3387392,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 11004,
+        "local_cgroup_peak_bytes": 10854400,
+        "write_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        },
+        "query_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        }
+      },
+      "data16777216-scan0": {
+        "write_ms": 257.002343,
+        "query_total_ms": 43.153555,
+        "first_query_ms": 3.436085,
+        "write_cpu_ms": 92.981,
+        "query_cpu_ms": 43.122,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 3534848,
+        "insert_file_growth_bytes": 3387392,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 24348,
+        "local_cgroup_peak_bytes": 27729920,
+        "write_data_cache": {
+          "hits": 38,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 80480,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 502
+        }
+      }
+    },
+    "wide": {
+      "data0-scan1048576": {
+        "write_ms": 346.734331,
+        "query_total_ms": 714.060803,
+        "first_query_ms": 19.318952,
+        "write_cpu_ms": 158.859,
+        "query_cpu_ms": 713.599,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 20029440,
+        "insert_file_growth_bytes": 19881984,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 20056,
+        "local_cgroup_peak_bytes": 39505920,
+        "write_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        },
+        "query_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        }
+      },
+      "data16777216-scan0": {
+        "write_ms": 338.308259,
+        "query_total_ms": 416.570504,
+        "first_query_ms": 20.24484,
+        "write_cpu_ms": 166.375,
+        "query_cpu_ms": 415.734,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 20029440,
+        "insert_file_growth_bytes": 19881984,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 36200,
+        "local_cgroup_peak_bytes": 56078336,
+        "write_data_cache": {
+          "hits": 38,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 122199,
+          "misses": 38681,
+          "evictions": 38681,
+          "capacity_bytes": 16776960,
+          "resident_pages": 3808
+        }
+      }
+    },
+    "dim16": {
+      "data0-scan1048576": {
+        "write_ms": 192.616116,
+        "query_total_ms": 48.276792,
+        "first_query_ms": 1.325373,
+        "write_cpu_ms": 27.902,
+        "query_cpu_ms": 48.315,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 2277376,
+        "insert_file_growth_bytes": 2129920,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 11140,
+        "local_cgroup_peak_bytes": 7270400,
+        "write_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        },
+        "query_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        }
+      },
+      "data16777216-scan0": {
+        "write_ms": 205.305697,
+        "query_total_ms": 21.576671,
+        "first_query_ms": 1.081088,
+        "write_cpu_ms": 35.958,
+        "query_cpu_ms": 21.608,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 2277376,
+        "insert_file_growth_bytes": 2129920,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 21248,
+        "local_cgroup_peak_bytes": 22978560,
+        "write_data_cache": {
+          "hits": 38,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 80480,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 62
+        }
+      }
+    },
+    "dim768": {
+      "data0-scan1048576": {
+        "write_ms": 540.802734,
+        "query_total_ms": 353.78223,
+        "first_query_ms": 10.01294,
+        "write_cpu_ms": 357.621,
+        "query_cpu_ms": 352.843,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 10223616,
+        "insert_file_growth_bytes": 10076160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 23284,
+        "local_cgroup_peak_bytes": 33120256,
+        "write_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        },
+        "query_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        }
+      },
+      "data16777216-scan0": {
+        "write_ms": 543.713134,
+        "query_total_ms": 170.17054,
+        "first_query_ms": 12.35598,
+        "write_cpu_ms": 365.05,
+        "query_cpu_ms": 168.77,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 10223616,
+        "insert_file_growth_bytes": 10076160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 39908,
+        "local_cgroup_peak_bytes": 49688576,
+        "write_data_cache": {
+          "hits": 38,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 80480,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2002
+        }
+      }
+    },
+    "filter1": {
+      "data0-scan1048576": {
+        "write_ms": 250.416912,
+        "query_total_ms": 124.332951,
+        "first_query_ms": 3.820402,
+        "write_cpu_ms": 80.996,
+        "query_cpu_ms": 124.295,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 4079616,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 11280,
+        "local_cgroup_peak_bytes": 10952704,
+        "write_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        },
+        "query_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        }
+      },
+      "data16777216-scan0": {
+        "write_ms": 256.079603,
+        "query_total_ms": 51.707028,
+        "first_query_ms": 3.441349,
+        "write_cpu_ms": 88.296,
+        "query_cpu_ms": 51.354,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 4079616,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 24344,
+        "local_cgroup_peak_bytes": 28020736,
+        "write_data_cache": {
+          "hits": 38,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 80480,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 502
+        }
+      }
+    },
+    "churn": {
+      "data0-scan1048576": {
+        "write_ms": 252.970981,
+        "query_total_ms": 95.240118,
+        "first_query_ms": 2.788086,
+        "write_cpu_ms": 81.274,
+        "query_cpu_ms": 95.286,
+        "churn_ms": 26.5593,
+        "churn_cpu_ms": 9.954,
+        "database_bytes": 5124096,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 1044480,
+        "process_maxrss_kib": 11024,
+        "local_cgroup_peak_bytes": 11751424,
+        "write_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        },
+        "query_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        }
+      },
+      "data16777216-scan0": {
+        "write_ms": 258.639909,
+        "query_total_ms": 33.225827,
+        "first_query_ms": 1.557975,
+        "write_cpu_ms": 89.644,
+        "query_cpu_ms": 33.262,
+        "churn_ms": 25.3891,
+        "churn_cpu_ms": 8.527,
+        "database_bytes": 5124096,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 1044480,
+        "process_maxrss_kib": 24352,
+        "local_cgroup_peak_bytes": 28061696,
+        "write_data_cache": {
+          "hits": 38,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 60480,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 627
+        }
+      }
+    }
+  },
+  "validated_queries": 1440,
+  "reopen_checks": 36,
+  "first_query_checks": 36
+}

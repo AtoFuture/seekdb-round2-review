@@ -1,0 +1,65 @@
+{
+  "source": "b7eb52b4bb8fbc25e3209d0933182e57e41afdd8",
+  "rows": 2000,
+  "queries": 40,
+  "rounds": 3,
+  "diagnostic": false,
+  "medians": {
+    "standard": {
+      "packed0-scan0": {
+        "write_ms": 251.350157,
+        "query_total_ms": 221.419626,
+        "write_cpu_ms": 85.745,
+        "query_cpu_ms": 221.428,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 10223616,
+        "insert_file_growth_bytes": 10076160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 11024,
+        "local_cgroup_peak_bytes": 17252352
+      },
+      "packed1-scan0": {
+        "write_ms": 243.529702,
+        "query_total_ms": 226.344541,
+        "write_cpu_ms": 75.091,
+        "query_cpu_ms": 226.347,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 4079616,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 11024,
+        "local_cgroup_peak_bytes": 10895360
+      },
+      "packed1-scan1048576": {
+        "write_ms": 240.577669,
+        "query_total_ms": 104.966847,
+        "write_cpu_ms": 75.045,
+        "query_cpu_ms": 104.973,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 4079616,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 10768,
+        "local_cgroup_peak_bytes": 11075584
+      },
+      "packed1-scan262144": {
+        "write_ms": 240.003225,
+        "query_total_ms": 92.377243,
+        "write_cpu_ms": 74.816,
+        "query_cpu_ms": 92.363,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 4079616,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 11140,
+        "local_cgroup_peak_bytes": 11186176
+      }
+    }
+  },
+  "validated_queries": 480,
+  "reopen_checks": 12
+}

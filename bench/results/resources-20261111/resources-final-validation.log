@@ -1,0 +1,700 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 978B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B done
+#3 DONE 0.0s
+
+#4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#4 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 8.21kB done
+#5 DONE 0.0s
+
+#6 [build 3/8] WORKDIR /src
+#6 CACHED
+
+#7 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+#7 CACHED
+
+#8 [build 4/8] COPY CMakeLists.txt ./
+#8 CACHED
+
+#9 [build 5/8] COPY include ./include
+#9 DONE 0.0s
+
+#10 [build 6/8] COPY src ./src
+#10 DONE 0.0s
+
+#11 [build 7/8] COPY tests ./tests
+#11 DONE 0.0s
+
+#12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+#12 0.084 -- The CXX compiler identification is GNU 14.2.0
+#12 0.088 -- Detecting CXX compiler ABI info
+#12 0.105 -- Detecting CXX compiler ABI info - done
+#12 0.110 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#12 0.111 -- Detecting CXX compile features
+#12 0.111 -- Detecting CXX compile features - done
+#12 0.166 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+#12 0.167 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+#12 0.185 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+#12 0.186 -- Found Threads: TRUE
+#12 0.187 -- Configuring done (0.1s)
+#12 0.192 -- Generating done (0.0s)
+#12 0.192 -- Build files have been written to: /build
+#12 0.197 [1/73] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+#12 0.197 [2/73] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+#12 0.879 [3/73] Building CXX object CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o
+#12 1.248 [4/73] Building CXX object CMakeFiles/compressed_path_tests.dir/tests/compressed_path_tests.cpp.o
+#12 1.510 [5/73] Building CXX object CMakeFiles/commit_policy_tests.dir/tests/commit_policy_tests.cpp.o
+#12 2.582 [6/73] Building CXX object CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o
+#12 2.588 [7/73] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+#12 4.209 [8/73] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+#12 5.752 [9/73] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+#12 5.996 [10/73] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+#12 7.085 [11/73] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+#12 7.544 [12/73] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+#12 8.091 [13/73] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+#12 8.676 [14/73] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+#12 9.141 [15/73] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+#12 9.594 [16/73] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+#12 10.31 [17/73] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+#12 10.99 [18/73] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+#12 11.30 [19/73] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+#12 12.65 [20/73] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+#12 12.80 [21/73] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+#12 14.14 [22/73] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+#12 14.32 [23/73] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+#12 15.04 [24/73] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+#12 15.40 [25/73] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+#12 15.89 [26/73] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+#12 16.24 [27/73] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+#12 17.03 [28/73] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+#12 17.34 [29/73] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+#12 18.17 [30/73] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+#12 18.56 [31/73] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+#12 19.26 [32/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+#12 19.82 [33/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+#12 21.00 [34/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+#12 21.29 [35/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+#12 22.23 [36/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+#12 22.36 [37/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+#12 22.71 [38/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+#12 23.10 [39/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+#12 23.69 [40/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+#12 24.32 [41/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+#12 25.24 [42/73] Linking CXX static library libminivectordb_core.a
+#12 25.24 [43/73] Linking CXX executable validated_snapshot_tests
+#12 25.24 [44/73] Linking CXX executable validated_vector_tests
+#12 25.25 [45/73] Linking CXX executable vector_literal_tests
+#12 25.25 [46/73] Linking CXX executable compressed_path_tests
+#12 25.26 [47/73] Linking CXX executable commit_policy_tests
+#12 25.26 [48/73] Linking CXX executable mixed_filter_cache_tests
+#12 25.26 [49/73] Linking CXX executable typed_scan_tests
+#12 25.27 [50/73] Linking CXX executable vector_scratch_tests
+#12 25.28 [51/73] Linking CXX executable unindexed_snapshot_tests
+#12 25.28 [52/73] Linking CXX executable adversarial_storage_tests
+#12 25.29 [53/73] Linking CXX executable row_allocation_tests
+#12 25.29 [54/73] Linking CXX executable row_validation_tests
+#12 25.29 [55/73] Linking CXX executable text_validation_tests
+#12 25.30 [56/73] Linking CXX executable numeric_sql_tests
+#12 25.30 [57/73] Linking CXX executable scan_snapshot_tests
+#12 25.31 [58/73] Linking CXX executable paired_scan_tests
+#12 25.31 [59/73] Linking CXX executable vector_index_tests
+#12 25.32 [60/73] Linking CXX executable data_cache_sql_tests
+#12 25.32 [61/73] Linking CXX executable data_cache_tests
+#12 25.33 [62/73] Linking CXX executable packed_sql_tests
+#12 25.33 [63/73] Linking CXX executable packed_storage_tests
+#12 25.34 [64/73] Linking CXX executable checksum_slicing_tests
+#12 25.34 [65/73] Linking CXX executable index_cache_tests
+#12 25.35 [66/73] Linking CXX executable profile_tests
+#12 25.35 [67/73] Linking CXX executable checksum_tests
+#12 25.36 [68/73] Linking CXX executable batch_tests
+#12 25.36 [69/73] Linking CXX executable selective_tests
+#12 25.37 [70/73] Linking CXX executable minivectordb
+#12 25.37 [71/73] Linking CXX executable sql_tests
+#12 25.38 [72/73] Linking CXX executable namespace_tests
+#12 25.38 [73/73] Linking CXX executable core_tests
+#12 DONE 25.4s
+
+#13 [test 1/1] WORKDIR /build
+#13 DONE 0.0s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 0.3s done
+#14 exporting manifest sha256:048bff4bb85e6bdc0630fddae425aa06f3a88af5ae944a2556c8278014e71aaa done
+#14 exporting config sha256:c267780266068e9278848e795d56022d3071082360b9daeadf40e20ca603e265 done
+#14 exporting attestation manifest sha256:f96fe7cdca68a7a52e306b586f58c92f549f04ce9547f302ffc9e9387a88518b done
+#14 exporting manifest list sha256:b959a7a43ffc8ecc67182d6c35e8118b631647a960fe224aac55d809fc381775 done
+#14 naming to docker.io/library/mvdb:resources-final-test-arm64 done
+#14 unpacking to docker.io/library/mvdb:resources-final-test-arm64 0.1s done
+#14 DONE 0.4s
+Test project /build
+      Start  1: core_types
+ 1/47 Test  #1: core_types .......................   Passed    0.00 sec
+      Start  2: core_vector
+ 2/47 Test  #2: core_vector ......................   Passed    0.00 sec
+      Start  3: core_storage
+ 3/47 Test  #3: core_storage .....................   Passed    0.70 sec
+      Start  4: core_storage_failure
+ 4/47 Test  #4: core_storage_failure .............   Passed    0.00 sec
+      Start  5: core_namespaces
+ 5/47 Test  #5: core_namespaces ..................   Passed    0.00 sec
+      Start  6: core_codec
+ 6/47 Test  #6: core_codec .......................   Passed    0.00 sec
+      Start  7: core_sql
+ 7/47 Test  #7: core_sql .........................   Passed    0.00 sec
+      Start  8: core_sort
+ 8/47 Test  #8: core_sort ........................   Passed    0.01 sec
+      Start  9: core_sql_crash
+ 9/47 Test  #9: core_sql_crash ...................   Passed    0.00 sec
+      Start 10: core_sql_edges
+10/47 Test #10: core_sql_edges ...................   Passed    0.01 sec
+      Start 11: core_sql_failure
+11/47 Test #11: core_sql_failure .................   Passed    0.01 sec
+      Start 12: core_sql_batch
+12/47 Test #12: core_sql_batch ...................   Passed    0.05 sec
+      Start 13: cli
+13/47 Test #13: cli ..............................   Passed    0.07 sec
+      Start 14: core_selective
+14/47 Test #14: core_selective ...................   Passed    0.13 sec
+      Start 15: core_batches
+15/47 Test #15: core_batches .....................   Passed    0.04 sec
+      Start 16: core_checksum
+16/47 Test #16: core_checksum ....................   Passed    0.24 sec
+      Start 17: core_profile
+17/47 Test #17: core_profile .....................   Passed    0.00 sec
+      Start 18: core_index_cache
+18/47 Test #18: core_index_cache .................   Passed    0.07 sec
+      Start 19: core_checksum_slicing
+19/47 Test #19: core_checksum_slicing ............   Passed    0.49 sec
+      Start 20: core_packed_storage
+20/47 Test #20: core_packed_storage ..............   Passed    0.09 sec
+      Start 21: core_packed_sql
+21/47 Test #21: core_packed_sql ..................   Passed    0.81 sec
+      Start 22: core_data_cache
+22/47 Test #22: core_data_cache ..................   Passed    0.07 sec
+      Start 23: core_data_cache_sql
+23/47 Test #23: core_data_cache_sql ..............   Passed    0.23 sec
+      Start 24: jsonl
+24/47 Test #24: jsonl ............................   Passed    0.06 sec
+      Start 25: core_vector_index
+25/47 Test #25: core_vector_index ................   Passed    0.06 sec
+      Start 26: core_float32_literals
+26/47 Test #26: core_float32_literals ............   Passed    0.03 sec
+      Start 27: core_paired_scan
+27/47 Test #27: core_paired_scan .................   Passed    0.22 sec
+      Start 28: core_scan_snapshot
+28/47 Test #28: core_scan_snapshot ...............   Passed    0.09 sec
+      Start 29: core_numeric_maximum
+29/47 Test #29: core_numeric_maximum .............   Passed    0.01 sec
+      Start 30: core_numeric_ties
+30/47 Test #30: core_numeric_ties ................   Passed    0.01 sec
+      Start 31: core_text_validation
+31/47 Test #31: core_text_validation .............   Passed    0.70 sec
+      Start 32: core_row_validation
+32/47 Test #32: core_row_validation ..............   Passed    1.96 sec
+      Start 33: core_row_allocation
+33/47 Test #33: core_row_allocation ..............   Passed    0.00 sec
+      Start 34: protocol_adversarial
+34/47 Test #34: protocol_adversarial .............   Passed    0.11 sec
+      Start 35: sql_adversarial
+35/47 Test #35: sql_adversarial ..................   Passed    0.46 sec
+      Start 36: storage_adversarial
+36/47 Test #36: storage_adversarial ..............   Passed    0.49 sec
+      Start 37: core_unindexed_snapshot
+37/47 Test #37: core_unindexed_snapshot ..........   Passed    0.44 sec
+      Start 38: core_vector_scratch
+38/47 Test #38: core_vector_scratch ..............   Passed    0.09 sec
+      Start 39: core_typed_scan
+39/47 Test #39: core_typed_scan ..................   Passed    0.16 sec
+      Start 40: core_mixed_filter_cache
+40/47 Test #40: core_mixed_filter_cache ..........   Passed    0.06 sec
+      Start 41: core_commit_policy
+41/47 Test #41: core_commit_policy ...............   Passed    0.77 sec
+      Start 42: core_commit_policy_compressed
+42/47 Test #42: core_commit_policy_compressed ....   Passed    0.26 sec
+      Start 43: core_compressed_paths
+43/47 Test #43: core_compressed_paths ............   Passed    5.07 sec
+      Start 44: core_packed_sql_compressed
+44/47 Test #44: core_packed_sql_compressed .......   Passed    0.35 sec
+      Start 45: core_vector_literals
+45/47 Test #45: core_vector_literals .............   Passed    0.11 sec
+      Start 46: core_validated_vector
+46/47 Test #46: core_validated_vector ............   Passed    0.01 sec
+      Start 47: core_validated_snapshot
+47/47 Test #47: core_validated_snapshot ..........   Passed    0.27 sec
+
+100% tests passed, 0 tests failed out of 47
+
+Total Test time (real) =  14.81 sec
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 978B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B done
+#3 DONE 0.0s
+
+#4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#4 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 3.42kB done
+#5 DONE 0.0s
+
+#6 [build 3/8] WORKDIR /src
+#6 CACHED
+
+#7 [build 7/8] COPY tests ./tests
+#7 CACHED
+
+#8 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+#8 CACHED
+
+#9 [build 5/8] COPY include ./include
+#9 CACHED
+
+#10 [build 6/8] COPY src ./src
+#10 CACHED
+
+#11 [build 4/8] COPY CMakeLists.txt ./
+#11 CACHED
+
+#12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+#12 CACHED
+
+#13 [runtime 3/4] COPY --from=build /build/minivectordb /usr/local/bin/minivectordb
+#13 CACHED
+
+#14 [runtime 2/4] RUN apk add --no-cache libstdc++=14.2.0-r6
+#14 CACHED
+
+#15 [runtime 4/4] WORKDIR /data
+#15 CACHED
+
+#16 exporting to image
+#16 exporting layers done
+#16 exporting manifest sha256:77bac1f83984a469192adac9284e41e2882de3221b02a585cd9c628a7c2c46f5 done
+#16 exporting config sha256:cc8f875a57f97549fd52c3619b171a9ca518ef4aa4ec858960b34dba82be180a done
+#16 exporting attestation manifest sha256:d56432e00a2cf83578b25044b49628161c1355ba8863946bc860f0dac870f54e done
+#16 exporting manifest list sha256:24cb099aabc745c67d02fe0c6a84363ece0bb8b0ca98f71d3cad7c1385e6db36 done
+#16 naming to docker.io/library/mvdb:resources-final-arm64 done
+#16 unpacking to docker.io/library/mvdb:resources-final-arm64 done
+#16 DONE 0.0s
+sql_crud: PASS 
+sql_comparisons: PASS 
+sql_ordering: PASS 
+sql_empty: PASS 
+sql_primary_key: PASS 
+sql_unicode: PASS 
+sql_bigint: PASS 
+sql_unsupported: PASS 
+storage_restart: PASS 
+vector_euclidean: PASS 
+transaction_commit: PASS 
+transaction_rollback: PASS 
+storage_mutations: PASS 
+storage_multiple_tables: PASS 
+vector_ties_and_filter: PASS 
+vector_float32: PASS 
+vector_index_maintenance: PASS 
+transaction_failed_insert: PASS 
+transaction_autocommit_atomic: PASS 
+transaction_shutdown_rollback: PASS 
+Report: /opt/mvdb/results/resources-final-public-arm64/result.json
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 978B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B done
+#3 DONE 0.0s
+
+#4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#4 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 3.42kB done
+#5 DONE 0.0s
+
+#6 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+#6 CACHED
+
+#7 [build 3/8] WORKDIR /src
+#7 CACHED
+
+#8 [build 4/8] COPY CMakeLists.txt ./
+#8 DONE 0.0s
+
+#9 [build 5/8] COPY include ./include
+#9 DONE 0.0s
+
+#10 [build 6/8] COPY src ./src
+#10 DONE 0.0s
+
+#11 [build 7/8] COPY tests ./tests
+#11 DONE 0.0s
+
+#12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+#12 0.485 -- The CXX compiler identification is GNU 14.2.0
+#12 0.518 -- Detecting CXX compiler ABI info
+#12 0.927 -- Detecting CXX compiler ABI info - done
+#12 0.984 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#12 0.985 -- Detecting CXX compile features
+#12 0.988 -- Detecting CXX compile features - done
+#12 1.873 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+#12 1.878 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+#12 2.260 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+#12 2.263 -- Found Threads: TRUE
+#12 2.270 -- Configuring done (2.2s)
+#12 2.330 -- Generating done (0.1s)
+#12 2.330 -- Build files have been written to: /build
+#12 2.399 [1/73] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+#12 2.400 [2/73] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+#12 9.143 [3/73] Building CXX object CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o
+#12 11.77 [4/73] Building CXX object CMakeFiles/compressed_path_tests.dir/tests/compressed_path_tests.cpp.o
+#12 15.03 [5/73] Building CXX object CMakeFiles/commit_policy_tests.dir/tests/commit_policy_tests.cpp.o
+#12 22.94 [6/73] Building CXX object CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o
+#12 23.87 [7/73] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+#12 35.99 [8/73] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+#12 46.40 [9/73] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+#12 49.96 [10/73] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+#12 59.11 [11/73] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+#12 63.71 [12/73] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+#12 63.84 [13/73] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+#12 69.67 [14/73] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+#12 77.06 [15/73] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+#12 77.74 [16/73] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+#12 86.28 [17/73] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+#12 89.43 [18/73] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+#12 94.31 [19/73] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+#12 103.0 [20/73] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+#12 106.4 [21/73] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+#12 115.0 [22/73] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+#12 118.8 [23/73] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+#12 123.4 [24/73] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+#12 127.6 [25/73] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+#12 131.2 [26/73] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+#12 135.5 [27/73] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+#12 140.6 [28/73] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+#12 144.8 [29/73] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+#12 150.9 [30/73] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+#12 154.9 [31/73] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+#12 159.6 [32/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+#12 164.5 [33/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+#12 175.1 [34/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+#12 176.8 [35/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+#12 186.5 [36/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+#12 186.8 [37/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+#12 191.4 [38/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+#12 193.5 [39/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+#12 200.5 [40/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+#12 206.9 [41/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+#12 211.0 [42/73] Linking CXX static library libminivectordb_core.a
+#12 211.1 [43/73] Linking CXX executable validated_snapshot_tests
+#12 211.1 [44/73] Linking CXX executable validated_vector_tests
+#12 211.2 [45/73] Linking CXX executable vector_literal_tests
+#12 211.2 [46/73] Linking CXX executable compressed_path_tests
+#12 211.3 [47/73] Linking CXX executable commit_policy_tests
+#12 211.3 [48/73] Linking CXX executable mixed_filter_cache_tests
+#12 211.4 [49/73] Linking CXX executable typed_scan_tests
+#12 211.4 [50/73] Linking CXX executable vector_scratch_tests
+#12 211.5 [51/73] Linking CXX executable unindexed_snapshot_tests
+#12 211.5 [52/73] Linking CXX executable adversarial_storage_tests
+#12 211.6 [53/73] Linking CXX executable row_allocation_tests
+#12 211.6 [54/73] Linking CXX executable row_validation_tests
+#12 211.7 [55/73] Linking CXX executable text_validation_tests
+#12 211.7 [56/73] Linking CXX executable numeric_sql_tests
+#12 211.8 [57/73] Linking CXX executable scan_snapshot_tests
+#12 211.9 [58/73] Linking CXX executable paired_scan_tests
+#12 211.9 [59/73] Linking CXX executable vector_index_tests
+#12 212.0 [60/73] Linking CXX executable data_cache_sql_tests
+#12 212.0 [61/73] Linking CXX executable data_cache_tests
+#12 212.1 [62/73] Linking CXX executable packed_sql_tests
+#12 212.1 [63/73] Linking CXX executable packed_storage_tests
+#12 212.2 [64/73] Linking CXX executable checksum_slicing_tests
+#12 212.2 [65/73] Linking CXX executable index_cache_tests
+#12 212.3 [66/73] Linking CXX executable profile_tests
+#12 212.4 [67/73] Linking CXX executable checksum_tests
+#12 212.4 [68/73] Linking CXX executable batch_tests
+#12 212.5 [69/73] Linking CXX executable selective_tests
+#12 212.5 [70/73] Linking CXX executable minivectordb
+#12 212.6 [71/73] Linking CXX executable sql_tests
+#12 212.6 [72/73] Linking CXX executable namespace_tests
+#12 212.7 [73/73] Linking CXX executable core_tests
+#12 DONE 212.8s
+
+#13 [test 1/1] WORKDIR /build
+#13 DONE 0.0s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 0.4s done
+#14 exporting manifest sha256:12cb58a4d4429b8824c80614691fc5b4db4f189fdce484c92aea73eb6a66b328 done
+#14 exporting config sha256:2253d4fdc26b40f592ee50583f5f845e01ff5bf306482684f1562b3ff438bf4c done
+#14 exporting attestation manifest sha256:fa19bde7bacdd8684291454f985e37e73a8df9e1155b03d48b207632041b4e97 done
+#14 exporting manifest list sha256:eff7559b84b8d1856af31a29e656abddbcb2b3d44ec75e75ce292d20f2abe984 done
+#14 naming to docker.io/library/mvdb:resources-final-test-amd64 done
+#14 DONE 0.4s
+Test project /build
+      Start  1: core_types
+ 1/47 Test  #1: core_types .......................   Passed    0.02 sec
+      Start  2: core_vector
+ 2/47 Test  #2: core_vector ......................   Passed    0.01 sec
+      Start  3: core_storage
+ 3/47 Test  #3: core_storage .....................   Passed    1.64 sec
+      Start  4: core_storage_failure
+ 4/47 Test  #4: core_storage_failure .............   Passed    0.02 sec
+      Start  5: core_namespaces
+ 5/47 Test  #5: core_namespaces ..................   Passed    0.02 sec
+      Start  6: core_codec
+ 6/47 Test  #6: core_codec .......................   Passed    0.02 sec
+      Start  7: core_sql
+ 7/47 Test  #7: core_sql .........................   Passed    0.04 sec
+      Start  8: core_sort
+ 8/47 Test  #8: core_sort ........................   Passed    0.06 sec
+      Start  9: core_sql_crash
+ 9/47 Test  #9: core_sql_crash ...................   Passed    0.03 sec
+      Start 10: core_sql_edges
+10/47 Test #10: core_sql_edges ...................   Passed    0.04 sec
+      Start 11: core_sql_failure
+11/47 Test #11: core_sql_failure .................   Passed    0.08 sec
+      Start 12: core_sql_batch
+12/47 Test #12: core_sql_batch ...................   Passed    0.22 sec
+      Start 13: cli
+13/47 Test #13: cli ..............................   Passed    0.64 sec
+      Start 14: core_selective
+14/47 Test #14: core_selective ...................   Passed    0.31 sec
+      Start 15: core_batches
+15/47 Test #15: core_batches .....................   Passed    0.11 sec
+      Start 16: core_checksum
+16/47 Test #16: core_checksum ....................   Passed    0.47 sec
+      Start 17: core_profile
+17/47 Test #17: core_profile .....................   Passed    0.05 sec
+      Start 18: core_index_cache
+18/47 Test #18: core_index_cache .................   Passed    0.12 sec
+      Start 19: core_checksum_slicing
+19/47 Test #19: core_checksum_slicing ............   Passed    0.98 sec
+      Start 20: core_packed_storage
+20/47 Test #20: core_packed_storage ..............   Passed    0.11 sec
+      Start 21: core_packed_sql
+21/47 Test #21: core_packed_sql ..................   Passed    1.96 sec
+      Start 22: core_data_cache
+22/47 Test #22: core_data_cache ..................   Passed    0.13 sec
+      Start 23: core_data_cache_sql
+23/47 Test #23: core_data_cache_sql ..............   Passed    0.72 sec
+      Start 24: jsonl
+24/47 Test #24: jsonl ............................   Passed    0.51 sec
+      Start 25: core_vector_index
+25/47 Test #25: core_vector_index ................   Passed    0.24 sec
+      Start 26: core_float32_literals
+26/47 Test #26: core_float32_literals ............   Passed    0.27 sec
+      Start 27: core_paired_scan
+27/47 Test #27: core_paired_scan .................   Passed    0.62 sec
+      Start 28: core_scan_snapshot
+28/47 Test #28: core_scan_snapshot ...............   Passed    0.28 sec
+      Start 29: core_numeric_maximum
+29/47 Test #29: core_numeric_maximum .............   Passed    0.04 sec
+      Start 30: core_numeric_ties
+30/47 Test #30: core_numeric_ties ................   Passed    0.05 sec
+      Start 31: core_text_validation
+31/47 Test #31: core_text_validation .............   Passed    9.66 sec
+      Start 32: core_row_validation
+32/47 Test #32: core_row_validation ..............   Passed   11.00 sec
+      Start 33: core_row_allocation
+33/47 Test #33: core_row_allocation ..............   Passed    0.01 sec
+      Start 34: protocol_adversarial
+34/47 Test #34: protocol_adversarial .............   Passed    0.80 sec
+      Start 35: sql_adversarial
+35/47 Test #35: sql_adversarial ..................   Passed    3.30 sec
+      Start 36: storage_adversarial
+36/47 Test #36: storage_adversarial ..............   Passed    1.25 sec
+      Start 37: core_unindexed_snapshot
+37/47 Test #37: core_unindexed_snapshot ..........   Passed    1.14 sec
+      Start 38: core_vector_scratch
+38/47 Test #38: core_vector_scratch ..............   Passed    0.32 sec
+      Start 39: core_typed_scan
+39/47 Test #39: core_typed_scan ..................   Passed    0.56 sec
+      Start 40: core_mixed_filter_cache
+40/47 Test #40: core_mixed_filter_cache ..........   Passed    0.26 sec
+      Start 41: core_commit_policy
+41/47 Test #41: core_commit_policy ...............   Passed    1.84 sec
+      Start 42: core_commit_policy_compressed
+42/47 Test #42: core_commit_policy_compressed ....   Passed    0.79 sec
+      Start 43: core_compressed_paths
+43/47 Test #43: core_compressed_paths ............   Passed   14.04 sec
+      Start 44: core_packed_sql_compressed
+44/47 Test #44: core_packed_sql_compressed .......   Passed    1.16 sec
+      Start 45: core_vector_literals
+45/47 Test #45: core_vector_literals .............   Passed    0.65 sec
+      Start 46: core_validated_vector
+46/47 Test #46: core_validated_vector ............   Passed    0.09 sec
+      Start 47: core_validated_snapshot
+47/47 Test #47: core_validated_snapshot ..........   Passed    2.03 sec
+
+100% tests passed, 0 tests failed out of 47
+
+Total Test time (real) =  58.79 sec
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 978B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B done
+#3 DONE 0.0s
+
+#4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#4 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 3.42kB done
+#5 DONE 0.0s
+
+#6 [build 3/8] WORKDIR /src
+#6 CACHED
+
+#7 [build 5/8] COPY include ./include
+#7 CACHED
+
+#8 [build 4/8] COPY CMakeLists.txt ./
+#8 CACHED
+
+#9 [build 7/8] COPY tests ./tests
+#9 CACHED
+
+#10 [build 6/8] COPY src ./src
+#10 CACHED
+
+#11 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+#11 CACHED
+
+#12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+#12 CACHED
+
+#13 [runtime 2/4] RUN apk add --no-cache libstdc++=14.2.0-r6
+#13 CACHED
+
+#14 [runtime 3/4] COPY --from=build /build/minivectordb /usr/local/bin/minivectordb
+#14 DONE 0.0s
+
+#15 [runtime 4/4] WORKDIR /data
+#15 DONE 0.0s
+
+#16 exporting to image
+#16 exporting layers 0.0s done
+#16 exporting manifest sha256:02ce49b611e63f474e6185823498f527f0baea7675004007a61a5fabab1f76e5 done
+#16 exporting config sha256:9307158fa0b7a763ed0da29c4d602cdb573df47d36673170379b97929714ca82 done
+#16 exporting attestation manifest sha256:57a8dcb8472137e12c05d65075c3e162d13b887bd7e08c735e5c8639377e5638 done
+#16 exporting manifest list sha256:f5b7df72fe7e652024d92c8109c0f7e17f7dccc9e09f17d7d58e2631a5876955 done
+#16 naming to docker.io/library/mvdb:resources-final-amd64 done
+#16 DONE 0.0s
+sql_crud: PASS 
+sql_comparisons: PASS 
+sql_ordering: PASS 
+sql_empty: PASS 
+sql_primary_key: PASS 
+sql_unicode: PASS 
+sql_bigint: PASS 
+sql_unsupported: PASS 
+storage_restart: PASS 
+vector_euclidean: PASS 
+transaction_commit: PASS 
+transaction_rollback: PASS 
+storage_mutations: PASS 
+storage_multiple_tables: PASS 
+vector_ties_and_filter: PASS 
+vector_float32: PASS 
+vector_index_maintenance: PASS 
+transaction_failed_insert: PASS 
+transaction_autocommit_atomic: PASS 
+transaction_shutdown_rollback: PASS 
+Report: /opt/mvdb/results/resources-final-public-amd64/result.json
+{"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 458.708657, "B_bytes": 31793152, "M_bytes": 39440384, "passed": true}
+{"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 407.232765, "B_bytes": 15753216, "M_bytes": 22962176, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 711.869382, "B_bytes": 31793152, "M_bytes": 44126208, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 685.93488, "B_bytes": 15753216, "M_bytes": 27815936, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 728.981143, "B_bytes": 43196416, "M_bytes": 55894016, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 692.270504, "B_bytes": 22179840, "M_bytes": 34435072, "passed": true}
+{"round": 2, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 405.468549, "B_bytes": 15753216, "M_bytes": 22990848, "passed": true}
+{"round": 2, "version": "reference", "phase": "write", "indexed": false, "T_ms": 458.495467, "B_bytes": 31793152, "M_bytes": 39428096, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 689.427875, "B_bytes": 22179840, "M_bytes": 34430976, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": true, "T_ms": 728.339946, "B_bytes": 43196416, "M_bytes": 55902208, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 688.39611, "B_bytes": 15753216, "M_bytes": 27815936, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": false, "T_ms": 711.706342, "B_bytes": 31793152, "M_bytes": 44138496, "passed": true}
+{"round": 3, "version": "reference", "phase": "write", "indexed": false, "T_ms": 451.016562, "B_bytes": 31793152, "M_bytes": 39432192, "passed": true}
+{"round": 3, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 415.990433, "B_bytes": 15753216, "M_bytes": 22990848, "passed": true}
+{"round": 3, "version": "reference", "phase": "query", "indexed": false, "T_ms": 708.881097, "B_bytes": 31793152, "M_bytes": 44138496, "passed": true}
+{"round": 3, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 695.82428, "B_bytes": 15753216, "M_bytes": 27815936, "passed": true}
+{"round": 3, "version": "reference", "phase": "query", "indexed": true, "T_ms": 732.071645, "B_bytes": 43196416, "M_bytes": 55885824, "passed": true}
+{"round": 3, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 698.483526, "B_bytes": 22179840, "M_bytes": 34226176, "passed": true}
+{"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 460.326632, "B_bytes": 31793152, "M_bytes": 39514112, "passed": true}
+{"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 411.965756, "B_bytes": 15753216, "M_bytes": 23183360, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 819.401871, "B_bytes": 31793152, "M_bytes": 47157248, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 799.681558, "B_bytes": 15753216, "M_bytes": 30867456, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 832.363099, "B_bytes": 43196416, "M_bytes": 58912768, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 804.564249, "B_bytes": 22179840, "M_bytes": 37449728, "passed": true}
+{"round": 2, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 409.924276, "B_bytes": 15753216, "M_bytes": 22974464, "passed": true}
+{"round": 2, "version": "reference", "phase": "write", "indexed": false, "T_ms": 465.819669, "B_bytes": 31793152, "M_bytes": 39440384, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 798.598475, "B_bytes": 22179840, "M_bytes": 37453824, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": true, "T_ms": 839.62131, "B_bytes": 43196416, "M_bytes": 58929152, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 796.566334, "B_bytes": 15753216, "M_bytes": 30875648, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": false, "T_ms": 823.376649, "B_bytes": 31793152, "M_bytes": 47149056, "passed": true}
+{"round": 3, "version": "reference", "phase": "write", "indexed": false, "T_ms": 452.700321, "B_bytes": 31793152, "M_bytes": 39493632, "passed": true}
+{"round": 3, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 419.40243, "B_bytes": 15753216, "M_bytes": 22966272, "passed": true}
+{"round": 3, "version": "reference", "phase": "query", "indexed": false, "T_ms": 819.038356, "B_bytes": 31793152, "M_bytes": 47153152, "passed": true}
+{"round": 3, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 803.998757, "B_bytes": 15753216, "M_bytes": 30871552, "passed": true}
+{"round": 3, "version": "reference", "phase": "query", "indexed": true, "T_ms": 836.592046, "B_bytes": 43196416, "M_bytes": 58920960, "passed": true}
+{"round": 3, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 804.27873, "B_bytes": 22179840, "M_bytes": 37441536, "passed": true}
+{"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 1428.508732, "B_bytes": 134029312, "M_bytes": 143855616, "passed": true}
+{"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 1292.208157, "B_bytes": 59916288, "M_bytes": 67723264, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 2678.266465, "B_bytes": 134029312, "M_bytes": 151244800, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 2638.982375, "B_bytes": 59916288, "M_bytes": 74907648, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 4927.214003, "B_bytes": 167813120, "M_bytes": 186294272, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 4962.587806, "B_bytes": 79138816, "M_bytes": 94842880, "passed": true}
+{"round": 2, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 1267.673813, "B_bytes": 59916288, "M_bytes": 67751936, "passed": true}
+{"round": 2, "version": "reference", "phase": "write", "indexed": false, "T_ms": 1440.496014, "B_bytes": 134029312, "M_bytes": 144240640, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 5004.493665, "B_bytes": 79138816, "M_bytes": 94830592, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": true, "T_ms": 4983.776688, "B_bytes": 167813120, "M_bytes": 186048512, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 2677.874811, "B_bytes": 59916288, "M_bytes": 75051008, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": false, "T_ms": 2711.059853, "B_bytes": 134029312, "M_bytes": 151138304, "passed": true}
+{"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 1415.836482, "B_bytes": 134029312, "M_bytes": 143917056, "passed": true}
+{"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 1276.277945, "B_bytes": 59916288, "M_bytes": 67604480, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 2668.653953, "B_bytes": 134029312, "M_bytes": 151232512, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 2652.240042, "B_bytes": 59916288, "M_bytes": 75280384, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 5052.798097, "B_bytes": 167813120, "M_bytes": 186048512, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 5052.874927, "B_bytes": 79138816, "M_bytes": 94830592, "passed": true}
+{"round": 2, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 1273.153926, "B_bytes": 59916288, "M_bytes": 67723264, "passed": true}
+{"round": 2, "version": "reference", "phase": "write", "indexed": false, "T_ms": 1428.660349, "B_bytes": 134029312, "M_bytes": 144023552, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 5019.277887, "B_bytes": 79138816, "M_bytes": 94830592, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": true, "T_ms": 5082.327646, "B_bytes": 167813120, "M_bytes": 186052608, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 2690.049562, "B_bytes": 59916288, "M_bytes": 75051008, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": false, "T_ms": 2707.535229, "B_bytes": 134029312, "M_bytes": 151236608, "passed": true}

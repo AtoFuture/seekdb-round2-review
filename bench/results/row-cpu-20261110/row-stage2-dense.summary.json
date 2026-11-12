@@ -1,0 +1,53 @@
+{
+  "medians": {
+    "dense": {
+      "reference": {
+        "write_ms": 1388.592264,
+        "index_build_ms": 60.4602,
+        "query_total_ms": 590.072882,
+        "query_unfiltered_ms": 357.772021,
+        "query_filtered_ms": 232.300861,
+        "first_query_ms": 15.603246,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 2000000,
+        "database_bytes": 42831872,
+        "churn_ms": 0,
+        "process_maxrss_kib": 40088,
+        "local_cgroup_peak_bytes": 84553728
+      },
+      "batched": {
+        "write_ms": 1382.960579,
+        "index_build_ms": 57.8469,
+        "query_total_ms": 568.464561,
+        "query_unfiltered_ms": 348.06983,
+        "query_filtered_ms": 221.151912,
+        "first_query_ms": 14.6035,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 2000000,
+        "database_bytes": 42831872,
+        "churn_ms": 0,
+        "process_maxrss_kib": 39760,
+        "local_cgroup_peak_bytes": 84217856
+      },
+      "inline": {
+        "write_ms": 1367.457238,
+        "index_build_ms": 61.5756,
+        "query_total_ms": 461.144686,
+        "query_unfiltered_ms": 292.505213,
+        "query_filtered_ms": 168.639473,
+        "first_query_ms": 13.624725,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 2000000,
+        "database_bytes": 42831872,
+        "churn_ms": 0,
+        "process_maxrss_kib": 39968,
+        "local_cgroup_peak_bytes": 84443136
+      }
+    }
+  },
+  "samples": 9,
+  "validated_queries": 1800,
+  "reopen_checks": 9,
+  "diagnostic": false,
+  "no_official_score": true
+}

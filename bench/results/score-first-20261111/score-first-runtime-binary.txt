@@ -1,0 +1,1 @@
+61249560c684981daa4a8e2d786f90df0021b7123303594c3b0c658c3e0cd2b4  /usr/local/bin/minivectordb

@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /mnt/d/Codex/MiniVectorDB/build/unindexed-baseline-core
+Test project /mnt/d/Codex/MiniVectorDB/build/unindexed-baseline-core
+    Start 17: core_profile
+1/1 Test #17: core_profile .....................   Passed    0.06 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.08 sec

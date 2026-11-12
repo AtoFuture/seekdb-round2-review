@@ -1,0 +1,141 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.lto
+#1 transferring dockerfile: 1.02kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B done
+#3 DONE 0.0s
+
+#4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 3.56kB done
+#5 DONE 0.0s
+
+#6 [build 6/8] COPY src ./src
+#6 CACHED
+
+#7 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+#7 CACHED
+
+#8 [build 4/8] COPY CMakeLists.txt ./
+#8 CACHED
+
+#9 [build 5/8] COPY include ./include
+#9 CACHED
+
+#10 [build 3/8] WORKDIR /src
+#10 CACHED
+
+#11 [build 7/8] COPY tests ./tests
+#11 CACHED
+
+#12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON && cmake --build /build --parallel 2
+#12 0.186 -- The CXX compiler identification is GNU 14.2.0
+#12 0.196 -- Detecting CXX compiler ABI info
+#12 0.248 -- Detecting CXX compiler ABI info - done
+#12 0.268 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#12 0.268 -- Detecting CXX compile features
+#12 0.269 -- Detecting CXX compile features - done
+#12 0.451 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+#12 0.454 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+#12 0.511 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+#12 0.514 -- Found Threads: TRUE
+#12 0.516 -- Configuring done (0.4s)
+#12 0.544 -- Generating done (0.0s)
+#12 0.544 -- Build files have been written to: /build
+#12 0.560 [1/77] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+#12 0.560 [2/77] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+#12 2.780 [3/77] Building CXX object CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o
+#12 3.020 [4/77] Building CXX object CMakeFiles/compressed_path_tests.dir/tests/compressed_path_tests.cpp.o
+#12 4.225 [5/77] Building CXX object CMakeFiles/commit_policy_tests.dir/tests/commit_policy_tests.cpp.o
+#12 5.580 [6/77] Building CXX object CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o
+#12 5.988 [7/77] Building CXX object CMakeFiles/text_scan_tests.dir/tests/text_scan_tests.cpp.o
+#12 8.203 [8/77] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+#12 10.40 [9/77] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+#12 12.25 [10/77] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+#12 12.65 [11/77] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+#12 14.54 [12/77] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+#12 15.26 [13/77] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+#12 15.83 [14/77] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+#12 16.96 [15/77] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+#12 17.45 [16/77] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+#12 18.57 [17/77] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+#12 19.27 [18/77] Building CXX object CMakeFiles/reference_index_tests.dir/tests/reference_index_tests.cpp.o
+#12 20.76 [19/77] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+#12 21.09 [20/77] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+#12 22.24 [21/77] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+#12 23.69 [22/77] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+#12 24.68 [23/77] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+#12 25.77 [24/77] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+#12 27.10 [25/77] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+#12 27.57 [26/77] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+#12 29.09 [27/77] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+#12 29.83 [28/77] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+#12 31.18 [29/77] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+#12 31.71 [30/77] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+#12 32.99 [31/77] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+#12 33.49 [32/77] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+#12 34.66 [33/77] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+#12 35.39 [34/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+#12 36.66 [35/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+#12 38.48 [36/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+#12 39.49 [37/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+#12 41.23 [38/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+#12 41.37 [39/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+#12 42.45 [40/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+#12 42.71 [41/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+#12 44.72 [42/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+#12 45.14 [43/77] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+#12 47.65 [44/77] Linking CXX static library libminivectordb_core.a
+#12 47.69 [45/77] Linking CXX executable validated_snapshot_tests
+#12 47.69 [46/77] Linking CXX executable validated_vector_tests
+#12 52.56 [47/77] Linking CXX executable vector_literal_tests
+#12 54.59 [48/77] Linking CXX executable compressed_path_tests
+#12 55.67 [49/77] Linking CXX executable commit_policy_tests
+#12 58.27 [50/77] Linking CXX executable mixed_filter_cache_tests
+#12 58.84 [51/77] Linking CXX executable text_scan_tests
+#12 69.51 /usr/include/fortify/stdio.h: In function '__to_xstring.constprop':
+#12 69.51 /usr/include/fortify/stdio.h:73:28: error: inlining failed in call to 'always_inline' 'vsnprintf': function body can be overwritten at link time
+#12 69.51    73 | _FORTIFY_FN(vsnprintf) int vsnprintf(char * _FORTIFY_POS0 __s, size_t __n,
+#12 69.51       |                            ^
+#12 69.51 /usr/include/c++/14.2.0/ext/string_conversions.h:113:32: note: called from here
+#12 69.51   113 |       const int __len = __convf(__s, __n, __fmt, __args);
+#12 69.51       |                                ^
+#12 69.51 make: *** [/tmp/ccggnfHO.mk:17: /tmp/cceNGgKF.ltrans5.ltrans.o] Error 1
+#12 69.51 make: *** Waiting for unfinished jobs....
+#12 69.51 lto-wrapper: fatal error: make returned 2 exit status
+#12 69.51 compilation terminated.
+#12 69.51 /usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: error: lto-wrapper failed
+#12 69.51 collect2: error: ld returned 1 exit status
+#12 69.51 ninja: job failed: : && /usr/bin/c++ -O3 -DNDEBUG -flto=auto -fno-fat-lto-objects  CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o -o mixed_filter_cache_tests  libminivectordb_core.a && :
+#12 69.83 ninja: subcommand failed
+#12 ERROR: process "/bin/sh -c cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON && cmake --build /build --parallel 2" did not complete successfully: exit code: 1
+------
+ > [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON && cmake --build /build --parallel 2:
+69.51   113 |       const int __len = __convf(__s, __n, __fmt, __args);
+69.51       |                                ^
+69.51 make: *** [/tmp/ccggnfHO.mk:17: /tmp/cceNGgKF.ltrans5.ltrans.o] Error 1
+69.51 make: *** Waiting for unfinished jobs....
+69.51 lto-wrapper: fatal error: make returned 2 exit status
+69.51 compilation terminated.
+69.51 /usr/lib/gcc/x86_64-alpine-linux-musl/14.2.0/../../../../x86_64-alpine-linux-musl/bin/ld: error: lto-wrapper failed
+69.51 collect2: error: ld returned 1 exit status
+69.51 ninja: job failed: : && /usr/bin/c++ -O3 -DNDEBUG -flto=auto -fno-fat-lto-objects  CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o -o mixed_filter_cache_tests  libminivectordb_core.a && :
+69.83 ninja: subcommand failed
+------
+Dockerfile.lto:9
+--------------------
+   7 |     COPY src ./src
+   8 |     COPY tests ./tests
+   9 | >>> RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON && cmake --build /build --parallel 2
+  10 |     
+  11 |     FROM build AS test
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON && cmake --build /build --parallel 2" did not complete successfully: exit code: 1

@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "/mnt/mvdb-src/bench/run_contract_benchmark.py", line 368, in run_one
+    verify_rows(request("SELECT id,g,v,body FROM t ORDER BY id;")[0], workload)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/mvdb-src/bench/run_contract_benchmark.py", line 311, in request
+    response = session.request(sql, mode="exact")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/mvdb-src/bench/vendor/seekdb-round2-f4d4e26/protocol_check/_transport.py", line 131, in request
+    response = self.read(self.config["request_timeout"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/mvdb-src/bench/vendor/seekdb-round2-f4d4e26/protocol_check/_transport.py", line 100, in read
+    raise ProtocolError("response exceeds byte limit")
+_transport.ProtocolError: response exceeds byte limit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/mvdb/mvdb-benchmark-local.py", line 34, in <module>
+    sys.exit(benchmark.main())
+             ^^^^^^^^^^^^^^^^
+  File "/mnt/mvdb-src/bench/run_contract_benchmark.py", line 451, in main
+    samples.append(run_one(args, Session, config, workload, truth, version, image, r + 1, "write", False))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/mvdb-src/bench/run_contract_benchmark.py", line 384, in run_one
+    close_session(session, result)
+  File "/mnt/mvdb-src/bench/run_contract_benchmark.py", line 237, in close_session
+    session.close()
+  File "/mnt/mvdb-src/bench/vendor/seekdb-round2-f4d4e26/protocol_check/_transport.py", line 172, in close
+    self.stop()
+  File "/mnt/mvdb-src/bench/vendor/seekdb-round2-f4d4e26/protocol_check/_transport.py", line 152, in stop
+    self.docker("rm", "--force", "--volumes", self.name, check=False)
+  File "/mnt/mvdb-src/bench/vendor/seekdb-round2-f4d4e26/protocol_check/_transport.py", line 50, in docker
+    return subprocess.run(["docker", *args], stdout=subprocess.PIPE,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['docker', 'rm', '--force', '--volumes', 'vectordb-judge-4c6655cd3224426eac69e06ecb85774b']' timed out after 30 seconds

@@ -1,0 +1,16 @@
+WARNING: Your kernel does not support swap limit capabilities or the cgroup is not mounted. Memory limited without swap.
+Test project /build
+    Start 26: core_float32_literals
+1/2 Test #26: core_float32_literals ............   Passed    0.22 sec
+    Start 29: core_numeric_maximum
+2/2 Test #29: core_numeric_maximum .............***Failed    0.06 sec
+caught line 13
+
+
+50% tests passed, 1 tests failed out of 2
+
+Total Test time (real) =   0.28 sec
+
+The following tests FAILED:
+	 29 - core_numeric_maximum (Failed)
+Errors while running CTest

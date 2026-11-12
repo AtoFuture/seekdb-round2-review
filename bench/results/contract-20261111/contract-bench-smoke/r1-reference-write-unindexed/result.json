@@ -1,0 +1,185 @@
+{
+  "round": 1,
+  "version": "reference",
+  "image": "sha256:91fe268d07c2c0da849ef87dc00eebb96e5a9df5c2f4d9f41ac27b05ce6da856",
+  "phase": "write",
+  "indexed": false,
+  "filter_type": "varchar",
+  "passed": true,
+  "resources_ready": {
+    "at_monotonic_ns": 142923183835146,
+    "cgroup_path": "/sys/fs/cgroup/docker/694d89f2cba82183eb510d05de0d8f9109c8f860274783241269d54504c57f0b",
+    "data_device": "8:48",
+    "io": {
+      "rbytes": 409600,
+      "wbytes": 8192
+    },
+    "B_bytes": 417792,
+    "M_bytes": 5574656,
+    "dirty": {
+      "file_dirty": 0,
+      "file_writeback": 0
+    },
+    "swap_bytes": 0,
+    "raw": {
+      "io.stat": "8:48 rbytes=409600 wbytes=8192 rios=4 wios=1 dbytes=0 dios=0",
+      "memory.peak": "5574656",
+      "memory.current": "3371008",
+      "memory.swap.current": "0",
+      "memory.stat": "anon 1196032\nfile 417792\nkernel 577536\nkernel_stack 16384\npagetables 36864\nsec_pagetables 0\npercpu 12104\nsock 0\nvmalloc 16384\nshmem 0\nfile_mapped 266240\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 1175552\nactive_anon 4096\ninactive_file 401408\nactive_file 0\nunevictable 0\nslab_reclaimable 87752\nslab_unreclaimable 219200\nslab 306952\nworkingset_refault_anon 0\nworkingset_refault_file 0\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgscan 0\npgsteal 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgfault 1636\npgmajfault 1\npgrefill 0\npgactivate 0\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nthp_fault_alloc 0\nthp_collapse_alloc 0",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+      "cpu.stat": "usage_usec 28374\nuser_usec 24320\nsystem_usec 4053\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+    }
+  },
+  "write_wall_ms": 30.250673,
+  "write_sum_request_ms": 30.245874,
+  "write_request_ms": [
+    30.245874
+  ],
+  "T_ms": 30.250673,
+  "wall_ms": 30.250673,
+  "sum_request_ms": 30.245874,
+  "drain": {
+    "before": {
+      "at_monotonic_ns": 142923226542629,
+      "cgroup_path": "/sys/fs/cgroup/docker/694d89f2cba82183eb510d05de0d8f9109c8f860274783241269d54504c57f0b",
+      "data_device": "8:48",
+      "io": {
+        "rbytes": 548864,
+        "wbytes": 323584
+      },
+      "B_bytes": 872448,
+      "M_bytes": 21942272,
+      "dirty": {
+        "file_dirty": 0,
+        "file_writeback": 0
+      },
+      "swap_bytes": 0,
+      "raw": {
+        "io.stat": "8:48 rbytes=548864 wbytes=323584 rios=6 wios=6 dbytes=0 dios=0",
+        "memory.peak": "21942272",
+        "memory.current": "20860928",
+        "memory.swap.current": "0",
+        "memory.stat": "anon 18075648\nfile 864256\nkernel 598016\nkernel_stack 16384\npagetables 73728\nsec_pagetables 0\npercpu 12104\nsock 0\nvmalloc 16384\nshmem 0\nfile_mapped 479232\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 18071552\nactive_anon 4096\ninactive_file 847872\nactive_file 0\nunevictable 0\nslab_reclaimable 86880\nslab_unreclaimable 341880\nslab 428760\nworkingset_refault_anon 0\nworkingset_refault_file 0\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgscan 0\npgsteal 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgfault 7477\npgmajfault 2\npgrefill 0\npgactivate 0\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nthp_fault_alloc 0\nthp_collapse_alloc 0",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+        "cpu.stat": "usage_usec 50341\nuser_usec 33561\nsystem_usec 16780\nnr_periods 1\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      }
+    },
+    "after": {
+      "at_monotonic_ns": 142923432316829,
+      "cgroup_path": "/sys/fs/cgroup/docker/694d89f2cba82183eb510d05de0d8f9109c8f860274783241269d54504c57f0b",
+      "data_device": "8:48",
+      "io": {
+        "rbytes": 548864,
+        "wbytes": 323584
+      },
+      "B_bytes": 872448,
+      "M_bytes": 21942272,
+      "dirty": {
+        "file_dirty": 0,
+        "file_writeback": 0
+      },
+      "swap_bytes": 0,
+      "raw": {
+        "io.stat": "8:48 rbytes=548864 wbytes=323584 rios=6 wios=6 dbytes=0 dios=0",
+        "memory.peak": "21942272",
+        "memory.current": "20594688",
+        "memory.swap.current": "0",
+        "memory.stat": "anon 18075648\nfile 864256\nkernel 401408\nkernel_stack 16384\npagetables 73728\nsec_pagetables 0\npercpu 12104\nsock 0\nvmalloc 16384\nshmem 0\nfile_mapped 479232\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 18071552\nactive_anon 4096\ninactive_file 847872\nactive_file 0\nunevictable 0\nslab_reclaimable 86880\nslab_unreclaimable 149728\nslab 236608\nworkingset_refault_anon 0\nworkingset_refault_file 0\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgscan 0\npgsteal 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgfault 7477\npgmajfault 2\npgrefill 0\npgactivate 0\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nthp_fault_alloc 0\nthp_collapse_alloc 0",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+        "cpu.stat": "usage_usec 50341\nuser_usec 33561\nsystem_usec 16780\nnr_periods 3\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      }
+    },
+    "samples": [
+      {
+        "at_monotonic_ns": 142923230848616,
+        "cgroup_path": "/sys/fs/cgroup/docker/694d89f2cba82183eb510d05de0d8f9109c8f860274783241269d54504c57f0b",
+        "data_device": "8:48",
+        "io": {
+          "rbytes": 548864,
+          "wbytes": 323584
+        },
+        "B_bytes": 872448,
+        "M_bytes": 21942272,
+        "dirty": {
+          "file_dirty": 0,
+          "file_writeback": 0
+        },
+        "swap_bytes": 0,
+        "raw": {
+          "io.stat": "8:48 rbytes=548864 wbytes=323584 rios=6 wios=6 dbytes=0 dios=0",
+          "memory.peak": "21942272",
+          "memory.current": "20594688",
+          "memory.swap.current": "0",
+          "memory.stat": "anon 18075648\nfile 864256\nkernel 425984\nkernel_stack 16384\npagetables 73728\nsec_pagetables 0\npercpu 12104\nsock 0\nvmalloc 16384\nshmem 0\nfile_mapped 479232\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 18071552\nactive_anon 4096\ninactive_file 847872\nactive_file 0\nunevictable 0\nslab_reclaimable 86880\nslab_unreclaimable 174784\nslab 261664\nworkingset_refault_anon 0\nworkingset_refault_file 0\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgscan 0\npgsteal 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgfault 7477\npgmajfault 2\npgrefill 0\npgactivate 0\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nthp_fault_alloc 0\nthp_collapse_alloc 0",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.stat": "usage_usec 50341\nuser_usec 33561\nsystem_usec 16780\nnr_periods 1\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+        }
+      },
+      {
+        "at_monotonic_ns": 142923331672285,
+        "cgroup_path": "/sys/fs/cgroup/docker/694d89f2cba82183eb510d05de0d8f9109c8f860274783241269d54504c57f0b",
+        "data_device": "8:48",
+        "io": {
+          "rbytes": 548864,
+          "wbytes": 323584
+        },
+        "B_bytes": 872448,
+        "M_bytes": 21942272,
+        "dirty": {
+          "file_dirty": 0,
+          "file_writeback": 0
+        },
+        "swap_bytes": 0,
+        "raw": {
+          "io.stat": "8:48 rbytes=548864 wbytes=323584 rios=6 wios=6 dbytes=0 dios=0",
+          "memory.peak": "21942272",
+          "memory.current": "20594688",
+          "memory.swap.current": "0",
+          "memory.stat": "anon 18075648\nfile 864256\nkernel 401408\nkernel_stack 16384\npagetables 73728\nsec_pagetables 0\npercpu 12104\nsock 0\nvmalloc 16384\nshmem 0\nfile_mapped 479232\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 18071552\nactive_anon 4096\ninactive_file 847872\nactive_file 0\nunevictable 0\nslab_reclaimable 86880\nslab_unreclaimable 149728\nslab 236608\nworkingset_refault_anon 0\nworkingset_refault_file 0\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgscan 0\npgsteal 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgfault 7477\npgmajfault 2\npgrefill 0\npgactivate 0\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nthp_fault_alloc 0\nthp_collapse_alloc 0",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.stat": "usage_usec 50341\nuser_usec 33561\nsystem_usec 16780\nnr_periods 2\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+        }
+      },
+      {
+        "at_monotonic_ns": 142923432316829,
+        "cgroup_path": "/sys/fs/cgroup/docker/694d89f2cba82183eb510d05de0d8f9109c8f860274783241269d54504c57f0b",
+        "data_device": "8:48",
+        "io": {
+          "rbytes": 548864,
+          "wbytes": 323584
+        },
+        "B_bytes": 872448,
+        "M_bytes": 21942272,
+        "dirty": {
+          "file_dirty": 0,
+          "file_writeback": 0
+        },
+        "swap_bytes": 0,
+        "raw": {
+          "io.stat": "8:48 rbytes=548864 wbytes=323584 rios=6 wios=6 dbytes=0 dios=0",
+          "memory.peak": "21942272",
+          "memory.current": "20594688",
+          "memory.swap.current": "0",
+          "memory.stat": "anon 18075648\nfile 864256\nkernel 401408\nkernel_stack 16384\npagetables 73728\nsec_pagetables 0\npercpu 12104\nsock 0\nvmalloc 16384\nshmem 0\nfile_mapped 479232\nfile_dirty 0\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 18071552\nactive_anon 4096\ninactive_file 847872\nactive_file 0\nunevictable 0\nslab_reclaimable 86880\nslab_unreclaimable 149728\nslab 236608\nworkingset_refault_anon 0\nworkingset_refault_file 0\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgscan 0\npgsteal 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgfault 7477\npgmajfault 2\npgrefill 0\npgactivate 0\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nthp_fault_alloc 0\nthp_collapse_alloc 0",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+          "cpu.stat": "usage_usec 50341\nuser_usec 33561\nsystem_usec 16780\nnr_periods 3\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+        }
+      }
+    ],
+    "fsync_counts": {
+      "files": 1,
+      "directories": 1
+    },
+    "elapsed_ms": 205.77741600573063,
+    "timeout_seconds": 5.0,
+    "poll_interval_seconds": 0.1
+  },
+  "B_bytes": 872448,
+  "M_bytes": 21942272,
+  "data_device": "8:48",
+  "swap_bytes": 0,
+  "full_rows_before_restart": true,
+  "full_rows_after_restart": true,
+  "restart_query_checked": false
+}

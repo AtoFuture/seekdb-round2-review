@@ -1,0 +1,31 @@
+{
+  "scope": "Local warm SQL API;2000 rows128 dimensions40 queries;3 alternating samples per version;no official score",
+  "medians": {
+    "baseline": {
+      "write_ms": 6376.644168,
+      "query_total_ms": 15785.471319,
+      "query_filtered_ms": 7839.346844,
+      "query_unfiltered_ms": 7946.124475,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160
+    },
+    "table": {
+      "write_ms": 4973.974588,
+      "query_total_ms": 12536.93325,
+      "query_filtered_ms": 6260.438865,
+      "query_unfiltered_ms": 6276.494385,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160
+    }
+  },
+  "validated_queries": 240,
+  "reopen_checks": 6,
+  "source": {
+    "baseline": "4ad8b99326cbd24523912143bff58b2e286a3c78",
+    "table": "6f1824f48673fea71da59d9a20719bd25e4fe12c"
+  },
+  "binary_sha256": {
+    "baseline": "523b0ae5a19c8fe50e8310a4d1cf4530ad7ef2daf6fa99ea2b60edda344c028f",
+    "table": "79ffa56a86d090799a563c02ec3a8e25f3208fbf102e2bb02746c7bed5d75484"
+  }
+}

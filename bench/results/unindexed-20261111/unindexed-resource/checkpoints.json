@@ -1,0 +1,25 @@
+[
+  {
+    "phase": "before_warm",
+    "generation": 0,
+    "elapsed_seconds": 0.5649412240018137,
+    "memory_limit": 67108864,
+    "configured_memory_swap_limit": -1,
+    "cgroup_memory_limit": "67108864",
+    "memory_current": 33316864,
+    "memory_peak": 36491264,
+    "swap_current": 0,
+    "swap_max": "max",
+    "memory_events": {
+      "low": 0,
+      "high": 0,
+      "max": 0,
+      "oom": 0,
+      "oom_kill": 0,
+      "oom_group_kill": 0
+    },
+    "oom_killed": false,
+    "file_bytes": 9007104,
+    "file_count": 1
+  }
+]

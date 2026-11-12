@@ -1,0 +1,70 @@
+{
+  "medians": {
+    "overflow": {
+      "reference": {
+        "write_ms": 315.321946,
+        "index_build_ms": 0.0,
+        "query_total_ms": 238.7849605,
+        "query_unfiltered_ms": 121.96497,
+        "query_filtered_ms": 116.8199905,
+        "first_query_ms": 15.123438,
+        "second_query_ms": 6.2916004999999995,
+        "snapshot_capacity": 0.0,
+        "snapshot_rows": 0.0,
+        "database_bytes": 20029440.0,
+        "churn_ms": 0.0,
+        "query_and_mutation_ms": 238.7849605,
+        "warm_resident_bytes": 34068480.0,
+        "invalidated_resident_bytes": 0.0,
+        "query_and_mutation_minor_faults": 4737.0,
+        "process_maxrss_kib": 36392.0,
+        "local_cgroup_peak_bytes": 56424448.0
+      },
+      "reuse": {
+        "write_ms": 310.4564085,
+        "index_build_ms": 0.0,
+        "query_total_ms": 240.14359100000001,
+        "query_unfiltered_ms": 122.6463255,
+        "query_filtered_ms": 117.4972655,
+        "first_query_ms": 15.1981155,
+        "second_query_ms": 12.603009,
+        "snapshot_capacity": 0.0,
+        "snapshot_rows": 0.0,
+        "database_bytes": 20029440.0,
+        "churn_ms": 0.0,
+        "query_and_mutation_ms": 240.14359100000001,
+        "warm_resident_bytes": 34107392.0,
+        "invalidated_resident_bytes": 0.0,
+        "query_and_mutation_minor_faults": 4738.0,
+        "process_maxrss_kib": 41132.0,
+        "local_cgroup_peak_bytes": 61902848.0
+      },
+      "scratch": {
+        "write_ms": 313.592129,
+        "index_build_ms": 0.0,
+        "query_total_ms": 233.42223,
+        "query_unfiltered_ms": 118.699356,
+        "query_filtered_ms": 114.72287399999999,
+        "first_query_ms": 14.865354,
+        "second_query_ms": 12.6317255,
+        "snapshot_capacity": 0.0,
+        "snapshot_rows": 0.0,
+        "database_bytes": 20029440.0,
+        "churn_ms": 0.0,
+        "query_and_mutation_ms": 233.42223,
+        "warm_resident_bytes": 34062336.0,
+        "invalidated_resident_bytes": 0.0,
+        "query_and_mutation_minor_faults": 4738.0,
+        "process_maxrss_kib": 41198.0,
+        "local_cgroup_peak_bytes": 62083072.0
+      }
+    }
+  },
+  "samples": 18,
+  "validated_queries": 720,
+  "reopen_checks": 18,
+  "diagnostic": false,
+  "no_official_score": true,
+  "order": "rotating positions, reverse each full block",
+  "profile_note": "table_scan and scan_consume are inclusive. Difference estimates traversal outside callbacks; do not sum enclosing and leaf timers."
+}

@@ -1,0 +1,35 @@
+{
+  "medians": {
+    "dense": {
+      "False": {
+        "write_ms": 1397.425473,
+        "index_build_ms": 67.3923,
+        "query_total_ms": 6619.37075,
+        "query_unfiltered_ms": 3347.937021,
+        "query_filtered_ms": 3274.50445,
+        "first_query_ms": 38.59442,
+        "database_bytes": 42831872,
+        "churn_ms": 0,
+        "process_maxrss_kib": 32976,
+        "local_cgroup_peak_bytes": 76263424
+      },
+      "True": {
+        "write_ms": 1371.848245,
+        "index_build_ms": 58.6142,
+        "query_total_ms": 2948.92593,
+        "query_unfiltered_ms": 1509.634399,
+        "query_filtered_ms": 1439.291531,
+        "first_query_ms": 15.275822,
+        "database_bytes": 42831872,
+        "churn_ms": 0,
+        "process_maxrss_kib": 32992,
+        "local_cgroup_peak_bytes": 76210176
+      }
+    }
+  },
+  "samples": 6,
+  "validated_queries": 1200,
+  "reopen_checks": 6,
+  "diagnostic": false,
+  "no_official_score": true
+}

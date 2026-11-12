@@ -1,0 +1,28 @@
+{
+  "actual": [
+    [
+      9e-06
+    ],
+    [
+      1.8e-05
+    ],
+    [
+      0.0
+    ]
+  ],
+  "expected": [
+    [
+      0.0
+    ],
+    [
+      9e-06
+    ],
+    [
+      1.8e-05
+    ]
+  ],
+  "same_multiset": true,
+  "scope": "public helper only; hidden driver cause unknown",
+  "helper_passed": false,
+  "error": "missing row: [1.8e-05]"
+}

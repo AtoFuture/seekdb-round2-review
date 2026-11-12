@@ -1,0 +1,2146 @@
+[
+  {
+    "filter": "bigint",
+    "variant": "previous",
+    "medians": {
+      "query_total_ms": 277.958364,
+      "query_unfiltered_ms": 193.785464,
+      "query_filtered_ms": 84.106053,
+      "write_ms": 544.259991,
+      "process_maxrss_kib": 30616
+    },
+    "samples": [
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 485.512,
+        "query_cpu_ms": 279.262,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 543.119505,
+        "query_unfiltered_ms": 193.785464,
+        "query_filtered_ms": 84.448383,
+        "query_total_ms": 278.233847,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 30632,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      },
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 498.313,
+        "query_cpu_ms": 278.937,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 544.259991,
+        "query_unfiltered_ms": 193.852311,
+        "query_filtered_ms": 84.106053,
+        "query_total_ms": 277.958364,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 30400,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      },
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 479.013,
+        "query_cpu_ms": 277.636,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 547.627957,
+        "query_unfiltered_ms": 193.160667,
+        "query_filtered_ms": 83.493028,
+        "query_total_ms": 276.653695,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 30616,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      }
+    ],
+    "exact_results_agree": true
+  },
+  {
+    "filter": "bigint",
+    "variant": "wide",
+    "medians": {
+      "query_total_ms": 276.932777,
+      "query_unfiltered_ms": 193.246578,
+      "query_filtered_ms": 83.686199,
+      "write_ms": 548.103947,
+      "process_maxrss_kib": 30636
+    },
+    "samples": [
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 491.268,
+        "query_cpu_ms": 276.867,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 554.533983,
+        "query_unfiltered_ms": 192.690017,
+        "query_filtered_ms": 83.171364,
+        "query_total_ms": 275.861381,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 30600,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      },
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 496.368,
+        "query_cpu_ms": 284.589,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 533.690135,
+        "query_unfiltered_ms": 195.066754,
+        "query_filtered_ms": 88.524188,
+        "query_total_ms": 283.590942,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 30636,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      },
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 498.462,
+        "query_cpu_ms": 277.879,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 548.103947,
+        "query_unfiltered_ms": 193.246578,
+        "query_filtered_ms": 83.686199,
+        "query_total_ms": 276.932777,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 30704,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      }
+    ],
+    "exact_results_agree": true
+  },
+  {
+    "filter": "varchar",
+    "variant": "previous",
+    "medians": {
+      "query_total_ms": 285.322392,
+      "query_unfiltered_ms": 193.304845,
+      "query_filtered_ms": 92.239164,
+      "write_ms": 556.781199,
+      "process_maxrss_kib": 31232
+    },
+    "samples": [
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 497.97,
+        "query_cpu_ms": 286.337,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 641.598349,
+        "query_unfiltered_ms": 193.083228,
+        "query_filtered_ms": 92.239164,
+        "query_total_ms": 285.322392,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 31292,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      },
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 501.799,
+        "query_cpu_ms": 286.153,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 556.781199,
+        "query_unfiltered_ms": 193.304845,
+        "query_filtered_ms": 91.876533,
+        "query_total_ms": 285.181378,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 31232,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      },
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 484.657,
+        "query_cpu_ms": 287.134,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 551.864676,
+        "query_unfiltered_ms": 193.756901,
+        "query_filtered_ms": 92.360891,
+        "query_total_ms": 286.117792,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 31200,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      }
+    ],
+    "exact_results_agree": true
+  },
+  {
+    "filter": "varchar",
+    "variant": "wide",
+    "medians": {
+      "query_total_ms": 285.57322,
+      "query_unfiltered_ms": 193.441233,
+      "query_filtered_ms": 92.131987,
+      "write_ms": 545.084706,
+      "process_maxrss_kib": 31196
+    },
+    "samples": [
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 489.841,
+        "query_cpu_ms": 285.288,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 545.084706,
+        "query_unfiltered_ms": 192.758524,
+        "query_filtered_ms": 91.553746,
+        "query_total_ms": 284.31227,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 31192,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      },
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 498.257,
+        "query_cpu_ms": 286.569,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 542.46898,
+        "query_unfiltered_ms": 193.441233,
+        "query_filtered_ms": 92.131987,
+        "query_total_ms": 285.57322,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 31196,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      },
+      {
+        "profile_enabled": false,
+        "write_cpu_ms": 499.165,
+        "query_cpu_ms": 287.16,
+        "write_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "table_scan": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "scan_consume": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "predicate_evaluation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_scratch_copy": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "rows": 10000,
+        "dimensions": 128,
+        "queries": 1000,
+        "seed": 20261109,
+        "sql_batch_size": 100,
+        "shuffled_inserts": true,
+        "selective_decode": 1,
+        "batch_writes": 1,
+        "write_ms": 545.096408,
+        "query_unfiltered_ms": 193.732118,
+        "query_filtered_ms": 92.423764,
+        "query_total_ms": 286.155882,
+        "database_bytes": 15310848,
+        "insert_file_growth_bytes": 15286272,
+        "rows_examined": 10000000,
+        "distances_computed": 5500000,
+        "vector_values_filtered": 0,
+        "vector_values_unfiltered": 0,
+        "vector_values_materialized": 0,
+        "cells_materialized": 20000,
+        "process_maxrss_kib": 31284,
+        "local_cgroup_peak_bytes": 0,
+        "validated_queries": 1000,
+        "recovered_rows": 10000,
+        "result_digest": "4d68913ece23dc4c"
+      }
+    ],
+    "exact_results_agree": true
+  }
+]

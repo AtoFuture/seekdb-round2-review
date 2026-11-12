@@ -1,0 +1,24 @@
+Internal ctest changing into directory: /mnt/d/Codex/MiniVectorDB/build/score-first-core
+Test project /mnt/d/Codex/MiniVectorDB/build/score-first-core
+    Start  7: core_sql
+1/9 Test  #7: core_sql .........................   Passed    0.16 sec
+    Start 10: core_sql_edges
+2/9 Test #10: core_sql_edges ...................   Passed    0.13 sec
+    Start 11: core_sql_failure
+3/9 Test #11: core_sql_failure .................   Passed    0.39 sec
+    Start 12: core_sql_batch
+4/9 Test #12: core_sql_batch ...................   Passed    8.20 sec
+    Start 25: core_vector_index
+5/9 Test #25: core_vector_index ................   Passed    7.36 sec
+    Start 29: core_numeric_maximum
+6/9 Test #29: core_numeric_maximum .............   Passed    0.15 sec
+    Start 30: core_numeric_ties
+7/9 Test #30: core_numeric_ties ................   Passed    0.43 sec
+    Start 37: core_unindexed_snapshot
+8/9 Test #37: core_unindexed_snapshot ..........   Passed   20.51 sec
+    Start 39: core_typed_scan
+9/9 Test #39: core_typed_scan ..................   Passed    9.02 sec
+
+100% tests passed, 0 tests failed out of 9
+
+Total Test time (real) =  46.41 sec

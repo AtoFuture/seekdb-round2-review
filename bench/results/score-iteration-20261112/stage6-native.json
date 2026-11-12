@@ -1,0 +1,3776 @@
+[
+  {
+    "job": 130871670187,
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "groups": {
+      "formal-bigint": {
+        "metadata": {
+          "reference_image": "sha256:0ba0dfc728913847017bda0911e77a0714709980d06fc91eef1ee915a62fa426",
+          "candidate_image": "sha256:e268383bbca5aa1625be8c0e8ec5e9be5914016241d60dc9c17b61b16dddbcce",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/formal-bigint",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "bigint",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 1102.448979,
+              "B_bytes": 15753216,
+              "M_bytes": 23269376
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1125.703311,
+                "B_bytes": 15753216,
+                "M_bytes": 23248896,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1102.448979,
+                "B_bytes": 15753216,
+                "M_bytes": 23269376,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1075.159917,
+                "B_bytes": 15753216,
+                "M_bytes": 23502848,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 939.628738,
+              "B_bytes": 15753216,
+              "M_bytes": 23203840
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 939.628738,
+                "B_bytes": 15753216,
+                "M_bytes": 23203840,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 943.376887,
+                "B_bytes": 15753216,
+                "M_bytes": 23199744,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 928.119495,
+                "B_bytes": 15753216,
+                "M_bytes": 23531520,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1318.118561,
+              "B_bytes": 15753216,
+              "M_bytes": 28217344
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1323.210557,
+                "B_bytes": 15753216,
+                "M_bytes": 28250112,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1318.118561,
+                "B_bytes": 15753216,
+                "M_bytes": 28213248,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1315.871121,
+                "B_bytes": 15753216,
+                "M_bytes": 28217344,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 988.582598,
+              "B_bytes": 15753216,
+              "M_bytes": 28229632
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 984.553564,
+                "B_bytes": 15753216,
+                "M_bytes": 28200960,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 991.051469,
+                "B_bytes": 15753216,
+                "M_bytes": 28307456,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 988.582598,
+                "B_bytes": 15753216,
+                "M_bytes": 28229632,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1322.662828,
+              "B_bytes": 22179840,
+              "M_bytes": 34902016
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1320.858044,
+                "B_bytes": 22179840,
+                "M_bytes": 34906112,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1322.662828,
+                "B_bytes": 22179840,
+                "M_bytes": 34725888,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1343.356655,
+                "B_bytes": 22179840,
+                "M_bytes": 34902016,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 995.530356,
+              "B_bytes": 16740352,
+              "M_bytes": 29290496
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1013.008219,
+                "B_bytes": 16740352,
+                "M_bytes": 29265920,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 995.530356,
+                "B_bytes": 16740352,
+                "M_bytes": 29294592,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 994.203307,
+                "B_bytes": 16740352,
+                "M_bytes": 29290496,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "formal-varchar": {
+        "metadata": {
+          "reference_image": "sha256:0ba0dfc728913847017bda0911e77a0714709980d06fc91eef1ee915a62fa426",
+          "candidate_image": "sha256:e268383bbca5aa1625be8c0e8ec5e9be5914016241d60dc9c17b61b16dddbcce",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/formal-varchar",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "varchar",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 1099.820127,
+              "B_bytes": 15753216,
+              "M_bytes": 23490560
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1090.325494,
+                "B_bytes": 15753216,
+                "M_bytes": 23367680,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1099.820127,
+                "B_bytes": 15753216,
+                "M_bytes": 23490560,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1112.213713,
+                "B_bytes": 15753216,
+                "M_bytes": 23494656,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 935.51842,
+              "B_bytes": 15753216,
+              "M_bytes": 23490560
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 935.51842,
+                "B_bytes": 15753216,
+                "M_bytes": 23490560,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 942.401665,
+                "B_bytes": 15753216,
+                "M_bytes": 23617536,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 932.08888,
+                "B_bytes": 15753216,
+                "M_bytes": 23216128,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1746.98431,
+              "B_bytes": 15753216,
+              "M_bytes": 31281152
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1739.563229,
+                "B_bytes": 15753216,
+                "M_bytes": 31219712,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1749.989432,
+                "B_bytes": 15753216,
+                "M_bytes": 31281152,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1746.98431,
+                "B_bytes": 15753216,
+                "M_bytes": 31289344,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 1323.140637,
+              "B_bytes": 15753216,
+              "M_bytes": 31252480
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1323.140637,
+                "B_bytes": 15753216,
+                "M_bytes": 31252480,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1326.715844,
+                "B_bytes": 15753216,
+                "M_bytes": 31219712,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1318.883249,
+                "B_bytes": 15753216,
+                "M_bytes": 31268864,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1751.297081,
+              "B_bytes": 22179840,
+              "M_bytes": 37900288
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1751.297081,
+                "B_bytes": 22179840,
+                "M_bytes": 37908480,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1744.297195,
+                "B_bytes": 22179840,
+                "M_bytes": 37900288,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1762.984291,
+                "B_bytes": 22179840,
+                "M_bytes": 37879808,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 1331.098046,
+              "B_bytes": 16740352,
+              "M_bytes": 32329728
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1346.312801,
+                "B_bytes": 16801792,
+                "M_bytes": 32329728,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1330.255552,
+                "B_bytes": 16740352,
+                "M_bytes": 32325632,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1331.098046,
+                "B_bytes": 16740352,
+                "M_bytes": 32346112,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "previous-bigint": {
+        "metadata": {
+          "reference_image": "sha256:e8cccbc7853c9581c79408bee21212a56aaef1dff4d38c2e7deaa5f34645305a",
+          "candidate_image": "sha256:e268383bbca5aa1625be8c0e8ec5e9be5914016241d60dc9c17b61b16dddbcce",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/previous-bigint",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "bigint",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 925.647204,
+              "B_bytes": 15753216,
+              "M_bytes": 23449600
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 925.647204,
+                "B_bytes": 15753216,
+                "M_bytes": 23449600,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 920.876475,
+                "B_bytes": 15753216,
+                "M_bytes": 23576576,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 931.166574,
+                "B_bytes": 15753216,
+                "M_bytes": 23404544,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 925.55343,
+              "B_bytes": 15753216,
+              "M_bytes": 23437312
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 939.522947,
+                "B_bytes": 15753216,
+                "M_bytes": 23437312,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 925.55343,
+                "B_bytes": 15753216,
+                "M_bytes": 23502848,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 925.108079,
+                "B_bytes": 15753216,
+                "M_bytes": 23216128,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1069.063512,
+              "B_bytes": 15753216,
+              "M_bytes": 28229632
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1069.063512,
+                "B_bytes": 15753216,
+                "M_bytes": 28229632,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1075.491065,
+                "B_bytes": 15753216,
+                "M_bytes": 28176384,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1067.285217,
+                "B_bytes": 15753216,
+                "M_bytes": 28315648,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 985.369967,
+              "B_bytes": 15753216,
+              "M_bytes": 28282880
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 990.043945,
+                "B_bytes": 15753216,
+                "M_bytes": 28225536,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 985.369967,
+                "B_bytes": 15753216,
+                "M_bytes": 28282880,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 981.864979,
+                "B_bytes": 15753216,
+                "M_bytes": 28389376,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1071.448406,
+              "B_bytes": 16740352,
+              "M_bytes": 29270016
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1070.588521,
+                "B_bytes": 16740352,
+                "M_bytes": 29282304,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1076.210537,
+                "B_bytes": 16740352,
+                "M_bytes": 29253632,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1071.448406,
+                "B_bytes": 16740352,
+                "M_bytes": 29270016,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 996.119451,
+              "B_bytes": 16740352,
+              "M_bytes": 29319168
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1007.740482,
+                "B_bytes": 16740352,
+                "M_bytes": 29319168,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 996.119451,
+                "B_bytes": 16740352,
+                "M_bytes": 29224960,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 995.02027,
+                "B_bytes": 16740352,
+                "M_bytes": 29364224,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "previous-varchar": {
+        "metadata": {
+          "reference_image": "sha256:e8cccbc7853c9581c79408bee21212a56aaef1dff4d38c2e7deaa5f34645305a",
+          "candidate_image": "sha256:e268383bbca5aa1625be8c0e8ec5e9be5914016241d60dc9c17b61b16dddbcce",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/previous-varchar",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "varchar",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 940.684683,
+              "B_bytes": 15753216,
+              "M_bytes": 23457792
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 933.941076,
+                "B_bytes": 15753216,
+                "M_bytes": 23457792,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 940.684683,
+                "B_bytes": 15753216,
+                "M_bytes": 23523328,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 947.303084,
+                "B_bytes": 15753216,
+                "M_bytes": 23216128,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 947.777898,
+              "B_bytes": 15753216,
+              "M_bytes": 23339008
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 939.06244,
+                "B_bytes": 15753216,
+                "M_bytes": 23281664,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 947.777898,
+                "B_bytes": 15753216,
+                "M_bytes": 23363584,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 948.482556,
+                "B_bytes": 15753216,
+                "M_bytes": 23339008,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1402.914212,
+              "B_bytes": 15753216,
+              "M_bytes": 31232000
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1397.863819,
+                "B_bytes": 15753216,
+                "M_bytes": 31166464,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1402.914212,
+                "B_bytes": 15753216,
+                "M_bytes": 31232000,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1406.893626,
+                "B_bytes": 15753216,
+                "M_bytes": 31281152,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 1321.995207,
+              "B_bytes": 15753216,
+              "M_bytes": 31285248
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1317.850233,
+                "B_bytes": 15753216,
+                "M_bytes": 31293440,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1321.995207,
+                "B_bytes": 15753216,
+                "M_bytes": 31285248,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1328.813892,
+                "B_bytes": 15753216,
+                "M_bytes": 31244288,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1406.34481,
+              "B_bytes": 16740352,
+              "M_bytes": 32301056
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1404.366544,
+                "B_bytes": 16740352,
+                "M_bytes": 32382976,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1406.34481,
+                "B_bytes": 16740352,
+                "M_bytes": 32276480,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1421.641371,
+                "B_bytes": 16740352,
+                "M_bytes": 32301056,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 1332.649326,
+              "B_bytes": 16740352,
+              "M_bytes": 32235520
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1350.503087,
+                "B_bytes": 16740352,
+                "M_bytes": 32288768,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1331.940095,
+                "B_bytes": 16740352,
+                "M_bytes": 32235520,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1332.649326,
+                "B_bytes": 16740352,
+                "M_bytes": 32223232,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "job": 130871670642,
+    "cpu": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "groups": {
+      "formal-bigint": {
+        "metadata": {
+          "reference_image": "sha256:d3c7d0702ccf586b7499c608acb9ec2a3a66609f6830eb53ac8a06f34cc540d1",
+          "candidate_image": "sha256:f37b58d5c3f8df242f363fe3b9baea87f9cf5b344eac4389dc461da5faa4f01b",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/formal-bigint",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "bigint",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 913.660829,
+              "B_bytes": 15753216,
+              "M_bytes": 23216128
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 913.660829,
+                "B_bytes": 15753216,
+                "M_bytes": 23216128,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 892.196363,
+                "B_bytes": 15753216,
+                "M_bytes": 23232512,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 927.087032,
+                "B_bytes": 15753216,
+                "M_bytes": 23150592,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 776.108322,
+              "B_bytes": 15753216,
+              "M_bytes": 23203840
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 776.108322,
+                "B_bytes": 15753216,
+                "M_bytes": 23191552,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 805.888782,
+                "B_bytes": 15753216,
+                "M_bytes": 23203840,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 759.092235,
+                "B_bytes": 15753216,
+                "M_bytes": 23560192,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1291.455228,
+              "B_bytes": 15753216,
+              "M_bytes": 28258304
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1290.383342,
+                "B_bytes": 15753216,
+                "M_bytes": 28217344,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1291.455228,
+                "B_bytes": 15753216,
+                "M_bytes": 28295168,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1294.985606,
+                "B_bytes": 15753216,
+                "M_bytes": 28258304,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 922.966891,
+              "B_bytes": 15753216,
+              "M_bytes": 28225536
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 922.966891,
+                "B_bytes": 15753216,
+                "M_bytes": 28225536,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 933.681644,
+                "B_bytes": 15753216,
+                "M_bytes": 28192768,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 922.506697,
+                "B_bytes": 15753216,
+                "M_bytes": 28258304,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1314.3379,
+              "B_bytes": 22179840,
+              "M_bytes": 34869248
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1294.673948,
+                "B_bytes": 22179840,
+                "M_bytes": 34885632,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1314.3379,
+                "B_bytes": 22179840,
+                "M_bytes": 34869248,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1315.825762,
+                "B_bytes": 22179840,
+                "M_bytes": 34844672,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 943.996156,
+              "B_bytes": 16740352,
+              "M_bytes": 29241344
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 963.057406,
+                "B_bytes": 16740352,
+                "M_bytes": 29261824,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 940.221657,
+                "B_bytes": 16740352,
+                "M_bytes": 29216768,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 943.996156,
+                "B_bytes": 16740352,
+                "M_bytes": 29241344,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "formal-varchar": {
+        "metadata": {
+          "reference_image": "sha256:d3c7d0702ccf586b7499c608acb9ec2a3a66609f6830eb53ac8a06f34cc540d1",
+          "candidate_image": "sha256:f37b58d5c3f8df242f363fe3b9baea87f9cf5b344eac4389dc461da5faa4f01b",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/formal-varchar",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "varchar",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 899.795758,
+              "B_bytes": 15753216,
+              "M_bytes": 23318528
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 893.656611,
+                "B_bytes": 15753216,
+                "M_bytes": 23527424,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 899.795758,
+                "B_bytes": 15753216,
+                "M_bytes": 23220224,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 902.560644,
+                "B_bytes": 15753216,
+                "M_bytes": 23318528,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 771.99477,
+              "B_bytes": 15753216,
+              "M_bytes": 23199744
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 775.925159,
+                "B_bytes": 15753216,
+                "M_bytes": 23195648,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 766.269845,
+                "B_bytes": 15753216,
+                "M_bytes": 23199744,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 771.99477,
+                "B_bytes": 15753216,
+                "M_bytes": 23470080,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1907.574397,
+              "B_bytes": 15753216,
+              "M_bytes": 31256576
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1896.929754,
+                "B_bytes": 15753216,
+                "M_bytes": 31256576,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1907.574397,
+                "B_bytes": 15753216,
+                "M_bytes": 31264768,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1941.07942,
+                "B_bytes": 15753216,
+                "M_bytes": 31248384,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 1363.059598,
+              "B_bytes": 15753216,
+              "M_bytes": 31277056
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1369.05006,
+                "B_bytes": 15753216,
+                "M_bytes": 31264768,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1354.565171,
+                "B_bytes": 15753216,
+                "M_bytes": 31277056,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1363.059598,
+                "B_bytes": 15753216,
+                "M_bytes": 31318016,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1923.227401,
+              "B_bytes": 22179840,
+              "M_bytes": 37924864
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1923.227401,
+                "B_bytes": 22179840,
+                "M_bytes": 37949440,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1905.855191,
+                "B_bytes": 22179840,
+                "M_bytes": 37924864,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1935.245461,
+                "B_bytes": 22179840,
+                "M_bytes": 37789696,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 1382.272647,
+              "B_bytes": 16740352,
+              "M_bytes": 32305152
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1382.272647,
+                "B_bytes": 16740352,
+                "M_bytes": 32305152,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1368.043122,
+                "B_bytes": 16740352,
+                "M_bytes": 32440320,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1395.243973,
+                "B_bytes": 16740352,
+                "M_bytes": 32268288,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "previous-bigint": {
+        "metadata": {
+          "reference_image": "sha256:0c07f29741ba94df99ece5c5a1de566bcaaf70561bf68d5791eabbf241adb574",
+          "candidate_image": "sha256:f37b58d5c3f8df242f363fe3b9baea87f9cf5b344eac4389dc461da5faa4f01b",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/previous-bigint",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "bigint",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 766.538706,
+              "B_bytes": 15753216,
+              "M_bytes": 23433216
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 766.538706,
+                "B_bytes": 15753216,
+                "M_bytes": 23146496,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 776.642469,
+                "B_bytes": 15753216,
+                "M_bytes": 23433216,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 760.246528,
+                "B_bytes": 15753216,
+                "M_bytes": 23642112,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 768.252373,
+              "B_bytes": 15753216,
+              "M_bytes": 23527424
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 768.252373,
+                "B_bytes": 15753216,
+                "M_bytes": 23621632,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 764.502423,
+                "B_bytes": 15753216,
+                "M_bytes": 23527424,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 770.725876,
+                "B_bytes": 15753216,
+                "M_bytes": 23191552,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1047.480385,
+              "B_bytes": 15753216,
+              "M_bytes": 28233728
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1047.480385,
+                "B_bytes": 15753216,
+                "M_bytes": 28233728,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1047.442598,
+                "B_bytes": 15753216,
+                "M_bytes": 28307456,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1056.471824,
+                "B_bytes": 15753216,
+                "M_bytes": 28168192,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 945.406737,
+              "B_bytes": 15753216,
+              "M_bytes": 28278784
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 932.272248,
+                "B_bytes": 15753216,
+                "M_bytes": 28282880,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 951.381979,
+                "B_bytes": 15753216,
+                "M_bytes": 28278784,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 945.406737,
+                "B_bytes": 15753216,
+                "M_bytes": 28250112,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1065.796585,
+              "B_bytes": 16740352,
+              "M_bytes": 29270016
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1049.861484,
+                "B_bytes": 16740352,
+                "M_bytes": 29270016,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1065.796585,
+                "B_bytes": 16740352,
+                "M_bytes": 29282304,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1088.995922,
+                "B_bytes": 16740352,
+                "M_bytes": 29237248,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 935.36709,
+              "B_bytes": 16740352,
+              "M_bytes": 29298688
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 955.8707,
+                "B_bytes": 16740352,
+                "M_bytes": 29446144,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 934.938652,
+                "B_bytes": 16740352,
+                "M_bytes": 29286400,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 935.36709,
+                "B_bytes": 16740352,
+                "M_bytes": 29298688,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "previous-varchar": {
+        "metadata": {
+          "reference_image": "sha256:0c07f29741ba94df99ece5c5a1de566bcaaf70561bf68d5791eabbf241adb574",
+          "candidate_image": "sha256:f37b58d5c3f8df242f363fe3b9baea87f9cf5b344eac4389dc461da5faa4f01b",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/previous-varchar",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "varchar",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 781.393999,
+              "B_bytes": 15753216,
+              "M_bytes": 23449600
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 781.070804,
+                "B_bytes": 15753216,
+                "M_bytes": 23449600,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 787.325209,
+                "B_bytes": 15753216,
+                "M_bytes": 23183360,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 781.393999,
+                "B_bytes": 15753216,
+                "M_bytes": 23461888,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 786.495047,
+              "B_bytes": 15753216,
+              "M_bytes": 23474176
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 800.622044,
+                "B_bytes": 15753216,
+                "M_bytes": 23474176,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 786.495047,
+                "B_bytes": 15753216,
+                "M_bytes": 23482368,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 784.990473,
+                "B_bytes": 15753216,
+                "M_bytes": 23470080,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1524.639813,
+              "B_bytes": 15753216,
+              "M_bytes": 31219712
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1524.810284,
+                "B_bytes": 15753216,
+                "M_bytes": 31219712,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1517.524409,
+                "B_bytes": 15753216,
+                "M_bytes": 31211520,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1524.639813,
+                "B_bytes": 15753216,
+                "M_bytes": 31268864,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 1374.513169,
+              "B_bytes": 15753216,
+              "M_bytes": 31297536
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1377.660514,
+                "B_bytes": 15753216,
+                "M_bytes": 31297536,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1374.513169,
+                "B_bytes": 15753216,
+                "M_bytes": 31350784,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1363.079734,
+                "B_bytes": 15753216,
+                "M_bytes": 31264768,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1536.583691,
+              "B_bytes": 16740352,
+              "M_bytes": 32276480
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1536.583691,
+                "B_bytes": 16740352,
+                "M_bytes": 32309248,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1511.404997,
+                "B_bytes": 16740352,
+                "M_bytes": 32276480,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1555.35888,
+                "B_bytes": 16740352,
+                "M_bytes": 32227328,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 1397.430635,
+              "B_bytes": 16740352,
+              "M_bytes": 32268288
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1401.842634,
+                "B_bytes": 16740352,
+                "M_bytes": 32378880,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1379.20469,
+                "B_bytes": 16740352,
+                "M_bytes": 32251904,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1397.430635,
+                "B_bytes": 16740352,
+                "M_bytes": 32268288,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "job": 130872675168,
+    "cpu": "AMD EPYC 7763 64-Core Processor",
+    "groups": {
+      "formal-bigint": {
+        "metadata": {
+          "reference_image": "sha256:8a5c7fc9a6c6b8f63fcb8386e69f12f3e7a07a979ee75e92269a10c56768ff41",
+          "candidate_image": "sha256:203861b1a1824f6036f659e956533c09ddb57dcf78a712c241af3f2e7252aee9",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/formal-bigint",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "bigint",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "31714a076265c5b8794fc4f6fd1f2b5021c6663531b5b0b165f89537851a79b4",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 1197.638127,
+              "B_bytes": 15753216,
+              "M_bytes": 23015424
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1193.750582,
+                "B_bytes": 15753216,
+                "M_bytes": 23015424,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1197.638127,
+                "B_bytes": 15753216,
+                "M_bytes": 23007232,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1211.868156,
+                "B_bytes": 15753216,
+                "M_bytes": 23027712,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 1021.919508,
+              "B_bytes": 15753216,
+              "M_bytes": 23023616
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1068.277839,
+                "B_bytes": 15753216,
+                "M_bytes": 22880256,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1021.919508,
+                "B_bytes": 15753216,
+                "M_bytes": 23031808,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1001.52348,
+                "B_bytes": 15753216,
+                "M_bytes": 23023616,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1321.025537,
+              "B_bytes": 15753216,
+              "M_bytes": 27570176
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1350.806048,
+                "B_bytes": 15753216,
+                "M_bytes": 27803648,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1318.314999,
+                "B_bytes": 15753216,
+                "M_bytes": 27566080,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1321.025537,
+                "B_bytes": 15753216,
+                "M_bytes": 27570176,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 1009.281609,
+              "B_bytes": 15753216,
+              "M_bytes": 27648000
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1009.281609,
+                "B_bytes": 15753216,
+                "M_bytes": 27795456,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1005.32312,
+                "B_bytes": 15753216,
+                "M_bytes": 27578368,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1013.908331,
+                "B_bytes": 15826944,
+                "M_bytes": 27648000,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1334.40969,
+              "B_bytes": 22179840,
+              "M_bytes": 34201600
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1325.732566,
+                "B_bytes": 22179840,
+                "M_bytes": 34201600,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1343.100039,
+                "B_bytes": 22179840,
+                "M_bytes": 34193408,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1334.40969,
+                "B_bytes": 22179840,
+                "M_bytes": 34430976,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 1008.000476,
+              "B_bytes": 16740352,
+              "M_bytes": 28606464
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1022.48506,
+                "B_bytes": 16740352,
+                "M_bytes": 28606464,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1007.751003,
+                "B_bytes": 16740352,
+                "M_bytes": 28606464,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1008.000476,
+                "B_bytes": 16740352,
+                "M_bytes": 28610560,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "formal-varchar": {
+        "metadata": {
+          "reference_image": "sha256:8a5c7fc9a6c6b8f63fcb8386e69f12f3e7a07a979ee75e92269a10c56768ff41",
+          "candidate_image": "sha256:203861b1a1824f6036f659e956533c09ddb57dcf78a712c241af3f2e7252aee9",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/formal-varchar",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "varchar",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "31714a076265c5b8794fc4f6fd1f2b5021c6663531b5b0b165f89537851a79b4",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 1168.376246,
+              "B_bytes": 15753216,
+              "M_bytes": 23003136
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1168.376246,
+                "B_bytes": 15753216,
+                "M_bytes": 23003136,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1186.255185,
+                "B_bytes": 15753216,
+                "M_bytes": 22949888,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1166.192454,
+                "B_bytes": 15753216,
+                "M_bytes": 23011328,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 1025.769108,
+              "B_bytes": 15753216,
+              "M_bytes": 23105536
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1026.607977,
+                "B_bytes": 15753216,
+                "M_bytes": 23023616,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1025.769108,
+                "B_bytes": 15753216,
+                "M_bytes": 23187456,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1018.638154,
+                "B_bytes": 15753216,
+                "M_bytes": 23105536,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1761.367922,
+              "B_bytes": 15753216,
+              "M_bytes": 30597120
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1761.367922,
+                "B_bytes": 15753216,
+                "M_bytes": 30613504,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1768.995189,
+                "B_bytes": 15753216,
+                "M_bytes": 30597120,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1760.480328,
+                "B_bytes": 15753216,
+                "M_bytes": 30588928,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 1328.607777,
+              "B_bytes": 15753216,
+              "M_bytes": 30601216
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1345.439616,
+                "B_bytes": 15753216,
+                "M_bytes": 30605312,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1324.926477,
+                "B_bytes": 15753216,
+                "M_bytes": 30597120,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1328.607777,
+                "B_bytes": 15753216,
+                "M_bytes": 30601216,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1752.727927,
+              "B_bytes": 22179840,
+              "M_bytes": 37212160
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1752.727927,
+                "B_bytes": 22179840,
+                "M_bytes": 37220352,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1768.946535,
+                "B_bytes": 22179840,
+                "M_bytes": 37208064,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1742.399663,
+                "B_bytes": 22179840,
+                "M_bytes": 37212160,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 1346.176097,
+              "B_bytes": 16740352,
+              "M_bytes": 31637504
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1346.474127,
+                "B_bytes": 16740352,
+                "M_bytes": 31637504,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1336.491643,
+                "B_bytes": 16740352,
+                "M_bytes": 31621120,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1346.176097,
+                "B_bytes": 16740352,
+                "M_bytes": 31858688,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "previous-bigint": {
+        "metadata": {
+          "reference_image": "sha256:21a8e2c1e583edf8c38bfa4dc16384b44f9c08ca9a49a179915d3f6f1546423a",
+          "candidate_image": "sha256:203861b1a1824f6036f659e956533c09ddb57dcf78a712c241af3f2e7252aee9",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/previous-bigint",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "bigint",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "31714a076265c5b8794fc4f6fd1f2b5021c6663531b5b0b165f89537851a79b4",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 1039.879265,
+              "B_bytes": 15753216,
+              "M_bytes": 23023616
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1019.487201,
+                "B_bytes": 15753216,
+                "M_bytes": 23023616,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1039.879265,
+                "B_bytes": 15753216,
+                "M_bytes": 23015424,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1057.467369,
+                "B_bytes": 15753216,
+                "M_bytes": 23027712,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 1044.758932,
+              "B_bytes": 15753216,
+              "M_bytes": 23040000
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1044.758932,
+                "B_bytes": 15753216,
+                "M_bytes": 23040000,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1051.102555,
+                "B_bytes": 15753216,
+                "M_bytes": 23154688,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1026.403373,
+                "B_bytes": 15753216,
+                "M_bytes": 23011328,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1088.203096,
+              "B_bytes": 15753216,
+              "M_bytes": 27590656
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1084.829472,
+                "B_bytes": 15753216,
+                "M_bytes": 27799552,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1091.70458,
+                "B_bytes": 15753216,
+                "M_bytes": 27566080,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1088.203096,
+                "B_bytes": 15753216,
+                "M_bytes": 27590656,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 1002.295463,
+              "B_bytes": 15753216,
+              "M_bytes": 27578368
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1017.233904,
+                "B_bytes": 15753216,
+                "M_bytes": 27578368,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1002.295463,
+                "B_bytes": 15753216,
+                "M_bytes": 27578368,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1001.13308,
+                "B_bytes": 15753216,
+                "M_bytes": 27578368,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1091.74844,
+              "B_bytes": 16740352,
+              "M_bytes": 28610560
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1091.74844,
+                "B_bytes": 16740352,
+                "M_bytes": 28606464,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1109.172313,
+                "B_bytes": 16740352,
+                "M_bytes": 28844032,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1085.956465,
+                "B_bytes": 16740352,
+                "M_bytes": 28610560,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 1009.585088,
+              "B_bytes": 16740352,
+              "M_bytes": 28614656
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1024.158325,
+                "B_bytes": 16740352,
+                "M_bytes": 28827648,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1007.530044,
+                "B_bytes": 16740352,
+                "M_bytes": 28606464,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1009.585088,
+                "B_bytes": 16740352,
+                "M_bytes": 28614656,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      },
+      "previous-varchar": {
+        "metadata": {
+          "reference_image": "sha256:21a8e2c1e583edf8c38bfa4dc16384b44f9c08ca9a49a179915d3f6f1546423a",
+          "candidate_image": "sha256:203861b1a1824f6036f659e956533c09ddb57dcf78a712c241af3f2e7252aee9",
+          "output": "/home/runner/work/seekdb/seekdb/simd-results/previous-varchar",
+          "data_root": "/home/runner/work/_temp/mvdb-native-data",
+          "temp_root": "/home/runner/work/_temp/mvdb-native-tmp",
+          "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle",
+          "rounds": 3,
+          "rows": 10000,
+          "queries": 1000,
+          "warmup": 10,
+          "seed": 20261110,
+          "filter_type": "varchar",
+          "local_case_budget": 600,
+          "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+          "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+          "oracle_binary_sha256": "31714a076265c5b8794fc4f6fd1f2b5021c6663531b5b0b165f89537851a79b4",
+          "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+          "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+          "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+          "official_config": {
+            "startup_timeout": 120,
+            "request_timeout": 60,
+            "case_timeout": 600,
+            "max_response_bytes": 16777216,
+            "cpus": "2",
+            "memory": "2g",
+            "pids_limit": 128,
+            "abs_tol": 0.00001,
+            "rel_tol": 0.00001,
+            "error_codes": {}
+          },
+          "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+          "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+          "local_workload": {
+            "dimensions": 128,
+            "batch": 100,
+            "top_k": 10,
+            "distribution": "integer uniform [-2048,2048] / 128",
+            "half_filtered": true,
+            "unfiltered_queries": 500,
+            "filtered_queries": 500,
+            "filter_group_count": 10,
+            "payload_repeated_characters": 256,
+            "search_mode": "exact"
+          },
+          "limitations": [
+            "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+            "Reports per-metric medians and every round, no synthetic official E.",
+            "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+            "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+            "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+            "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+            "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+            "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+          ]
+        },
+        "groups": {
+          "reference/write/unindexed": {
+            "median": {
+              "T_ms": 1054.99402,
+              "B_bytes": 15753216,
+              "M_bytes": 23023616
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1029.38371,
+                "B_bytes": 15753216,
+                "M_bytes": 23183360,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1090.244087,
+                "B_bytes": 15753216,
+                "M_bytes": 23023616,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1054.99402,
+                "B_bytes": 15753216,
+                "M_bytes": 22892544,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "candidate/write/unindexed": {
+            "median": {
+              "T_ms": 1048.864663,
+              "B_bytes": 15753216,
+              "M_bytes": 23019520
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1068.841992,
+                "B_bytes": 15753216,
+                "M_bytes": 23019520,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 2,
+                "T_ms": 1030.907046,
+                "B_bytes": 15753216,
+                "M_bytes": 23023616,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              },
+              {
+                "round": 3,
+                "T_ms": 1048.864663,
+                "B_bytes": 15753216,
+                "M_bytes": 22999040,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": false
+              }
+            ]
+          },
+          "reference/query/unindexed": {
+            "median": {
+              "T_ms": 1429.468522,
+              "B_bytes": 15753216,
+              "M_bytes": 30609408
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1429.420541,
+                "B_bytes": 15753216,
+                "M_bytes": 30609408,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1433.615063,
+                "B_bytes": 15753216,
+                "M_bytes": 30617600,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1429.468522,
+                "B_bytes": 15753216,
+                "M_bytes": 30609408,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/unindexed": {
+            "median": {
+              "T_ms": 1361.244346,
+              "B_bytes": 15753216,
+              "M_bytes": 30609408
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1398.974583,
+                "B_bytes": 15753216,
+                "M_bytes": 30842880,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1360.873283,
+                "B_bytes": 15753216,
+                "M_bytes": 30609408,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1361.244346,
+                "B_bytes": 15753216,
+                "M_bytes": 30601216,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "reference/query/indexed": {
+            "median": {
+              "T_ms": 1443.634629,
+              "B_bytes": 16740352,
+              "M_bytes": 31633408
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1443.634629,
+                "B_bytes": 16740352,
+                "M_bytes": 31629312,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1455.046805,
+                "B_bytes": 16740352,
+                "M_bytes": 31633408,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1442.655354,
+                "B_bytes": 16740352,
+                "M_bytes": 31866880,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          },
+          "candidate/query/indexed": {
+            "median": {
+              "T_ms": 1361.367575,
+              "B_bytes": 16740352,
+              "M_bytes": 31633408
+            },
+            "samples": [
+              {
+                "round": 1,
+                "T_ms": 1371.340555,
+                "B_bytes": 16740352,
+                "M_bytes": 31633408,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 2,
+                "T_ms": 1354.178269,
+                "B_bytes": 16740352,
+                "M_bytes": 31633408,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              },
+              {
+                "round": 3,
+                "T_ms": 1361.367575,
+                "B_bytes": 16740352,
+                "M_bytes": 31633408,
+                "passed": true,
+                "swap_bytes": 0,
+                "full_rows_before_restart": true,
+                "full_rows_after_restart": true,
+                "restart_query_checked": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

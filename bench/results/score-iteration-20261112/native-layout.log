@@ -1,0 +1,369 @@
+﻿2026-11-11T23:46:03.0585352Z Current runner version: '2.338.2'
+2026-11-11T23:46:03.0618940Z ##[group]Runner Image Provisioner
+2026-11-11T23:46:03.0620524Z Hosted Compute Agent
+2026-11-11T23:46:03.0621633Z Version: 20261028.624
+2026-11-11T23:46:03.0622631Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-11T23:46:03.0623910Z Build Date: 2026-10-28T21:51:42Z
+2026-11-11T23:46:03.0625280Z Worker ID: {416a6e48-44ce-4d28-804d-cc1a48632a10}
+2026-11-11T23:46:03.0626602Z Region: centralus
+2026-11-11T23:46:03.0627707Z Cloud: Azure
+2026-11-11T23:46:03.0628756Z ##[endgroup]
+2026-11-11T23:46:03.0631716Z ##[group]Operating System
+2026-11-11T23:46:03.0632780Z Ubuntu
+2026-11-11T23:46:03.0633593Z 24.04.5
+2026-11-11T23:46:03.0634616Z LTS
+2026-11-11T23:46:03.0635550Z ##[endgroup]
+2026-11-11T23:46:03.0636529Z ##[group]Runner Image
+2026-11-11T23:46:03.0638048Z Image: ubuntu-24.04
+2026-11-11T23:46:03.0639088Z Version: 20261101.360.1
+2026-11-11T23:46:03.0641665Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-11T23:46:03.0645462Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+2026-11-11T23:46:03.0647280Z ##[endgroup]
+2026-11-11T23:46:03.0649315Z ##[group]GITHUB_TOKEN Permissions
+2026-11-11T23:46:03.0652495Z Contents: read
+2026-11-11T23:46:03.0653535Z Metadata: read
+2026-11-11T23:46:03.0654792Z ##[endgroup]
+2026-11-11T23:46:03.0657598Z Secret source: Actions
+2026-11-11T23:46:03.0659422Z Cache mode: write
+2026-11-11T23:46:03.0661493Z Prepare workflow directory
+2026-11-11T23:46:03.1028736Z Prepare all required actions
+2026-11-11T23:46:03.1100294Z Getting action download info
+2026-11-11T23:46:03.3864077Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-11T23:46:03.6334358Z Complete job name: compare
+2026-11-11T23:46:03.7309219Z ##[group]Run set -euo pipefail
+2026-11-11T23:46:03.7310214Z [36;1mset -euo pipefail[0m
+2026-11-11T23:46:03.7310790Z [36;1mgit init .[0m
+2026-11-11T23:46:03.7311478Z [36;1mgit remote add origin https://github.com/juanzhi-gcb/seekdb.git[0m
+2026-11-11T23:46:03.7312300Z [36;1mgit fetch --depth=1 origin "$GITHUB_SHA"[0m
+2026-11-11T23:46:03.7313165Z [36;1mgit checkout --detach FETCH_HEAD[0m
+2026-11-11T23:46:03.7313825Z [36;1mtest "$(git rev-parse HEAD)" = "$GITHUB_SHA"[0m
+2026-11-11T23:46:03.7314441Z [36;1mlscpu[0m
+2026-11-11T23:46:03.7341213Z shell: /usr/bin/bash -e {0}
+2026-11-11T23:46:03.7342493Z ##[endgroup]
+2026-11-11T23:46:03.7632284Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-11T23:46:03.7634071Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-11T23:46:03.7635732Z Initialized empty Git repository in /home/runner/work/seekdb/seekdb/.git/
+2026-11-11T23:46:03.7637426Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-11T23:46:03.7638703Z hint: call:
+2026-11-11T23:46:03.7639411Z hint:
+2026-11-11T23:46:03.7640804Z hint: 	git config --global init.defaultBranch <name>
+2026-11-11T23:46:03.7641949Z hint:
+2026-11-11T23:46:03.7642971Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-11T23:46:03.7644099Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-11T23:46:03.7644866Z hint:
+2026-11-11T23:46:03.7645314Z hint: 	git branch -m <name>
+2026-11-11T23:46:03.7645822Z hint:
+2026-11-11T23:46:03.7646474Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-11T23:46:05.7829645Z From https://github.com/juanzhi-gcb/seekdb
+2026-11-11T23:46:05.7832205Z  * branch            c09f226642fb5f36c05de13a259f39e98e5eddbc -> FETCH_HEAD
+2026-11-11T23:46:05.9105962Z HEAD is now at c09f226 Screen transposed exact distance lanes on native x86 without changing production
+2026-11-11T23:46:05.9179261Z Architecture:                            x86_64
+2026-11-11T23:46:05.9181298Z CPU op-mode(s):                          32-bit, 64-bit
+2026-11-11T23:46:05.9184130Z Address sizes:                           48 bits physical, 48 bits virtual
+2026-11-11T23:46:05.9185705Z Byte Order:                              Little Endian
+2026-11-11T23:46:05.9186775Z CPU(s):                                  4
+2026-11-11T23:46:05.9187763Z On-line CPU(s) list:                     0-3
+2026-11-11T23:46:05.9188970Z Vendor ID:                               AuthenticAMD
+2026-11-11T23:46:05.9190617Z Model name:                              AMD EPYC 7763 64-Core Processor
+2026-11-11T23:46:05.9191943Z CPU family:                              25
+2026-11-11T23:46:05.9193045Z Model:                                   1
+2026-11-11T23:46:05.9194114Z Thread(s) per core:                      2
+2026-11-11T23:46:05.9195237Z Core(s) per socket:                      2
+2026-11-11T23:46:05.9196334Z Socket(s):                               1
+2026-11-11T23:46:05.9197377Z Stepping:                                1
+2026-11-11T23:46:05.9198461Z BogoMIPS:                                4890.85
+2026-11-11T23:46:05.9210165Z Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
+2026-11-11T23:46:05.9223001Z Virtualization:                          AMD-V
+2026-11-11T23:46:05.9224895Z Hypervisor vendor:                       Microsoft
+2026-11-11T23:46:05.9226599Z Virtualization type:                     full
+2026-11-11T23:46:05.9228303Z L1d cache:                               64 KiB (2 instances)
+2026-11-11T23:46:05.9230405Z L1i cache:                               64 KiB (2 instances)
+2026-11-11T23:46:05.9232260Z L2 cache:                                1 MiB (2 instances)
+2026-11-11T23:46:05.9234060Z L3 cache:                                32 MiB (1 instance)
+2026-11-11T23:46:05.9235748Z NUMA node(s):                            1
+2026-11-11T23:46:05.9237290Z NUMA node0 CPU(s):                       0-3
+2026-11-11T23:46:05.9239023Z Vulnerability Gather data sampling:      Not affected
+2026-11-11T23:46:05.9241273Z Vulnerability Ghostwrite:                Not affected
+2026-11-11T23:46:05.9243270Z Vulnerability Indirect target selection: Not affected
+2026-11-11T23:46:05.9245201Z Vulnerability Itlb multihit:             Not affected
+2026-11-11T23:46:05.9247110Z Vulnerability L1tf:                      Not affected
+2026-11-11T23:46:05.9248928Z Vulnerability Mds:                       Not affected
+2026-11-11T23:46:05.9251030Z Vulnerability Meltdown:                  Not affected
+2026-11-11T23:46:05.9253082Z Vulnerability Mmio stale data:           Not affected
+2026-11-11T23:46:05.9254934Z Vulnerability Old microcode:             Not affected
+2026-11-11T23:46:05.9256777Z Vulnerability Reg file data sampling:    Not affected
+2026-11-11T23:46:05.9258608Z Vulnerability Retbleed:                  Not affected
+2026-11-11T23:46:05.9260994Z Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+2026-11-11T23:46:05.9263177Z Vulnerability Spec store bypass:         Vulnerable
+2026-11-11T23:46:05.9265687Z Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-11T23:46:05.9269248Z Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+2026-11-11T23:46:05.9272347Z Vulnerability Srbds:                     Not affected
+2026-11-11T23:46:05.9274193Z Vulnerability Tsa:                       Vulnerable: No microcode
+2026-11-11T23:46:05.9276313Z Vulnerability Tsx async abort:           Not affected
+2026-11-11T23:46:05.9278051Z Vulnerability Vmscape:                   Not affected
+2026-11-11T23:46:05.9430400Z ##[group]Run bash bench/run_layout_native.sh
+2026-11-11T23:46:05.9432041Z [36;1mbash bench/run_layout_native.sh[0m
+2026-11-11T23:46:05.9454583Z shell: /usr/bin/bash -e {0}
+2026-11-11T23:46:05.9455773Z ##[endgroup]
+2026-11-11T23:46:06.4497415Z #0 building with "default" instance using docker driver
+2026-11-11T23:46:06.4498008Z 
+2026-11-11T23:46:06.4498216Z #1 [internal] load build definition from Dockerfile
+2026-11-11T23:46:06.4498757Z #1 transferring dockerfile: 978B done
+2026-11-11T23:46:06.4499117Z #1 DONE 0.0s
+2026-11-11T23:46:06.4499275Z 
+2026-11-11T23:46:06.4499481Z #2 [auth] library/alpine:pull token for registry-1.docker.io
+2026-11-11T23:46:06.6005977Z #2 DONE 0.0s
+2026-11-11T23:46:06.6006369Z 
+2026-11-11T23:46:06.6006980Z #3 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:46:06.9598823Z #3 DONE 0.6s
+2026-11-11T23:46:07.0793061Z 
+2026-11-11T23:46:07.0793696Z #4 [internal] load .dockerignore
+2026-11-11T23:46:07.0794127Z #4 transferring context: 81B done
+2026-11-11T23:46:07.0794480Z #4 DONE 0.0s
+2026-11-11T23:46:07.0794639Z 
+2026-11-11T23:46:07.0794777Z #5 [internal] load build context
+2026-11-11T23:46:07.0795151Z #5 transferring context: 531.96kB done
+2026-11-11T23:46:07.0795490Z #5 DONE 0.0s
+2026-11-11T23:46:07.0795645Z 
+2026-11-11T23:46:07.0796132Z #6 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:46:07.0797341Z #6 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+2026-11-11T23:46:07.0798671Z #6 sha256:9db2934886712d877c932e07249c75a59e6ca27adfbccc05261987a17bef2d63 1.02kB / 1.02kB done
+2026-11-11T23:46:07.0799475Z #6 sha256:812e99317af7009fea987b5ad913e63f8494c2d6e596b59b6ac8b8f91f7766e8 611B / 611B done
+2026-11-11T23:46:07.0800526Z #6 sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 0B / 3.79MB 0.1s
+2026-11-11T23:46:07.0801290Z #6 sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f 9.22kB / 9.22kB done
+2026-11-11T23:46:07.1890051Z #6 sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 3.79MB / 3.79MB 0.1s done
+2026-11-11T23:46:07.1891690Z #6 extracting sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 0.1s done
+2026-11-11T23:46:07.3531042Z #6 DONE 0.2s
+2026-11-11T23:46:07.3531463Z 
+2026-11-11T23:46:07.3531883Z #7 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+2026-11-11T23:46:07.3532688Z #7 0.138 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+2026-11-11T23:46:07.4566400Z #7 0.242 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+2026-11-11T23:46:07.7868880Z #7 0.572 (1/43) Installing libgcc (14.2.0-r6)
+2026-11-11T23:46:07.9187768Z #7 0.584 (2/43) Installing jansson (2.14.1-r0)
+2026-11-11T23:46:07.9188627Z #7 0.594 (3/43) Installing libstdc++ (14.2.0-r6)
+2026-11-11T23:46:07.9189253Z #7 0.617 (4/43) Installing zstd-libs (1.5.7-r0)
+2026-11-11T23:46:07.9189965Z #7 0.631 (5/43) Installing binutils (2.44-r3)
+2026-11-11T23:46:07.9190482Z #7 0.704 (6/43) Installing libmagic (5.46-r2)
+2026-11-11T23:46:08.0203556Z #7 0.734 (7/43) Installing file (5.46-r2)
+2026-11-11T23:46:08.0204039Z #7 0.744 (8/43) Installing libgomp (14.2.0-r6)
+2026-11-11T23:46:08.1960509Z #7 0.757 (9/43) Installing libatomic (14.2.0-r6)
+2026-11-11T23:46:08.1961365Z #7 0.768 (10/43) Installing gmp (6.3.0-r3)
+2026-11-11T23:46:08.1961880Z #7 0.781 (11/43) Installing isl26 (0.26-r1)
+2026-11-11T23:46:08.1962400Z #7 0.806 (12/43) Installing mpfr4 (4.2.1_p1-r0)
+2026-11-11T23:46:08.1962939Z #7 0.820 (13/43) Installing mpc1 (1.3.1-r1)
+2026-11-11T23:46:08.1963381Z #7 0.831 (14/43) Installing gcc (14.2.0-r6)
+2026-11-11T23:46:08.7434269Z #7 1.529 (15/43) Installing libstdc++-dev (14.2.0-r6)
+2026-11-11T23:46:08.8931246Z #7 1.679 (16/43) Installing musl-dev (1.2.5-r13)
+2026-11-11T23:46:09.1138803Z #7 1.749 (17/43) Installing g++ (14.2.0-r6)
+2026-11-11T23:46:09.1705300Z #7 1.956 (18/43) Installing make (4.4.1-r3)
+2026-11-11T23:46:09.2764906Z #7 1.968 (19/43) Installing fortify-headers (1.1-r5)
+2026-11-11T23:46:09.2765312Z #7 1.979 (20/43) Installing patch (2.8-r0)
+2026-11-11T23:46:09.2765643Z #7 1.990 (21/43) Installing build-base (0.5-r3)
+2026-11-11T23:46:09.2765962Z #7 1.990 (22/43) Installing acl-libs (2.3.2-r1)
+2026-11-11T23:46:09.2766261Z #7 2.001 (23/43) Installing libbz2 (1.0.8-r6)
+2026-11-11T23:46:09.2766568Z #7 2.011 (24/43) Installing libexpat (2.10.0-r0)
+2026-11-11T23:46:09.2766873Z #7 2.022 (25/43) Installing lz4-libs (1.10.0-r0)
+2026-11-11T23:46:09.2767164Z #7 2.034 (26/43) Installing xz-libs (5.8.4-r0)
+2026-11-11T23:46:09.2767475Z #7 2.046 (27/43) Installing libarchive (3.8.11-r0)
+2026-11-11T23:46:09.2767842Z #7 2.062 (28/43) Installing rhash-libs (1.4.5-r0)
+2026-11-11T23:46:09.4526431Z #7 2.074 (29/43) Installing libuv (1.51.0-r0)
+2026-11-11T23:46:09.4527152Z #7 2.088 (30/43) Installing cmake (3.31.7-r1)
+2026-11-11T23:46:09.9201142Z #7 2.706 (31/43) Installing libffi (3.4.8-r0)
+2026-11-11T23:46:10.1702945Z #7 2.716 (32/43) Installing gdbm (1.24-r0)
+2026-11-11T23:46:10.1703582Z #7 2.726 (33/43) Installing mpdecimal (4.0.1-r0)
+2026-11-11T23:46:10.1704356Z #7 2.737 (34/43) Installing ncurses-terminfo-base (6.5_p20250503-r0)
+2026-11-11T23:46:10.1705080Z #7 2.751 (35/43) Installing libncursesw (6.5_p20250503-r0)
+2026-11-11T23:46:10.1705720Z #7 2.763 (36/43) Installing libpanelw (6.5_p20250503-r0)
+2026-11-11T23:46:10.1706227Z #7 2.773 (37/43) Installing readline (8.2.13-r1)
+2026-11-11T23:46:10.1946298Z #7 2.785 (38/43) Installing sqlite-libs (3.49.2-r1)
+2026-11-11T23:46:10.1947030Z #7 2.806 (39/43) Installing python3 (3.12.16-r0)
+2026-11-11T23:46:10.1947749Z #7 2.980 (40/43) Installing python3-pycache-pyc0 (3.12.16-r0)
+2026-11-11T23:46:10.3221860Z #7 3.108 (41/43) Installing pyc (3.12.16-r0)
+2026-11-11T23:46:10.3222479Z #7 3.108 (42/43) Installing python3-pyc (3.12.16-r0)
+2026-11-11T23:46:10.3223082Z #7 3.108 (43/43) Installing samurai (1.2-r7)
+2026-11-11T23:46:10.4930065Z #7 3.120 Executing busybox-1.37.0-r20.trigger
+2026-11-11T23:46:10.4930535Z #7 3.128 OK: 334 MiB in 59 packages
+2026-11-11T23:46:11.1934017Z #7 DONE 4.0s
+2026-11-11T23:46:11.4026440Z 
+2026-11-11T23:46:11.4026988Z #8 [build 3/8] WORKDIR /src
+2026-11-11T23:46:11.4027523Z #8 DONE 0.0s
+2026-11-11T23:46:11.4027770Z 
+2026-11-11T23:46:11.4027977Z #9 [build 4/8] COPY CMakeLists.txt ./
+2026-11-11T23:46:11.4028510Z #9 DONE 0.0s
+2026-11-11T23:46:11.4028750Z 
+2026-11-11T23:46:11.4028961Z #10 [build 5/8] COPY include ./include
+2026-11-11T23:46:11.4029509Z #10 DONE 0.0s
+2026-11-11T23:46:11.4030008Z 
+2026-11-11T23:46:11.4030215Z #11 [build 6/8] COPY src ./src
+2026-11-11T23:46:11.4030731Z #11 DONE 0.0s
+2026-11-11T23:46:11.4031012Z 
+2026-11-11T23:46:11.4031232Z #12 [build 7/8] COPY tests ./tests
+2026-11-11T23:46:11.4031747Z #12 DONE 0.0s
+2026-11-11T23:46:11.4031973Z 
+2026-11-11T23:46:11.4032632Z #13 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+2026-11-11T23:46:11.4246472Z #13 0.173 -- The CXX compiler identification is GNU 14.2.0
+2026-11-11T23:46:11.6548972Z #13 0.184 -- Detecting CXX compiler ABI info
+2026-11-11T23:46:11.6549635Z #13 0.233 -- Detecting CXX compiler ABI info - done
+2026-11-11T23:46:11.6550541Z #13 0.251 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+2026-11-11T23:46:11.6551195Z #13 0.252 -- Detecting CXX compile features
+2026-11-11T23:46:11.6551744Z #13 0.253 -- Detecting CXX compile features - done
+2026-11-11T23:46:11.6794767Z #13 0.428 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+2026-11-11T23:46:11.7803928Z #13 0.431 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+2026-11-11T23:46:11.7805783Z #13 0.483 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+2026-11-11T23:46:11.7814351Z #13 0.486 -- Found Threads: TRUE
+2026-11-11T23:46:11.7815164Z #13 0.488 -- Configuring done (0.4s)
+2026-11-11T23:46:11.7815936Z #13 0.514 -- Generating done (0.0s)
+2026-11-11T23:46:11.7816472Z #13 0.515 -- Build files have been written to: /build
+2026-11-11T23:46:11.7817452Z #13 0.529 [1/75] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+2026-11-11T23:46:11.9314491Z #13 0.529 [2/75] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+2026-11-11T23:46:15.0702801Z #13 3.818 [3/75] Building CXX object CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o
+2026-11-11T23:46:16.0999573Z #13 4.848 [4/75] Building CXX object CMakeFiles/compressed_path_tests.dir/tests/compressed_path_tests.cpp.o
+2026-11-11T23:46:17.1924117Z #13 5.941 [5/75] Building CXX object CMakeFiles/commit_policy_tests.dir/tests/commit_policy_tests.cpp.o
+2026-11-11T23:46:20.0037964Z #13 8.752 [6/75] Building CXX object CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o
+2026-11-11T23:46:20.7043037Z #13 9.452 [7/75] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+2026-11-11T23:46:24.6196800Z #13 13.37 [8/75] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+2026-11-11T23:46:28.9641231Z #13 17.71 [9/75] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+2026-11-11T23:46:29.9732919Z #13 18.72 [10/75] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+2026-11-11T23:46:33.2790710Z #13 22.03 [11/75] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+2026-11-11T23:46:34.7952505Z #13 23.54 [12/75] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+2026-11-11T23:46:35.1534664Z #13 23.90 [13/75] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+2026-11-11T23:46:36.9517325Z #13 25.70 [14/75] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+2026-11-11T23:46:39.4420405Z #13 28.19 [15/75] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+2026-11-11T23:46:39.6774441Z #13 28.43 [16/75] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+2026-11-11T23:46:42.7166684Z #13 31.46 [17/75] Building CXX object CMakeFiles/reference_index_tests.dir/tests/reference_index_tests.cpp.o
+2026-11-11T23:46:44.1358777Z #13 32.88 [18/75] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+2026-11-11T23:46:45.4070985Z #13 34.15 [19/75] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+2026-11-11T23:46:46.9594665Z #13 35.71 [20/75] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+2026-11-11T23:46:50.3337521Z #13 39.08 [21/75] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+2026-11-11T23:46:51.2309336Z #13 39.98 [22/75] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+2026-11-11T23:46:54.6160563Z #13 43.36 [23/75] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+2026-11-11T23:46:55.5542723Z #13 44.30 [24/75] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+2026-11-11T23:46:57.3904898Z #13 46.14 [25/75] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+2026-11-11T23:46:58.5430684Z #13 47.29 [26/75] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+2026-11-11T23:47:00.1078617Z #13 48.86 [27/75] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+2026-11-11T23:47:01.1214883Z #13 49.87 [28/75] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+2026-11-11T23:47:03.3595229Z #13 52.11 [29/75] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+2026-11-11T23:47:04.4371306Z #13 53.19 [30/75] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+2026-11-11T23:47:07.0020043Z #13 55.75 [31/75] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+2026-11-11T23:47:08.2147874Z #13 56.96 [32/75] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+2026-11-11T23:47:09.5037495Z #13 58.25 [33/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+2026-11-11T23:47:11.4236257Z #13 60.17 [34/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+2026-11-11T23:47:14.9896054Z #13 63.74 [35/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+2026-11-11T23:47:15.8885461Z #13 64.64 [36/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+2026-11-11T23:47:18.9556347Z #13 67.70 [37/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+2026-11-11T23:47:19.1776700Z #13 67.93 [38/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+2026-11-11T23:47:20.5430402Z #13 69.29 [39/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+2026-11-11T23:47:21.4568449Z #13 70.20 [40/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+2026-11-11T23:47:23.6261189Z #13 72.37 [41/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+2026-11-11T23:47:26.0621155Z #13 74.81 [42/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+2026-11-11T23:47:27.2467385Z #13 76.00 [43/75] Linking CXX static library libminivectordb_core.a
+2026-11-11T23:47:27.3646611Z #13 76.02 [44/75] Linking CXX executable validated_snapshot_tests
+2026-11-11T23:47:27.3647365Z #13 76.02 [45/75] Linking CXX executable validated_vector_tests
+2026-11-11T23:47:27.3648062Z #13 76.04 [46/75] Linking CXX executable vector_literal_tests
+2026-11-11T23:47:27.3648766Z #13 76.05 [47/75] Linking CXX executable compressed_path_tests
+2026-11-11T23:47:27.3649400Z #13 76.06 [48/75] Linking CXX executable commit_policy_tests
+2026-11-11T23:47:27.3650336Z #13 76.08 [49/75] Linking CXX executable mixed_filter_cache_tests
+2026-11-11T23:47:27.3650986Z #13 76.09 [50/75] Linking CXX executable typed_scan_tests
+2026-11-11T23:47:27.3651593Z #13 76.11 [51/75] Linking CXX executable vector_scratch_tests
+2026-11-11T23:47:27.4960360Z #13 76.13 [52/75] Linking CXX executable unindexed_snapshot_tests
+2026-11-11T23:47:27.4961555Z #13 76.15 [53/75] Linking CXX executable adversarial_storage_tests
+2026-11-11T23:47:27.4962506Z #13 76.16 [54/75] Linking CXX executable row_allocation_tests
+2026-11-11T23:47:27.4963231Z #13 76.19 [55/75] Linking CXX executable row_validation_tests
+2026-11-11T23:47:27.4963901Z #13 76.19 [56/75] Linking CXX executable text_validation_tests
+2026-11-11T23:47:27.4964550Z #13 76.21 [57/75] Linking CXX executable numeric_sql_tests
+2026-11-11T23:47:27.4965217Z #13 76.21 [58/75] Linking CXX executable scan_snapshot_tests
+2026-11-11T23:47:27.4965863Z #13 76.24 [59/75] Linking CXX executable paired_scan_tests
+2026-11-11T23:47:27.6031900Z #13 76.24 [60/75] Linking CXX executable reference_index_tests
+2026-11-11T23:47:27.6032795Z #13 76.28 [61/75] Linking CXX executable vector_index_tests
+2026-11-11T23:47:27.6033530Z #13 76.28 [62/75] Linking CXX executable data_cache_sql_tests
+2026-11-11T23:47:27.6034254Z #13 76.31 [63/75] Linking CXX executable data_cache_tests
+2026-11-11T23:47:27.6034948Z #13 76.32 [64/75] Linking CXX executable packed_sql_tests
+2026-11-11T23:47:27.6035578Z #13 76.34 [65/75] Linking CXX executable packed_storage_tests
+2026-11-11T23:47:27.6036280Z #13 76.35 [66/75] Linking CXX executable checksum_slicing_tests
+2026-11-11T23:47:27.7100907Z #13 76.36 [67/75] Linking CXX executable index_cache_tests
+2026-11-11T23:47:27.7102344Z #13 76.37 [68/75] Linking CXX executable profile_tests
+2026-11-11T23:47:27.7103339Z #13 76.40 [69/75] Linking CXX executable checksum_tests
+2026-11-11T23:47:27.7104634Z #13 76.41 [70/75] Linking CXX executable batch_tests
+2026-11-11T23:47:27.7105230Z #13 76.42 [71/75] Linking CXX executable selective_tests
+2026-11-11T23:47:27.7106030Z #13 76.43 [72/75] Linking CXX executable minivectordb
+2026-11-11T23:47:27.7106630Z #13 76.46 [73/75] Linking CXX executable sql_tests
+2026-11-11T23:47:27.9581796Z #13 76.47 [74/75] Linking CXX executable namespace_tests
+2026-11-11T23:47:27.9583020Z #13 76.49 [75/75] Linking CXX executable core_tests
+2026-11-11T23:47:27.9583923Z #13 DONE 76.5s
+2026-11-11T23:47:27.9584314Z 
+2026-11-11T23:47:27.9584634Z #14 [test 1/1] WORKDIR /build
+2026-11-11T23:47:27.9585218Z #14 DONE 0.0s
+2026-11-11T23:47:27.9585569Z 
+2026-11-11T23:47:27.9585872Z #15 exporting to image
+2026-11-11T23:47:27.9586391Z #15 exporting layers
+2026-11-11T23:47:29.5476928Z #15 exporting layers 1.7s done
+2026-11-11T23:47:29.5645866Z #15 writing image sha256:b4d6992a04fddb65670a6787382345d7b18c1e58a867a997e4b1b7294ff0c7b3 done
+2026-11-11T23:47:29.5646879Z #15 naming to docker.io/library/mvdb:layout-native done
+2026-11-11T23:47:29.5647343Z #15 DONE 1.7s
+2026-11-11T23:47:35.2136082Z validated vector kernel: 1117 bitwise cases and validation boundaries passed
+2026-11-11T23:47:46.0497647Z write complete 548.852 ms; query warm-up
+2026-11-11T23:47:47.9346071Z RESULT r1-bigint-reference
+2026-11-11T23:47:47.9363223Z {"profile_enabled":false,"write_cpu_ms":488.624,"query_cpu_ms":601.702,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":548.852119,"query_unfiltered_ms":479.025106,"query_filtered_ms":121.655751,"query_total_ms":600.680857,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30464,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:47:49.0656196Z write complete 543.742 ms; query warm-up
+2026-11-11T23:47:51.3061244Z RESULT r1-varchar-reference
+2026-11-11T23:47:51.3082170Z {"profile_enabled":false,"write_cpu_ms":482.097,"query_cpu_ms":943.98,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":543.742022,"query_unfiltered_ms":674.240572,"query_filtered_ms":268.793524,"query_total_ms":943.034096,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33276,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:47:52.4420699Z write complete 548.224 ms; query warm-up
+2026-11-11T23:47:54.3155471Z RESULT r1-bigint-transposed
+2026-11-11T23:47:54.3173484Z {"profile_enabled":false,"write_cpu_ms":483.885,"query_cpu_ms":587.367,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":548.224308,"query_unfiltered_ms":465.694087,"query_filtered_ms":120.699816,"query_total_ms":586.393903,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30664,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:47:55.4412948Z write complete 538.547 ms; query warm-up
+2026-11-11T23:47:57.7268129Z RESULT r1-varchar-transposed
+2026-11-11T23:47:57.7284616Z {"profile_enabled":false,"write_cpu_ms":480.439,"query_cpu_ms":982.347,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":538.54704,"query_unfiltered_ms":703.909767,"query_filtered_ms":277.506949,"query_total_ms":981.416716,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33428,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:47:58.8497129Z write complete 536.077 ms; query warm-up
+2026-11-11T23:48:00.7216465Z RESULT r2-bigint-transposed
+2026-11-11T23:48:00.7234022Z {"profile_enabled":false,"write_cpu_ms":472.127,"query_cpu_ms":589.002,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":536.076773,"query_unfiltered_ms":466.420094,"query_filtered_ms":121.618549,"query_total_ms":588.038643,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30584,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:48:01.8591423Z write complete 549.242 ms; query warm-up
+2026-11-11T23:48:04.0825343Z RESULT r2-varchar-transposed
+2026-11-11T23:48:04.0843783Z {"profile_enabled":false,"write_cpu_ms":488.894,"query_cpu_ms":925.622,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":549.241667,"query_unfiltered_ms":649.719282,"query_filtered_ms":274.925785,"query_total_ms":924.645067,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33456,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:48:05.1970248Z write complete 531.791 ms; query warm-up
+2026-11-11T23:48:07.0759881Z RESULT r2-bigint-reference
+2026-11-11T23:48:07.0778366Z {"profile_enabled":false,"write_cpu_ms":472.383,"query_cpu_ms":599.042,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":531.791204,"query_unfiltered_ms":477.206065,"query_filtered_ms":120.790221,"query_total_ms":597.996286,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30584,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:48:08.2086171Z write complete 544.302 ms; query warm-up
+2026-11-11T23:48:10.4452735Z RESULT r2-varchar-reference
+2026-11-11T23:48:10.4470952Z {"profile_enabled":false,"write_cpu_ms":484.908,"query_cpu_ms":935.048,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":544.301754,"query_unfiltered_ms":668.961149,"query_filtered_ms":265.124795,"query_total_ms":934.085944,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33304,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:48:11.5687167Z write complete 535.097 ms; query warm-up
+2026-11-11T23:48:13.4483515Z RESULT r3-bigint-reference
+2026-11-11T23:48:13.4503188Z {"profile_enabled":false,"write_cpu_ms":481.94,"query_cpu_ms":602.744,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":535.09669,"query_unfiltered_ms":479.73555,"query_filtered_ms":122.021343,"query_total_ms":601.756893,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30648,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:48:14.5667621Z write complete 533.46 ms; query warm-up
+2026-11-11T23:48:16.8025530Z RESULT r3-varchar-reference
+2026-11-11T23:48:16.8044224Z {"profile_enabled":false,"write_cpu_ms":482.644,"query_cpu_ms":934.677,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":533.459777,"query_unfiltered_ms":667.418563,"query_filtered_ms":266.265739,"query_total_ms":933.684302,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33476,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:48:17.9438343Z write complete 546.031 ms; query warm-up
+2026-11-11T23:48:19.8122759Z RESULT r3-bigint-transposed
+2026-11-11T23:48:19.8139367Z {"profile_enabled":false,"write_cpu_ms":491.424,"query_cpu_ms":589.455,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":546.031176,"query_unfiltered_ms":467.332634,"query_filtered_ms":121.149615,"query_total_ms":588.482249,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30612,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:48:20.9277411Z write complete 529.953 ms; query warm-up
+2026-11-11T23:48:23.1519840Z RESULT r3-varchar-transposed
+2026-11-11T23:48:23.1537696Z {"profile_enabled":false,"write_cpu_ms":476.689,"query_cpu_ms":926.043,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":529.953256,"query_unfiltered_ms":651.790265,"query_filtered_ms":273.240376,"query_total_ms":925.030641,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33364,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:48:23.1822752Z LAYOUT_SUMMARY {"filter": "bigint", "variant": "reference", "query_ms": [600.680857, 597.996286, 601.756893], "median_ms": 600.680857, "relative_percent": 0.0, "exact_results_agree": true}
+2026-11-11T23:48:23.1825331Z LAYOUT_SUMMARY {"filter": "bigint", "variant": "transposed", "query_ms": [586.393903, 588.038643, 588.482249], "median_ms": 588.038643, "relative_percent": -2.1046473934826837, "exact_results_agree": true}
+2026-11-11T23:48:23.1826918Z LAYOUT_SUMMARY {"filter": "varchar", "variant": "reference", "query_ms": [943.034096, 934.085944, 933.684302], "median_ms": 934.085944, "relative_percent": 0.0, "exact_results_agree": true}
+2026-11-11T23:48:23.1828546Z LAYOUT_SUMMARY {"filter": "varchar", "variant": "transposed", "query_ms": [981.416716, 924.645067, 925.030641], "median_ms": 925.030641, "relative_percent": -0.9694293183797331, "exact_results_agree": true}
+2026-11-11T23:48:23.2003804Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-11-11T23:48:23.2004243Z with:
+2026-11-11T23:48:23.2004536Z   name: native-layout-c09f226642fb5f36c05de13a259f39e98e5eddbc
+2026-11-11T23:48:23.2004897Z   path: layout-results/
+2026-11-11T23:48:23.2005133Z   retention-days: 30
+2026-11-11T23:48:23.2005356Z   if-no-files-found: warn
+2026-11-11T23:48:23.2005589Z   compression-level: 6
+2026-11-11T23:48:23.2005805Z   overwrite: false
+2026-11-11T23:48:23.2006024Z   include-hidden-files: false
+2026-11-11T23:48:23.2006273Z ##[endgroup]
+2026-11-11T23:48:23.5277540Z (node:3786) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-11T23:48:23.5278500Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-11T23:48:23.5384618Z With the provided path, there will be 14 files uploaded
+2026-11-11T23:48:23.5392693Z Artifact name is valid!
+2026-11-11T23:48:23.5393420Z Root directory input is valid!
+2026-11-11T23:48:23.8528322Z Beginning upload of artifact content to blob storage
+2026-11-11T23:48:23.8918310Z (node:3786) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-11T23:48:24.0224556Z Uploaded bytes 11521
+2026-11-11T23:48:24.0663326Z Finished uploading artifact content to blob storage!
+2026-11-11T23:48:24.0664236Z SHA256 digest of uploaded artifact zip is 289d75a9ad54169f89868661946aa7a6eefdf4c9dc259098a504c041ce22a9d9
+2026-11-11T23:48:24.0667554Z Finalizing artifact upload
+2026-11-11T23:48:24.4148554Z Artifact native-layout-c09f226642fb5f36c05de13a259f39e98e5eddbc.zip successfully finalized. Artifact ID 13900638518
+2026-11-11T23:48:24.4151291Z Artifact native-layout-c09f226642fb5f36c05de13a259f39e98e5eddbc has been successfully uploaded! Final size is 11521 bytes. Artifact ID is 13900638518
+2026-11-11T23:48:24.4156727Z Artifact download URL: https://github.com/juanzhi-gcb/seekdb/actions/runs/43122308733/artifacts/13900638518
+2026-11-11T23:48:24.4361311Z Cleaning up orphan processes
+2026-11-11T23:48:24.4771493Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

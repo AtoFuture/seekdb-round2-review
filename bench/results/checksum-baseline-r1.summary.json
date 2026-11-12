@@ -1,0 +1,25 @@
+{
+  "source": "4ad8b99326cbd24523912143bff58b2e286a3c78",
+  "rows": 2000,
+  "queries": 40,
+  "rounds": 1,
+  "batch_only": false,
+  "combined_only": true,
+  "scope": "Local warm SQL API + sink, batch100 autocommits, shuffled inserts, exact truth and reopen checks. No stdin/stdout request transport timing; file growth is logical, not physical IO. Memory includes benchmark data/driver and local container page cache; swap/IO attribution not official.",
+  "medians": {
+    "decode1-batch1": {
+      "write_ms": 6320.494811,
+      "query_total_ms": 15616.255434,
+      "query_filtered_ms": 7742.833771,
+      "query_unfiltered_ms": 7873.421663,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "vector_values_materialized": 44000,
+      "vector_values_filtered": 4000,
+      "vector_values_unfiltered": 40000,
+      "cells_materialized": 164800,
+      "process_maxrss_kib": 11280,
+      "local_cgroup_peak_bytes": 6557696
+    }
+  }
+}

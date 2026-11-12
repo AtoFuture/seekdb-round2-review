@@ -1,0 +1,22 @@
+Internal ctest changing into directory: /mnt/d/Codex/MiniVectorDB/build/unindexed-candidate-core
+Test project /mnt/d/Codex/MiniVectorDB/build/unindexed-candidate-core
+    Start 14: core_selective
+1/8 Test #14: core_selective ...................   Passed    3.36 sec
+    Start 17: core_profile
+2/8 Test #17: core_profile .....................   Passed    0.07 sec
+    Start 23: core_data_cache_sql
+3/8 Test #23: core_data_cache_sql ..............   Passed   13.66 sec
+    Start 28: core_scan_snapshot
+4/8 Test #28: core_scan_snapshot ...............   Passed    4.17 sec
+    Start 29: core_numeric_maximum
+5/8 Test #29: core_numeric_maximum .............   Passed    0.16 sec
+    Start 30: core_numeric_ties
+6/8 Test #30: core_numeric_ties ................   Passed    0.44 sec
+    Start 32: core_row_validation
+7/8 Test #32: core_row_validation ..............   Passed    3.03 sec
+    Start 37: core_unindexed_snapshot
+8/8 Test #37: core_unindexed_snapshot ..........   Passed    5.95 sec
+
+100% tests passed, 0 tests failed out of 8
+
+Total Test time (real) =  30.89 sec

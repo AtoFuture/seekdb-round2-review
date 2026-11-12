@@ -1,0 +1,35 @@
+Start testing: Nov 10 09:11 UTC
+----------------------------------------------------------
+14/31 Testing: core_selective
+14/31 Test: core_selective
+Command: "/mnt/d/Codex/MiniVectorDB/build/text-core/selective_tests"
+Directory: /mnt/d/Codex/MiniVectorDB/build/text-core
+"core_selective" start time: Nov 10 09:11 UTC
+Output:
+----------------------------------------------------------
+PASS selective
+<end of output>
+Test time =   3.33 sec
+----------------------------------------------------------
+Test Passed.
+"core_selective" end time: Nov 10 09:11 UTC
+"core_selective" time elapsed: 00:00:03
+----------------------------------------------------------
+
+31/31 Testing: core_text_validation
+31/31 Test: core_text_validation
+Command: "/mnt/d/Codex/MiniVectorDB/build/text-core/text_validation_tests"
+Directory: /mnt/d/Codex/MiniVectorDB/build/text-core
+"core_text_validation" start time: Nov 10 09:11 UTC
+Output:
+----------------------------------------------------------
+PASS text validation 321404 comparisons per mode
+<end of output>
+Test time =   0.77 sec
+----------------------------------------------------------
+Test Passed.
+"core_text_validation" end time: Nov 10 09:11 UTC
+"core_text_validation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 10 09:11 UTC

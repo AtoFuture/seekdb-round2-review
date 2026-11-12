@@ -1,0 +1,155 @@
+{
+  "source": "46c92cb156b5f4f9c96ff88dd2a87165761f5f6a",
+  "rows": 2000,
+  "queries": 40,
+  "rounds": 3,
+  "diagnostic": false,
+  "medians": {
+    "bytewise-cache0": {
+      "write_ms": 546.548278,
+      "query_total_ms": 728.692253,
+      "write_cpu_ms": 372.191,
+      "query_cpu_ms": 728.767,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "process_maxrss_kib": 11024,
+      "local_cgroup_peak_bytes": 15835136,
+      "write_cache": {
+        "hits": 0,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 0,
+        "resident_pages": 0
+      },
+      "query_cache": {
+        "hits": 0,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 0,
+        "resident_pages": 0
+      }
+    },
+    "bytewise-cache1048576": {
+      "write_ms": 271.018492,
+      "query_total_ms": 668.207493,
+      "write_cpu_ms": 101.413,
+      "query_cpu_ms": 668.289,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "process_maxrss_kib": 10768,
+      "local_cgroup_peak_bytes": 16957440,
+      "write_cache": {
+        "hits": 31491,
+        "misses": 474,
+        "evictions": 282,
+        "capacity_bytes": 1048560,
+        "resident_pages": 208
+      },
+      "query_cache": {
+        "hits": 7960,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 1048560,
+        "resident_pages": 217
+      }
+    },
+    "bytewise-cache262144": {
+      "write_ms": 271.32334,
+      "query_total_ms": 702.606778,
+      "write_cpu_ms": 100.376,
+      "query_cpu_ms": 702.686,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "process_maxrss_kib": 11024,
+      "local_cgroup_peak_bytes": 16232448,
+      "write_cache": {
+        "hits": 31451,
+        "misses": 514,
+        "evictions": 467,
+        "capacity_bytes": 259056,
+        "resident_pages": 63
+      },
+      "query_cache": {
+        "hits": 7320,
+        "misses": 640,
+        "evictions": 640,
+        "capacity_bytes": 259056,
+        "resident_pages": 63
+      }
+    },
+    "slicing8-cache0": {
+      "write_ms": 334.714106,
+      "query_total_ms": 263.384806,
+      "write_cpu_ms": 168.349,
+      "query_cpu_ms": 263.435,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "process_maxrss_kib": 10936,
+      "local_cgroup_peak_bytes": 15929344,
+      "write_cache": {
+        "hits": 0,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 0,
+        "resident_pages": 0
+      },
+      "query_cache": {
+        "hits": 0,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 0,
+        "resident_pages": 0
+      }
+    },
+    "slicing8-cache1048576": {
+      "write_ms": 260.462345,
+      "query_total_ms": 248.096114,
+      "write_cpu_ms": 87.713,
+      "query_cpu_ms": 248.142,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "process_maxrss_kib": 11024,
+      "local_cgroup_peak_bytes": 16945152,
+      "write_cache": {
+        "hits": 31491,
+        "misses": 474,
+        "evictions": 282,
+        "capacity_bytes": 1048560,
+        "resident_pages": 208
+      },
+      "query_cache": {
+        "hits": 7960,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 1048560,
+        "resident_pages": 217
+      }
+    },
+    "slicing8-cache262144": {
+      "write_ms": 261.349928,
+      "query_total_ms": 273.668087,
+      "write_cpu_ms": 86.651,
+      "query_cpu_ms": 273.761,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "process_maxrss_kib": 10768,
+      "local_cgroup_peak_bytes": 16650240,
+      "write_cache": {
+        "hits": 31451,
+        "misses": 514,
+        "evictions": 467,
+        "capacity_bytes": 259056,
+        "resident_pages": 63
+      },
+      "query_cache": {
+        "hits": 7320,
+        "misses": 640,
+        "evictions": 640,
+        "capacity_bytes": 259056,
+        "resident_pages": 63
+      }
+    }
+  },
+  "validated_queries": 720,
+  "reopen_checks": 18
+}

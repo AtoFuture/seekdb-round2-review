@@ -1,0 +1,446 @@
+test_bom_is_rejected (__main__.SubmissionContractTests) ... FAIL
+test_case_is_strict_at_each_directory_and_filename (__main__.SubmissionContractTests) ... test_duplicate_keys_are_rejected_at_any_depth (__main__.SubmissionContractTests) ... FAIL
+test_empty_official_placeholder_is_not_a_json_template (__main__.SubmissionContractTests) ... FAIL
+test_exact_size_limit (__main__.SubmissionContractTests) ... FAIL
+test_explicit_material_path (__main__.SubmissionContractTests) ... FAIL
+test_free_business_schema_and_default_worktree (__main__.SubmissionContractTests) ... FAIL
+test_git_exact_case_and_missing_entry (__main__.SubmissionContractTests) ... FAIL
+test_git_executable_regular_file_is_allowed (__main__.SubmissionContractTests) ... FAIL
+test_git_history_is_distinct_from_dirty_worktree (__main__.SubmissionContractTests) ... FAIL
+test_git_rejects_lfs_pointer (__main__.SubmissionContractTests) ... FAIL
+test_git_rejects_symbolic_link_mode_even_if_blob_is_json (__main__.SubmissionContractTests) ... FAIL
+test_git_requires_full_commit_sha (__main__.SubmissionContractTests) ... test_mirror_matching_and_local_mismatch (__main__.SubmissionContractTests) ... FAIL
+test_non_utf8_is_rejected (__main__.SubmissionContractTests) ... FAIL
+test_nonstandard_constants_are_rejected (__main__.SubmissionContractTests) ... test_optional_internal_pointer_quotes (__main__.SubmissionContractTests) ... FAIL
+test_optional_pointer_escaping_and_list_index (__main__.SubmissionContractTests) ... FAIL
+test_root_only_is_not_default_material (__main__.SubmissionContractTests) ... FAIL
+test_root_selected_explicitly_is_not_its_own_mirror (__main__.SubmissionContractTests) ... FAIL
+test_trailing_garbage_and_nonobjects_are_rejected (__main__.SubmissionContractTests) ... test_unsafe_material_paths (__main__.SubmissionContractTests) ... 
+======================================================================
+FAIL: test_bom_is_rejected (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 140, in test_bom_is_rejected
+    self.assert_failure(b'\xef\xbb\xbf{}', 'utf8_bom')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_case_is_strict_at_each_directory_and_filename (__main__.SubmissionContractTests) (path='Agent/conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 119, in test_case_is_strict_at_each_directory_and_filename
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_case_is_strict_at_each_directory_and_filename (__main__.SubmissionContractTests) (path='agent/Conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 119, in test_case_is_strict_at_each_directory_and_filename
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_duplicate_keys_are_rejected_at_any_depth (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 146, in test_duplicate_keys_are_rejected_at_any_depth
+    self.assert_failure(b'{"nested":{"x":1,"x":2}}', 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_empty_official_placeholder_is_not_a_json_template (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 137, in test_empty_official_placeholder_is_not_a_json_template
+    self.assert_failure(b'', 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_exact_size_limit (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 162, in test_exact_size_limit
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_explicit_material_path (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 111, in test_explicit_material_path
+    code, report = self.check('--material-path', 'notes/record.json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_free_business_schema_and_default_worktree (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 93, in test_free_business_schema_and_default_worktree
+    code, report = self.check(default_repository=True)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_exact_case_and_missing_entry (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 245, in test_git_exact_case_and_missing_entry
+    code, report = self.check('--ref', ref)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_executable_regular_file_is_allowed (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 278, in test_git_executable_regular_file_is_allowed
+    code, report = self.check('--ref', self.git('rev-parse', 'HEAD'))
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_history_is_distinct_from_dirty_worktree (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 219, in test_git_history_is_distinct_from_dirty_worktree
+    code, report = self.check('--ref', ref)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_rejects_lfs_pointer (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 268, in test_git_rejects_lfs_pointer
+    code, report = self.check('--ref', ref)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_rejects_symbolic_link_mode_even_if_blob_is_json (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 260, in test_git_rejects_symbolic_link_mode_even_if_blob_is_json
+    code, report = self.check('--ref', ref)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_requires_full_commit_sha (__main__.SubmissionContractTests) (ref='HEAD')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 236, in test_git_requires_full_commit_sha
+    code, report = self.check('--ref', invalid)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_requires_full_commit_sha (__main__.SubmissionContractTests) (ref='7d9bf3032fbb')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 236, in test_git_requires_full_commit_sha
+    code, report = self.check('--ref', invalid)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_requires_full_commit_sha (__main__.SubmissionContractTests) (ref='--help')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 236, in test_git_requires_full_commit_sha
+    code, report = self.check('--ref', invalid)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_git_requires_full_commit_sha (__main__.SubmissionContractTests) (ref='0000000000000000000000000000000000000000')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 236, in test_git_requires_full_commit_sha
+    code, report = self.check('--ref', invalid)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_mirror_matching_and_local_mismatch (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 170, in test_mirror_matching_and_local_mismatch
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_non_utf8_is_rejected (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 143, in test_non_utf8_is_rejected
+    self.assert_failure(b'{"x":"\xff"}', 'invalid_utf8')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_nonstandard_constants_are_rejected (__main__.SubmissionContractTests) (token='NaN')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 151, in test_nonstandard_constants_are_rejected
+    self.assert_failure(('{"x":' + token + '}').encode('ascii'), 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_nonstandard_constants_are_rejected (__main__.SubmissionContractTests) (token='Infinity')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 151, in test_nonstandard_constants_are_rejected
+    self.assert_failure(('{"x":' + token + '}').encode('ascii'), 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_nonstandard_constants_are_rejected (__main__.SubmissionContractTests) (token='-Infinity')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 151, in test_nonstandard_constants_are_rejected
+    self.assert_failure(('{"x":' + token + '}').encode('ascii'), 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_optional_internal_pointer_quotes (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 191, in test_optional_internal_pointer_quotes
+    code, report = self.check('--check-internal-references')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_optional_pointer_escaping_and_list_index (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 203, in test_optional_pointer_escaping_and_list_index
+    self.assertEqual(self.check('--check-internal-references')[0], 0)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_root_only_is_not_default_material (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 104, in test_root_only_is_not_default_material
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_root_selected_explicitly_is_not_its_own_mirror (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 183, in test_root_selected_explicitly_is_not_its_own_mirror
+    code, report = self.check('--material-path', 'conversation.json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_trailing_garbage_and_nonobjects_are_rejected (__main__.SubmissionContractTests) (raw=b'[]')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 156, in test_trailing_garbage_and_nonobjects_are_rejected
+    self.assert_failure(raw, 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_trailing_garbage_and_nonobjects_are_rejected (__main__.SubmissionContractTests) (raw=b'null')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 156, in test_trailing_garbage_and_nonobjects_are_rejected
+    self.assert_failure(raw, 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_trailing_garbage_and_nonobjects_are_rejected (__main__.SubmissionContractTests) (raw=b'"x"')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 156, in test_trailing_garbage_and_nonobjects_are_rejected
+    self.assert_failure(raw, 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_trailing_garbage_and_nonobjects_are_rejected (__main__.SubmissionContractTests) (raw=b'{} trailing')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 156, in test_trailing_garbage_and_nonobjects_are_rejected
+    self.assert_failure(raw, 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_trailing_garbage_and_nonobjects_are_rejected (__main__.SubmissionContractTests) (raw=b'{}{}')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 156, in test_trailing_garbage_and_nonobjects_are_rejected
+    self.assert_failure(raw, 'invalid_json')
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 66, in assert_failure
+    code, report = self.check()
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='../conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='/agent/conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='C:/agent/conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='agent\\conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='agent/../conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='./agent/conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='agent//conversation.json')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='agent/conversation.json/')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+======================================================================
+FAIL: test_unsafe_material_paths (__main__.SubmissionContractTests) (path='')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 132, in test_unsafe_material_paths
+    code, report = self.check('--material-path', path)
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 52, in check
+    self.assertTrue(CHECKER.is_file(), 'Missing standalone submission contract checker')
+AssertionError: False is not true : Missing standalone submission contract checker
+
+----------------------------------------------------------------------
+Ran 22 tests in 7.174s
+
+FAILED (failures=40)

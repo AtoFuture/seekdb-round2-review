@@ -1,0 +1,10 @@
+{
+  "ref": "refs/heads/2026-competition-round2",
+  "node_id": "REF_kwDOQGY_aNoAInJlZnMvaGVhZHMvMjAyNi1jb21wZXRpdGlvbi1yb3VuZDI",
+  "url": "https://api.github.com/repos/oceanbase/seekdb/git/refs/heads/2026-competition-round2",
+  "object": {
+    "sha": "f4d4e26653af823a7601668802f80e374ad6643c",
+    "type": "commit",
+    "url": "https://api.github.com/repos/oceanbase/seekdb/git/commits/f4d4e26653af823a7601668802f80e374ad6643c"
+  }
+}

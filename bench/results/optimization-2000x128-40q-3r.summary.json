@@ -1,0 +1,65 @@
+{
+  "source": "fa419bbda1bf63cc2ff00346f2bdcc8441274c55",
+  "rows": 2000,
+  "queries": 40,
+  "rounds": 3,
+  "scope": "Local warm SQL API + sink, batch100 autocommits, shuffled inserts, exact truth and reopen checks. No stdin/stdout request transport timing; file growth is logical, not physical IO. Memory includes benchmark data/driver and local container page cache; swap/IO attribution not official.",
+  "medians": {
+    "decode0-batch0": {
+      "write_ms": 18748.7853,
+      "query_total_ms": 17309.526203,
+      "query_filtered_ms": 8631.865012,
+      "query_unfiltered_ms": 8677.661191,
+      "database_bytes": 139411456,
+      "insert_file_growth_bytes": 139264000,
+      "vector_values_materialized": 80400,
+      "vector_values_filtered": 40200,
+      "vector_values_unfiltered": 40200,
+      "cells_materialized": 321600,
+      "process_maxrss_kib": 11024,
+      "local_cgroup_peak_bytes": 6692864
+    },
+    "decode0-batch1": {
+      "write_ms": 6627.18502,
+      "query_total_ms": 16790.543752,
+      "query_filtered_ms": 8385.057261,
+      "query_unfiltered_ms": 8405.486491,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "vector_values_materialized": 80400,
+      "vector_values_filtered": 40200,
+      "vector_values_unfiltered": 40200,
+      "cells_materialized": 321600,
+      "process_maxrss_kib": 11024,
+      "local_cgroup_peak_bytes": 6758400
+    },
+    "decode1-batch0": {
+      "write_ms": 18602.794848,
+      "query_total_ms": 16934.387119,
+      "query_filtered_ms": 8313.841269,
+      "query_unfiltered_ms": 8620.54585,
+      "database_bytes": 139411456,
+      "insert_file_growth_bytes": 139264000,
+      "vector_values_materialized": 44000,
+      "vector_values_filtered": 4000,
+      "vector_values_unfiltered": 40000,
+      "cells_materialized": 164800,
+      "process_maxrss_kib": 11024,
+      "local_cgroup_peak_bytes": 6643712
+    },
+    "decode1-batch1": {
+      "write_ms": 6675.263531,
+      "query_total_ms": 17073.261744,
+      "query_filtered_ms": 8374.165834,
+      "query_unfiltered_ms": 8699.09591,
+      "database_bytes": 10223616,
+      "insert_file_growth_bytes": 10076160,
+      "vector_values_materialized": 44000,
+      "vector_values_filtered": 4000,
+      "vector_values_unfiltered": 40000,
+      "cells_materialized": 164800,
+      "process_maxrss_kib": 11024,
+      "local_cgroup_peak_bytes": 6336512
+    }
+  }
+}

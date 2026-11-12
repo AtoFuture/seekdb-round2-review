@@ -1,0 +1,392 @@
+﻿2026-11-11T23:52:24.8516919Z Current runner version: '2.338.2'
+2026-11-11T23:52:24.8535444Z ##[group]Runner Image Provisioner
+2026-11-11T23:52:24.8536087Z Hosted Compute Agent
+2026-11-11T23:52:24.8536485Z Version: 20261028.624
+2026-11-11T23:52:24.8536937Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-11T23:52:24.8537442Z Build Date: 2026-10-28T21:51:42Z
+2026-11-11T23:52:24.8537867Z Worker ID: {d391e264-fccc-4d5b-9b2d-3f0d1d5acbc0}
+2026-11-11T23:52:24.8538335Z Region: centralus
+2026-11-11T23:52:24.8538696Z Cloud: Azure
+2026-11-11T23:52:24.8539057Z ##[endgroup]
+2026-11-11T23:52:24.8540380Z ##[group]Operating System
+2026-11-11T23:52:24.8540765Z Ubuntu
+2026-11-11T23:52:24.8541127Z 24.04.5
+2026-11-11T23:52:24.8541495Z LTS
+2026-11-11T23:52:24.8541844Z ##[endgroup]
+2026-11-11T23:52:24.8542238Z ##[group]Runner Image
+2026-11-11T23:52:24.8542614Z Image: ubuntu-24.04
+2026-11-11T23:52:24.8542991Z Version: 20261101.360.1
+2026-11-11T23:52:24.8543818Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-11T23:52:24.8545018Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+2026-11-11T23:52:24.8545629Z ##[endgroup]
+2026-11-11T23:52:24.8546332Z ##[group]GITHUB_TOKEN Permissions
+2026-11-11T23:52:24.8547764Z Contents: read
+2026-11-11T23:52:24.8548212Z Metadata: read
+2026-11-11T23:52:24.8548561Z ##[endgroup]
+2026-11-11T23:52:24.8550198Z Secret source: Actions
+2026-11-11T23:52:24.8550885Z Cache mode: write
+2026-11-11T23:52:24.8551317Z Prepare workflow directory
+2026-11-11T23:52:24.8763187Z Prepare all required actions
+2026-11-11T23:52:24.8795335Z Getting action download info
+2026-11-11T23:52:25.1241412Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-11T23:52:25.3822479Z Complete job name: compare (1)
+2026-11-11T23:52:25.4408660Z ##[group]Run set -euo pipefail
+2026-11-11T23:52:25.4409051Z [36;1mset -euo pipefail[0m
+2026-11-11T23:52:25.4410895Z [36;1mgit init .[0m
+2026-11-11T23:52:25.4411258Z [36;1mgit remote add origin https://github.com/juanzhi-gcb/seekdb.git[0m
+2026-11-11T23:52:25.4413025Z [36;1mgit fetch --depth=1 origin "$GITHUB_SHA"[0m
+2026-11-11T23:52:25.4413368Z [36;1mgit checkout --detach FETCH_HEAD[0m
+2026-11-11T23:52:25.4415067Z [36;1mtest "$(git rev-parse HEAD)" = "$GITHUB_SHA"[0m
+2026-11-11T23:52:25.4436987Z shell: /usr/bin/bash -e {0}
+2026-11-11T23:52:25.4437365Z ##[endgroup]
+2026-11-11T23:52:25.4742401Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-11T23:52:25.4743206Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-11T23:52:25.4744051Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-11T23:52:25.4744557Z hint: call:
+2026-11-11T23:52:25.4744789Z hint:
+2026-11-11T23:52:25.4745196Z hint: 	git config --global init.defaultBranch <name>
+2026-11-11T23:52:25.4745549Z hint:
+2026-11-11T23:52:25.4745879Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-11T23:52:25.4746413Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-11T23:52:25.4746824Z hint:
+2026-11-11T23:52:25.4747064Z hint: 	git branch -m <name>
+2026-11-11T23:52:25.4747489Z hint:
+2026-11-11T23:52:25.4747840Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-11T23:52:25.4754196Z Initialized empty Git repository in /home/runner/work/seekdb/seekdb/.git/
+2026-11-11T23:52:27.4015331Z From https://github.com/juanzhi-gcb/seekdb
+2026-11-11T23:52:27.4016660Z  * branch            432a05de8754997ae95da6a988f5f0e00fb08e5b -> FETCH_HEAD
+2026-11-11T23:52:27.4977624Z HEAD is now at 432a05d Screen runtime-dispatched exact AVX2 across candidates without reassociation
+2026-11-11T23:52:27.5118462Z ##[group]Run bash bench/run_avx_native.sh
+2026-11-11T23:52:27.5119675Z [36;1mbash bench/run_avx_native.sh[0m
+2026-11-11T23:52:27.5138161Z shell: /usr/bin/bash -e {0}
+2026-11-11T23:52:27.5139176Z ##[endgroup]
+2026-11-11T23:52:27.5248568Z Architecture:                            x86_64
+2026-11-11T23:52:27.5249985Z CPU op-mode(s):                          32-bit, 64-bit
+2026-11-11T23:52:27.5251074Z Address sizes:                           48 bits physical, 48 bits virtual
+2026-11-11T23:52:27.5252189Z Byte Order:                              Little Endian
+2026-11-11T23:52:27.5253111Z CPU(s):                                  4
+2026-11-11T23:52:27.5253981Z On-line CPU(s) list:                     0-3
+2026-11-11T23:52:27.5254894Z Vendor ID:                               AuthenticAMD
+2026-11-11T23:52:27.5255929Z Model name:                              AMD EPYC 9V45 96-Core Processor
+2026-11-11T23:52:27.5256940Z CPU family:                              26
+2026-11-11T23:52:27.5257835Z Model:                                   2
+2026-11-11T23:52:27.5258666Z Thread(s) per core:                      2
+2026-11-11T23:52:27.5259834Z Core(s) per socket:                      2
+2026-11-11T23:52:27.5261076Z Socket(s):                               1
+2026-11-11T23:52:27.5261919Z Stepping:                                1
+2026-11-11T23:52:27.5262772Z BogoMIPS:                                5192.19
+2026-11-11T23:52:27.5272110Z Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves user_shstk avx_vnni avx512_bf16 clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect
+2026-11-11T23:52:27.5280606Z Virtualization:                          AMD-V
+2026-11-11T23:52:27.5281519Z Hypervisor vendor:                       Microsoft
+2026-11-11T23:52:27.5282427Z Virtualization type:                     full
+2026-11-11T23:52:27.5283358Z L1d cache:                               96 KiB (2 instances)
+2026-11-11T23:52:27.5284374Z L1i cache:                               64 KiB (2 instances)
+2026-11-11T23:52:27.5285363Z L2 cache:                                2 MiB (2 instances)
+2026-11-11T23:52:27.5286361Z L3 cache:                                32 MiB (1 instance)
+2026-11-11T23:52:27.5287319Z NUMA node(s):                            1
+2026-11-11T23:52:27.5288202Z NUMA node0 CPU(s):                       0-3
+2026-11-11T23:52:27.5289154Z Vulnerability Gather data sampling:      Not affected
+2026-11-11T23:52:27.5290593Z Vulnerability Ghostwrite:                Not affected
+2026-11-11T23:52:27.5291636Z Vulnerability Indirect target selection: Not affected
+2026-11-11T23:52:27.5292649Z Vulnerability Itlb multihit:             Not affected
+2026-11-11T23:52:27.5293644Z Vulnerability L1tf:                      Not affected
+2026-11-11T23:52:27.5294637Z Vulnerability Mds:                       Not affected
+2026-11-11T23:52:27.5295614Z Vulnerability Meltdown:                  Not affected
+2026-11-11T23:52:27.5296567Z Vulnerability Mmio stale data:           Not affected
+2026-11-11T23:52:27.5297536Z Vulnerability Old microcode:             Not affected
+2026-11-11T23:52:27.5298513Z Vulnerability Reg file data sampling:    Not affected
+2026-11-11T23:52:27.5299623Z Vulnerability Retbleed:                  Not affected
+2026-11-11T23:52:27.5301002Z Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+2026-11-11T23:52:27.5302142Z Vulnerability Spec store bypass:         Vulnerable
+2026-11-11T23:52:27.5303479Z Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-11T23:52:27.5305579Z Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+2026-11-11T23:52:27.5307163Z Vulnerability Srbds:                     Not affected
+2026-11-11T23:52:27.5308099Z Vulnerability Tsa:                       Not affected
+2026-11-11T23:52:27.5309028Z Vulnerability Tsx async abort:           Not affected
+2026-11-11T23:52:27.5310157Z Vulnerability Vmscape:                   Not affected
+2026-11-11T23:52:28.2018983Z #0 building with "default" instance using docker driver
+2026-11-11T23:52:28.2019497Z 
+2026-11-11T23:52:28.2019649Z #1 [internal] load build definition from Dockerfile
+2026-11-11T23:52:28.2020068Z #1 transferring dockerfile: 978B 0.0s done
+2026-11-11T23:52:28.2020350Z #1 DONE 0.0s
+2026-11-11T23:52:28.2020477Z 
+2026-11-11T23:52:28.2020929Z #2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:52:28.3552785Z #2 ...
+2026-11-11T23:52:28.3552971Z 
+2026-11-11T23:52:28.3553150Z #3 [auth] library/alpine:pull token for registry-1.docker.io
+2026-11-11T23:52:28.3553465Z #3 DONE 0.0s
+2026-11-11T23:52:28.5055836Z 
+2026-11-11T23:52:28.5056738Z #2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:52:28.7429850Z #2 DONE 0.7s
+2026-11-11T23:52:28.9014997Z 
+2026-11-11T23:52:28.9015557Z #4 [internal] load .dockerignore
+2026-11-11T23:52:28.9015914Z #4 transferring context: 81B done
+2026-11-11T23:52:28.9016149Z #4 DONE 0.0s
+2026-11-11T23:52:28.9016259Z 
+2026-11-11T23:52:28.9016351Z #5 [internal] load build context
+2026-11-11T23:52:28.9016849Z #5 transferring context: 531.96kB 0.0s done
+2026-11-11T23:52:28.9017011Z #5 DONE 0.1s
+2026-11-11T23:52:28.9017715Z 
+2026-11-11T23:52:28.9017985Z #6 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:52:28.9018467Z #6 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+2026-11-11T23:52:28.9018876Z #6 sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 0B / 3.79MB 0.1s
+2026-11-11T23:52:28.9019367Z #6 sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f 9.22kB / 9.22kB done
+2026-11-11T23:52:28.9019775Z #6 sha256:9db2934886712d877c932e07249c75a59e6ca27adfbccc05261987a17bef2d63 1.02kB / 1.02kB done
+2026-11-11T23:52:28.9020135Z #6 sha256:812e99317af7009fea987b5ad913e63f8494c2d6e596b59b6ac8b8f91f7766e8 611B / 611B done
+2026-11-11T23:52:29.0325657Z #6 sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 3.79MB / 3.79MB 0.2s done
+2026-11-11T23:52:29.0326460Z #6 extracting sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 0.1s done
+2026-11-11T23:52:29.1737636Z #6 DONE 0.3s
+2026-11-11T23:52:29.1738445Z 
+2026-11-11T23:52:29.1738921Z #7 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+2026-11-11T23:52:29.1739671Z #7 0.121 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+2026-11-11T23:52:29.2937566Z #7 0.241 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+2026-11-11T23:52:29.5518546Z #7 0.499 (1/43) Installing libgcc (14.2.0-r6)
+2026-11-11T23:52:29.6604209Z #7 0.510 (2/43) Installing jansson (2.14.1-r0)
+2026-11-11T23:52:29.6610109Z #7 0.520 (3/43) Installing libstdc++ (14.2.0-r6)
+2026-11-11T23:52:29.6610408Z #7 0.540 (4/43) Installing zstd-libs (1.5.7-r0)
+2026-11-11T23:52:29.6610675Z #7 0.553 (5/43) Installing binutils (2.44-r3)
+2026-11-11T23:52:29.6611285Z #7 0.608 (6/43) Installing libmagic (5.46-r2)
+2026-11-11T23:52:29.7655047Z #7 0.629 (7/43) Installing file (5.46-r2)
+2026-11-11T23:52:29.7655317Z #7 0.639 (8/43) Installing libgomp (14.2.0-r6)
+2026-11-11T23:52:29.7655497Z #7 0.650 (9/43) Installing libatomic (14.2.0-r6)
+2026-11-11T23:52:29.7655923Z #7 0.660 (10/43) Installing gmp (6.3.0-r3)
+2026-11-11T23:52:30.2939164Z #7 0.672 (11/43) Installing isl26 (0.26-r1)
+2026-11-11T23:52:30.2939573Z #7 0.689 (12/43) Installing mpfr4 (4.2.1_p1-r0)
+2026-11-11T23:52:30.2939750Z #7 0.702 (13/43) Installing mpc1 (1.3.1-r1)
+2026-11-11T23:52:30.2939900Z #7 0.713 (14/43) Installing gcc (14.2.0-r6)
+2026-11-11T23:52:30.2940065Z #7 1.241 (15/43) Installing libstdc++-dev (14.2.0-r6)
+2026-11-11T23:52:30.4038241Z #7 1.351 (16/43) Installing musl-dev (1.2.5-r13)
+2026-11-11T23:52:30.5996460Z #7 1.396 (17/43) Installing g++ (14.2.0-r6)
+2026-11-11T23:52:30.6005524Z #7 1.548 (18/43) Installing make (4.4.1-r3)
+2026-11-11T23:52:30.7114738Z #7 1.559 (19/43) Installing fortify-headers (1.1-r5)
+2026-11-11T23:52:30.7115134Z #7 1.569 (20/43) Installing patch (2.8-r0)
+2026-11-11T23:52:30.7115373Z #7 1.579 (21/43) Installing build-base (0.5-r3)
+2026-11-11T23:52:30.7115619Z #7 1.579 (22/43) Installing acl-libs (2.3.2-r1)
+2026-11-11T23:52:30.7115868Z #7 1.589 (23/43) Installing libbz2 (1.0.8-r6)
+2026-11-11T23:52:30.7116105Z #7 1.599 (24/43) Installing libexpat (2.10.0-r0)
+2026-11-11T23:52:30.7116563Z #7 1.609 (25/43) Installing lz4-libs (1.10.0-r0)
+2026-11-11T23:52:30.7116912Z #7 1.620 (26/43) Installing xz-libs (5.8.4-r0)
+2026-11-11T23:52:30.7117210Z #7 1.631 (27/43) Installing libarchive (3.8.11-r0)
+2026-11-11T23:52:30.7117496Z #7 1.647 (28/43) Installing rhash-libs (1.4.5-r0)
+2026-11-11T23:52:30.7117796Z #7 1.659 (29/43) Installing libuv (1.51.0-r0)
+2026-11-11T23:52:30.8735521Z #7 1.670 (30/43) Installing cmake (3.31.7-r1)
+2026-11-11T23:52:31.1799857Z #7 2.127 (31/43) Installing libffi (3.4.8-r0)
+2026-11-11T23:52:31.4161734Z #7 2.137 (32/43) Installing gdbm (1.24-r0)
+2026-11-11T23:52:31.4162011Z #7 2.147 (33/43) Installing mpdecimal (4.0.1-r0)
+2026-11-11T23:52:31.4162267Z #7 2.159 (34/43) Installing ncurses-terminfo-base (6.5_p20250503-r0)
+2026-11-11T23:52:31.4162487Z #7 2.172 (35/43) Installing libncursesw (6.5_p20250503-r0)
+2026-11-11T23:52:31.4162692Z #7 2.184 (36/43) Installing libpanelw (6.5_p20250503-r0)
+2026-11-11T23:52:31.4162869Z #7 2.194 (37/43) Installing readline (8.2.13-r1)
+2026-11-11T23:52:31.4163035Z #7 2.205 (38/43) Installing sqlite-libs (3.49.2-r1)
+2026-11-11T23:52:31.4163205Z #7 2.223 (39/43) Installing python3 (3.12.16-r0)
+2026-11-11T23:52:31.4163392Z #7 2.363 (40/43) Installing python3-pycache-pyc0 (3.12.16-r0)
+2026-11-11T23:52:31.5216754Z #7 2.457 (41/43) Installing pyc (3.12.16-r0)
+2026-11-11T23:52:31.5217028Z #7 2.457 (42/43) Installing python3-pyc (3.12.16-r0)
+2026-11-11T23:52:31.5217206Z #7 2.457 (43/43) Installing samurai (1.2-r7)
+2026-11-11T23:52:31.5217372Z #7 2.469 Executing busybox-1.37.0-r20.trigger
+2026-11-11T23:52:31.6788802Z #7 2.476 OK: 334 MiB in 59 packages
+2026-11-11T23:52:34.6370990Z #7 DONE 5.6s
+2026-11-11T23:52:34.8439174Z 
+2026-11-11T23:52:34.8439943Z #8 [build 3/8] WORKDIR /src
+2026-11-11T23:52:34.8440224Z #8 DONE 0.0s
+2026-11-11T23:52:34.8440320Z 
+2026-11-11T23:52:34.8440386Z #9 [build 4/8] COPY CMakeLists.txt ./
+2026-11-11T23:52:34.8440559Z #9 DONE 0.0s
+2026-11-11T23:52:34.8440626Z 
+2026-11-11T23:52:34.8440684Z #10 [build 5/8] COPY include ./include
+2026-11-11T23:52:34.8440829Z #10 DONE 0.0s
+2026-11-11T23:52:34.8440922Z 
+2026-11-11T23:52:34.8441012Z #11 [build 6/8] COPY src ./src
+2026-11-11T23:52:34.8441167Z #11 DONE 0.0s
+2026-11-11T23:52:34.8441230Z 
+2026-11-11T23:52:34.8441289Z #12 [build 7/8] COPY tests ./tests
+2026-11-11T23:52:34.8441425Z #12 DONE 0.0s
+2026-11-11T23:52:34.8441486Z 
+2026-11-11T23:52:34.8441740Z #13 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+2026-11-11T23:52:34.8442175Z #13 0.136 -- The CXX compiler identification is GNU 14.2.0
+2026-11-11T23:52:35.0299192Z #13 0.145 -- Detecting CXX compiler ABI info
+2026-11-11T23:52:35.0300024Z #13 0.183 -- Detecting CXX compiler ABI info - done
+2026-11-11T23:52:35.0300282Z #13 0.195 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+2026-11-11T23:52:35.0300520Z #13 0.196 -- Detecting CXX compile features
+2026-11-11T23:52:35.0300866Z #13 0.196 -- Detecting CXX compile features - done
+2026-11-11T23:52:35.0301170Z #13 0.322 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+2026-11-11T23:52:35.2577001Z #13 0.325 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+2026-11-11T23:52:35.2582391Z #13 0.365 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+2026-11-11T23:52:35.2582831Z #13 0.367 -- Found Threads: TRUE
+2026-11-11T23:52:35.2583093Z #13 0.369 -- Configuring done (0.3s)
+2026-11-11T23:52:35.2583499Z #13 0.387 -- Generating done (0.0s)
+2026-11-11T23:52:35.2583783Z #13 0.388 -- Build files have been written to: /build
+2026-11-11T23:52:35.2584873Z #13 0.400 [1/75] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+2026-11-11T23:52:35.2585543Z #13 0.400 [2/75] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+2026-11-11T23:52:37.1705335Z #13 2.463 [3/75] Building CXX object CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o
+2026-11-11T23:52:37.8683420Z #13 3.161 [4/75] Building CXX object CMakeFiles/compressed_path_tests.dir/tests/compressed_path_tests.cpp.o
+2026-11-11T23:52:38.5444090Z #13 3.837 [5/75] Building CXX object CMakeFiles/commit_policy_tests.dir/tests/commit_policy_tests.cpp.o
+2026-11-11T23:52:40.3614885Z #13 5.654 [6/75] Building CXX object CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o
+2026-11-11T23:52:40.7473358Z #13 6.040 [7/75] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+2026-11-11T23:52:43.1964439Z #13 8.489 [8/75] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+2026-11-11T23:52:45.9518018Z #13 11.24 [9/75] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+2026-11-11T23:52:46.3178803Z #13 11.61 [10/75] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+2026-11-11T23:52:48.2669821Z #13 13.56 [11/75] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+2026-11-11T23:52:49.1919581Z #13 14.48 [12/75] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+2026-11-11T23:52:49.8081187Z #13 15.10 [13/75] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+2026-11-11T23:52:50.8587735Z #13 16.15 [14/75] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+2026-11-11T23:52:51.9681159Z #13 17.26 [15/75] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+2026-11-11T23:52:52.4520883Z #13 17.74 [16/75] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+2026-11-11T23:52:53.9179023Z #13 19.21 [17/75] Building CXX object CMakeFiles/reference_index_tests.dir/tests/reference_index_tests.cpp.o
+2026-11-11T23:52:54.9942864Z #13 20.29 [18/75] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+2026-11-11T23:52:55.4511277Z #13 20.74 [19/75] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+2026-11-11T23:52:56.6129061Z #13 21.91 [20/75] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+2026-11-11T23:52:58.2850773Z #13 23.58 [21/75] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+2026-11-11T23:52:59.0324821Z #13 24.32 [22/75] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+2026-11-11T23:53:00.9015219Z #13 26.19 [23/75] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+2026-11-11T23:53:01.6151233Z #13 26.91 [24/75] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+2026-11-11T23:53:02.4071158Z #13 27.70 [25/75] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+2026-11-11T23:53:03.3193715Z #13 28.61 [26/75] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+2026-11-11T23:53:03.9406084Z #13 29.23 [27/75] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+2026-11-11T23:53:04.7671757Z #13 30.06 [28/75] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+2026-11-11T23:53:05.8218104Z #13 31.11 [29/75] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+2026-11-11T23:53:06.7046733Z #13 32.00 [30/75] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+2026-11-11T23:53:07.9586244Z #13 33.25 [31/75] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+2026-11-11T23:53:08.6509862Z #13 33.94 [32/75] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+2026-11-11T23:53:09.8278201Z #13 35.12 [33/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+2026-11-11T23:53:10.5390314Z #13 35.83 [34/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+2026-11-11T23:53:12.6332960Z #13 37.93 [35/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+2026-11-11T23:53:13.8573859Z #13 39.15 [36/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+2026-11-11T23:53:15.0866899Z #13 40.38 [37/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+2026-11-11T23:53:15.9082106Z #13 41.20 [38/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+2026-11-11T23:53:16.1575078Z #13 41.30 [39/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+2026-11-11T23:53:17.2170128Z #13 42.51 [40/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+2026-11-11T23:53:17.8181671Z #13 43.11 [41/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+2026-11-11T23:53:19.2305964Z #13 44.52 [42/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+2026-11-11T23:53:20.6503267Z #13 45.94 [43/75] Linking CXX static library libminivectordb_core.a
+2026-11-11T23:53:20.7671636Z #13 45.96 [44/75] Linking CXX executable validated_snapshot_tests
+2026-11-11T23:53:20.7672403Z #13 45.96 [45/75] Linking CXX executable validated_vector_tests
+2026-11-11T23:53:20.7672699Z #13 45.98 [46/75] Linking CXX executable vector_literal_tests
+2026-11-11T23:53:20.7672909Z #13 45.99 [47/75] Linking CXX executable compressed_path_tests
+2026-11-11T23:53:20.7673115Z #13 45.99 [48/75] Linking CXX executable commit_policy_tests
+2026-11-11T23:53:20.7673321Z #13 46.00 [49/75] Linking CXX executable mixed_filter_cache_tests
+2026-11-11T23:53:20.7673523Z #13 46.01 [50/75] Linking CXX executable typed_scan_tests
+2026-11-11T23:53:20.7673761Z #13 46.03 [51/75] Linking CXX executable vector_scratch_tests
+2026-11-11T23:53:20.7673966Z #13 46.04 [52/75] Linking CXX executable unindexed_snapshot_tests
+2026-11-11T23:53:20.7674182Z #13 46.06 [53/75] Linking CXX executable adversarial_storage_tests
+2026-11-11T23:53:20.8922591Z #13 46.07 [54/75] Linking CXX executable row_allocation_tests
+2026-11-11T23:53:20.8923539Z #13 46.09 [55/75] Linking CXX executable row_validation_tests
+2026-11-11T23:53:20.8923855Z #13 46.09 [56/75] Linking CXX executable text_validation_tests
+2026-11-11T23:53:20.8924222Z #13 46.11 [57/75] Linking CXX executable numeric_sql_tests
+2026-11-11T23:53:20.8924524Z #13 46.11 [58/75] Linking CXX executable scan_snapshot_tests
+2026-11-11T23:53:20.8924860Z #13 46.13 [59/75] Linking CXX executable paired_scan_tests
+2026-11-11T23:53:20.8925194Z #13 46.13 [60/75] Linking CXX executable reference_index_tests
+2026-11-11T23:53:20.8925492Z #13 46.16 [61/75] Linking CXX executable vector_index_tests
+2026-11-11T23:53:20.8925847Z #13 46.16 [62/75] Linking CXX executable data_cache_sql_tests
+2026-11-11T23:53:20.8926395Z #13 46.18 [63/75] Linking CXX executable data_cache_tests
+2026-11-11T23:53:21.0037898Z #13 46.18 [64/75] Linking CXX executable packed_sql_tests
+2026-11-11T23:53:21.0038453Z #13 46.20 [65/75] Linking CXX executable packed_storage_tests
+2026-11-11T23:53:21.0039745Z #13 46.21 [66/75] Linking CXX executable checksum_slicing_tests
+2026-11-11T23:53:21.0040175Z #13 46.22 [67/75] Linking CXX executable index_cache_tests
+2026-11-11T23:53:21.0040553Z #13 46.23 [68/75] Linking CXX executable profile_tests
+2026-11-11T23:53:21.0040926Z #13 46.25 [69/75] Linking CXX executable checksum_tests
+2026-11-11T23:53:21.0041283Z #13 46.26 [70/75] Linking CXX executable batch_tests
+2026-11-11T23:53:21.0041622Z #13 46.27 [71/75] Linking CXX executable selective_tests
+2026-11-11T23:53:21.0041901Z #13 46.27 [72/75] Linking CXX executable minivectordb
+2026-11-11T23:53:21.0042170Z #13 46.30 [73/75] Linking CXX executable sql_tests
+2026-11-11T23:53:21.1717882Z #13 46.30 [74/75] Linking CXX executable namespace_tests
+2026-11-11T23:53:21.1724191Z #13 46.32 [75/75] Linking CXX executable core_tests
+2026-11-11T23:53:21.1724541Z #13 DONE 46.5s
+2026-11-11T23:53:21.3436176Z 
+2026-11-11T23:53:21.3436737Z #14 [test 1/1] WORKDIR /build
+2026-11-11T23:53:21.3437067Z #14 DONE 0.0s
+2026-11-11T23:53:21.3437170Z 
+2026-11-11T23:53:21.3437248Z #15 exporting to image
+2026-11-11T23:53:21.3437436Z #15 exporting layers
+2026-11-11T23:53:22.3438275Z #15 exporting layers 1.2s done
+2026-11-11T23:53:22.3593935Z #15 writing image sha256:69999f0f51e0df4015d26f4d4196af16b28a17e2d863b50ebc5a0c47aa758b1f done
+2026-11-11T23:53:22.3594429Z #15 naming to docker.io/library/mvdb:avx-native done
+2026-11-11T23:53:22.3594697Z #15 DONE 1.2s
+2026-11-11T23:53:28.3060951Z validated vector kernel: 1117 bitwise cases and validation boundaries passed
+2026-11-11T23:53:35.7795681Z validated vector kernel: 1117 bitwise cases and validation boundaries passed
+2026-11-11T23:53:40.6425484Z write complete 445.034 ms; query warm-up
+2026-11-11T23:53:41.8718295Z RESULT r1-bigint-reference
+2026-11-11T23:53:41.8731665Z {"profile_enabled":false,"write_cpu_ms":348.925,"query_cpu_ms":355.361,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":445.034003,"query_unfiltered_ms":284.313633,"query_filtered_ms":70.447227,"query_total_ms":354.76086,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30568,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:53:42.8069618Z write complete 439.351 ms; query warm-up
+2026-11-11T23:53:44.2875071Z RESULT r1-varchar-reference
+2026-11-11T23:53:44.2888332Z {"profile_enabled":false,"write_cpu_ms":347.243,"query_cpu_ms":616.846,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":439.351151,"query_unfiltered_ms":465.287785,"query_filtered_ms":150.940674,"query_total_ms":616.228459,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33340,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:53:45.2443651Z write complete 466.991 ms; query warm-up
+2026-11-11T23:53:46.4682463Z RESULT r1-bigint-avx2
+2026-11-11T23:53:46.4694691Z {"profile_enabled":false,"write_cpu_ms":343.456,"query_cpu_ms":415.376,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":466.990752,"query_unfiltered_ms":341.000967,"query_filtered_ms":73.747674,"query_total_ms":414.748641,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30648,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:53:47.4014477Z write complete 450.06 ms; query warm-up
+2026-11-11T23:53:48.8832267Z RESULT r1-varchar-avx2
+2026-11-11T23:53:48.8844145Z {"profile_enabled":false,"write_cpu_ms":346.732,"query_cpu_ms":657.275,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":450.059901,"query_unfiltered_ms":501.314915,"query_filtered_ms":155.357997,"query_total_ms":656.672912,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33368,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:53:49.8195676Z write complete 448.565 ms; query warm-up
+2026-11-11T23:53:50.9848320Z RESULT r1-bigint-avx2_transposed
+2026-11-11T23:53:50.9861951Z {"profile_enabled":false,"write_cpu_ms":351.558,"query_cpu_ms":342.019,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":448.565039,"query_unfiltered_ms":277.349513,"query_filtered_ms":64.010153,"query_total_ms":341.359666,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30636,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:53:51.9290569Z write complete 472.787 ms; query warm-up
+2026-11-11T23:53:53.2333934Z RESULT r1-varchar-avx2_transposed
+2026-11-11T23:53:53.2346927Z {"profile_enabled":false,"write_cpu_ms":353.565,"query_cpu_ms":492.561,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":472.787176,"query_unfiltered_ms":356.499163,"query_filtered_ms":135.449506,"query_total_ms":491.948669,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33528,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:53:54.1698259Z write complete 458.807 ms; query warm-up
+2026-11-11T23:53:55.3325254Z RESULT r2-bigint-avx2_transposed
+2026-11-11T23:53:55.3337318Z {"profile_enabled":false,"write_cpu_ms":352.067,"query_cpu_ms":347.197,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":458.807076,"query_unfiltered_ms":280.65817,"query_filtered_ms":65.878135,"query_total_ms":346.536305,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30580,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:53:56.2674546Z write complete 451.643 ms; query warm-up
+2026-11-11T23:53:57.6530227Z RESULT r2-varchar-avx2_transposed
+2026-11-11T23:53:57.6543787Z {"profile_enabled":false,"write_cpu_ms":354.661,"query_cpu_ms":518.435,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":451.643075,"query_unfiltered_ms":371.813315,"query_filtered_ms":145.984125,"query_total_ms":517.79744,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33428,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:53:58.6221107Z write complete 480.726 ms; query warm-up
+2026-11-11T23:53:59.9208290Z RESULT r2-bigint-avx2
+2026-11-11T23:53:59.9235263Z {"profile_enabled":false,"write_cpu_ms":367.794,"query_cpu_ms":467.473,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":480.726193,"query_unfiltered_ms":386.276042,"query_filtered_ms":80.535959,"query_total_ms":466.812001,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30676,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:00.8632606Z write complete 455.411 ms; query warm-up
+2026-11-11T23:54:02.3353497Z RESULT r2-varchar-avx2
+2026-11-11T23:54:02.3366706Z {"profile_enabled":false,"write_cpu_ms":360.329,"query_cpu_ms":642.929,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":455.411301,"query_unfiltered_ms":490.343879,"query_filtered_ms":151.943372,"query_total_ms":642.287251,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33392,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:03.3009659Z write complete 481.608 ms; query warm-up
+2026-11-11T23:54:04.4636554Z RESULT r2-bigint-reference
+2026-11-11T23:54:04.4649497Z {"profile_enabled":false,"write_cpu_ms":340.617,"query_cpu_ms":350.025,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":481.607902,"query_unfiltered_ms":282.255717,"query_filtered_ms":67.128143,"query_total_ms":349.38386,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30636,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:05.3553782Z write complete 420.657 ms; query warm-up
+2026-11-11T23:54:06.7748966Z RESULT r2-varchar-reference
+2026-11-11T23:54:06.7823909Z {"profile_enabled":false,"write_cpu_ms":346.262,"query_cpu_ms":589.461,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":420.656627,"query_unfiltered_ms":440.275713,"query_filtered_ms":148.552766,"query_total_ms":588.828479,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33148,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:07.6595998Z write complete 432.569 ms; query warm-up
+2026-11-11T23:54:08.8496486Z RESULT r3-bigint-reference
+2026-11-11T23:54:08.8509859Z {"profile_enabled":false,"write_cpu_ms":342.322,"query_cpu_ms":378.844,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":432.569355,"query_unfiltered_ms":307.516872,"query_filtered_ms":70.692446,"query_total_ms":378.209318,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30612,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:09.7417193Z write complete 423.434 ms; query warm-up
+2026-11-11T23:54:11.1855153Z RESULT r3-varchar-reference
+2026-11-11T23:54:11.1868088Z {"profile_enabled":false,"write_cpu_ms":336.377,"query_cpu_ms":570.831,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":423.433561,"query_unfiltered_ms":423.359979,"query_filtered_ms":146.77269,"query_total_ms":570.132669,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33412,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:12.1157610Z write complete 450.765 ms; query warm-up
+2026-11-11T23:54:13.3893631Z RESULT r3-bigint-avx2
+2026-11-11T23:54:13.3905611Z {"profile_enabled":false,"write_cpu_ms":346.369,"query_cpu_ms":444.151,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":450.764704,"query_unfiltered_ms":365.853046,"query_filtered_ms":77.607682,"query_total_ms":443.460728,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30472,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:14.2645543Z write complete 397.28 ms; query warm-up
+2026-11-11T23:54:15.7355043Z RESULT r3-varchar-avx2
+2026-11-11T23:54:15.7368379Z {"profile_enabled":false,"write_cpu_ms":357.143,"query_cpu_ms":640.064,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":397.2799,"query_unfiltered_ms":484.939948,"query_filtered_ms":154.487687,"query_total_ms":639.427635,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33360,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:16.6134930Z write complete 387.129 ms; query warm-up
+2026-11-11T23:54:17.7632538Z RESULT r3-bigint-avx2_transposed
+2026-11-11T23:54:17.7646033Z {"profile_enabled":false,"write_cpu_ms":348.55,"query_cpu_ms":347.003,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":387.128949,"query_unfiltered_ms":280.975897,"query_filtered_ms":65.418467,"query_total_ms":346.394364,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":30528,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:18.6061413Z write complete 376.27 ms; query warm-up
+2026-11-11T23:54:19.9273570Z RESULT r3-varchar-avx2_transposed
+2026-11-11T23:54:19.9286232Z {"profile_enabled":false,"write_cpu_ms":340.01,"query_cpu_ms":492.805,"write_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"query_profile":{"pread":{"calls":0,"bytes":0,"nanoseconds":0},"pwrite":{"calls":0,"bytes":0,"nanoseconds":0},"fsync":{"calls":0,"bytes":0,"nanoseconds":0},"page_checksum":{"calls":0,"bytes":0,"nanoseconds":0},"row_validation":{"calls":0,"bytes":0,"nanoseconds":0},"row_materialization":{"calls":0,"bytes":0,"nanoseconds":0},"row_decode":{"calls":0,"bytes":0,"nanoseconds":0},"vector_distance":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_branch":{"calls":0,"bytes":0,"nanoseconds":0},"page_read_overflow":{"calls":0,"bytes":0,"nanoseconds":0},"table_scan":{"calls":0,"bytes":0,"nanoseconds":0},"scan_consume":{"calls":0,"bytes":0,"nanoseconds":0},"predicate_evaluation":{"calls":0,"bytes":0,"nanoseconds":0},"vector_scratch_copy":{"calls":0,"bytes":0,"nanoseconds":0}},"rows":10000,"dimensions":128,"queries":1000,"seed":20261109,"sql_batch_size":100,"shuffled_inserts":true,"selective_decode":1,"batch_writes":1,"write_ms":376.269514,"query_unfiltered_ms":355.303481,"query_filtered_ms":136.88736,"query_total_ms":492.190841,"database_bytes":15310848,"insert_file_growth_bytes":15286272,"rows_examined":10000000,"distances_computed":5500000,"vector_values_filtered":0,"vector_values_unfiltered":0,"vector_values_materialized":0,"cells_materialized":20000,"process_maxrss_kib":33404,"local_cgroup_peak_bytes":0,"validated_queries":1000,"recovered_rows":10000,"result_digest":"4d68913ece23dc4c"}
+2026-11-11T23:54:19.9481419Z AVX_SUMMARY {"filter": "bigint", "variant": "reference", "query_ms": [354.76086, 349.38386, 378.209318], "median_ms": 354.76086, "relative_percent": 0.0, "exact_results_agree": true}
+2026-11-11T23:54:19.9482201Z AVX_SUMMARY {"filter": "bigint", "variant": "avx2", "query_ms": [414.748641, 466.812001, 443.460728], "median_ms": 443.460728, "relative_percent": 25.002720987879012, "exact_results_agree": true}
+2026-11-11T23:54:19.9482826Z AVX_SUMMARY {"filter": "bigint", "variant": "avx2_transposed", "query_ms": [341.359666, 346.536305, 346.394364], "median_ms": 346.394364, "relative_percent": -2.3583480996184236, "exact_results_agree": true}
+2026-11-11T23:54:19.9483429Z AVX_SUMMARY {"filter": "varchar", "variant": "reference", "query_ms": [616.228459, 588.828479, 570.132669], "median_ms": 588.828479, "relative_percent": 0.0, "exact_results_agree": true}
+2026-11-11T23:54:19.9484058Z AVX_SUMMARY {"filter": "varchar", "variant": "avx2", "query_ms": [656.672912, 642.287251, 639.427635], "median_ms": 642.287251, "relative_percent": 9.078836011938197, "exact_results_agree": true}
+2026-11-11T23:54:19.9484675Z AVX_SUMMARY {"filter": "varchar", "variant": "avx2_transposed", "query_ms": [491.948669, 517.79744, 492.190841], "median_ms": 492.190841, "relative_percent": -16.41184851726576, "exact_results_agree": true}
+2026-11-11T23:54:19.9607065Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-11-11T23:54:19.9607287Z with:
+2026-11-11T23:54:19.9607438Z   name: native-avx-1-432a05de8754997ae95da6a988f5f0e00fb08e5b
+2026-11-11T23:54:19.9607626Z   path: avx-results/
+2026-11-11T23:54:19.9607742Z   retention-days: 30
+2026-11-11T23:54:19.9607859Z   if-no-files-found: warn
+2026-11-11T23:54:19.9607981Z   compression-level: 6
+2026-11-11T23:54:19.9608096Z   overwrite: false
+2026-11-11T23:54:19.9608211Z   include-hidden-files: false
+2026-11-11T23:54:19.9608345Z ##[endgroup]
+2026-11-11T23:54:20.2298269Z (node:4135) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-11T23:54:20.2298914Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-11T23:54:20.2371401Z With the provided path, there will be 22 files uploaded
+2026-11-11T23:54:20.2373591Z Artifact name is valid!
+2026-11-11T23:54:20.2376112Z Root directory input is valid!
+2026-11-11T23:54:20.5162113Z Beginning upload of artifact content to blob storage
+2026-11-11T23:54:20.5427906Z (node:4135) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-11T23:54:20.7648686Z Uploaded bytes 16999
+2026-11-11T23:54:20.8158721Z Finished uploading artifact content to blob storage!
+2026-11-11T23:54:20.8159440Z SHA256 digest of uploaded artifact zip is 2bb46e848f640b00eb60a30a5a2d3df2cb5097fcd0a2d65c8469e3b0a678a8b1
+2026-11-11T23:54:20.8160252Z Finalizing artifact upload
+2026-11-11T23:54:21.1567247Z Artifact native-avx-1-432a05de8754997ae95da6a988f5f0e00fb08e5b.zip successfully finalized. Artifact ID 13901618561
+2026-11-11T23:54:21.1568987Z Artifact native-avx-1-432a05de8754997ae95da6a988f5f0e00fb08e5b has been successfully uploaded! Final size is 16999 bytes. Artifact ID is 13901618561
+2026-11-11T23:54:21.1572842Z Artifact download URL: https://github.com/juanzhi-gcb/seekdb/actions/runs/43123089803/artifacts/13901618561
+2026-11-11T23:54:21.1757400Z Cleaning up orphan processes
+2026-11-11T23:54:21.2018829Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

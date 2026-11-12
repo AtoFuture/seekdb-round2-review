@@ -1,0 +1,18 @@
+[OUTPUT] 
+Internal ctest changing into directory: /mnt/d/Codex/MiniVectorDB/build/score-first-core
+
+[HANDLER_OUTPUT] 
+Test project /mnt/d/Codex/MiniVectorDB/build/score-first-core
+
+    Start 37: core_unindexed_snapshot
+1/4 Test #37: core_unindexed_snapshot ..........   Passed   17.85 sec
+    Start 39: core_typed_scan
+2/4 Test #39: core_typed_scan ..................   Passed    8.39 sec
+    Start 40: core_mixed_filter_cache
+3/4 Test #40: core_mixed_filter_cache ..........   Passed    1.76 sec
+    Start 42: core_validated_vector
+4/4 Test #42: core_validated_vector ............   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =  28.06 sec

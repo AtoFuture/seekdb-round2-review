@@ -1,0 +1,25 @@
+{
+  "source": "d9a522d4ab9275cc7e5c4c254cec12d8d8c08eea",
+  "transactions": 100,
+  "rounds": 3,
+  "medians": {
+    "two_sync": {
+      "write_seconds": 0.899283,
+      "replay_seconds": 0.0246332,
+      "reopen_seconds": 0.0290227,
+      "file_bytes": 8135600,
+      "write_bytes": 8135600,
+      "write_calls": 200,
+      "fsync_calls": 200
+    },
+    "one_sync": {
+      "write_seconds": 0.497303,
+      "replay_seconds": 0.0248366,
+      "reopen_seconds": 0.0293726,
+      "file_bytes": 8135600,
+      "write_bytes": 8135600,
+      "write_calls": 100,
+      "fsync_calls": 100
+    }
+  }
+}

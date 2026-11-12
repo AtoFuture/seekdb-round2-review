@@ -1,0 +1,16 @@
+{
+  "source": "observed tool execution output",
+  "passed": true,
+  "cases": 472,
+  "store_write_points": [
+    19,
+    20,
+    16
+  ],
+  "sql_write_points": [
+    103,
+    72,
+    68
+  ],
+  "note": "Pre-fix standalone probe; source archived. Expanded final test measures after prior transaction INSERT and also covers 17/25/33-byte root writes."
+}

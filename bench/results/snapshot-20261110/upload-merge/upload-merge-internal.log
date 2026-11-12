@@ -1,0 +1,66 @@
+WARNING: Your kernel does not support swap limit capabilities or the cgroup is not mounted. Memory limited without swap.
+Test project /build
+      Start  1: core_types
+ 1/30 Test  #1: core_types .......................   Passed    0.00 sec
+      Start  2: core_vector
+ 2/30 Test  #2: core_vector ......................   Passed    0.00 sec
+      Start  3: core_storage
+ 3/30 Test  #3: core_storage .....................   Passed   40.62 sec
+      Start  4: core_storage_failure
+ 4/30 Test  #4: core_storage_failure .............   Passed    0.05 sec
+      Start  5: core_namespaces
+ 5/30 Test  #5: core_namespaces ..................   Passed    0.11 sec
+      Start  6: core_codec
+ 6/30 Test  #6: core_codec .......................   Passed    0.01 sec
+      Start  7: core_sql
+ 7/30 Test  #7: core_sql .........................   Passed    0.15 sec
+      Start  8: core_sort
+ 8/30 Test  #8: core_sort ........................   Passed    1.31 sec
+      Start  9: core_sql_crash
+ 9/30 Test  #9: core_sql_crash ...................   Passed    0.10 sec
+      Start 10: core_sql_edges
+10/30 Test #10: core_sql_edges ...................   Passed    0.12 sec
+      Start 11: core_sql_failure
+11/30 Test #11: core_sql_failure .................   Passed    0.36 sec
+      Start 12: core_sql_batch
+12/30 Test #12: core_sql_batch ...................   Passed    8.14 sec
+      Start 13: cli
+13/30 Test #13: cli ..............................   Passed    0.89 sec
+      Start 14: core_selective
+14/30 Test #14: core_selective ...................   Passed    3.24 sec
+      Start 15: core_batches
+15/30 Test #15: core_batches .....................   Passed    1.86 sec
+      Start 16: core_checksum
+16/30 Test #16: core_checksum ....................   Passed    0.29 sec
+      Start 17: core_profile
+17/30 Test #17: core_profile .....................   Passed    0.05 sec
+      Start 18: core_index_cache
+18/30 Test #18: core_index_cache .................   Passed    1.91 sec
+      Start 19: core_checksum_slicing
+19/30 Test #19: core_checksum_slicing ............   Passed    0.54 sec
+      Start 20: core_packed_storage
+20/30 Test #20: core_packed_storage ..............   Passed    2.01 sec
+      Start 21: core_packed_sql
+21/30 Test #21: core_packed_sql ..................   Passed   41.06 sec
+      Start 22: core_data_cache
+22/30 Test #22: core_data_cache ..................   Passed    2.09 sec
+      Start 23: core_data_cache_sql
+23/30 Test #23: core_data_cache_sql ..............   Passed   15.29 sec
+      Start 24: jsonl
+24/30 Test #24: jsonl ............................   Passed    0.45 sec
+      Start 25: core_vector_index
+25/30 Test #25: core_vector_index ................   Passed    9.06 sec
+      Start 26: core_float32_literals
+26/30 Test #26: core_float32_literals ............   Passed    0.23 sec
+      Start 27: core_paired_scan
+27/30 Test #27: core_paired_scan .................   Passed   30.50 sec
+      Start 28: core_scan_snapshot
+28/30 Test #28: core_scan_snapshot ...............   Passed    4.86 sec
+      Start 29: core_numeric_maximum
+29/30 Test #29: core_numeric_maximum .............   Passed    0.16 sec
+      Start 30: core_numeric_ties
+30/30 Test #30: core_numeric_ties ................   Passed    0.48 sec
+
+100% tests passed, 0 tests failed out of 30
+
+Total Test time (real) = 165.98 sec

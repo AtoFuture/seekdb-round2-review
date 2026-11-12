@@ -1,0 +1,6 @@
+{"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 447.766938, "B_bytes": 31793152, "M_bytes": 39436288, "passed": true}
+{"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 438.834016, "B_bytes": 15753216, "M_bytes": 23146496, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 743.052257, "B_bytes": 31793152, "M_bytes": 44109824, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 693.27042, "B_bytes": 15753216, "M_bytes": 27770880, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 717.388474, "B_bytes": 43196416, "M_bytes": 55898112, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 713.770707, "B_bytes": 22179840, "M_bytes": 34377728, "passed": true}

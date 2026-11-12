@@ -1,0 +1,123 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 978B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B 0.0s done
+#3 DONE 0.1s
+
+#4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 110.35kB 0.3s done
+#5 DONE 0.3s
+
+#6 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+#6 CACHED
+
+#7 [build 3/8] WORKDIR /src
+#7 CACHED
+
+#8 [build 4/8] COPY CMakeLists.txt ./
+#8 DONE 0.1s
+
+#9 [build 5/8] COPY include ./include
+#9 DONE 0.1s
+
+#10 [build 6/8] COPY src ./src
+#10 DONE 0.1s
+
+#11 [build 7/8] COPY tests ./tests
+#11 DONE 0.1s
+
+#12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+#12 0.375 -- The CXX compiler identification is GNU 14.2.0
+#12 0.388 -- Detecting CXX compiler ABI info
+#12 0.439 -- Detecting CXX compiler ABI info - done
+#12 0.453 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#12 0.453 -- Detecting CXX compile features
+#12 0.454 -- Detecting CXX compile features - done
+#12 0.621 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+#12 0.624 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+#12 0.671 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+#12 0.673 -- Found Threads: TRUE
+#12 0.674 -- Configuring done (0.5s)
+#12 0.705 -- Generating done (0.0s)
+#12 0.705 -- Build files have been written to: /build
+#12 0.718 [1/59] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+#12 0.718 [2/59] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+#12 4.459 [3/59] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+#12 5.098 [4/59] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+#12 6.009 [5/59] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+#12 6.683 [6/59] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+#12 7.835 [7/59] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+#12 9.092 [8/59] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+#12 9.525 [9/59] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+#12 11.21 [10/59] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+#12 12.29 [11/59] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+#12 13.02 [12/59] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+#12 15.62 [13/59] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+#12 15.70 [14/59] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+#12 18.51 [15/59] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+#12 18.53 [16/59] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+#12 20.29 [17/59] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+#12 20.34 [18/59] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+#12 21.94 [19/59] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+#12 22.08 [20/59] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+#12 23.97 [21/59] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+#12 24.26 [22/59] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+#12 26.27 [23/59] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+#12 27.12 [24/59] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+#12 27.60 [25/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+#12 29.28 [26/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+#12 31.39 [27/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+#12 31.60 [28/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+#12 33.68 [29/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+#12 33.99 [30/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+#12 34.65 [31/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+#12 35.53 [32/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+#12 36.54 [33/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+#12 37.69 [34/59] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+#12 38.46 [35/59] Linking CXX static library libminivectordb_core.a
+#12 38.48 [36/59] Linking CXX executable vector_scratch_tests
+#12 38.49 [37/59] Linking CXX executable unindexed_snapshot_tests
+#12 38.51 [38/59] Linking CXX executable adversarial_storage_tests
+#12 38.51 [39/59] Linking CXX executable row_allocation_tests
+#12 38.53 [40/59] Linking CXX executable row_validation_tests
+#12 38.54 [41/59] Linking CXX executable text_validation_tests
+#12 38.55 [42/59] Linking CXX executable numeric_sql_tests
+#12 38.56 [43/59] Linking CXX executable scan_snapshot_tests
+#12 38.59 [44/59] Linking CXX executable paired_scan_tests
+#12 38.59 [45/59] Linking CXX executable vector_index_tests
+#12 38.62 [46/59] Linking CXX executable data_cache_sql_tests
+#12 38.62 [47/59] Linking CXX executable data_cache_tests
+#12 38.64 [48/59] Linking CXX executable packed_sql_tests
+#12 38.65 [49/59] Linking CXX executable packed_storage_tests
+#12 38.67 [50/59] Linking CXX executable checksum_slicing_tests
+#12 38.67 [51/59] Linking CXX executable index_cache_tests
+#12 38.69 [52/59] Linking CXX executable profile_tests
+#12 38.69 [53/59] Linking CXX executable checksum_tests
+#12 38.71 [54/59] Linking CXX executable batch_tests
+#12 38.71 [55/59] Linking CXX executable selective_tests
+#12 38.73 [56/59] Linking CXX executable minivectordb
+#12 38.75 [57/59] Linking CXX executable sql_tests
+#12 38.76 [58/59] Linking CXX executable namespace_tests
+#12 38.78 [59/59] Linking CXX executable core_tests
+#12 DONE 38.8s
+
+#13 [test 1/1] WORKDIR /build
+#13 DONE 0.1s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 0.2s done
+#14 writing image sha256:a5e6e4bd0ed4493e8525d91d67867c32574e5a5ab8ffc5f67387c79177ff00f7 done
+#14 naming to docker.io/library/minivectordb-core:unindexed-final 0.0s done
+#14 DONE 0.2s
+WARNING: current commit information was not captured by the build: git was not found in the system: exec: "git": executable file not found in $PATH

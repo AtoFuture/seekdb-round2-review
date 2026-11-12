@@ -1,0 +1,123 @@
+{
+  "files": [
+    {
+      "sha256": "fe5eac0ee7effee7e51ba17ff7917d47bed112ce93dc7f69be42af85d93e9624",
+      "bytes": 948,
+      "path": "Dockerfile"
+    },
+    {
+      "sha256": "92b4dc5bdb954dab18b8bb13a1db935c794472ef0d3d7500b562ee0087058100",
+      "bytes": 2698,
+      "path": "include/minivectordb/database.hpp"
+    },
+    {
+      "sha256": "939de73b43268d526e6d770d8257dfaef09afe79f71c71278e87eaae2da3286b",
+      "bytes": 3346,
+      "path": "include/minivectordb/store.hpp"
+    },
+    {
+      "sha256": "b8e278052f8de3a534f8a43ddf48a4bcd8916f56c81ec1c14af614ab4fc2ddb6",
+      "bytes": 22036,
+      "path": "src/storage/store.cpp"
+    },
+    {
+      "sha256": "dee8c7e7233ea486432765cd6f1a06744edcca10afafc84b7b277a4d98330793",
+      "bytes": 12774,
+      "path": "src/sql/executor.cpp"
+    },
+    {
+      "sha256": "9fb97561c944f76a175dce6ad86b1e0b48452cddff654c7fbd99f4a7388462f3",
+      "bytes": 10620,
+      "path": "tests/data_cache_tests.cpp"
+    },
+    {
+      "sha256": "e2b4c1f6c7faf0b16a48c28e908aa0aa60c22f0e3542ed4c178b4529e21077ae",
+      "bytes": 9434,
+      "path": "tests/data_cache_sql_tests.cpp"
+    },
+    {
+      "sha256": "fcac44e6340bebc68d894143b98b5c6606d828e5190beea19c0ae301df094013",
+      "bytes": 16713,
+      "path": "bench/buffer.cpp"
+    },
+    {
+      "sha256": "9c5768c7adfd6a7fe0d01c713be6a462cd8fa560d663645f8b1e77bf5400b9fb",
+      "bytes": 6858,
+      "path": "bench/run_buffer.py"
+    },
+    {
+      "sha256": "7e143fbf5c062ca36ced979764d3bfd69a6f1fb9bf986aa514a5f466ee722c2b",
+      "bytes": 35095,
+      "path": "agent/conversation.json"
+    },
+    {
+      "sha256": "7e143fbf5c062ca36ced979764d3bfd69a6f1fb9bf986aa514a5f466ee722c2b",
+      "bytes": 35095,
+      "path": "conversation.json"
+    },
+    {
+      "sha256": "305257678d2a2849fc68816cc281eba7bbbb32c05225983e1283c6d7756a6582",
+      "bytes": 6525,
+      "path": "bench/results/buffer-baseline-large-profile.jsonl"
+    },
+    {
+      "sha256": "35ef33ed4c5482f232c602782bc8ea507a6c7feec7642432545d764e00956e21",
+      "bytes": 17894,
+      "path": "bench/results/buffer-diagnostic.jsonl"
+    },
+    {
+      "sha256": "dc75549c5ab110785511c7dd275c79b5a818310fefce3818a1a9782a564a1b37",
+      "bytes": 51860,
+      "path": "bench/results/buffer-large.jsonl"
+    },
+    {
+      "sha256": "a3f2ac50be6653c07dcebb6fc2e8fe0464ebb7f05785a189186ce985c8b2fc8c",
+      "bytes": 20697,
+      "path": "bench/results/buffer-over-capacity.jsonl"
+    },
+    {
+      "sha256": "f7242d6968be9fc78b4fa3be2652f1108bef4216a55efa1e91f0b6fd5b7ac957",
+      "bytes": 51230,
+      "path": "bench/results/buffer-small.jsonl"
+    },
+    {
+      "sha256": "eb45f79154735a30760d0d1f180fd9d946c94d3f7779a80a40e4d807c7d6d92a",
+      "bytes": 122793,
+      "path": "bench/results/buffer-varied.jsonl"
+    },
+    {
+      "sha256": "9f92e09e2d0b91eee6be1f4b14287a48bb48072aa9d306ccf24facad9c2878e1",
+      "bytes": 7208,
+      "path": "bench/results/buffer-baseline-large-profile.summary.json"
+    },
+    {
+      "sha256": "7e29c1dbe3070606a7c62b1843796063685ae055abe773a27314a4c8be7a7b5d",
+      "bytes": 19707,
+      "path": "bench/results/buffer-diagnostic.summary.json"
+    },
+    {
+      "sha256": "fa9e028d38e9632d4e38eed3cd449d35c254647415974463462ef8ae9841e7bb",
+      "bytes": 4419,
+      "path": "bench/results/buffer-large.summary.json"
+    },
+    {
+      "sha256": "5c53b9d71e4825b0ba1d2f52b640c362ed4de3623b7e05681283364a9c0259db",
+      "bytes": 1912,
+      "path": "bench/results/buffer-over-capacity.summary.json"
+    },
+    {
+      "sha256": "b2754cf65579dda3923d1a64dad11e993dbefef18105321bfc8d24d8c0b76238",
+      "bytes": 4346,
+      "path": "bench/results/buffer-small.summary.json"
+    },
+    {
+      "sha256": "185b52f0cb4148f82fd953573dc209787d31ac1770dd92e280c20ae671f95c1e",
+      "bytes": 10152,
+      "path": "bench/results/buffer-varied.summary.json"
+    }
+  ],
+  "final_change": "SQL data16MiB/scan0 defaults; all benchmark options explicit",
+  "date": "2026-11-10",
+  "uploaded_baseline": "bdae610c073a215d1fe85727ef85a2a8062ea238",
+  "measured_core": "250375570ff8b4f4db747b6ab6dc5b667163b9e1"
+}

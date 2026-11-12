@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="3"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="301"
+	timestamp="2026-11-10T13:53:31"
+	>
+	<testcase name="protocol_adversarial" classname="protocol_adversarial" time="0.633048" status="run">
+		<properties/>
+		<system-out>......
+----------------------------------------------------------------------
+Ran 6 tests in 0.544s
+
+OK
+</system-out>
+	</testcase>
+	<testcase name="sql_adversarial" classname="sql_adversarial" time="45.9462" status="run">
+		<properties/>
+		<system-out>{"status": "PASS", "seed": 548219, "checks": 1344, "rows_initial": 584, "transaction_cycles": 56, "coverage": ["4096-byte spill sort", "multi-distance expressions", "distance ties", "INT64 extreme keys", "LIMIT extremes", "Unicode/control VARCHAR", "quoted identifiers", "2 indexes/table", "cross-table snapshots", "index/table rollback/recreation", "failed multirow inserts", "failed DDL", "snapshot invalidation", "shutdown rollback", "reopen"]}
+</system-out>
+	</testcase>
+	<testcase name="storage_adversarial" classname="storage_adversarial" time="254.936" status="run">
+		<properties/>
+		<system-out>store kind=0 writepoints=19
+store kind=1 writepoints=20
+store kind=2 writepoints=16
+UPDATE t SET n='new',v=[999,0] writepoints=103
+DELETE FROM t writepoints=72
+CREATE VECTOR INDEX third ON t(v) writepoints=68
+PASS adversarial storage cases=475
+</system-out>
+	</testcase>
+</testsuite>

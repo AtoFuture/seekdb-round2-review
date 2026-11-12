@@ -1,0 +1,265 @@
+{
+  "scope": "Original downloaded Actions artifacts retained locally; compressed repository archives retain all result and build files except regenerable oracle-input.bin. Excluded inputs retain their hashes below and can be regenerated from the checked-in generator and recorded seed. No sample or failure removed.",
+  "artifacts": [
+    {
+      "stage": 7,
+      "host": 1,
+      "original_zip": "native-stage7-1-results.zip",
+      "original_zip_bytes": 12963960,
+      "original_zip_sha256": "47f16c1bd441b47126d0fc765fba78b5cc255ee1438ed42dc795678fcb836110",
+      "repo_archive": "stage7-raw-results.tar.xz",
+      "excluded_regenerable_inputs": [
+        {
+          "path": "formal-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "formal-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        }
+      ]
+    },
+    {
+      "stage": 7,
+      "host": 2,
+      "original_zip": "native-stage7-2-results.zip",
+      "original_zip_bytes": 12991845,
+      "original_zip_sha256": "c0f4026561b954f0adc8991c9d97fe6e65f48bb57e5836dbf117fc29b966b719",
+      "repo_archive": "stage7-raw-results.tar.xz",
+      "excluded_regenerable_inputs": [
+        {
+          "path": "formal-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "formal-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "host": 1,
+      "original_zip": "native-stage8-1-results.zip",
+      "original_zip_bytes": 13011452,
+      "original_zip_sha256": "8e5ac9019d6b7310870b832e36eac4953d6211b1eecd536c845a65056b62ca5e",
+      "repo_archive": "stage8-raw-results.tar.xz",
+      "excluded_regenerable_inputs": [
+        {
+          "path": "formal-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "formal-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        }
+      ]
+    },
+    {
+      "stage": 8,
+      "host": 2,
+      "original_zip": "native-stage8-2-results.zip",
+      "original_zip_bytes": 12958583,
+      "original_zip_sha256": "6a17abc1f42fd0bcd199d52adac08520a73de81c0670f819a4c30a03c1822176",
+      "repo_archive": "stage8-raw-results.tar.xz",
+      "excluded_regenerable_inputs": [
+        {
+          "path": "formal-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "formal-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "host": 1,
+      "original_zip": "native-stage9-1-results.zip",
+      "original_zip_bytes": 29294750,
+      "original_zip_sha256": "55b34ec8de9ff46208a555b729345d53f93407117bcaeb40198d8f8a5df31533",
+      "repo_archive": "stage9-raw-results.tar.xz",
+      "excluded_regenerable_inputs": [
+        {
+          "path": "formal-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "formal-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "overflow-bigint/oracle-input.bin",
+          "bytes": 15411212,
+          "sha256": "d34d2883546be96eb57684287542c83ecc8fb59ba7b615c77f2e4e714c030d12"
+        },
+        {
+          "path": "overflow-varchar/oracle-input.bin",
+          "bytes": 15411212,
+          "sha256": "d34d2883546be96eb57684287542c83ecc8fb59ba7b615c77f2e4e714c030d12"
+        },
+        {
+          "path": "previous-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        }
+      ]
+    },
+    {
+      "stage": 9,
+      "host": 2,
+      "original_zip": "native-stage9-2-results.zip",
+      "original_zip_bytes": 12950797,
+      "original_zip_sha256": "8f58052be23eef56ffdf73f6ffd8639526807301d230ed8a9659ede49e585595",
+      "repo_archive": "stage9-raw-results.tar.xz",
+      "excluded_regenerable_inputs": [
+        {
+          "path": "formal-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "formal-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "host": 1,
+      "original_zip": "native-stage10-1-results.zip",
+      "original_zip_bytes": 29293735,
+      "original_zip_sha256": "7c317325a180708154da59bcfce9cfd3cd492c6b72bffc511ea29c4301235df1",
+      "repo_archive": "stage10-raw-results.tar.xz",
+      "excluded_regenerable_inputs": [
+        {
+          "path": "formal-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "formal-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "overflow-bigint/oracle-input.bin",
+          "bytes": 15411212,
+          "sha256": "d34d2883546be96eb57684287542c83ecc8fb59ba7b615c77f2e4e714c030d12"
+        },
+        {
+          "path": "overflow-varchar/oracle-input.bin",
+          "bytes": 15411212,
+          "sha256": "d34d2883546be96eb57684287542c83ecc8fb59ba7b615c77f2e4e714c030d12"
+        },
+        {
+          "path": "previous-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        }
+      ]
+    },
+    {
+      "stage": 10,
+      "host": 2,
+      "original_zip": "native-stage10-2-results.zip",
+      "original_zip_bytes": 12948387,
+      "original_zip_sha256": "113fb9a0d13cbfa01ec36f6ad0079a1e93dc303f5d83316ccfc4c55983896a90",
+      "repo_archive": "stage10-raw-results.tar.xz",
+      "excluded_regenerable_inputs": [
+        {
+          "path": "formal-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "formal-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-bigint/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        },
+        {
+          "path": "previous-varchar/oracle-input.bin",
+          "bytes": 5632012,
+          "sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424"
+        }
+      ]
+    }
+  ]
+}

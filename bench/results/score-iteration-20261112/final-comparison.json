@@ -1,0 +1,572 @@
+{
+  "formal_baseline": "aea69813bb6cfb1b0abea3d892db0d4c32517829",
+  "formal_score": 1630.670965,
+  "candidate_source": "c09d76bf0919c8a2cbce8835f021a622f65fa26b",
+  "scope": "Local generated workloads on native x86 shared runners, not official scores",
+  "hosts": [
+    {
+      "job": 130893164949,
+      "cpu": "AMD EPYC 9V74 80-Core Processor",
+      "avx512f": false,
+      "scenarios": {
+        "formal-bigint": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 1095.387534,
+              "B_bytes": 15753216,
+              "M_bytes": 23293952
+            },
+            "candidate": {
+              "T_ms": 938.009313,
+              "B_bytes": 15753216,
+              "M_bytes": 23326720
+            },
+            "percent_change": {
+              "T_ms": -14.367355489733002,
+              "B_bytes": 0,
+              "M_bytes": 0.14067170740283963
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 1323.643087,
+              "B_bytes": 15753216,
+              "M_bytes": 28229632
+            },
+            "candidate": {
+              "T_ms": 741.749807,
+              "B_bytes": 15753216,
+              "M_bytes": 28184576
+            },
+            "percent_change": {
+              "T_ms": -43.96149428157743,
+              "B_bytes": 0,
+              "M_bytes": -0.15960533952408262
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 1332.211978,
+              "B_bytes": 22179840,
+              "M_bytes": 34938880
+            },
+            "candidate": {
+              "T_ms": 739.298168,
+              "B_bytes": 16740352,
+              "M_bytes": 29249536
+            },
+            "percent_change": {
+              "T_ms": -44.505966001755915,
+              "B_bytes": -24.524469067405352,
+              "M_bytes": -16.28370457209848
+            }
+          }
+        },
+        "formal-varchar": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 1092.149031,
+              "B_bytes": 15753216,
+              "M_bytes": 23351296
+            },
+            "candidate": {
+              "T_ms": 945.99753,
+              "B_bytes": 15753216,
+              "M_bytes": 23334912
+            },
+            "percent_change": {
+              "T_ms": -13.382010774315278,
+              "B_bytes": 0,
+              "M_bytes": -0.07016312927556889
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 1765.998308,
+              "B_bytes": 15753216,
+              "M_bytes": 31223808
+            },
+            "candidate": {
+              "T_ms": 785.29311,
+              "B_bytes": 15753216,
+              "M_bytes": 29442048
+            },
+            "percent_change": {
+              "T_ms": -55.53262387383895,
+              "B_bytes": 0,
+              "M_bytes": -5.706414797323889
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 1754.432225,
+              "B_bytes": 22179840,
+              "M_bytes": 37855232
+            },
+            "candidate": {
+              "T_ms": 805.733943,
+              "B_bytes": 16740352,
+              "M_bytes": 30482432
+            },
+            "percent_change": {
+              "T_ms": -54.07437622732905,
+              "B_bytes": -24.524469067405352,
+              "M_bytes": -19.47630383033976
+            }
+          }
+        },
+        "previous-bigint": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 947.879859,
+              "B_bytes": 15753216,
+              "M_bytes": 23298048
+            },
+            "candidate": {
+              "T_ms": 975.354051,
+              "B_bytes": 15753216,
+              "M_bytes": 23429120
+            },
+            "percent_change": {
+              "T_ms": 2.898488847414149,
+              "B_bytes": 0,
+              "M_bytes": 0.5625879043600568
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 744.427595,
+              "B_bytes": 15753216,
+              "M_bytes": 28250112
+            },
+            "candidate": {
+              "T_ms": 743.695034,
+              "B_bytes": 15753216,
+              "M_bytes": 28196864
+            },
+            "percent_change": {
+              "T_ms": -0.09840594369692202,
+              "B_bytes": 0,
+              "M_bytes": -0.18848774829636206
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 744.74967,
+              "B_bytes": 16740352,
+              "M_bytes": 29306880
+            },
+            "candidate": {
+              "T_ms": 748.86309,
+              "B_bytes": 16740352,
+              "M_bytes": 29310976
+            },
+            "percent_change": {
+              "T_ms": 0.5523225005255927,
+              "B_bytes": 0,
+              "M_bytes": 0.013976240391344597
+            }
+          }
+        },
+        "previous-varchar": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 960.15065,
+              "B_bytes": 15753216,
+              "M_bytes": 23474176
+            },
+            "candidate": {
+              "T_ms": 954.815923,
+              "B_bytes": 15753216,
+              "M_bytes": 23334912
+            },
+            "percent_change": {
+              "T_ms": -0.5556135383546379,
+              "B_bytes": 0,
+              "M_bytes": -0.5932647007503067
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 791.007093,
+              "B_bytes": 15753216,
+              "M_bytes": 29458432
+            },
+            "candidate": {
+              "T_ms": 792.081488,
+              "B_bytes": 15753216,
+              "M_bytes": 29478912
+            },
+            "percent_change": {
+              "T_ms": 0.1358262156569534,
+              "B_bytes": 0,
+              "M_bytes": 0.06952169076752668
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 791.895618,
+              "B_bytes": 16740352,
+              "M_bytes": 30527488
+            },
+            "candidate": {
+              "T_ms": 793.331468,
+              "B_bytes": 16740352,
+              "M_bytes": 30543872
+            },
+            "percent_change": {
+              "T_ms": 0.1813180888191157,
+              "B_bytes": 0,
+              "M_bytes": 0.05366966322286615
+            }
+          }
+        },
+        "overflow-bigint": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 3332.7082995,
+              "B_bytes": 59916288,
+              "M_bytes": 68061184
+            },
+            "candidate": {
+              "T_ms": 2928.748842,
+              "B_bytes": 59916288,
+              "M_bytes": 68124672
+            },
+            "percent_change": {
+              "T_ms": -12.121056546131125,
+              "B_bytes": 0,
+              "M_bytes": 0.09328077513315325
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 5747.8763675,
+              "B_bytes": 59916288,
+              "M_bytes": 75436032
+            },
+            "candidate": {
+              "T_ms": 5143.704069,
+              "B_bytes": 59916288,
+              "M_bytes": 75325440
+            },
+            "percent_change": {
+              "T_ms": -10.511226405566898,
+              "B_bytes": 0,
+              "M_bytes": -0.14660368138132984
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 9830.492459500001,
+              "B_bytes": 79138816,
+              "M_bytes": 95145984
+            },
+            "candidate": {
+              "T_ms": 5962.490593500001,
+              "B_bytes": 62820352,
+              "M_bytes": 78409728
+            },
+            "percent_change": {
+              "T_ms": -39.34697963439295,
+              "B_bytes": -20.620050722012316,
+              "M_bytes": -17.59008136381247
+            }
+          }
+        },
+        "overflow-varchar": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 3365.2743105,
+              "B_bytes": 59916288,
+              "M_bytes": 67909632
+            },
+            "candidate": {
+              "T_ms": 2968.9521955,
+              "B_bytes": 59916288,
+              "M_bytes": 67895296
+            },
+            "percent_change": {
+              "T_ms": -11.77681456050802,
+              "B_bytes": 0,
+              "M_bytes": -0.021110407430868783
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 5898.586271,
+              "B_bytes": 59916288,
+              "M_bytes": 75327488
+            },
+            "candidate": {
+              "T_ms": 5202.001561,
+              "B_bytes": 59916288,
+              "M_bytes": 75302912
+            },
+            "percent_change": {
+              "T_ms": -11.809350206925206,
+              "B_bytes": 0,
+              "M_bytes": -0.03262554036050913
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 10058.777517999999,
+              "B_bytes": 79138816,
+              "M_bytes": 95107072
+            },
+            "candidate": {
+              "T_ms": 6051.22839,
+              "B_bytes": 62820352,
+              "M_bytes": 78495744
+            },
+            "percent_change": {
+              "T_ms": -39.841313925360836,
+              "B_bytes": -20.620050722012316,
+              "M_bytes": -17.465923038825125
+            }
+          }
+        }
+      }
+    },
+    {
+      "job": 130893165273,
+      "cpu": "AMD EPYC 9V74 80-Core Processor",
+      "avx512f": true,
+      "scenarios": {
+        "formal-bigint": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 1525.681293,
+              "B_bytes": 15753216,
+              "M_bytes": 23015424
+            },
+            "candidate": {
+              "T_ms": 994.465706,
+              "B_bytes": 15753216,
+              "M_bytes": 23027712
+            },
+            "percent_change": {
+              "T_ms": -34.81825394578002,
+              "B_bytes": 0,
+              "M_bytes": 0.05339028296849069
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 1034.954973,
+              "B_bytes": 15753216,
+              "M_bytes": 27578368
+            },
+            "candidate": {
+              "T_ms": 554.133393,
+              "B_bytes": 15753216,
+              "M_bytes": 27582464
+            },
+            "percent_change": {
+              "T_ms": -46.458212438581135,
+              "B_bytes": 0,
+              "M_bytes": 0.014852220406957883
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 1038.460232,
+              "B_bytes": 22179840,
+              "M_bytes": 34193408
+            },
+            "candidate": {
+              "T_ms": 559.763324,
+              "B_bytes": 16740352,
+              "M_bytes": 28610560
+            },
+            "percent_change": {
+              "T_ms": -46.09679728207444,
+              "B_bytes": -24.524469067405352,
+              "M_bytes": -16.32726401533301
+            }
+          }
+        },
+        "formal-varchar": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 944.161545,
+              "B_bytes": 15753216,
+              "M_bytes": 23019520
+            },
+            "candidate": {
+              "T_ms": 869.618456,
+              "B_bytes": 15753216,
+              "M_bytes": 23011328
+            },
+            "percent_change": {
+              "T_ms": -7.895162580467097,
+              "B_bytes": 0,
+              "M_bytes": -0.0355871886120962
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 1363.018789,
+              "B_bytes": 15753216,
+              "M_bytes": 30588928
+            },
+            "candidate": {
+              "T_ms": 596.64852,
+              "B_bytes": 15753216,
+              "M_bytes": 28823552
+            },
+            "percent_change": {
+              "T_ms": -56.22595045533154,
+              "B_bytes": 0,
+              "M_bytes": -5.771290840921262
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 1367.865598,
+              "B_bytes": 22179840,
+              "M_bytes": 37216256
+            },
+            "candidate": {
+              "T_ms": 591.390767,
+              "B_bytes": 16740352,
+              "M_bytes": 29859840
+            },
+            "percent_change": {
+              "T_ms": -56.76543310507325,
+              "B_bytes": -24.524469067405352,
+              "M_bytes": -19.766674003962137
+            }
+          }
+        },
+        "previous-bigint": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 1409.792066,
+              "B_bytes": 15753216,
+              "M_bytes": 23044096
+            },
+            "candidate": {
+              "T_ms": 1018.782738,
+              "B_bytes": 15753216,
+              "M_bytes": 23019520
+            },
+            "percent_change": {
+              "T_ms": -27.735248156801585,
+              "B_bytes": 0,
+              "M_bytes": -0.10664770707430327
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 569.284833,
+              "B_bytes": 15753216,
+              "M_bytes": 27561984
+            },
+            "candidate": {
+              "T_ms": 546.225224,
+              "B_bytes": 15753216,
+              "M_bytes": 27574272
+            },
+            "percent_change": {
+              "T_ms": -4.050627675865027,
+              "B_bytes": 0,
+              "M_bytes": 0.04458314757020965
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 573.111055,
+              "B_bytes": 16740352,
+              "M_bytes": 28602368
+            },
+            "candidate": {
+              "T_ms": 549.64161,
+              "B_bytes": 16740352,
+              "M_bytes": 28594176
+            },
+            "percent_change": {
+              "T_ms": -4.095095495933155,
+              "B_bytes": 0,
+              "M_bytes": -0.02864098524989478
+            }
+          }
+        },
+        "previous-varchar": {
+          "write/unindexed": {
+            "reference": {
+              "T_ms": 832.743424,
+              "B_bytes": 15753216,
+              "M_bytes": 23019520
+            },
+            "candidate": {
+              "T_ms": 1138.10419,
+              "B_bytes": 15753216,
+              "M_bytes": 23150592
+            },
+            "percent_change": {
+              "T_ms": 36.66924975921515,
+              "B_bytes": 0,
+              "M_bytes": 0.5693950177935836
+            }
+          },
+          "query/unindexed": {
+            "reference": {
+              "T_ms": 604.793325,
+              "B_bytes": 15753216,
+              "M_bytes": 28819456
+            },
+            "candidate": {
+              "T_ms": 585.775069,
+              "B_bytes": 15753216,
+              "M_bytes": 28819456
+            },
+            "percent_change": {
+              "T_ms": -3.1445876159430064,
+              "B_bytes": 0,
+              "M_bytes": 0
+            }
+          },
+          "query/indexed": {
+            "reference": {
+              "T_ms": 608.371181,
+              "B_bytes": 16740352,
+              "M_bytes": 29851648
+            },
+            "candidate": {
+              "T_ms": 587.688736,
+              "B_bytes": 16740352,
+              "M_bytes": 29859840
+            },
+            "percent_change": {
+              "T_ms": -3.3996424626826727,
+              "B_bytes": 0,
+              "M_bytes": 0.027442371020858225
+            }
+          }
+        }
+      }
+    }
+  ],
+  "correctness": {
+    "internal": 49,
+    "public": 20,
+    "standard_sessions": 144,
+    "standard_timed_queries": 96000,
+    "overflow_sessions": 24,
+    "overflow_timed_queries": 1600,
+    "all_correctness_checks_passed": true
+  },
+  "unresolved_report": {
+    "text": "正确性门槛未通过（失败用例数：1）。原因：JSON response timeout（未及时收到JSON响应，请检查换行、flush和程序阻塞） × 1。未执行性能评测。\n这个可能会影响我们的那个prompt测评吗",
+    "commit": null,
+    "prompt_stage_status": "unknown"
+  },
+  "limitations": [
+    "Shared host and generated data; no official frozen baseline or T/B/M breakdown.",
+    "Large write timing dispersion and regressions are preserved.",
+    "All result files are retained in raw archives; only regenerable binary input copies are omitted with hashes.",
+    "Local material validation does not supply an official Prompt score."
+  ]
+}

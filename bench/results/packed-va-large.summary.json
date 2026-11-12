@@ -1,0 +1,67 @@
+{
+  "source": "46c92cb156b5f4f9c96ff88dd2a87165761f5f6a",
+  "rows": 10000,
+  "queries": 200,
+  "rounds": 3,
+  "medians": {
+    "uniform": {
+      "one_row": {
+        "query_ms": 8709.65,
+        "pages_read": 2000200,
+        "checksum_bytes": 8192819200,
+        "distance_evaluations": 1125000,
+        "pruned_rows": 0,
+        "file_bytes": 40964096,
+        "all_formats_build_ms": 118.956
+      },
+      "packed": {
+        "query_ms": 4682.25,
+        "pages_read": 286000,
+        "checksum_bytes": 1171456000,
+        "distance_evaluations": 1125000,
+        "pruned_rows": 0,
+        "file_bytes": 5857280,
+        "all_formats_build_ms": 118.956
+      },
+      "packed_va": {
+        "query_ms": 3095.99,
+        "pages_read": 119990,
+        "checksum_bytes": 491479040,
+        "distance_evaluations": 107599,
+        "pruned_rows": 1017401,
+        "file_bytes": 6615040,
+        "all_formats_build_ms": 118.956
+      }
+    },
+    "clustered": {
+      "one_row": {
+        "query_ms": 8641.13,
+        "pages_read": 2000200,
+        "checksum_bytes": 8192819200,
+        "distance_evaluations": 1125000,
+        "pruned_rows": 0,
+        "file_bytes": 40964096,
+        "all_formats_build_ms": 112.234
+      },
+      "packed": {
+        "query_ms": 4672.36,
+        "pages_read": 286000,
+        "checksum_bytes": 1171456000,
+        "distance_evaluations": 1125000,
+        "pruned_rows": 0,
+        "file_bytes": 5857280,
+        "all_formats_build_ms": 112.234
+      },
+      "packed_va": {
+        "query_ms": 2826.38,
+        "pages_read": 287325,
+        "checksum_bytes": 1176883200,
+        "distance_evaluations": 252825,
+        "pruned_rows": 872175,
+        "file_bytes": 6615040,
+        "all_formats_build_ms": 112.234
+      }
+    }
+  },
+  "validated_queries": 3600
+}

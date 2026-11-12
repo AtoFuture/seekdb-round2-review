@@ -1,0 +1,33 @@
+{
+  "scope": "local_packaging_only",
+  "local_packaging_only": true,
+  "source": "git_commit",
+  "repository": "D:\\Codex\\MiniVectorDB\\repo",
+  "requested_path": "agent/conversation.json",
+  "resolved_path": null,
+  "git_path": "agent/conversation.json",
+  "ref": "524133baf0a4ed947805236c02cce9cecffc0be3",
+  "bytes": 103281,
+  "sha256": "5255100105aa4e6d4217c149f85e7c5c5aac369745736d565b5c924617138bb3",
+  "git_blob": "0d39f6eea2ef220f79a8f985eba7a489d750395d",
+  "git_mode": "100644",
+  "format_pass": true,
+  "mirror": {
+    "scope": "local_mirror_check",
+    "path": "conversation.json",
+    "status": "match",
+    "git_path": "conversation.json",
+    "git_blob": "0d39f6eea2ef220f79a8f985eba7a489d750395d",
+    "git_mode": "100644",
+    "bytes": 103281,
+    "sha256": "5255100105aa4e6d4217c149f85e7c5c5aac369745736d565b5c924617138bb3"
+  },
+  "internal_references": {
+    "scope": "optional_local_check",
+    "enabled": true,
+    "checked": 35,
+    "pass": true
+  },
+  "errors": [],
+  "local_checks_pass": true
+}

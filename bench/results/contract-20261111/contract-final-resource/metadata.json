@@ -1,0 +1,41 @@
+{
+  "requested_image": "sha256:cf04eff21586927d3d4add8cfa20aa4a770ea5096b68f608b2b7d6fddbb8baf7",
+  "image_id": "sha256:cf04eff21586927d3d4add8cfa20aa4a770ea5096b68f608b2b7d6fddbb8baf7",
+  "entrypoint": [
+    "/usr/local/bin/minivectordb",
+    "--protocol",
+    "jsonl",
+    "--data-dir",
+    "/data"
+  ],
+  "config": {
+    "startup_timeout": 120,
+    "request_timeout": 120,
+    "case_timeout": 1800,
+    "max_response_bytes": 16777216,
+    "cpus": "2",
+    "memory": "64m",
+    "pids_limit": 128,
+    "abs_tol": 1e-05,
+    "rel_tol": 1e-05,
+    "error_codes": {}
+  },
+  "script_sha256": "60b28faf1562829a7cf810e94eb27113a24e2f04f42892b7b374741dab8807d8",
+  "transport_sha256": "fb3a820105e6e94fc348167c7644ce23a270c63f57b026065f4b563d6ef0674f",
+  "official_config_sha256": "63fe51cac3aaaf45c3739b53b1de8420e5d001e8abb6cf88532d9f190d72d904",
+  "data_root": "/var/lib/minivectordb-unindexed-resource",
+  "data_filesystem": "ext2/ext3",
+  "output": "/mnt/d/Codex/MiniVectorDB/work/contract-final-resource",
+  "initial_rows": 1000,
+  "final_rows": 20000,
+  "body_bytes_per_row": 4096,
+  "requested_memory_swap_limit_bytes": 67108864,
+  "swap_policy": "Session requests memory-swap equal to memory. This WSL host may ignore or normalize the request; observed Docker and cgroup limits are reported without a no-swap guarantee.",
+  "index_created": false,
+  "snapshot_budget_assumed_from_default": 8388608,
+  "warm_snapshot_bytes_estimate": 16008,
+  "large_numeric_payload_estimate": 320008,
+  "cache_scope": "Numeric payload fits the typed budget; this tests dataset larger than RAM, not typed-budget refusal.",
+  "large_text_bytes": 81920000,
+  "scope": "64 MiB runtime container; host generates input and checks answers. D-backed WSL backing is verified by the caller. Swap settings and observed usage are reported; this is not official resource admission or a direct measurement of internal cache state."
+}

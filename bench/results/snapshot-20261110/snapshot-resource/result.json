@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "rows": 20000,
+  "logical_text_bytes": 81920000,
+  "before_restart": {
+    "memory_limit": 67108864,
+    "memory_peak": 67108864,
+    "swap_current": 0,
+    "oom_killed": false,
+    "file_bytes": 188473344
+  },
+  "after_restart": {
+    "memory_limit": 67108864,
+    "memory_peak": 67108864,
+    "swap_current": 0,
+    "oom_killed": false,
+    "file_bytes": 188604416
+  },
+  "scope": "64MiB container limit; observed swap reported, host WSL cannot enforce no-swap; not official resource admission"
+}

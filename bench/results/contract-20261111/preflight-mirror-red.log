@@ -1,0 +1,17 @@
+test_mirror_identity_is_reported_even_for_invalid_json (__main__.SubmissionContractTests) ... FAIL
+
+======================================================================
+FAIL: test_mirror_identity_is_reported_even_for_invalid_json (__main__.SubmissionContractTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Codex\MiniVectorDB\repo\tests\submission_contract_tests.py", line 187, in test_mirror_identity_is_reported_even_for_invalid_json
+    self.assertEqual(report['mirror']['status'], 'match')
+AssertionError: 'not_checked' != 'match'
+- not_checked
++ match
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.183s
+
+FAILED (failures=1)
