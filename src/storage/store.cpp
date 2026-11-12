@@ -99,6 +99,17 @@ bool valid_root(const Page& p,std::uint64_t complete_pages) {
 std::uint64_t ordered_key(std::int64_t key) {return std::bit_cast<std::uint64_t>(key)^(1ULL<<63);}
 std::int64_t signed_key(std::uint64_t key) {return std::bit_cast<std::int64_t>(key^(1ULL<<63));}
 unsigned key_index(std::uint64_t space,std::uint64_t key,unsigned depth) {return static_cast<unsigned>(((depth<8?space:key)>>((7-depth%8)*8))&255);}
+// Wait a bounded time for the exclusive file lock. The crash-recovery test
+// kills the process and restarts on the same data directory, so the previous
+// holder can still be releasing the lock when the new process opens it.
+bool acquire_lock(int fd) {
+  for(unsigned attempt=0;attempt<50;++attempt) {
+    if(::flock(fd,LOCK_EX|LOCK_NB)==0)return true;
+    if(errno!=EWOULDBLOCK&&errno!=EAGAIN&&errno!=EINTR)return false;
+    ::usleep(100000);
+  }
+  return false;
+}
 }
 
 struct Store::Impl {
@@ -476,7 +487,10 @@ Store::Store(const std::filesystem::path& path,std::size_t index_cache_bytes,boo
   s.packed_branches=packed_branches;
   s.packing=packed_values; s.format3=packed_values||compressed_paths; s.scan_budget=packed_scan_cache_bytes;
   s.data_set_count=data_cache_bytes/sizeof(Impl::DataSet);
-  if(::flock(s.fd,LOCK_EX|LOCK_NB)!=0) io_error("lock database");
+  // A predecessor that was just killed may still hold the lock for a moment.
+  // Retry briefly instead of exiting immediately: a crash-recovery case that
+  // restarts on the same data directory must not fail on that race.
+  if(!acquire_lock(s.fd)) io_error("lock database");
   if(created) {
     write_page(s.fd,Page{},1); write_page(s.fd,make_root(0,0,2,s.format3,s.compressed_paths),0); sync_fd(s.fd);
     auto parent=path.parent_path(); if(parent.empty()) parent=".";

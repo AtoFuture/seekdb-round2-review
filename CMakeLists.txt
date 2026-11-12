@@ -3,6 +3,16 @@ project(MiniVectorDB LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+# -ffp-contract=off keeps every distance accumulation a plain multiply plus add.
+# Without it aarch64 clang contracts "sum += d*d" into an FMA, so the last bits
+# of a distance differ from the x86_64 build that the evaluation image runs on,
+# and the tie order of equal distances can differ between the two platforms.
+# The x86_64 baseline has no FMA instruction, so this changes nothing there; it
+# only makes the ARM64 local build match the platform bit for bit. It is scoped
+# to the units that accumulate distances so the rest of the program keeps the
+# compiler's normal floating point contraction.
+set(MVDB_FP_EXACT_SOURCES src/vector/exact.cpp src/sql/binder.cpp)
+set_source_files_properties(${MVDB_FP_EXACT_SOURCES} PROPERTIES COMPILE_OPTIONS -ffp-contract=off)
 add_library(minivectordb_core src/types/value.cpp src/vector/exact.cpp src/storage/store.cpp)
 target_include_directories(minivectordb_core PUBLIC include)
 target_compile_options(minivectordb_core PRIVATE -Wall -Wextra -Wpedantic -Wconversion)
@@ -80,6 +90,8 @@ add_test(NAME core_data_cache_sql COMMAND data_cache_sql_tests)
 set_tests_properties(core_data_cache_sql PROPERTIES TIMEOUT 180)
 
 add_test(NAME jsonl COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/tests/jsonl_tests.py $<TARGET_FILE:minivectordb>)
+add_test(NAME order_by_limit COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/tests/order_by_limit_tests.py $<TARGET_FILE:minivectordb>)
+set_tests_properties(order_by_limit PROPERTIES TIMEOUT 120)
 set_tests_properties(jsonl PROPERTIES TIMEOUT 120)
 add_executable(vector_index_tests tests/vector_index_tests.cpp)
 target_link_libraries(vector_index_tests PRIVATE minivectordb_core)
@@ -183,6 +195,9 @@ add_test(NAME core_vector_literals COMMAND vector_literal_tests)
 set_tests_properties(core_vector_literals PROPERTIES TIMEOUT 60)
 
 add_executable(validated_vector_tests tests/validated_vector_tests.cpp)
+# The oracle in this test compares distance bit patterns; it must use the same
+# accumulation contract as the kernel under test.
+target_compile_options(validated_vector_tests PRIVATE -ffp-contract=off)
 target_link_libraries(validated_vector_tests PRIVATE minivectordb_core)
 add_test(NAME core_validated_vector COMMAND validated_vector_tests)
 add_executable(validated_snapshot_tests tests/validated_snapshot_tests.cpp)

@@ -12,6 +12,9 @@
 #include "../storage/binary.hpp"
 #include <limits>
 #include <span>
+#include <algorithm>
+#include <queue>
+#include <vector>
 namespace minivectordb {
   namespace {
     std::string index_vector(const Cell& cell) {
@@ -499,6 +502,58 @@ namespace minivectordb {
             }
             if(sink.row)sink.row(output);
             ++info.affected_rows;
+          });
+        }
+        return info;
+      }
+      // A single non-distance ORDER BY with LIMIT never needs a full external
+      // sort. A bounded heap keeps the K best rows in memory, which removes the
+      // spill files, the multi-pass merge and the per-record seek of the
+      // general path. Ordering and tie-breaking match sql::Sorter exactly:
+      // compare_cells per key, ties broken by ascending primary key.
+      if(b.order.size()==1&&!b.order[0].expression.query&&statement.limit&&
+         limit<=options.memory_budget_bytes/64) {
+        // This path reads raw rows, exactly like the general sorter path it
+        // replaces, so the typed snapshot is released the same way.
+        typed_snapshot.clear();
+        const auto&o=b.order[0];
+        const bool descending=o.descending;
+        struct Candidate { Cell value; std::int64_t key; };
+        auto before=[&](const Candidate&a,const Candidate&c) {
+          auto cmp=sql::compare_cells(a.value,c.value);
+          if(cmp)return descending?cmp>0:cmp<0;
+          return a.key<c.key;
+        };
+        std::priority_queue<Candidate,std::vector<Candidate>,decltype(before)> heap(before);
+        const auto cap=static_cast<std::size_t>(limit);
+        // A table scan yields rows in ascending primary key order, so ordering
+        // by the primary key ascending can stop as soon as the limit is filled.
+        const bool primary_ascending=!descending&&o.expression.column==s.primary;
+        try {
+          scan_select(s,b,info,[&](auto key,const SelectRow&r) {
+            Candidate candidate{r[o.expression.column],key};
+            if(heap.size()<cap)heap.push(candidate);
+            else if(before(candidate,heap.top())) {
+              heap.pop();
+              heap.push(candidate);
+            }
+            if(primary_ascending&&heap.size()>=cap)throw StopScan {
+            };
+          });
+        }
+        catch(const StopScan&) {
+        }
+        std::vector<Candidate> winners;
+        winners.reserve(heap.size());
+        while(!heap.empty()) {
+          winners.push_back(heap.top());
+          heap.pop();
+        }
+        std::sort(winners.begin(),winners.end(),before);
+        for(const auto&winner:winners) {
+          fetch_select(s,winner.key,info,[&](const SelectRow& row) {
+            DistanceCache cache;
+            emit(row,cache);
           });
         }
         return info;

@@ -13,6 +13,7 @@
 - 单个磁盘提交根覆盖表目录和所有表；自动提交、显式 BEGIN/COMMIT/ROLLBACK、语句失败保存点。
 - 双版本提交记录、同步后确认、正常关闭回滚及异常进程退出后恢复。
 - 流式扫描和输出；主键等值直接查找；一般排序按预算生成临时段并做两路归并。
+- 单列 ORDER BY 配合 LIMIT 时改用有界堆保留 K 个候选，不再对全表排序后截断；顺序与并列规则与外部排序完全一致，主键升序时取满 K 行即停。
 
 完整语法仍以正式题包为准。不支持的 NULL、JOIN、OR、聚合、子查询、ALTER/DROP 和主键更新会报错，不会伪装成功。
 
@@ -71,7 +72,14 @@ MVDB_TEST_DIR=/data/core-tests ctest --test-dir build --output-on-failure
 
 本项目的 `.github/workflows/minivectordb-round2.yml` 验证材料完整性、官方题包身份、原生 x86 构建、内部回归和公开协议。它不运行隐藏准入、不提交比赛、不生成正式分数。上游遗留流程继续保留。
 
+距离累加在 `src/vector/exact.cpp` 与 `src/sql/binder.cpp` 两个编译单元上使用 `-ffp-contract=off`：aarch64 clang 默认会把 `sum += d*d` 收缩成 FMA，末位与评测用的 x86_64 基线（无 FMA 指令）不同，等距两行的并列次序可能因此不一致；关闭收缩后 ARM64 与 x86_64 逐位一致，评测侧行为不变。
+
 页面校验使用 IEEE CRC32 slicing-by-8，字节算法保留作独立对照。格式04保留03的数据页打包与溢出记录规则；每次扫描的 packed-page 临时缓存默认关闭（`packed_scan_cache_bytes=0`）。本轮改变了新建文件的节点存储格式，保留旧文件读取和原提交同步策略。VA 精确剪枝及追加日志仍为独立研究原型。详见[格式说明](docs/storage-format03.md)、[当前数据缓存契约](docs/data-buffer.md)及记录旧16 MiB配置的[历史缓存结果](docs/buffer-results.md)。
+
+## 独立复核记录
+
+- [独立复核、五项改动与剩余风险](docs/independent-verification-20261112.md)：官方公开用例复现、题面口径 T/B/M 复刻、ORDER BY 前后对照、FMA 跨平台交叉检查、超时候选清单。
+- [Agent prompt 五维度补证清单](docs/prompt-rubric-questions.md)：当前材料按 `agent-learning-evidence-v3-unbounded` 组织为 14 个实例，仍缺学生本人对「技术理解与迁移」「取舍与反思」的独立解释。
 
 ## 论文与学习材料
 
