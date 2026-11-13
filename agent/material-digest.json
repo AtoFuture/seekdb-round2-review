@@ -1,82 +1,95 @@
 {
-  "kind": "local-material-integrity-manifest",
-  "date": "2026-11-12",
-  "scope": "Local file integrity only; not a platform evaluation result or a documented platform summary field.",
-  "base_commit": "aea69813bb6cfb1b0abea3d892db0d4c32517829",
-  "submission_state": "User reported formal result for ff117199f8077de7a6e3e1f91a611397bb6641a0: MySQL passed, E=2576.778405, Prompt still has the combined invalid/review/range/summary message. Subsequent modifications are not formally evaluated. Earlier timeout report remains unbound.",
-  "material_files": {
-    "agent/conversation.json": {
-      "bytes": 118518,
-      "sha256": "7c4346cc8e2b23279ad1bc97c447b07b05a9a3e4942509437e5d949c8b42cfc0"
-    },
-    "conversation.json": {
-      "bytes": 118518,
-      "sha256": "7c4346cc8e2b23279ad1bc97c447b07b05a9a3e4942509437e5d949c8b42cfc0"
-    }
+ "kind": "local-material-integrity-manifest",
+ "date": "2026-11-13",
+ "scope": "Local file integrity only; not a platform evaluation result or a documented platform summary field.",
+ "base_commit": "a24d2cd764027adec7371f268f99ccdca2307032",
+ "submission_state": "Materials rebuilt on 2026-11-13 as an explicit agent-learning-evidence-v3-unbounded map. The platform has not evaluated this rebuild; the latest user-reported result still belongs to ff117199 and its old-format material.",
+ "material_files": {
+  "agent/conversation.json": {
+   "bytes": 61521,
+   "sha256": "30179553904625a8ff7eeee06eb34612bd41fda0891146016bd3d3766a1c597b"
   },
-  "before_material": {
-    "path": "bench/results/prompt-material-20261111/before-conversation.json",
-    "bytes": 78701,
-    "sha256": "bcf087a952542df442151b3ed159b2744325589fe5bf894dbf87e1b86311f970"
+  "conversation.json": {
+   "bytes": 61521,
+   "sha256": "30179553904625a8ff7eeee06eb34612bd41fda0891146016bd3d3766a1c597b"
+  }
+ },
+ "before_material": {
+  "path": "bench/results/prompt-material-20261111/before-conversation.json",
+  "bytes": 78701,
+  "sha256": "bcf087a952542df442151b3ed159b2744325589fe5bf894dbf87e1b86311f970"
+ },
+ "measurement_evidence": {
+  "path": "bench/results/unindexed-20261111/manifest.json",
+  "sha256": "7528f3608c7afc318bb06d85d8728cb9b61be173eeb86621aa71e4494943f79b",
+  "material_at_measurement_sha256": "bcf087a952542df442151b3ed159b2744325589fe5bf894dbf87e1b86311f970",
+  "source_commit": "524133baf0a4ed947805236c02cce9cecffc0be3",
+  "source_binding": "Historical source hashes are checked against immutable Git objects, not ongoing working-tree changes."
+ },
+ "counts": {
+  "user_records": 69,
+  "experiments": 23,
+  "agent_observations": 5,
+  "retrospective_cases": 2
+ },
+ "original_records_preserved": true,
+ "revision_baseline": {
+  "path": "bench/results/score-first-20261111/material-before.json",
+  "bytes": 103281,
+  "sha256": "5255100105aa4e6d4217c149f85e7c5c5aac369745736d565b5c924617138bb3",
+  "commit": "524133baf0a4ed947805236c02cce9cecffc0be3"
+ },
+ "previous_local_material": {
+  "path": "bench/results/contract-20261111/previous-source/agent/conversation.json",
+  "bytes": 122152,
+  "sha256": "ea9319cb0fa601363b7c8990ec83b99dab1aa829514777380be7a85c0e36adc4"
+ },
+ "previous_candidate_material": {
+  "commit": "8a67457f946b6e1cf76f5198ce5a458fc6107742",
+  "path": "bench/results/resources-20261111/material-before.json",
+  "bytes": 120492,
+  "sha256": "133942a285be61a452e668624f0d167686db0a9b7a6eddce32cfb33056f54d93"
+ },
+ "previous_formal_material": {
+  "commit": "aea69813bb6cfb1b0abea3d892db0d4c32517829",
+  "path": "bench/results/score-iteration-20261112/material-before.json",
+  "bytes": 125952,
+  "sha256": "baf0e8c71aab7acaf5d4c1b2b7d96d144dd5f66783e018a59d4cd00bf9c5cb93",
+  "local_equivalent_commit": "afe53b61fcf674bea782bea9155687009c829011",
+  "shared_tree": "1495b9efdd34ae7d63822f2b58324e3a54f14326"
+ },
+ "schema": "curated-records-with-preserved-full-archive",
+ "selection_archive": {
+  "path": "bench/results/score-iteration-20261112/full-records-before-selection.json",
+  "bytes": 146700,
+  "sha256": "86572d05ac0c64138fa8e7b76bd7c2ee7a54df8beb14765c529cbe0e00ab2233"
+ },
+ "latest_formal_feedback": {
+  "source": "user_supplied_platform_result",
+  "reported_commit": "ff117199f8077de7a6e3e1f91a611397bb6641a0",
+  "mysql_admission": "passed",
+  "performance_E_text": "2576.778405",
+  "prompt_result_text": "Prompt结果无效、待复核、超出平台0–100范围或缺少材料摘要，本项不参与排名；未截断或换算本地分数。",
+  "verification_scope": "Bound by the user conversation sequence; platform locked commit and internal grader report were not independently read. This integrity manifest is not the platform material summary."
+ },
+ "selection_supplements": [
+  {
+   "path": "bench/results/score-next-20261112/iteration-records-appendix.json",
+   "bytes": 23625,
+   "sha256": "dd7f612805f19095729485eb653293746de827032a7ae0e97cc129a7a6a9fc84"
+  }
+ ],
+ "prompt_rubric": {
+  "rule_version": "agent-learning-evidence-v3-unbounded",
+  "instances": 11,
+  "dimensions": {
+   "问题理解与自主拆解": 2,
+   "技术理解与迁移": 1,
+   "独立验证与质疑": 4,
+   "实验与反馈迭代": 2,
+   "取舍与反思": 2
   },
-  "measurement_evidence": {
-    "path": "bench/results/unindexed-20261111/manifest.json",
-    "sha256": "7528f3608c7afc318bb06d85d8728cb9b61be173eeb86621aa71e4494943f79b",
-    "material_at_measurement_sha256": "bcf087a952542df442151b3ed159b2744325589fe5bf894dbf87e1b86311f970",
-    "source_commit": "524133baf0a4ed947805236c02cce9cecffc0be3",
-    "source_binding": "Historical source hashes are checked against immutable Git objects, not ongoing working-tree changes."
-  },
-  "counts": {
-    "user_records": 69,
-    "experiments": 61,
-    "agent_observations": 11,
-    "retrospective_cases": 2
-  },
-  "original_records_preserved": true,
-  "revision_baseline": {
-    "path": "bench/results/score-first-20261111/material-before.json",
-    "bytes": 103281,
-    "sha256": "5255100105aa4e6d4217c149f85e7c5c5aac369745736d565b5c924617138bb3",
-    "commit": "524133baf0a4ed947805236c02cce9cecffc0be3"
-  },
-  "previous_local_material": {
-    "path": "bench/results/contract-20261111/previous-source/agent/conversation.json",
-    "bytes": 122152,
-    "sha256": "ea9319cb0fa601363b7c8990ec83b99dab1aa829514777380be7a85c0e36adc4"
-  },
-  "previous_candidate_material": {
-    "commit": "8a67457f946b6e1cf76f5198ce5a458fc6107742",
-    "path": "bench/results/resources-20261111/material-before.json",
-    "bytes": 120492,
-    "sha256": "133942a285be61a452e668624f0d167686db0a9b7a6eddce32cfb33056f54d93"
-  },
-  "previous_formal_material": {
-    "commit": "aea69813bb6cfb1b0abea3d892db0d4c32517829",
-    "path": "bench/results/score-iteration-20261112/material-before.json",
-    "bytes": 125952,
-    "sha256": "baf0e8c71aab7acaf5d4c1b2b7d96d144dd5f66783e018a59d4cd00bf9c5cb93",
-    "local_equivalent_commit": "afe53b61fcf674bea782bea9155687009c829011",
-    "shared_tree": "1495b9efdd34ae7d63822f2b58324e3a54f14326"
-  },
-  "schema": "curated-records-with-preserved-full-archive",
-  "selection_archive": {
-    "path": "bench/results/score-iteration-20261112/full-records-before-selection.json",
-    "bytes": 146700,
-    "sha256": "86572d05ac0c64138fa8e7b76bd7c2ee7a54df8beb14765c529cbe0e00ab2233"
-  },
-  "latest_formal_feedback": {
-    "source": "user_supplied_platform_result",
-    "reported_commit": "ff117199f8077de7a6e3e1f91a611397bb6641a0",
-    "mysql_admission": "passed",
-    "performance_E_text": "2576.778405",
-    "prompt_result_text": "Prompt结果无效、待复核、超出平台0–100范围或缺少材料摘要，本项不参与排名；未截断或换算本地分数。",
-    "verification_scope": "Bound by the user conversation sequence; platform locked commit and internal grader report were not independently read. This integrity manifest is not the platform material summary."
-  },
-  "selection_supplements": [
-    {
-      "path": "bench/results/score-next-20261112/iteration-records-appendix.json",
-      "bytes": 23625,
-      "sha256": "dd7f612805f19095729485eb653293746de827032a7ae0e97cc129a7a6a9fc84"
-    }
-  ]
+  "suggested_level_sum": 10.5,
+  "note": "suggested_level is a local evidence rating, not a platform score."
+ }
 }

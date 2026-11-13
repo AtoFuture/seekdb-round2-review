@@ -1,6 +1,6 @@
 # MiniVectorDB
 
-OceanBase 加赛提交分支为 `2026-competition-round2`。本项目基于原有实现继续优化，最新已收到的正式结果对应 `ff117199f8077de7a6e3e1f91a611397bb6641a0`：MySQL 准入通过，性能原始 E=2576.778405，Prompt 返回合并无效/待复核提示。此后的原生测量均为自行生成的数据，不能换算官方分数。
+OceanBase 加赛提交分支为 `2026-competition-round2`。本项目基于原有实现继续优化，最新已收到的正式结果对应 `ff117199f8077de7a6e3e1f91a611397bb6641a0`：MySQL 准入通过，性能原始 E=2576.778405，Prompt 返回合并无效/待复核提示（对应旧版材料）。此后的原生测量均为自行生成的数据，不能换算官方分数。
 
 ## 运行与接口
 
@@ -24,11 +24,12 @@ JSONL 响应跨请求复用不超过 64 KiB 的缓冲容量。每次先清空内
 
 两台原生 x86_64 分别在 2 CPU、2 GiB、无交换、运行期无网络的容器中执行回归、公开协议、精确 oracle、重启和 T/B/M 对照。常规负载为 10000 行、128 维、1000 次查询、三轮；另有随机 float32/随机文本和 30000 行容量验证。失败及退步实验保留，采集异常不计作成功样本。原生结果见 [本轮证据](bench/results/release-20261112)，历史正式结果不被本地测量覆盖。
 
-材料入口 [agent/conversation.json](agent/conversation.json) 与根目录 conversation.json 逐字节相同。文件包含真实用户记录、实际工具摘要和明确归属的 Agent 分析；没有补造用户学习过程。`agent/material-digest.json` 仅证明本地材料完整性，不是平台内部评审摘要或评分。历史完整归档保留。
+材料入口 [agent/conversation.json](agent/conversation.json) 与根目录 conversation.json 逐字节相同。当前按 `agent-learning-evidence-v3-unbounded` 组织为 11 个 rubric 实例，覆盖五个维度；每个实例分开给出学生原文与结果原文，引用可在 JSON 内用 pointer 和原文核对。文件保留全部 69 条用户原话，包含实际工具摘要和明确归属的 Agent 分析；没有补造用户学习过程。`agent/material-digest.json` 仅证明本地材料完整性，不是平台内部评审摘要或评分。历史完整归档保留。
 
 本地检查：
 
 ~~~sh
+python3 -B scripts/build-prompt-rubric.py --check
 python3 -B scripts/check-submission-contract.py --check-internal-references
 python3 -B scripts/check-learning-material.py
 cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
