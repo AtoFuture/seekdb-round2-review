@@ -1,0 +1,31 @@
+name: Native combined compression and integer rejection experiment
+"on":
+  push:
+    branches: ['codex/score-combined8-20261112']
+permissions:
+  contents: read
+jobs:
+  compare:
+    strategy:
+      fail-fast: false
+      matrix:
+        replica: [1, 2]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check correctness and measure complete T B M
+        env:
+          NATIVE_REPLICA: ${{ matrix.replica }}
+        run: bash bench/run_combined8_contract.sh
+      - name: Preserve all measurements and failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: combined8-${{ matrix.replica }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: combined8-results/
+          if-no-files-found: error
+          retention-days: 14

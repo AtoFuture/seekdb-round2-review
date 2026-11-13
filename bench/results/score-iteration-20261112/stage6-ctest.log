@@ -1,0 +1,101 @@
+Test project /build
+      Start  1: core_types
+ 1/48 Test  #1: core_types .......................   Passed    0.00 sec
+      Start  2: core_vector
+ 2/48 Test  #2: core_vector ......................   Passed    0.00 sec
+      Start  3: core_storage
+ 3/48 Test  #3: core_storage .....................   Passed    0.70 sec
+      Start  4: core_storage_failure
+ 4/48 Test  #4: core_storage_failure .............   Passed    0.01 sec
+      Start  5: core_namespaces
+ 5/48 Test  #5: core_namespaces ..................   Passed    0.00 sec
+      Start  6: core_codec
+ 6/48 Test  #6: core_codec .......................   Passed    0.00 sec
+      Start  7: core_sql
+ 7/48 Test  #7: core_sql .........................   Passed    0.00 sec
+      Start  8: core_sort
+ 8/48 Test  #8: core_sort ........................   Passed    0.01 sec
+      Start  9: core_sql_crash
+ 9/48 Test  #9: core_sql_crash ...................   Passed    0.00 sec
+      Start 10: core_sql_edges
+10/48 Test #10: core_sql_edges ...................   Passed    0.01 sec
+      Start 11: core_sql_failure
+11/48 Test #11: core_sql_failure .................   Passed    0.01 sec
+      Start 12: core_sql_batch
+12/48 Test #12: core_sql_batch ...................   Passed    0.05 sec
+      Start 13: cli
+13/48 Test #13: cli ..............................   Passed    0.07 sec
+      Start 14: core_selective
+14/48 Test #14: core_selective ...................   Passed    0.13 sec
+      Start 15: core_batches
+15/48 Test #15: core_batches .....................   Passed    0.04 sec
+      Start 16: core_checksum
+16/48 Test #16: core_checksum ....................   Passed    0.23 sec
+      Start 17: core_profile
+17/48 Test #17: core_profile .....................   Passed    0.00 sec
+      Start 18: core_index_cache
+18/48 Test #18: core_index_cache .................   Passed    0.05 sec
+      Start 19: core_checksum_slicing
+19/48 Test #19: core_checksum_slicing ............   Passed    0.48 sec
+      Start 20: core_packed_storage
+20/48 Test #20: core_packed_storage ..............   Passed    0.05 sec
+      Start 21: core_packed_sql
+21/48 Test #21: core_packed_sql ..................   Passed    0.77 sec
+      Start 22: core_data_cache
+22/48 Test #22: core_data_cache ..................   Passed    0.07 sec
+      Start 23: core_data_cache_sql
+23/48 Test #23: core_data_cache_sql ..............   Passed    0.23 sec
+      Start 24: jsonl
+24/48 Test #24: jsonl ............................   Passed    0.06 sec
+      Start 25: core_vector_index
+25/48 Test #25: core_vector_index ................   Passed    0.06 sec
+      Start 26: core_reference_index
+26/48 Test #26: core_reference_index .............   Passed    0.05 sec
+      Start 27: core_float32_literals
+27/48 Test #27: core_float32_literals ............   Passed    0.02 sec
+      Start 28: core_paired_scan
+28/48 Test #28: core_paired_scan .................   Passed    0.22 sec
+      Start 29: core_scan_snapshot
+29/48 Test #29: core_scan_snapshot ...............   Passed    0.09 sec
+      Start 30: core_numeric_maximum
+30/48 Test #30: core_numeric_maximum .............   Passed    0.01 sec
+      Start 31: core_numeric_ties
+31/48 Test #31: core_numeric_ties ................   Passed    0.01 sec
+      Start 32: core_text_validation
+32/48 Test #32: core_text_validation .............   Passed    0.70 sec
+      Start 33: core_row_validation
+33/48 Test #33: core_row_validation ..............   Passed    2.22 sec
+      Start 34: core_row_allocation
+34/48 Test #34: core_row_allocation ..............   Passed    0.00 sec
+      Start 35: protocol_adversarial
+35/48 Test #35: protocol_adversarial .............   Passed    0.10 sec
+      Start 36: sql_adversarial
+36/48 Test #36: sql_adversarial ..................   Passed    0.46 sec
+      Start 37: storage_adversarial
+37/48 Test #37: storage_adversarial ..............   Passed    0.47 sec
+      Start 38: core_unindexed_snapshot
+38/48 Test #38: core_unindexed_snapshot ..........   Passed    0.44 sec
+      Start 39: core_vector_scratch
+39/48 Test #39: core_vector_scratch ..............   Passed    0.08 sec
+      Start 40: core_typed_scan
+40/48 Test #40: core_typed_scan ..................   Passed    0.16 sec
+      Start 41: core_mixed_filter_cache
+41/48 Test #41: core_mixed_filter_cache ..........   Passed    0.06 sec
+      Start 42: core_commit_policy
+42/48 Test #42: core_commit_policy ...............   Passed    0.78 sec
+      Start 43: core_commit_policy_compressed
+43/48 Test #43: core_commit_policy_compressed ....   Passed    0.41 sec
+      Start 44: core_compressed_paths
+44/48 Test #44: core_compressed_paths ............   Passed    5.19 sec
+      Start 45: core_packed_sql_compressed
+45/48 Test #45: core_packed_sql_compressed .......   Passed    0.36 sec
+      Start 46: core_vector_literals
+46/48 Test #46: core_vector_literals .............   Passed    0.13 sec
+      Start 47: core_validated_vector
+47/48 Test #47: core_validated_vector ............   Passed    0.03 sec
+      Start 48: core_validated_snapshot
+48/48 Test #48: core_validated_snapshot ..........   Passed    0.45 sec
+
+100% tests passed, 0 tests failed out of 48
+
+Total Test time (real) =  15.47 sec

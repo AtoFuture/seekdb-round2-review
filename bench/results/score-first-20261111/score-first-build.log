@@ -1,0 +1,23 @@
+[1/23] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+[2/23] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+[3/23] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+[4/23] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+[5/23] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+[6/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+[7/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+[8/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+[9/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+[10/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+[11/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+[12/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+[13/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+[14/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+[15/23] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+[16/23] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+[17/23] Linking CXX static library libminivectordb_core.a
+[18/23] Linking CXX executable typed_scan_tests
+[19/23] Linking CXX executable unindexed_snapshot_tests
+[20/23] Linking CXX executable numeric_sql_tests
+[21/23] Linking CXX executable vector_index_tests
+[22/23] Linking CXX executable sql_tests
+[23/23] Linking CXX executable minivectordb

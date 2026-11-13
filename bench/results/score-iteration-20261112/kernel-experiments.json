@@ -1,0 +1,754 @@
+[
+  {
+    "kind": "nativeWidth",
+    "id": 130867381811,
+    "cpu": "2026-11-11T23:50:26.2627122Z Model name:                              AMD EPYC 9V45 96-Core Processor",
+    "results": [
+      {
+        "filter": "bigint",
+        "variant": "scalar",
+        "query_ms": [
+          453.410951,
+          460.934554,
+          461.445389
+        ],
+        "median_ms": 460.934554,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch4",
+        "query_ms": [
+          352.599614,
+          362.972098,
+          382.846806
+        ],
+        "median_ms": 362.972098,
+        "relative_percent": -21.253007644985534,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch8",
+        "query_ms": [
+          388.723855,
+          364.054388,
+          373.361534
+        ],
+        "median_ms": 373.361534,
+        "relative_percent": -18.99901390339245,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch16",
+        "query_ms": [
+          349.993191,
+          348.946485,
+          381.776207
+        ],
+        "median_ms": 349.993191,
+        "relative_percent": -24.06878851612413,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "scalar",
+        "query_ms": [
+          657.287842,
+          667.839813,
+          672.915122
+        ],
+        "median_ms": 667.839813,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch4",
+        "query_ms": [
+          588.874968,
+          579.335028,
+          555.839431
+        ],
+        "median_ms": 579.335028,
+        "relative_percent": -13.252397248140714,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch8",
+        "query_ms": [
+          588.726895,
+          585.020058,
+          549.121028
+        ],
+        "median_ms": 585.020058,
+        "relative_percent": -12.40114072085129,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch16",
+        "query_ms": [
+          550.592405,
+          583.532021,
+          546.658624
+        ],
+        "median_ms": 550.592405,
+        "relative_percent": -17.55621718227812,
+        "exact_results_agree": true
+      }
+    ],
+    "log": "nativeWidth-130867381811.log"
+  },
+  {
+    "kind": "nativeWidth",
+    "id": 130867382286,
+    "cpu": "2026-11-11T23:50:26.3192112Z Model name:                              AMD EPYC 9V74 80-Core Processor",
+    "results": [
+      {
+        "filter": "bigint",
+        "variant": "scalar",
+        "query_ms": [
+          681.047779,
+          684.631981,
+          683.216614
+        ],
+        "median_ms": 683.216614,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch4",
+        "query_ms": [
+          519.293713,
+          522.921274,
+          518.206694
+        ],
+        "median_ms": 519.293713,
+        "relative_percent": -23.992815403051658,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch8",
+        "query_ms": [
+          516.36293,
+          516.16266,
+          512.568051
+        ],
+        "median_ms": 516.16266,
+        "relative_percent": -24.451096559545917,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch16",
+        "query_ms": [
+          487.125748,
+          488.286806,
+          488.335269
+        ],
+        "median_ms": 488.286806,
+        "relative_percent": -28.531186743067117,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "scalar",
+        "query_ms": [
+          956.912523,
+          960.142818,
+          956.558063
+        ],
+        "median_ms": 956.912523,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch4",
+        "query_ms": [
+          785.252283,
+          789.361328,
+          785.088634
+        ],
+        "median_ms": 785.252283,
+        "relative_percent": -17.938968910327446,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch8",
+        "query_ms": [
+          799.516589,
+          789.951256,
+          793.942403
+        ],
+        "median_ms": 793.942403,
+        "relative_percent": -17.030827383163004,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch16",
+        "query_ms": [
+          757.361179,
+          759.092544,
+          763.92422
+        ],
+        "median_ms": 759.092544,
+        "relative_percent": -20.672733844031843,
+        "exact_results_agree": true
+      }
+    ],
+    "log": "nativeWidth-130867382286.log"
+  },
+  {
+    "kind": "nativeAvx",
+    "id": 130868233520,
+    "cpu": "2026-11-11T23:52:29.5047710Z Model name:                              AMD EPYC 9V74 80-Core Processor",
+    "results": [
+      {
+        "filter": "bigint",
+        "variant": "reference",
+        "query_ms": [
+          492.517597,
+          491.06442,
+          493.432945
+        ],
+        "median_ms": 492.517597,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "avx2",
+        "query_ms": [
+          526.02732,
+          527.522107,
+          525.521411
+        ],
+        "median_ms": 526.02732,
+        "relative_percent": 6.803761571995159,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          447.714412,
+          446.810352,
+          447.494159
+        ],
+        "median_ms": 447.494159,
+        "relative_percent": -9.141488197425762,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "reference",
+        "query_ms": [
+          775.912109,
+          778.856599,
+          781.959222
+        ],
+        "median_ms": 778.856599,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "avx2",
+        "query_ms": [
+          800.169165,
+          814.780905,
+          789.938153
+        ],
+        "median_ms": 800.169165,
+        "relative_percent": 2.736391529244786,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          713.088488,
+          712.982712,
+          725.379232
+        ],
+        "median_ms": 713.088488,
+        "relative_percent": -8.444187426086113,
+        "exact_results_agree": true
+      }
+    ],
+    "log": "nativeAvx-130868233520.log"
+  },
+  {
+    "kind": "nativeAvx",
+    "id": 130868233905,
+    "cpu": "2026-11-11T23:52:27.5255929Z Model name:                              AMD EPYC 9V45 96-Core Processor",
+    "results": [
+      {
+        "filter": "bigint",
+        "variant": "reference",
+        "query_ms": [
+          354.76086,
+          349.38386,
+          378.209318
+        ],
+        "median_ms": 354.76086,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "avx2",
+        "query_ms": [
+          414.748641,
+          466.812001,
+          443.460728
+        ],
+        "median_ms": 443.460728,
+        "relative_percent": 25.002720987879012,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          341.359666,
+          346.536305,
+          346.394364
+        ],
+        "median_ms": 346.394364,
+        "relative_percent": -2.3583480996184236,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "reference",
+        "query_ms": [
+          616.228459,
+          588.828479,
+          570.132669
+        ],
+        "median_ms": 588.828479,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "avx2",
+        "query_ms": [
+          656.672912,
+          642.287251,
+          639.427635
+        ],
+        "median_ms": 642.287251,
+        "relative_percent": 9.078836011938197,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          491.948669,
+          517.79744,
+          492.190841
+        ],
+        "median_ms": 492.190841,
+        "relative_percent": -16.41184851726576,
+        "exact_results_agree": true
+      }
+    ],
+    "log": "nativeAvx-130868233905.log"
+  },
+  {
+    "kind": "nativeCombined",
+    "id": 130870537929,
+    "cpu": "2026-11-11T23:58:04.1399304Z Model name:                              AMD EPYC 9V74 80-Core Processor",
+    "results": [
+      {
+        "filter": "bigint",
+        "variant": "scalar",
+        "query_ms": [
+          680.252106,
+          684.554236,
+          683.226583
+        ],
+        "median_ms": 683.226583,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch4",
+        "query_ms": [
+          516.955049,
+          517.047149,
+          518.961931
+        ],
+        "median_ms": 517.047149,
+        "relative_percent": -24.32274125961519,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch8",
+        "query_ms": [
+          516.744513,
+          514.462409,
+          513.562218
+        ],
+        "median_ms": 514.462409,
+        "relative_percent": -24.701054993933102,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch16",
+        "query_ms": [
+          483.269899,
+          484.873872,
+          497.449044
+        ],
+        "median_ms": 484.873872,
+        "relative_percent": -29.031761341756813,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          439.188675,
+          442.18615,
+          449.173218
+        ],
+        "median_ms": 442.18615,
+        "relative_percent": -35.27972110534815,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "scalar",
+        "query_ms": [
+          970.417658,
+          959.174397,
+          961.142318
+        ],
+        "median_ms": 961.142318,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch4",
+        "query_ms": [
+          785.684596,
+          787.598819,
+          786.954913
+        ],
+        "median_ms": 786.954913,
+        "relative_percent": -18.122956583834448,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch8",
+        "query_ms": [
+          788.60576,
+          790.05543,
+          794.07342
+        ],
+        "median_ms": 790.05543,
+        "relative_percent": -17.800369913584436,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch16",
+        "query_ms": [
+          763.972825,
+          757.446198,
+          763.832927
+        ],
+        "median_ms": 763.832927,
+        "relative_percent": -20.52863424124043,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          703.908994,
+          716.488172,
+          750.950757
+        ],
+        "median_ms": 716.488172,
+        "relative_percent": -25.454518172614694,
+        "exact_results_agree": true
+      }
+    ],
+    "log": "nativeCombined-130870537929.log"
+  },
+  {
+    "kind": "nativeCombined",
+    "id": 130870538194,
+    "cpu": "2026-11-11T23:58:04.0937515Z Model name:                              AMD EPYC 7763 64-Core Processor",
+    "results": [
+      {
+        "filter": "bigint",
+        "variant": "scalar",
+        "query_ms": [
+          840.492487,
+          836.416125,
+          836.24384
+        ],
+        "median_ms": 836.416125,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch4",
+        "query_ms": [
+          625.736471,
+          624.76242,
+          626.246372
+        ],
+        "median_ms": 625.736471,
+        "relative_percent": -25.18837785438437,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch8",
+        "query_ms": [
+          617.231419,
+          620.364868,
+          616.509859
+        ],
+        "median_ms": 617.231419,
+        "relative_percent": -26.2052224304021,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch16",
+        "query_ms": [
+          600.044747,
+          600.901084,
+          603.49364
+        ],
+        "median_ms": 600.901084,
+        "relative_percent": -28.15763995463383,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          514.878202,
+          513.63446,
+          514.100158
+        ],
+        "median_ms": 514.100158,
+        "relative_percent": -38.535360255040516,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "scalar",
+        "query_ms": [
+          1187.205166,
+          1189.56375,
+          1184.818625
+        ],
+        "median_ms": 1187.205166,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch4",
+        "query_ms": [
+          952.741858,
+          943.427389,
+          947.358703
+        ],
+        "median_ms": 947.358703,
+        "relative_percent": -20.20261281443918,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch8",
+        "query_ms": [
+          957.108016,
+          945.887706,
+          961.07533
+        ],
+        "median_ms": 957.108016,
+        "relative_percent": -19.38141414724942,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch16",
+        "query_ms": [
+          935.721013,
+          947.324412,
+          923.346127
+        ],
+        "median_ms": 935.721013,
+        "relative_percent": -21.18287219447629,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          848.650634,
+          848.310733,
+          854.148758
+        ],
+        "median_ms": 848.650634,
+        "relative_percent": -28.516935547094814,
+        "exact_results_agree": true
+      }
+    ],
+    "log": "nativeCombined-130870538194.log"
+  },
+  {
+    "kind": "nativeCombined",
+    "id": 130870538267,
+    "cpu": "2026-11-11T23:58:04.1259957Z Model name:                              AMD EPYC 9V45 96-Core Processor",
+    "results": [
+      {
+        "filter": "bigint",
+        "variant": "scalar",
+        "query_ms": [
+          482.380925,
+          481.566628,
+          479.512749
+        ],
+        "median_ms": 481.566628,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch4",
+        "query_ms": [
+          389.17608,
+          376.851732,
+          383.577829
+        ],
+        "median_ms": 383.577829,
+        "relative_percent": -20.34792140953754,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch8",
+        "query_ms": [
+          371.489867,
+          383.185039,
+          420.697625
+        ],
+        "median_ms": 383.185039,
+        "relative_percent": -20.429486446888912,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "batch16",
+        "query_ms": [
+          365.727344,
+          387.564923,
+          364.838638
+        ],
+        "median_ms": 365.727344,
+        "relative_percent": -24.05467432016488,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "bigint",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          353.824375,
+          360.933013,
+          358.263308
+        ],
+        "median_ms": 358.263308,
+        "relative_percent": -25.60462308447171,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "scalar",
+        "query_ms": [
+          696.095029,
+          690.167043,
+          690.79815
+        ],
+        "median_ms": 690.79815,
+        "relative_percent": 0,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch4",
+        "query_ms": [
+          596.097147,
+          594.973391,
+          577.691151
+        ],
+        "median_ms": 594.973391,
+        "relative_percent": -13.87160040888934,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch8",
+        "query_ms": [
+          627.454778,
+          584.220912,
+          612.37397
+        ],
+        "median_ms": 612.37397,
+        "relative_percent": -11.352691086390433,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "batch16",
+        "query_ms": [
+          571.476087,
+          582.735048,
+          560.528932
+        ],
+        "median_ms": 571.476087,
+        "relative_percent": -17.27307217021353,
+        "exact_results_agree": true
+      },
+      {
+        "filter": "varchar",
+        "variant": "avx2_transposed",
+        "query_ms": [
+          517.863871,
+          529.325042,
+          540.910987
+        ],
+        "median_ms": 529.325042,
+        "relative_percent": -23.374861093649415,
+        "exact_results_agree": true
+      }
+    ],
+    "log": "nativeCombined-130870538267.log"
+  }
+]

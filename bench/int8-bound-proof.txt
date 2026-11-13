@@ -1,0 +1,13 @@
+Integer rejection cache — proof obligations and validation scope
+
+This is an auxiliary cache only; source vectors and final distances remain float32 inputs with the original dimension-ordered double subtraction/multiply/add and sqrt. No approximate rows are returned. The immutable typed snapshot is invalidated before non-SELECT statements. The auxiliary arrays count against the same 64MiB snapshot budget.
+
+Scope: finite binary32 input, 32<=dimension<=4096, RN double arithmetic, default masked exceptions, gradual underflow on x86. Unsupported CPU/environment/budget/shape falls back. Production builds only construct the cache on AVX512F+AVX512VNNI; tests can force its scalar dot implementation.
+
+Represent each input coordinate by scale*integer, integer in [-127,127]. For query coordinates, pack integer+128 as unsigned bytes. VNNI computes sum((q+128)*x); subtract 128*sum(x) to recover the signed integer dot. At n<=4096, every intermediate dot has absolute value <=4096*254*127=132128768, and integer norms <=66064384, so signed32 accumulation does not overflow. ISA semantics checked against primary docs: https://doc.rust-lang.org/core/arch/x86_64/fn._mm512_dpbusd_epi32.html and https://clang.llvm.org/doxygen/avx512vnniintrin_8h.html .
+
+For each represented row, bound its Euclidean quantization error using component |x-fl(scale*integer)| plus |represented|*2^-48 and upward rounding. Square/sum, sqrt, then multiply by 1+(padded_dimension+8)*2^-48 and round upward. The factors exceed RN64 relative error allowances for at most 4096 operations. Float32 nonzero values, differences and their squares lie well within the normal binary64 exponent range; the artificial DBL_MIN term can underflow on zero coordinates, where the exact representation error is zero.
+
+Quantized-center squared distance is qnorm*sq^2+xnorm*sx^2-2*dot*sq*sx. Subtract (|A|+|B|+|C|)*2^-45 to obtain an outward lower envelope despite cancellation and <=8 rounded arithmetic operations. Integer norms/dots are exact. Expand the current rounded Euclidean heap radius upward by 1+(dimension+8)*2^-48, then add both row and query error bounds. Square with upward expansion. Reject only when lower_squared > upper_radius_squared. Triangle inequality then excludes any row whose original sequential-double distance can improve or tie the heap boundary. Strict greater-than preserves key ties.
+
+Validation is required, not assumed: independent full-sort oracle, bitwise distances and exact-radius survival tests across random exponent classes, near ties, signed zero, denormals, FLT_MAX, arbitrary masks/tails, all K sizes, portable/native mask equality, and non-RN fallback. Native speed and end-to-end T/B/M remain to be measured.

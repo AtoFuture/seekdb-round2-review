@@ -1,0 +1,138 @@
+[
+  {
+    "replica": 1,
+    "schema": "bigint",
+    "phase": "query-unindexed",
+    "reference": {
+      "T": 333.849052,
+      "user": 92.14,
+      "system": 36.78,
+      "cpu": 128.792
+    },
+    "candidate": {
+      "T": 311.95344,
+      "user": 86.697,
+      "system": 13.027,
+      "cpu": 99.723
+    }
+  },
+  {
+    "replica": 1,
+    "schema": "bigint",
+    "phase": "query-indexed",
+    "reference": {
+      "T": 339.483509,
+      "user": 96.401,
+      "system": 36.166,
+      "cpu": 132.567
+    },
+    "candidate": {
+      "T": 316.36713,
+      "user": 87.14,
+      "system": 16.275,
+      "cpu": 102.582
+    }
+  },
+  {
+    "replica": 1,
+    "schema": "varchar",
+    "phase": "query-unindexed",
+    "reference": {
+      "T": 365.048086,
+      "user": 112.447,
+      "system": 47.187,
+      "cpu": 159.624
+    },
+    "candidate": {
+      "T": 343.006717,
+      "user": 100.768,
+      "system": 31.176,
+      "cpu": 131.779
+    }
+  },
+  {
+    "replica": 1,
+    "schema": "varchar",
+    "phase": "query-indexed",
+    "reference": {
+      "T": 370.712515,
+      "user": 116.453,
+      "system": 46.258,
+      "cpu": 162.607
+    },
+    "candidate": {
+      "T": 350.474221,
+      "user": 101.419,
+      "system": 31.048,
+      "cpu": 135.164
+    }
+  },
+  {
+    "replica": 2,
+    "schema": "bigint",
+    "phase": "query-unindexed",
+    "reference": {
+      "T": 456.391499,
+      "user": 126.654,
+      "system": 40.447,
+      "cpu": 166.77
+    },
+    "candidate": {
+      "T": 428.210106,
+      "user": 108.977,
+      "system": 22.602,
+      "cpu": 131.692
+    }
+  },
+  {
+    "replica": 2,
+    "schema": "bigint",
+    "phase": "query-indexed",
+    "reference": {
+      "T": 464.067345,
+      "user": 120.211,
+      "system": 50.375,
+      "cpu": 171.925
+    },
+    "candidate": {
+      "T": 436.248079,
+      "user": 115.466,
+      "system": 21.202,
+      "cpu": 136.669
+    }
+  },
+  {
+    "replica": 2,
+    "schema": "varchar",
+    "phase": "query-unindexed",
+    "reference": {
+      "T": 499.571064,
+      "user": 143.785,
+      "system": 61.974,
+      "cpu": 205.914
+    },
+    "candidate": {
+      "T": 473.593093,
+      "user": 139.335,
+      "system": 34.277,
+      "cpu": 173.613
+    }
+  },
+  {
+    "replica": 2,
+    "schema": "varchar",
+    "phase": "query-indexed",
+    "reference": {
+      "T": 501.346699,
+      "user": 149.245,
+      "system": 59.03,
+      "cpu": 209.43
+    },
+    "candidate": {
+      "T": 478.617082,
+      "user": 145.482,
+      "system": 30.577,
+      "cpu": 178.526
+    }
+  }
+]

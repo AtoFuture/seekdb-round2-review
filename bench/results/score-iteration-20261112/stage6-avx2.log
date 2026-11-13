@@ -1,0 +1,2 @@
+runtime AVX2 available: 1
+validated vector kernel: 1183 bitwise cases and validation boundaries passed

@@ -1,0 +1,13 @@
+{
+  "scope": "public-protocol-check",
+  "passed": false,
+  "cases": [
+    {
+      "id": "handshake",
+      "status": "TIMEOUT",
+      "message": "JSON response timeout",
+      "duration_ms": 3197
+    }
+  ],
+  "note": "Local diagnostic only; no performance/Agent scores or platform callbacks."
+}

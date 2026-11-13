@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "common_responses_equal": true,
+  "checks_per_version": 50,
+  "normal_restarts_total": 2,
+  "crash_restarts_total": 2,
+  "intentional_differences": {
+    "distance_ties": {
+      "old": {
+        "id": 52,
+        "ok": true,
+        "columns": [
+          "id",
+          "d"
+        ],
+        "rows": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "new": {
+        "id": 52,
+        "ok": true,
+        "columns": [
+          "id",
+          "d"
+        ],
+        "rows": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "wire_messages_per_version": 58,
+  "wire_different_line_indexes": [
+    56
+  ],
+  "old_image": "minivectordb:platform-success-8b7054",
+  "new_image": "minivectordb:success-compare-latest",
+  "scope": "Local differential validation; platform aggregate does not provide raw scores."
+}

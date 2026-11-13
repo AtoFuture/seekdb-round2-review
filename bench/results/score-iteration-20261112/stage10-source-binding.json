@@ -1,0 +1,208 @@
+{
+  "kind": "runtime-source-binding",
+  "formal_baseline": "aea69813bb6cfb1b0abea3d892db0d4c32517829",
+  "native_measured_commit": "c09d76bf0919c8a2cbce8835f021a622f65fa26b",
+  "native_measured_tree": "ad126d2c525eb5863b88cebf593d1245ea1ec278",
+  "runtime_files_equal_measured_git_tree": true,
+  "source_files": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 11199,
+      "sha256": "6c23eb481d38d7081244769dc09766026de920218e11cbe29c95be48be6b4ecf",
+      "git_blob": "d8ec0b9a191f9c0064fbcf2cd2d30a6170705cae"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 939,
+      "sha256": "ff7dd719c0b41c72e33e9aa112c2dcf16eab763a3bd7c6118d368b4bd0c0c086",
+      "git_blob": "5ca119733dfffd36fa9e11ee4612607d65ccc468"
+    },
+    {
+      "path": "include/minivectordb/database.hpp",
+      "bytes": 6247,
+      "sha256": "dde47907c836e6c3b5bd97a151ec865cbc1c313331ed7c5cefe0142af67d0ee9",
+      "git_blob": "9ed2dbd32d12cf9e6f97b33fe4cc8868fa2dbda2"
+    },
+    {
+      "path": "include/minivectordb/exact.hpp",
+      "bytes": 791,
+      "sha256": "452fbb9e9fb0b0aa5500937e39fbf71f48b1959636b16733f94a5824a35b5b67",
+      "git_blob": "24b82904306261449069e51164b3034d05966044"
+    },
+    {
+      "path": "include/minivectordb/profile.hpp",
+      "bytes": 2965,
+      "sha256": "beff29fdd58daa9fd45f8695485e02c86d95119232c3dc2e9a0036de5b91e0ca",
+      "git_blob": "0e7fe928b6fccb91a74121231d96ea9f08120482"
+    },
+    {
+      "path": "include/minivectordb/row_codec.hpp",
+      "bytes": 1578,
+      "sha256": "56856d5f134d097b98c174dc80b030238d2b471a3227a990c4de852750ecfc13",
+      "git_blob": "342e23ca1984fd88b9683b0988884e1c8d58f393"
+    },
+    {
+      "path": "include/minivectordb/store.hpp",
+      "bytes": 4780,
+      "sha256": "0059e6b9af69507a2d5de2e32dc4f226d45b64ca3447af0fd301ead1f30aa5e5",
+      "git_blob": "942b3ae72674d4ca440d655a0ca2f6ebc81cf817"
+    },
+    {
+      "path": "include/minivectordb/value.hpp",
+      "bytes": 386,
+      "sha256": "2d5066f03ae89528353680ada64d4b2458dc3bca2ba78d67455e4016a11cdbf8",
+      "git_blob": "5796b64843d6f59f297c8542c292025612ac14be"
+    },
+    {
+      "path": "src/catalog/catalog.cpp",
+      "bytes": 4726,
+      "sha256": "00d7cfc032a4ce89b59a6dcd5240901dece8740e969b20a240e6f06a2528c2a8",
+      "git_blob": "31ef31b83540c6167e50160c7958ec6769763cd2"
+    },
+    {
+      "path": "src/catalog/catalog.hpp",
+      "bytes": 498,
+      "sha256": "44d9faa9c297dc1fc11150f8f45d698cd279cf7c3089405046d13cde7ff323de",
+      "git_blob": "65d3a0e84fec8ec2d5bef8430912618ca4a83e98"
+    },
+    {
+      "path": "src/main.cpp",
+      "bytes": 7602,
+      "sha256": "5a117d5646026a4b86f60dc013c819ed991dfdbb29f4f0f3d72dd699277d15dd",
+      "git_blob": "d814e91e0218b250904604bd424dfc0d92c95cd3"
+    },
+    {
+      "path": "src/protocol/jsonl.hpp",
+      "bytes": 12291,
+      "sha256": "9e429febec4913220db169a5a107e05239c387441a8b8a81ac12ae2352d6bcba",
+      "git_blob": "b93a23febea2fd1e5ac8b6a58ef214232c1ab16a"
+    },
+    {
+      "path": "src/sql/binder.cpp",
+      "bytes": 11055,
+      "sha256": "579a6f09665f684b8553e9c5363981c8c7b077aa35a846badd9d91e20507616b",
+      "git_blob": "150c4d30c05a6083786d9fbaadb022a0d3828bbc"
+    },
+    {
+      "path": "src/sql/executor.cpp",
+      "bytes": 32544,
+      "sha256": "8d548e7953e340fe07a69ca9c5244c2cf984fabab729b1d971b90929c875240a",
+      "git_blob": "a07a42620e06ccdbfe31f0e92579a48c2de3c62f"
+    },
+    {
+      "path": "src/sql/lexer.cpp",
+      "bytes": 3278,
+      "sha256": "ac0aa1a04e0c365592f00534991c96ceb519c281b486265b180af4c7ca42936d",
+      "git_blob": "5169d9257ed2e8591311a0af65435865d7f07e4a"
+    },
+    {
+      "path": "src/sql/parser.cpp",
+      "bytes": 7191,
+      "sha256": "9691cac47264c5503d536a5b2a468441cbc316ceb61a68bc544dc0c91125a7ef",
+      "git_blob": "bb944ec94913e8078acfc15e80d4178a006ee58b"
+    },
+    {
+      "path": "src/sql/scan_cache.hpp",
+      "bytes": 3815,
+      "sha256": "fcc8cbf270375d79ad018de695656edc9e4c5d78656dcda48b0b0b6a939b34de",
+      "git_blob": "669c157ca5088eba6412d3c9191bbd579dadd65b"
+    },
+    {
+      "path": "src/sql/snapshot_row.hpp",
+      "bytes": 8197,
+      "sha256": "5f567f6a840f777b14a7b65f81648ad479ef34378f7ab06af38be2dec44192f6",
+      "git_blob": "a8b2d64410ab6004fb6872df14887919e30f5ef8"
+    },
+    {
+      "path": "src/sql/sorter.cpp",
+      "bytes": 6803,
+      "sha256": "29ab6fa41304812719e7fd1133bd00e76d9bf8df6cf90d7e5224bba8b258575e",
+      "git_blob": "1b987572852e82c4c0f755bd638a7e3c7d597a24"
+    },
+    {
+      "path": "src/sql/sorter.hpp",
+      "bytes": 441,
+      "sha256": "ebfd7d18179ef72770daf134367f7733b039790cf288e3d1d4a2c24a0bb5bc4c",
+      "git_blob": "ce44d548805bda070dde5eda7f993e98ce7a99d2"
+    },
+    {
+      "path": "src/sql/sql.hpp",
+      "bytes": 2183,
+      "sha256": "9b82df3f44aaf6705aebac6592339d89e8a133539dfb8760bb1816c52f7188a6",
+      "git_blob": "6068ced7d224eccdf106faf3b36426879c9339b6"
+    },
+    {
+      "path": "src/sql/typed_scan_cache.hpp",
+      "bytes": 11202,
+      "sha256": "e95ee8e8c5f2dcd96647250449907b1eb32710b5e071c055d565847679defe58",
+      "git_blob": "acb3f0adc6e8280565929b34cd04a887a6ec498a"
+    },
+    {
+      "path": "src/storage/binary.hpp",
+      "bytes": 1539,
+      "sha256": "2fc01d9e36805c4b8bd54c6dc786a74105239c6e703890167fa1c85af981966b",
+      "git_blob": "1b8c467ca7d27dbe718ff9d3aa42c08f3062a4f8"
+    },
+    {
+      "path": "src/storage/page_checksum.hpp",
+      "bytes": 3143,
+      "sha256": "cbaaf21c3cbc6ab5117643dc71ac3feb659c0456a1c075e77e86f5b0b5406c21",
+      "git_blob": "b2765f232d904c2736d8e4ef5650eb9d01917204"
+    },
+    {
+      "path": "src/storage/row_codec.cpp",
+      "bytes": 9831,
+      "sha256": "549a71589c593cb5f4ab6ea9e151de0138573ab9b6498cf223496aa4e5a0814f",
+      "git_blob": "d45f82dbec4962f6869faf5fd2e9d9c6a8713ec5"
+    },
+    {
+      "path": "src/storage/row_cpu.hpp",
+      "bytes": 380,
+      "sha256": "6449bfb061b069eff40fea31c08d872c966949c0eedd41405ea921d28331d736",
+      "git_blob": "a40d02988bb4141d49c5580b3cf1c277d6dc180f"
+    },
+    {
+      "path": "src/storage/store.cpp",
+      "bytes": 30594,
+      "sha256": "ee7f222f1d421dc2e671ba087350e6ad5360b3cdc846621284457ea273ec8288",
+      "git_blob": "bf3cf9a35c584bd9f89406ce9b2fa8bd216fbb84"
+    },
+    {
+      "path": "src/types/text_validation.hpp",
+      "bytes": 360,
+      "sha256": "8ef9e75f02ed6f6971b9e2f8780c0cfc23ff60736fd359cbbbf950fa7b2f1498",
+      "git_blob": "6c340919b45f144f52d99de8e8796b8cf503d55d"
+    },
+    {
+      "path": "src/types/value.cpp",
+      "bytes": 4519,
+      "sha256": "91fd8d059b92aa5a498f387372db13f7e3e9676e85213850e04522886c51f84a",
+      "git_blob": "efad2b3f2d63ad481562c5c72df5412ae4581f88"
+    },
+    {
+      "path": "src/vector/batch_simd.hpp",
+      "bytes": 2360,
+      "sha256": "deccccedd984cce3463c20ab67e6aa69428127d60c64165db1c67c1df33f2c6d",
+      "git_blob": "ba2bb7683adf4b2d3306cef1bb68834ebc11cb78"
+    },
+    {
+      "path": "src/vector/exact.cpp",
+      "bytes": 10781,
+      "sha256": "151315529fb40afb2f3a3eb6243a9bb0479058a1e8ae5d2288b342331164679c",
+      "git_blob": "291d5be09108de93e700154695cafd4a3057a5c0"
+    },
+    {
+      "path": "src/vector/validated.hpp",
+      "bytes": 2267,
+      "sha256": "bddfdfbd2286d1d234b7409fb825f6e43503ef610399b9df1630402953c49362",
+      "git_blob": "8df40fb6a2c7e826251f3d0196a26cf99f1d0619"
+    }
+  ],
+  "arm_evidence": "final-stage10-arm.tar.gz",
+  "native_evidence": "stage10-native.json",
+  "notes": [
+    "Only runtime source, CMakeLists and Dockerfile are bound here. Submission materials and later test-evidence files do not change the runtime binary.",
+    "The earlier candidate-source-binding.json belongs to stage5 and remains historical.",
+    "No official hidden admission or score is claimed by this binding."
+  ]
+}

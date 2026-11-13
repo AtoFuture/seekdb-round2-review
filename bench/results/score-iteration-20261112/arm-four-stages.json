@@ -1,0 +1,874 @@
+{
+  "batch-stage1-bigint": {
+    "metadata": {
+      "reference_image": "sha256:24cb099aabc745c67d02fe0c6a84363ece0bb8b0ca98f71d3cad7c1385e6db36",
+      "candidate_image": "sha256:d0b65dfe76eb252878b935c65ab03e63f173b25cb52d4769778f8be057740c48",
+      "output": "/opt/mvdb/results/batch-stage1-bigint",
+      "data_root": "/data/performance-comparison",
+      "temp_root": "/data/tmp",
+      "oracle_bin": "/opt/mvdb/jsonl-oracle",
+      "rounds": 3,
+      "rows": 10000,
+      "queries": 1000,
+      "warmup": 10,
+      "seed": 20261110,
+      "filter_type": "bigint",
+      "local_case_budget": 600,
+      "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+      "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+      "oracle_binary_sha256": "60c7303c45f937ce91908f0c98ad852a836391946f206887ef2725c7838cd259",
+      "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+      "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+      "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+      "official_config": {
+        "startup_timeout": 120,
+        "request_timeout": 60,
+        "case_timeout": 600,
+        "max_response_bytes": 16777216,
+        "cpus": "2",
+        "memory": "2g",
+        "pids_limit": 128,
+        "abs_tol": 1e-05,
+        "rel_tol": 1e-05,
+        "error_codes": {}
+      },
+      "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+      "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+      "local_workload": {
+        "dimensions": 128,
+        "batch": 100,
+        "top_k": 10,
+        "distribution": "integer uniform [-2048,2048] / 128",
+        "half_filtered": true,
+        "unfiltered_queries": 500,
+        "filtered_queries": 500,
+        "filter_group_count": 10,
+        "payload_repeated_characters": 256,
+        "search_mode": "exact"
+      },
+      "limitations": [
+        "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+        "Reports per-metric medians and every round, no synthetic official E.",
+        "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+        "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+        "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+        "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+        "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+        "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+      ]
+    },
+    "groups": {
+      "reference/write/unindexed": {
+        "median": {
+          "T_ms": 477.370441,
+          "B_bytes": 15753216,
+          "M_bytes": 22949888
+        },
+        "all_passed": true
+      },
+      "candidate/write/unindexed": {
+        "median": {
+          "T_ms": 488.761926,
+          "B_bytes": 15753216,
+          "M_bytes": 22982656
+        },
+        "all_passed": true
+      },
+      "reference/query/unindexed": {
+        "median": {
+          "T_ms": 820.357766,
+          "B_bytes": 15753216,
+          "M_bytes": 27815936
+        },
+        "all_passed": true
+      },
+      "candidate/query/unindexed": {
+        "median": {
+          "T_ms": 518.196594,
+          "B_bytes": 15753216,
+          "M_bytes": 27815936
+        },
+        "all_passed": true
+      },
+      "reference/query/indexed": {
+        "median": {
+          "T_ms": 809.957902,
+          "B_bytes": 22179840,
+          "M_bytes": 34430976
+        },
+        "all_passed": true
+      },
+      "candidate/query/indexed": {
+        "median": {
+          "T_ms": 532.824488,
+          "B_bytes": 22179840,
+          "M_bytes": 34422784
+        },
+        "all_passed": true
+      }
+    }
+  },
+  "batch-stage1-varchar": {
+    "metadata": {
+      "reference_image": "sha256:24cb099aabc745c67d02fe0c6a84363ece0bb8b0ca98f71d3cad7c1385e6db36",
+      "candidate_image": "sha256:d0b65dfe76eb252878b935c65ab03e63f173b25cb52d4769778f8be057740c48",
+      "output": "/opt/mvdb/results/batch-stage1-varchar",
+      "data_root": "/data/performance-comparison",
+      "temp_root": "/data/tmp",
+      "oracle_bin": "/opt/mvdb/jsonl-oracle",
+      "rounds": 3,
+      "rows": 10000,
+      "queries": 1000,
+      "warmup": 10,
+      "seed": 20261110,
+      "filter_type": "varchar",
+      "local_case_budget": 600,
+      "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+      "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+      "oracle_binary_sha256": "60c7303c45f937ce91908f0c98ad852a836391946f206887ef2725c7838cd259",
+      "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+      "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+      "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+      "official_config": {
+        "startup_timeout": 120,
+        "request_timeout": 60,
+        "case_timeout": 600,
+        "max_response_bytes": 16777216,
+        "cpus": "2",
+        "memory": "2g",
+        "pids_limit": 128,
+        "abs_tol": 1e-05,
+        "rel_tol": 1e-05,
+        "error_codes": {}
+      },
+      "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+      "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+      "local_workload": {
+        "dimensions": 128,
+        "batch": 100,
+        "top_k": 10,
+        "distribution": "integer uniform [-2048,2048] / 128",
+        "half_filtered": true,
+        "unfiltered_queries": 500,
+        "filtered_queries": 500,
+        "filter_group_count": 10,
+        "payload_repeated_characters": 256,
+        "search_mode": "exact"
+      },
+      "limitations": [
+        "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+        "Reports per-metric medians and every round, no synthetic official E.",
+        "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+        "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+        "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+        "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+        "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+        "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+      ]
+    },
+    "groups": {
+      "reference/write/unindexed": {
+        "median": {
+          "T_ms": 493.571037,
+          "B_bytes": 15753216,
+          "M_bytes": 23023616
+        },
+        "all_passed": true
+      },
+      "candidate/write/unindexed": {
+        "median": {
+          "T_ms": 522.848961,
+          "B_bytes": 15753216,
+          "M_bytes": 23134208
+        },
+        "all_passed": true
+      },
+      "reference/query/unindexed": {
+        "median": {
+          "T_ms": 1004.921711,
+          "B_bytes": 15753216,
+          "M_bytes": 30838784
+        },
+        "all_passed": true
+      },
+      "candidate/query/unindexed": {
+        "median": {
+          "T_ms": 691.008457,
+          "B_bytes": 15753216,
+          "M_bytes": 30822400
+        },
+        "all_passed": true
+      },
+      "reference/query/indexed": {
+        "median": {
+          "T_ms": 956.133412,
+          "B_bytes": 22179840,
+          "M_bytes": 37236736
+        },
+        "all_passed": true
+      },
+      "candidate/query/indexed": {
+        "median": {
+          "T_ms": 694.631934,
+          "B_bytes": 22179840,
+          "M_bytes": 37425152
+        },
+        "all_passed": true
+      }
+    }
+  },
+  "reference-stage2-bigint": {
+    "metadata": {
+      "reference_image": "sha256:d0b65dfe76eb252878b935c65ab03e63f173b25cb52d4769778f8be057740c48",
+      "candidate_image": "sha256:264d2bcb4f25b29f7494b257661009e0247dd51124e515cfee112c3b21b8d0b8",
+      "output": "/opt/mvdb/results/reference-stage2-bigint",
+      "data_root": "/data/performance-comparison",
+      "temp_root": "/data/tmp",
+      "oracle_bin": "/opt/mvdb/jsonl-oracle",
+      "rounds": 3,
+      "rows": 10000,
+      "queries": 1000,
+      "warmup": 10,
+      "seed": 20261110,
+      "filter_type": "bigint",
+      "local_case_budget": 600,
+      "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+      "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+      "oracle_binary_sha256": "60c7303c45f937ce91908f0c98ad852a836391946f206887ef2725c7838cd259",
+      "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+      "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+      "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+      "official_config": {
+        "startup_timeout": 120,
+        "request_timeout": 60,
+        "case_timeout": 600,
+        "max_response_bytes": 16777216,
+        "cpus": "2",
+        "memory": "2g",
+        "pids_limit": 128,
+        "abs_tol": 1e-05,
+        "rel_tol": 1e-05,
+        "error_codes": {}
+      },
+      "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+      "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+      "local_workload": {
+        "dimensions": 128,
+        "batch": 100,
+        "top_k": 10,
+        "distribution": "integer uniform [-2048,2048] / 128",
+        "half_filtered": true,
+        "unfiltered_queries": 500,
+        "filtered_queries": 500,
+        "filter_group_count": 10,
+        "payload_repeated_characters": 256,
+        "search_mode": "exact"
+      },
+      "limitations": [
+        "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+        "Reports per-metric medians and every round, no synthetic official E.",
+        "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+        "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+        "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+        "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+        "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+        "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+      ]
+    },
+    "groups": {
+      "reference/write/unindexed": {
+        "median": {
+          "T_ms": 408.417718,
+          "B_bytes": 15753216,
+          "M_bytes": 22970368
+        },
+        "all_passed": true
+      },
+      "candidate/write/unindexed": {
+        "median": {
+          "T_ms": 415.0574,
+          "B_bytes": 15753216,
+          "M_bytes": 22966272
+        },
+        "all_passed": true
+      },
+      "reference/query/unindexed": {
+        "median": {
+          "T_ms": 436.188072,
+          "B_bytes": 15753216,
+          "M_bytes": 27799552
+        },
+        "all_passed": true
+      },
+      "candidate/query/unindexed": {
+        "median": {
+          "T_ms": 439.460898,
+          "B_bytes": 15753216,
+          "M_bytes": 27820032
+        },
+        "all_passed": true
+      },
+      "reference/query/indexed": {
+        "median": {
+          "T_ms": 442.081393,
+          "B_bytes": 22179840,
+          "M_bytes": 34410496
+        },
+        "all_passed": true
+      },
+      "candidate/query/indexed": {
+        "median": {
+          "T_ms": 437.780654,
+          "B_bytes": 16740352,
+          "M_bytes": 28815360
+        },
+        "all_passed": true
+      }
+    }
+  },
+  "reference-stage2-varchar": {
+    "metadata": {
+      "reference_image": "sha256:d0b65dfe76eb252878b935c65ab03e63f173b25cb52d4769778f8be057740c48",
+      "candidate_image": "sha256:264d2bcb4f25b29f7494b257661009e0247dd51124e515cfee112c3b21b8d0b8",
+      "output": "/opt/mvdb/results/reference-stage2-varchar",
+      "data_root": "/data/performance-comparison",
+      "temp_root": "/data/tmp",
+      "oracle_bin": "/opt/mvdb/jsonl-oracle",
+      "rounds": 3,
+      "rows": 10000,
+      "queries": 1000,
+      "warmup": 10,
+      "seed": 20261110,
+      "filter_type": "varchar",
+      "local_case_budget": 600,
+      "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+      "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+      "oracle_binary_sha256": "60c7303c45f937ce91908f0c98ad852a836391946f206887ef2725c7838cd259",
+      "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+      "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+      "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+      "official_config": {
+        "startup_timeout": 120,
+        "request_timeout": 60,
+        "case_timeout": 600,
+        "max_response_bytes": 16777216,
+        "cpus": "2",
+        "memory": "2g",
+        "pids_limit": 128,
+        "abs_tol": 1e-05,
+        "rel_tol": 1e-05,
+        "error_codes": {}
+      },
+      "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+      "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+      "local_workload": {
+        "dimensions": 128,
+        "batch": 100,
+        "top_k": 10,
+        "distribution": "integer uniform [-2048,2048] / 128",
+        "half_filtered": true,
+        "unfiltered_queries": 500,
+        "filtered_queries": 500,
+        "filter_group_count": 10,
+        "payload_repeated_characters": 256,
+        "search_mode": "exact"
+      },
+      "limitations": [
+        "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+        "Reports per-metric medians and every round, no synthetic official E.",
+        "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+        "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+        "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+        "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+        "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+        "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+      ]
+    },
+    "groups": {
+      "reference/write/unindexed": {
+        "median": {
+          "T_ms": 413.408796,
+          "B_bytes": 15753216,
+          "M_bytes": 23228416
+        },
+        "all_passed": true
+      },
+      "candidate/write/unindexed": {
+        "median": {
+          "T_ms": 412.378122,
+          "B_bytes": 15753216,
+          "M_bytes": 23207936
+        },
+        "all_passed": true
+      },
+      "reference/query/unindexed": {
+        "median": {
+          "T_ms": 569.420061,
+          "B_bytes": 15753216,
+          "M_bytes": 30834688
+        },
+        "all_passed": true
+      },
+      "candidate/query/unindexed": {
+        "median": {
+          "T_ms": 575.891662,
+          "B_bytes": 15753216,
+          "M_bytes": 30838784
+        },
+        "all_passed": true
+      },
+      "reference/query/indexed": {
+        "median": {
+          "T_ms": 568.686683,
+          "B_bytes": 22179840,
+          "M_bytes": 37429248
+        },
+        "all_passed": true
+      },
+      "candidate/query/indexed": {
+        "median": {
+          "T_ms": 581.880957,
+          "B_bytes": 16740352,
+          "M_bytes": 31842304
+        },
+        "all_passed": true
+      }
+    }
+  },
+  "projection-stage3-bigint": {
+    "metadata": {
+      "reference_image": "sha256:264d2bcb4f25b29f7494b257661009e0247dd51124e515cfee112c3b21b8d0b8",
+      "candidate_image": "sha256:5559a4e901101b2b36c07fd2944b0b2f6c393587e999dc770aa4fd156fa5c955",
+      "output": "/opt/mvdb/results/projection-stage3-bigint",
+      "data_root": "/data/performance-comparison",
+      "temp_root": "/data/tmp",
+      "oracle_bin": "/opt/mvdb/jsonl-oracle",
+      "rounds": 3,
+      "rows": 10000,
+      "queries": 1000,
+      "warmup": 10,
+      "seed": 20261110,
+      "filter_type": "bigint",
+      "local_case_budget": 600,
+      "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+      "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+      "oracle_binary_sha256": "60c7303c45f937ce91908f0c98ad852a836391946f206887ef2725c7838cd259",
+      "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+      "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+      "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+      "official_config": {
+        "startup_timeout": 120,
+        "request_timeout": 60,
+        "case_timeout": 600,
+        "max_response_bytes": 16777216,
+        "cpus": "2",
+        "memory": "2g",
+        "pids_limit": 128,
+        "abs_tol": 1e-05,
+        "rel_tol": 1e-05,
+        "error_codes": {}
+      },
+      "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+      "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+      "local_workload": {
+        "dimensions": 128,
+        "batch": 100,
+        "top_k": 10,
+        "distribution": "integer uniform [-2048,2048] / 128",
+        "half_filtered": true,
+        "unfiltered_queries": 500,
+        "filtered_queries": 500,
+        "filter_group_count": 10,
+        "payload_repeated_characters": 256,
+        "search_mode": "exact"
+      },
+      "limitations": [
+        "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+        "Reports per-metric medians and every round, no synthetic official E.",
+        "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+        "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+        "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+        "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+        "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+        "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+      ]
+    },
+    "groups": {
+      "reference/write/unindexed": {
+        "median": {
+          "T_ms": 411.982562,
+          "B_bytes": 15753216,
+          "M_bytes": 22986752
+        },
+        "all_passed": true
+      },
+      "candidate/write/unindexed": {
+        "median": {
+          "T_ms": 414.725941,
+          "B_bytes": 15753216,
+          "M_bytes": 23031808
+        },
+        "all_passed": true
+      },
+      "reference/query/unindexed": {
+        "median": {
+          "T_ms": 445.334824,
+          "B_bytes": 15753216,
+          "M_bytes": 27811840
+        },
+        "all_passed": true
+      },
+      "candidate/query/unindexed": {
+        "median": {
+          "T_ms": 441.016596,
+          "B_bytes": 15753216,
+          "M_bytes": 27799552
+        },
+        "all_passed": true
+      },
+      "reference/query/indexed": {
+        "median": {
+          "T_ms": 439.728379,
+          "B_bytes": 16740352,
+          "M_bytes": 28815360
+        },
+        "all_passed": true
+      },
+      "candidate/query/indexed": {
+        "median": {
+          "T_ms": 436.619477,
+          "B_bytes": 16740352,
+          "M_bytes": 28811264
+        },
+        "all_passed": true
+      }
+    }
+  },
+  "projection-stage3-varchar": {
+    "metadata": {
+      "reference_image": "sha256:264d2bcb4f25b29f7494b257661009e0247dd51124e515cfee112c3b21b8d0b8",
+      "candidate_image": "sha256:5559a4e901101b2b36c07fd2944b0b2f6c393587e999dc770aa4fd156fa5c955",
+      "output": "/opt/mvdb/results/projection-stage3-varchar",
+      "data_root": "/data/performance-comparison",
+      "temp_root": "/data/tmp",
+      "oracle_bin": "/opt/mvdb/jsonl-oracle",
+      "rounds": 3,
+      "rows": 10000,
+      "queries": 1000,
+      "warmup": 10,
+      "seed": 20261110,
+      "filter_type": "varchar",
+      "local_case_budget": 600,
+      "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+      "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+      "oracle_binary_sha256": "60c7303c45f937ce91908f0c98ad852a836391946f206887ef2725c7838cd259",
+      "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+      "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+      "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+      "official_config": {
+        "startup_timeout": 120,
+        "request_timeout": 60,
+        "case_timeout": 600,
+        "max_response_bytes": 16777216,
+        "cpus": "2",
+        "memory": "2g",
+        "pids_limit": 128,
+        "abs_tol": 1e-05,
+        "rel_tol": 1e-05,
+        "error_codes": {}
+      },
+      "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+      "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+      "local_workload": {
+        "dimensions": 128,
+        "batch": 100,
+        "top_k": 10,
+        "distribution": "integer uniform [-2048,2048] / 128",
+        "half_filtered": true,
+        "unfiltered_queries": 500,
+        "filtered_queries": 500,
+        "filter_group_count": 10,
+        "payload_repeated_characters": 256,
+        "search_mode": "exact"
+      },
+      "limitations": [
+        "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+        "Reports per-metric medians and every round, no synthetic official E.",
+        "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+        "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+        "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+        "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+        "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+        "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+      ]
+    },
+    "groups": {
+      "reference/write/unindexed": {
+        "median": {
+          "T_ms": 415.401966,
+          "B_bytes": 15753216,
+          "M_bytes": 23109632
+        },
+        "all_passed": true
+      },
+      "candidate/write/unindexed": {
+        "median": {
+          "T_ms": 420.313922,
+          "B_bytes": 15753216,
+          "M_bytes": 22990848
+        },
+        "all_passed": true
+      },
+      "reference/query/unindexed": {
+        "median": {
+          "T_ms": 583.799656,
+          "B_bytes": 15753216,
+          "M_bytes": 30818304
+        },
+        "all_passed": true
+      },
+      "candidate/query/unindexed": {
+        "median": {
+          "T_ms": 579.963964,
+          "B_bytes": 15753216,
+          "M_bytes": 30834688
+        },
+        "all_passed": true
+      },
+      "reference/query/indexed": {
+        "median": {
+          "T_ms": 590.893454,
+          "B_bytes": 16740352,
+          "M_bytes": 31813632
+        },
+        "all_passed": true
+      },
+      "candidate/query/indexed": {
+        "median": {
+          "T_ms": 579.861652,
+          "B_bytes": 16740352,
+          "M_bytes": 31846400
+        },
+        "all_passed": true
+      }
+    }
+  },
+  "parser-stage4-bigint": {
+    "metadata": {
+      "reference_image": "sha256:5559a4e901101b2b36c07fd2944b0b2f6c393587e999dc770aa4fd156fa5c955",
+      "candidate_image": "sha256:580bb5685add89250edbea6a56af0efb315a3c7408dd97446f6fa856227f59a8",
+      "output": "/opt/mvdb/results/parser-stage4-bigint",
+      "data_root": "/data/performance-comparison",
+      "temp_root": "/data/tmp",
+      "oracle_bin": "/opt/mvdb/jsonl-oracle",
+      "rounds": 3,
+      "rows": 10000,
+      "queries": 1000,
+      "warmup": 10,
+      "seed": 20261110,
+      "filter_type": "bigint",
+      "local_case_budget": 600,
+      "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+      "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+      "oracle_binary_sha256": "60c7303c45f937ce91908f0c98ad852a836391946f206887ef2725c7838cd259",
+      "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+      "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+      "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+      "official_config": {
+        "startup_timeout": 120,
+        "request_timeout": 60,
+        "case_timeout": 600,
+        "max_response_bytes": 16777216,
+        "cpus": "2",
+        "memory": "2g",
+        "pids_limit": 128,
+        "abs_tol": 1e-05,
+        "rel_tol": 1e-05,
+        "error_codes": {}
+      },
+      "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d",
+      "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+      "local_workload": {
+        "dimensions": 128,
+        "batch": 100,
+        "top_k": 10,
+        "distribution": "integer uniform [-2048,2048] / 128",
+        "half_filtered": true,
+        "unfiltered_queries": 500,
+        "filtered_queries": 500,
+        "filter_group_count": 10,
+        "payload_repeated_characters": 256,
+        "search_mode": "exact"
+      },
+      "limitations": [
+        "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+        "Reports per-metric medians and every round, no synthetic official E.",
+        "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+        "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+        "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+        "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+        "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+        "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+      ]
+    },
+    "groups": {
+      "reference/write/unindexed": {
+        "median": {
+          "T_ms": 409.720886,
+          "B_bytes": 15753216,
+          "M_bytes": 22937600
+        },
+        "all_passed": true
+      },
+      "candidate/write/unindexed": {
+        "median": {
+          "T_ms": 387.927812,
+          "B_bytes": 15753216,
+          "M_bytes": 22978560
+        },
+        "all_passed": true
+      },
+      "reference/query/unindexed": {
+        "median": {
+          "T_ms": 445.911653,
+          "B_bytes": 15753216,
+          "M_bytes": 27799552
+        },
+        "all_passed": true
+      },
+      "candidate/query/unindexed": {
+        "median": {
+          "T_ms": 432.205833,
+          "B_bytes": 15753216,
+          "M_bytes": 27820032
+        },
+        "all_passed": true
+      },
+      "reference/query/indexed": {
+        "median": {
+          "T_ms": 438.405009,
+          "B_bytes": 16740352,
+          "M_bytes": 28807168
+        },
+        "all_passed": true
+      },
+      "candidate/query/indexed": {
+        "median": {
+          "T_ms": 432.415094,
+          "B_bytes": 16740352,
+          "M_bytes": 28815360
+        },
+        "all_passed": true
+      }
+    }
+  },
+  "parser-stage4-varchar": {
+    "metadata": {
+      "reference_image": "sha256:5559a4e901101b2b36c07fd2944b0b2f6c393587e999dc770aa4fd156fa5c955",
+      "candidate_image": "sha256:580bb5685add89250edbea6a56af0efb315a3c7408dd97446f6fa856227f59a8",
+      "output": "/opt/mvdb/results/parser-stage4-varchar",
+      "data_root": "/data/performance-comparison",
+      "temp_root": "/data/tmp",
+      "oracle_bin": "/opt/mvdb/jsonl-oracle",
+      "rounds": 3,
+      "rows": 10000,
+      "queries": 1000,
+      "warmup": 10,
+      "seed": 20261110,
+      "filter_type": "varchar",
+      "local_case_budget": 600,
+      "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+      "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb",
+      "oracle_binary_sha256": "60c7303c45f937ce91908f0c98ad852a836391946f206887ef2725c7838cd259",
+      "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+      "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384",
+      "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5",
+      "official_config": {
+        "startup_timeout": 120,
+        "request_timeout": 60,
+        "case_timeout": 600,
+        "max_response_bytes": 16777216,
+        "cpus": "2",
+        "memory": "2g",
+        "pids_limit": 128,
+        "abs_tol": 1e-05,
+        "rel_tol": 1e-05,
+        "error_codes": {}
+      },
+      "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431",
+      "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7",
+      "local_workload": {
+        "dimensions": 128,
+        "batch": 100,
+        "top_k": 10,
+        "distribution": "integer uniform [-2048,2048] / 128",
+        "half_filtered": true,
+        "unfiltered_queries": 500,
+        "filtered_queries": 500,
+        "filter_group_count": 10,
+        "payload_repeated_characters": 256,
+        "search_mode": "exact"
+      },
+      "limitations": [
+        "Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.",
+        "Reports per-metric medians and every round, no synthetic official E.",
+        "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.",
+        "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.",
+        "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.",
+        "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.",
+        "Full query loop wall time includes host reply retention; isolated request sum is also reported.",
+        "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."
+      ]
+    },
+    "groups": {
+      "reference/write/unindexed": {
+        "median": {
+          "T_ms": 418.005132,
+          "B_bytes": 15753216,
+          "M_bytes": 23142400
+        },
+        "all_passed": true
+      },
+      "candidate/write/unindexed": {
+        "median": {
+          "T_ms": 395.706049,
+          "B_bytes": 15753216,
+          "M_bytes": 23101440
+        },
+        "all_passed": true
+      },
+      "reference/query/unindexed": {
+        "median": {
+          "T_ms": 586.817962,
+          "B_bytes": 15753216,
+          "M_bytes": 30822400
+        },
+        "all_passed": true
+      },
+      "candidate/query/unindexed": {
+        "median": {
+          "T_ms": 580.99003,
+          "B_bytes": 15753216,
+          "M_bytes": 30818304
+        },
+        "all_passed": true
+      },
+      "reference/query/indexed": {
+        "median": {
+          "T_ms": 587.489932,
+          "B_bytes": 16740352,
+          "M_bytes": 31834112
+        },
+        "all_passed": true
+      },
+      "candidate/query/indexed": {
+        "median": {
+          "T_ms": 581.138402,
+          "B_bytes": 16740352,
+          "M_bytes": 31830016
+        },
+        "all_passed": true
+      }
+    }
+  }
+}

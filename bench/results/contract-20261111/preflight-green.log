@@ -1,0 +1,28 @@
+test_bom_is_rejected (__main__.SubmissionContractTests) ... ok
+test_case_is_strict_at_each_directory_and_filename (__main__.SubmissionContractTests) ... ok
+test_duplicate_keys_are_rejected_at_any_depth (__main__.SubmissionContractTests) ... ok
+test_empty_official_placeholder_is_not_a_json_template (__main__.SubmissionContractTests) ... ok
+test_exact_size_limit (__main__.SubmissionContractTests) ... ok
+test_explicit_material_path (__main__.SubmissionContractTests) ... ok
+test_free_business_schema_and_default_worktree (__main__.SubmissionContractTests) ... ok
+test_git_exact_case_and_missing_entry (__main__.SubmissionContractTests) ... ok
+test_git_executable_regular_file_is_allowed (__main__.SubmissionContractTests) ... ok
+test_git_history_is_distinct_from_dirty_worktree (__main__.SubmissionContractTests) ... ok
+test_git_rejects_lfs_pointer (__main__.SubmissionContractTests) ... ok
+test_git_rejects_symbolic_link_mode_even_if_blob_is_json (__main__.SubmissionContractTests) ... ok
+test_git_requires_full_commit_sha (__main__.SubmissionContractTests) ... ok
+test_mirror_identity_is_reported_even_for_invalid_json (__main__.SubmissionContractTests) ... ok
+test_mirror_matching_and_local_mismatch (__main__.SubmissionContractTests) ... ok
+test_non_utf8_is_rejected (__main__.SubmissionContractTests) ... ok
+test_nonstandard_constants_are_rejected (__main__.SubmissionContractTests) ... ok
+test_optional_internal_pointer_quotes (__main__.SubmissionContractTests) ... ok
+test_optional_pointer_escaping_and_list_index (__main__.SubmissionContractTests) ... ok
+test_root_only_is_not_default_material (__main__.SubmissionContractTests) ... ok
+test_root_selected_explicitly_is_not_its_own_mirror (__main__.SubmissionContractTests) ... ok
+test_trailing_garbage_and_nonobjects_are_rejected (__main__.SubmissionContractTests) ... ok
+test_unsafe_material_paths (__main__.SubmissionContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 13.536s
+
+OK

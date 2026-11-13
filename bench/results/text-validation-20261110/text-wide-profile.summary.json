@@ -1,0 +1,39 @@
+{
+  "medians": {
+    "wide": {
+      "scalar": {
+        "write_ms": 529.173692,
+        "index_build_ms": 39.9514,
+        "query_total_ms": 110.185802,
+        "query_unfiltered_ms": 66.015702,
+        "query_filtered_ms": 44.1701,
+        "first_query_ms": 13.986407,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 80000,
+        "database_bytes": 19603456,
+        "churn_ms": 0,
+        "process_maxrss_kib": 39708,
+        "local_cgroup_peak_bytes": 55922688
+      },
+      "ascii_blocks": {
+        "write_ms": 534.151,
+        "index_build_ms": 39.695,
+        "query_total_ms": 107.457171,
+        "query_unfiltered_ms": 64.640916,
+        "query_filtered_ms": 42.816255,
+        "first_query_ms": 13.683815,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 80000,
+        "database_bytes": 19603456,
+        "churn_ms": 0,
+        "process_maxrss_kib": 40092,
+        "local_cgroup_peak_bytes": 55922688
+      }
+    }
+  },
+  "samples": 2,
+  "validated_queries": 80,
+  "reopen_checks": 2,
+  "diagnostic": true,
+  "no_official_score": true
+}

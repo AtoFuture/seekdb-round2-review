@@ -1,0 +1,139 @@
+{
+  "medians": {
+    "sparse": {
+      "False": {
+        "write_ms": 349.068295,
+        "index_build_ms": 124.649,
+        "query_total_ms": 3072.256305,
+        "query_unfiltered_ms": 1537.661318,
+        "query_filtered_ms": 1534.594987,
+        "first_query_ms": 79.331288,
+        "database_bytes": 110956544,
+        "churn_ms": 0,
+        "process_maxrss_kib": 24344,
+        "local_cgroup_peak_bytes": 137113600
+      },
+      "True": {
+        "write_ms": 350.117322,
+        "index_build_ms": 126.778,
+        "query_total_ms": 3068.580137,
+        "query_unfiltered_ms": 1536.850227,
+        "query_filtered_ms": 1531.72991,
+        "first_query_ms": 86.932815,
+        "database_bytes": 110956544,
+        "churn_ms": 0,
+        "process_maxrss_kib": 24484,
+        "local_cgroup_peak_bytes": 137031680
+      }
+    },
+    "wide": {
+      "False": {
+        "write_ms": 569.676303,
+        "index_build_ms": 40.7693,
+        "query_total_ms": 2669.845133,
+        "query_unfiltered_ms": 1351.164586,
+        "query_filtered_ms": 1318.680547,
+        "first_query_ms": 68.156373,
+        "database_bytes": 19603456,
+        "churn_ms": 0,
+        "process_maxrss_kib": 39676,
+        "local_cgroup_peak_bytes": 50081792
+      },
+      "True": {
+        "write_ms": 554.106626,
+        "index_build_ms": 40.3439,
+        "query_total_ms": 431.898011,
+        "query_unfiltered_ms": 224.13725,
+        "query_filtered_ms": 207.760761,
+        "first_query_ms": 13.9354,
+        "database_bytes": 19603456,
+        "churn_ms": 0,
+        "process_maxrss_kib": 39604,
+        "local_cgroup_peak_bytes": 49811456
+      }
+    },
+    "overflow": {
+      "False": {
+        "write_ms": 350.633676,
+        "index_build_ms": 35.2848,
+        "query_total_ms": 545.704778,
+        "query_unfiltered_ms": 274.719203,
+        "query_filtered_ms": 270.985575,
+        "first_query_ms": 13.91929,
+        "database_bytes": 22433792,
+        "churn_ms": 0,
+        "process_maxrss_kib": 36252,
+        "local_cgroup_peak_bytes": 58138624
+      },
+      "True": {
+        "write_ms": 345.241435,
+        "index_build_ms": 36.5798,
+        "query_total_ms": 603.799015,
+        "query_unfiltered_ms": 303.655359,
+        "query_filtered_ms": 299.770792,
+        "first_query_ms": 13.34743,
+        "database_bytes": 22433792,
+        "churn_ms": 0,
+        "process_maxrss_kib": 36448,
+        "local_cgroup_peak_bytes": 58060800
+      }
+    },
+    "overcache": {
+      "False": {
+        "write_ms": 4202.76386,
+        "index_build_ms": 156.432,
+        "query_total_ms": 3518.600383,
+        "query_unfiltered_ms": 1785.485654,
+        "query_filtered_ms": 1733.114729,
+        "first_query_ms": 91.594215,
+        "database_bytes": 166100992,
+        "churn_ms": 0,
+        "process_maxrss_kib": 51916,
+        "local_cgroup_peak_bytes": 222388224
+      },
+      "True": {
+        "write_ms": 4319.864696,
+        "index_build_ms": 163.537,
+        "query_total_ms": 2545.962232,
+        "query_unfiltered_ms": 1294.628174,
+        "query_filtered_ms": 1251.334058,
+        "first_query_ms": 71.241432,
+        "database_bytes": 166100992,
+        "churn_ms": 0,
+        "process_maxrss_kib": 52124,
+        "local_cgroup_peak_bytes": 222298112
+      }
+    },
+    "churn": {
+      "False": {
+        "write_ms": 268.335757,
+        "index_build_ms": 18.6906,
+        "query_total_ms": 159.819197,
+        "query_unfiltered_ms": 81.000129,
+        "query_filtered_ms": 78.195712,
+        "first_query_ms": 4.920596,
+        "database_bytes": 8364032,
+        "churn_ms": 25.9684,
+        "process_maxrss_kib": 24104,
+        "local_cgroup_peak_bytes": 31211520
+      },
+      "True": {
+        "write_ms": 270.588243,
+        "index_build_ms": 18.5186,
+        "query_total_ms": 59.235137,
+        "query_unfiltered_ms": 31.114543,
+        "query_filtered_ms": 28.120594,
+        "first_query_ms": 2.587724,
+        "database_bytes": 8364032,
+        "churn_ms": 25.0441,
+        "process_maxrss_kib": 24480,
+        "local_cgroup_peak_bytes": 31129600
+      }
+    }
+  },
+  "samples": 30,
+  "validated_queries": 1200,
+  "reopen_checks": 30,
+  "diagnostic": false,
+  "no_official_score": true
+}

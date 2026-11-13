@@ -1,0 +1,252 @@
+{
+  "scope": "in-memory row validation/materialization and filtered squared-distance only; no SQL/store/IO/TopK",
+  "rows": 10000,
+  "dimensions": 128,
+  "repetitions": 20,
+  "samples": [
+    {
+      "round": 1,
+      "match_percent": 0,
+      "lazy": false,
+      "ms": 827.076597,
+      "checksum": 0.9999,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 1,
+      "match_percent": 0,
+      "lazy": true,
+      "ms": 625.016331,
+      "checksum": 0.9999,
+      "vector_values_materialized": 0
+    },
+    {
+      "round": 1,
+      "match_percent": 1,
+      "lazy": false,
+      "ms": 827.207552,
+      "checksum": 21814759.7499,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 1,
+      "match_percent": 1,
+      "lazy": true,
+      "ms": 630.098842,
+      "checksum": 21814759.7499,
+      "vector_values_materialized": 2000
+    },
+    {
+      "round": 1,
+      "match_percent": 10,
+      "lazy": false,
+      "ms": 828.144444,
+      "checksum": 218103278.5,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 1,
+      "match_percent": 10,
+      "lazy": true,
+      "ms": 703.062196,
+      "checksum": 218103278.5,
+      "vector_values_materialized": 20000
+    },
+    {
+      "round": 1,
+      "match_percent": 50,
+      "lazy": false,
+      "ms": 836.633466,
+      "checksum": 1090619978.5,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 1,
+      "match_percent": 50,
+      "lazy": true,
+      "ms": 1025.009931,
+      "checksum": 1090619978.5,
+      "vector_values_materialized": 100000
+    },
+    {
+      "round": 1,
+      "match_percent": 100,
+      "lazy": false,
+      "ms": 837.184444,
+      "checksum": 2181295436,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 1,
+      "match_percent": 100,
+      "lazy": true,
+      "ms": 1454.918721,
+      "checksum": 2181295436,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 2,
+      "match_percent": 0,
+      "lazy": true,
+      "ms": 617.236877,
+      "checksum": 0.9999,
+      "vector_values_materialized": 0
+    },
+    {
+      "round": 2,
+      "match_percent": 0,
+      "lazy": false,
+      "ms": 811.343176,
+      "checksum": 0.9999,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 2,
+      "match_percent": 1,
+      "lazy": true,
+      "ms": 679.640122,
+      "checksum": 21814759.7499,
+      "vector_values_materialized": 2000
+    },
+    {
+      "round": 2,
+      "match_percent": 1,
+      "lazy": false,
+      "ms": 812.25933,
+      "checksum": 21814759.7499,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 2,
+      "match_percent": 10,
+      "lazy": true,
+      "ms": 698.919114,
+      "checksum": 218103278.5,
+      "vector_values_materialized": 20000
+    },
+    {
+      "round": 2,
+      "match_percent": 10,
+      "lazy": false,
+      "ms": 813.984222,
+      "checksum": 218103278.5,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 2,
+      "match_percent": 50,
+      "lazy": true,
+      "ms": 1014.942297,
+      "checksum": 1090619978.5,
+      "vector_values_materialized": 100000
+    },
+    {
+      "round": 2,
+      "match_percent": 50,
+      "lazy": false,
+      "ms": 819.246314,
+      "checksum": 1090619978.5,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 2,
+      "match_percent": 100,
+      "lazy": true,
+      "ms": 1476.358952,
+      "checksum": 2181295436,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 2,
+      "match_percent": 100,
+      "lazy": false,
+      "ms": 829.930841,
+      "checksum": 2181295436,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 3,
+      "match_percent": 0,
+      "lazy": false,
+      "ms": 818.058841,
+      "checksum": 0.9999,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 3,
+      "match_percent": 0,
+      "lazy": true,
+      "ms": 625.771413,
+      "checksum": 0.9999,
+      "vector_values_materialized": 0
+    },
+    {
+      "round": 3,
+      "match_percent": 1,
+      "lazy": false,
+      "ms": 824.744398,
+      "checksum": 21814759.7499,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 3,
+      "match_percent": 1,
+      "lazy": true,
+      "ms": 626.714298,
+      "checksum": 21814759.7499,
+      "vector_values_materialized": 2000
+    },
+    {
+      "round": 3,
+      "match_percent": 10,
+      "lazy": false,
+      "ms": 877.028549,
+      "checksum": 218103278.5,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 3,
+      "match_percent": 10,
+      "lazy": true,
+      "ms": 727.274571,
+      "checksum": 218103278.5,
+      "vector_values_materialized": 20000
+    },
+    {
+      "round": 3,
+      "match_percent": 50,
+      "lazy": false,
+      "ms": 825.573289,
+      "checksum": 1090619978.5,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 3,
+      "match_percent": 50,
+      "lazy": true,
+      "ms": 1014.127384,
+      "checksum": 1090619978.5,
+      "vector_values_materialized": 100000
+    },
+    {
+      "round": 3,
+      "match_percent": 100,
+      "lazy": false,
+      "ms": 830.88117,
+      "checksum": 2181295436,
+      "vector_values_materialized": 200000
+    },
+    {
+      "round": 3,
+      "match_percent": 100,
+      "lazy": true,
+      "ms": 1434.958304,
+      "checksum": 2181295436,
+      "vector_values_materialized": 200000
+    }
+  ],
+  "library_commit": "fa419bbda1bf63cc2ff00346f2bdcc8441274c55",
+  "image": "sha256:d4c2de68f1b5624e8d5e371f6d74ac94d54f98216ef27ef1436c8388caaad77b",
+  "binary_sha256": "9f4411acad8bc0848d0f44071fcdb5c87e46b1ad57f90181d7375db51b228178",
+  "benchmark_source_sha256": "9e154309e030a41f67a55eb1f02acd966706a8f51f1449050e06d2d84188c429"
+}

@@ -1,0 +1,32 @@
+{
+  "commit": "d55b183-working-tree-snapshot-numeric",
+  "runtime": "sha256:2ba59e6c3712e2e258a60babea479f4cbdda59c741830a5e34fe52de1b00cb74",
+  "rows": 10000,
+  "dimensions": 128,
+  "queries_per_round": 1000,
+  "rounds": 3,
+  "batch": 100,
+  "seed": 20261110,
+  "payload_chars": 256,
+  "top_k": 10,
+  "half_filtered_group_selectivity": 0.1,
+  "search_mode": "exact",
+  "index_creation": "after insertion",
+  "warmup_queries": 10,
+  "timing": "Session.request includes JSON serialization, pipe/Docker transport, server execution, response parsing; excludes dataset/oracle generation and answer verification",
+  "oracle_input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+  "constraints": {
+    "startup_timeout": 120,
+    "request_timeout": 120,
+    "case_timeout": 14400,
+    "max_response_bytes": 16777216,
+    "cpus": "2",
+    "memory": "2g",
+    "pids_limit": 128,
+    "abs_tol": 1e-05,
+    "rel_tol": 1e-05,
+    "error_codes": {}
+  },
+  "swap_caveat": "WSL SwapLimit=false; requested --memory-swap=2g not enforceable; global settings unchanged",
+  "official_score": null
+}

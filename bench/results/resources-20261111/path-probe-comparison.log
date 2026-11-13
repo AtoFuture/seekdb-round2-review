@@ -1,0 +1,57 @@
+sql_crud: PASS 
+sql_comparisons: PASS 
+sql_ordering: PASS 
+sql_empty: PASS 
+sql_primary_key: PASS 
+sql_unicode: PASS 
+sql_bigint: PASS 
+sql_unsupported: PASS 
+storage_restart: PASS 
+vector_euclidean: PASS 
+transaction_commit: PASS 
+transaction_rollback: PASS 
+storage_mutations: PASS 
+storage_multiple_tables: PASS 
+vector_ties_and_filter: PASS 
+vector_float32: PASS 
+vector_index_maintenance: PASS 
+transaction_failed_insert: PASS 
+transaction_autocommit_atomic: PASS 
+transaction_shutdown_rollback: PASS 
+Report: /opt/mvdb/results/path-probe-public/result.json
+{"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 462.439605, "B_bytes": 31793152, "M_bytes": 39534592, "passed": true}
+{"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 451.554248, "B_bytes": 26345472, "M_bytes": 33959936, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 695.810565, "B_bytes": 31793152, "M_bytes": 44130304, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 706.421243, "B_bytes": 26345472, "M_bytes": 38600704, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 709.611712, "B_bytes": 43196416, "M_bytes": 55955456, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 710.433165, "B_bytes": 33427456, "M_bytes": 45993984, "passed": true}
+{"round": 2, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 477.387241, "B_bytes": 26345472, "M_bytes": 33914880, "passed": true}
+{"round": 2, "version": "reference", "phase": "write", "indexed": false, "T_ms": 468.952025, "B_bytes": 31793152, "M_bytes": 39428096, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 705.965098, "B_bytes": 33427456, "M_bytes": 45907968, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": true, "T_ms": 715.165697, "B_bytes": 43196416, "M_bytes": 55910400, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 704.126638, "B_bytes": 26345472, "M_bytes": 38604800, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": false, "T_ms": 702.878765, "B_bytes": 31793152, "M_bytes": 44179456, "passed": true}
+{"round": 3, "version": "reference", "phase": "write", "indexed": false, "T_ms": 459.088012, "B_bytes": 31793152, "M_bytes": 39428096, "passed": true}
+{"round": 3, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 456.357607, "B_bytes": 26345472, "M_bytes": 33943552, "passed": true}
+{"round": 3, "version": "reference", "phase": "query", "indexed": false, "T_ms": 699.20818, "B_bytes": 31793152, "M_bytes": 44142592, "passed": true}
+{"round": 3, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 703.229064, "B_bytes": 26345472, "M_bytes": 38600704, "passed": true}
+{"round": 3, "version": "reference", "phase": "query", "indexed": true, "T_ms": 718.592909, "B_bytes": 43196416, "M_bytes": 55885824, "passed": true}
+{"round": 3, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 711.226603, "B_bytes": 33427456, "M_bytes": 45928448, "passed": true}
+{"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 470.915507, "B_bytes": 31793152, "M_bytes": 39440384, "passed": true}
+{"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 470.738502, "B_bytes": 26345472, "M_bytes": 33955840, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 814.447187, "B_bytes": 31793152, "M_bytes": 47153152, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 822.219405, "B_bytes": 26345472, "M_bytes": 41623552, "passed": true}
+{"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 831.656746, "B_bytes": 43196416, "M_bytes": 58904576, "passed": true}
+{"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 833.503711, "B_bytes": 33427456, "M_bytes": 48996352, "passed": true}
+{"round": 2, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 449.09406, "B_bytes": 26345472, "M_bytes": 34017280, "passed": true}
+{"round": 2, "version": "reference", "phase": "write", "indexed": false, "T_ms": 465.974496, "B_bytes": 31793152, "M_bytes": 39407616, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 828.802444, "B_bytes": 33427456, "M_bytes": 48930816, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": true, "T_ms": 844.902073, "B_bytes": 43196416, "M_bytes": 58925056, "passed": true}
+{"round": 2, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 831.064033, "B_bytes": 26345472, "M_bytes": 41627648, "passed": true}
+{"round": 2, "version": "reference", "phase": "query", "indexed": false, "T_ms": 826.752628, "B_bytes": 31793152, "M_bytes": 47149056, "passed": true}
+{"round": 3, "version": "reference", "phase": "write", "indexed": false, "T_ms": 459.185728, "B_bytes": 31793152, "M_bytes": 39415808, "passed": true}
+{"round": 3, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 464.61244, "B_bytes": 26345472, "M_bytes": 33964032, "passed": true}
+{"round": 3, "version": "reference", "phase": "query", "indexed": false, "T_ms": 819.692975, "B_bytes": 31793152, "M_bytes": 47222784, "passed": true}
+{"round": 3, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 831.704312, "B_bytes": 26345472, "M_bytes": 41615360, "passed": true}
+{"round": 3, "version": "reference", "phase": "query", "indexed": true, "T_ms": 839.911496, "B_bytes": 43196416, "M_bytes": 58904576, "passed": true}
+{"round": 3, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 828.750627, "B_bytes": 33427456, "M_bytes": 48885760, "passed": true}

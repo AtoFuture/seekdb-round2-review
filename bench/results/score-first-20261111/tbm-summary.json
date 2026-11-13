@@ -1,0 +1,595 @@
+{
+  "medians": {
+    "uploaded": {
+      "unindexed": {
+        "write_ms": 1712.011049,
+        "query_ms": 2849.399473,
+        "index_build_ms": 0,
+        "request_cycle_ms": 4555.534967,
+        "write_cumulative_io_bytes": 31793152,
+        "query_cumulative_io_bytes": 31793152,
+        "write_interval_io_bytes": 31784960,
+        "query_interval_io_bytes": 0,
+        "write_peak_bytes": 53764096,
+        "query_peak_bytes": 61079552,
+        "file_bytes": 31379456,
+        "write_dirty_bytes": 0,
+        "write_writeback_bytes": 0,
+        "query_dirty_bytes": 0,
+        "query_writeback_bytes": 0,
+        "swap_current_bytes": 0
+      },
+      "indexed": {
+        "write_ms": 1697.999379,
+        "query_ms": 2882.698271,
+        "index_build_ms": 64.237973,
+        "request_cycle_ms": 4663.833377,
+        "write_cumulative_io_bytes": 31793152,
+        "query_cumulative_io_bytes": 43196416,
+        "write_interval_io_bytes": 31784960,
+        "query_interval_io_bytes": 0,
+        "write_peak_bytes": 53141504,
+        "query_peak_bytes": 72077312,
+        "file_bytes": 42778624,
+        "write_dirty_bytes": 0,
+        "write_writeback_bytes": 0,
+        "query_dirty_bytes": 0,
+        "query_writeback_bytes": 0,
+        "swap_current_bytes": 0
+      }
+    },
+    "current": {
+      "unindexed": {
+        "write_ms": 1322.305925,
+        "query_ms": 1196.347602,
+        "index_build_ms": 0,
+        "request_cycle_ms": 2517.513409,
+        "write_cumulative_io_bytes": 31793152,
+        "query_cumulative_io_bytes": 31793152,
+        "write_interval_io_bytes": 31784960,
+        "query_interval_io_bytes": 0,
+        "write_peak_bytes": 40648704,
+        "query_peak_bytes": 45031424,
+        "file_bytes": 31379456,
+        "write_dirty_bytes": 0,
+        "write_writeback_bytes": 0,
+        "query_dirty_bytes": 0,
+        "query_writeback_bytes": 0,
+        "swap_current_bytes": 0
+      },
+      "indexed": {
+        "write_ms": 1323.932018,
+        "query_ms": 1250.799258,
+        "index_build_ms": 55.206571,
+        "request_cycle_ms": 2626.63505,
+        "write_cumulative_io_bytes": 31793152,
+        "query_cumulative_io_bytes": 43196416,
+        "write_interval_io_bytes": 31784960,
+        "query_interval_io_bytes": 0,
+        "write_peak_bytes": 41447424,
+        "query_peak_bytes": 57696256,
+        "file_bytes": 42778624,
+        "write_dirty_bytes": 0,
+        "write_writeback_bytes": 0,
+        "query_dirty_bytes": 0,
+        "query_writeback_bytes": 0,
+        "swap_current_bytes": 0
+      }
+    }
+  },
+  "samples": [
+    {
+      "version": "uploaded",
+      "indexed": false,
+      "round": 1,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 32346112,
+      "query_cumulative_io_bytes": 32346112,
+      "write_interval_io_bytes": 31928320,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 54394880,
+      "query_peak_bytes": 61652992,
+      "write_ms": 1742.983951,
+      "query_ms": 2927.743643,
+      "index_build_ms": 0,
+      "request_cycle_ms": 4670.727594,
+      "file_bytes": 31379456,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 552960,
+          "wbytes": 31793152,
+          "rios": 7,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 552960,
+          "wbytes": 31793152,
+          "rios": 7,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 4096,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 4096,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "uploaded",
+      "indexed": true,
+      "round": 1,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 43196416,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 53157888,
+      "query_peak_bytes": 72351744,
+      "write_ms": 1716.985404,
+      "query_ms": 2882.698271,
+      "index_build_ms": 64.149702,
+      "request_cycle_ms": 4663.833377,
+      "file_bytes": 42778624,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 43196416,
+          "rios": 0,
+          "wios": 223,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "current",
+      "indexed": false,
+      "round": 1,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 31793152,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 40648704,
+      "query_peak_bytes": 44998656,
+      "write_ms": 1322.305925,
+      "query_ms": 1184.647659,
+      "index_build_ms": 0,
+      "request_cycle_ms": 2506.953584,
+      "file_bytes": 31379456,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "current",
+      "indexed": true,
+      "round": 1,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 43196416,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 41672704,
+      "query_peak_bytes": 57778176,
+      "write_ms": 1354.565662,
+      "query_ms": 1250.799258,
+      "index_build_ms": 55.206571,
+      "request_cycle_ms": 2660.5714909999997,
+      "file_bytes": 42778624,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 43196416,
+          "rios": 0,
+          "wios": 222,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "current",
+      "indexed": true,
+      "round": 2,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 43196416,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 41447424,
+      "query_peak_bytes": 57696256,
+      "write_ms": 1323.932018,
+      "query_ms": 1190.594268,
+      "index_build_ms": 55.51275,
+      "request_cycle_ms": 2570.039036,
+      "file_bytes": 42778624,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 43196416,
+          "rios": 0,
+          "wios": 222,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "current",
+      "indexed": false,
+      "round": 2,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 31793152,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 41148416,
+      "query_peak_bytes": 45715456,
+      "write_ms": 1321.165807,
+      "query_ms": 1196.347602,
+      "index_build_ms": 0,
+      "request_cycle_ms": 2517.513409,
+      "file_bytes": 31379456,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "uploaded",
+      "indexed": true,
+      "round": 2,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 43196416,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 53141504,
+      "query_peak_bytes": 72077312,
+      "write_ms": 1697.999379,
+      "query_ms": 2844.610628,
+      "index_build_ms": 67.578691,
+      "request_cycle_ms": 4610.188698,
+      "file_bytes": 42778624,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 43196416,
+          "rios": 0,
+          "wios": 222,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "uploaded",
+      "indexed": false,
+      "round": 2,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 31793152,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 53321728,
+      "query_peak_bytes": 60624896,
+      "write_ms": 1705.684041,
+      "query_ms": 2849.399473,
+      "index_build_ms": 0,
+      "request_cycle_ms": 4555.083514,
+      "file_bytes": 31379456,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "uploaded",
+      "indexed": false,
+      "round": 3,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 31793152,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 53764096,
+      "query_peak_bytes": 61079552,
+      "write_ms": 1712.011049,
+      "query_ms": 2843.523918,
+      "index_build_ms": 0,
+      "request_cycle_ms": 4555.534967,
+      "file_bytes": 31379456,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 212,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 212,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "uploaded",
+      "indexed": true,
+      "round": 3,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 43196416,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 52912128,
+      "query_peak_bytes": 71864320,
+      "write_ms": 1685.678684,
+      "query_ms": 2941.211955,
+      "index_build_ms": 64.237973,
+      "request_cycle_ms": 4691.128612,
+      "file_bytes": 42778624,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 212,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 43196416,
+          "rios": 0,
+          "wios": 223,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "current",
+      "indexed": false,
+      "round": 3,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 31793152,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 40374272,
+      "query_peak_bytes": 45031424,
+      "write_ms": 1396.808452,
+      "query_ms": 1278.730523,
+      "index_build_ms": 0,
+      "request_cycle_ms": 2675.538975,
+      "file_bytes": 31379456,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    },
+    {
+      "version": "current",
+      "indexed": true,
+      "round": 3,
+      "data_device": "8:48",
+      "write_cumulative_io_bytes": 31793152,
+      "query_cumulative_io_bytes": 43196416,
+      "write_interval_io_bytes": 31784960,
+      "query_interval_io_bytes": 0,
+      "write_peak_bytes": 41062400,
+      "query_peak_bytes": 57094144,
+      "write_ms": 1318.849017,
+      "query_ms": 1253.041656,
+      "index_build_ms": 54.744377,
+      "request_cycle_ms": 2626.63505,
+      "file_bytes": 42778624,
+      "write_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 31793152,
+          "rios": 0,
+          "wios": 211,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "query_devices": {
+        "8:48": {
+          "rbytes": 0,
+          "wbytes": 43196416,
+          "rios": 0,
+          "wios": 222,
+          "dbytes": 0,
+          "dios": 0
+        }
+      },
+      "write_dirty_bytes": 0,
+      "write_writeback_bytes": 0,
+      "query_dirty_bytes": 0,
+      "query_writeback_bytes": 0,
+      "swap_current_bytes": 0
+    }
+  ],
+  "devices": [
+    "8:48"
+  ],
+  "units": "milliseconds and bytes; three-round medians, fresh container per sample",
+  "T_scope": "Sum of measured requests including JSONL transport; excludes warmup and inter-request oracle validation.",
+  "B_scope": "Cgroup rbytes+wbytes on verified data_device up to sample, includes startup/load; not database file length; not official B or shutdown/drained writeback.",
+  "M_scope": "Container cumulative memory.peak since start at each phase; query peak includes load/index/warmup, not an isolated query peak.",
+  "score": null,
+  "formal_result": "Only baseline524133 has user-reported official admission/E; this candidate not pushed/submitted."
+}

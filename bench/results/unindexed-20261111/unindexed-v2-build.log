@@ -1,0 +1,12 @@
+[1/12] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+[2/12] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+[3/12] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+[4/12] Linking CXX static library libminivectordb_core.a
+[5/12] Linking CXX executable unindexed_snapshot_tests
+[6/12] Linking CXX executable row_validation_tests
+[7/12] Linking CXX executable numeric_sql_tests
+[8/12] Linking CXX executable scan_snapshot_tests
+[9/12] Linking CXX executable data_cache_sql_tests
+[10/12] Linking CXX executable profile_tests
+[11/12] Linking CXX executable selective_tests
+[12/12] Linking CXX executable minivectordb

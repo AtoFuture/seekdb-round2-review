@@ -1,0 +1,1 @@
+PASS runtime: default JSONL, read-only root, network disabled, 2 CPU/512 MiB, persistence and EOF/shutdown rollback

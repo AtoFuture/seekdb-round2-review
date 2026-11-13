@@ -1,0 +1,33 @@
+name: Release material and measured-source verification
+"on":
+  push:
+    branches: ['codex/releasecheck-20261112']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify material, history and measured production sources
+        run: |
+          set -euo pipefail
+          export TMPDIR="$RUNNER_TEMP/release-check"
+          mkdir -p "$TMPDIR"
+          mkdir release-check-results
+          python3 -B scripts/check-submission-contract.py --ref "$GITHUB_SHA" --check-internal-references | tee release-check-results/packaging.json
+          python3 -B scripts/check-learning-material.py | tee release-check-results/provenance.json
+          python3 -B tests/learning_selection_tests.py 2>&1 | tee release-check-results/selection-tests.txt
+          python3 -B tests/submission_contract_tests.py 2>&1 | tee release-check-results/contract-tests.txt
+          python3 -B scripts/check-release-evidence.py | tee release-check-results/evidence.json
+      - name: Preserve preflight result
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: release-preflight
+          path: release-check-results/
+          retention-days: 14

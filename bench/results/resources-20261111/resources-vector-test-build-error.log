@@ -1,0 +1,91 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 978B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B done
+#3 DONE 0.0s
+
+#4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#4 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 29.22kB done
+#5 DONE 0.0s
+
+#6 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+#6 CACHED
+
+#7 [build 3/8] WORKDIR /src
+#7 CACHED
+
+#8 [build 4/8] COPY CMakeLists.txt ./
+#8 DONE 0.0s
+
+#9 [build 5/8] COPY include ./include
+#9 DONE 0.0s
+
+#10 [build 6/8] COPY src ./src
+#10 DONE 0.0s
+
+#11 [build 7/8] COPY tests ./tests
+#11 DONE 0.0s
+
+#12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+#12 0.076 -- The CXX compiler identification is GNU 14.2.0
+#12 0.080 -- Detecting CXX compiler ABI info
+#12 0.097 -- Detecting CXX compiler ABI info - done
+#12 0.103 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#12 0.103 -- Detecting CXX compile features
+#12 0.103 -- Detecting CXX compile features - done
+#12 0.160 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+#12 0.161 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+#12 0.179 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+#12 0.180 -- Found Threads: TRUE
+#12 0.181 -- Configuring done (0.1s)
+#12 0.187 -- Generating done (0.0s)
+#12 0.187 -- Build files have been written to: /build
+#12 0.191 [1/73] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+#12 0.191 [2/73] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+#12 0.884 [3/73] Building CXX object CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o
+#12 1.245 /src/tests/vector_literal_tests.cpp: In function 'int main()':
+#12 1.245 /src/tests/vector_literal_tests.cpp:28:80: error: expected '}' before ']' token
+#12 1.245    28 |       "[+-1]","[- 1]","[1e+]","[.]","[1.2.3]","[1]x","[1];","[1\v,2]","[1,2",""];
+#12 1.245       |                                                                                ^
+#12 1.245 /src/tests/vector_literal_tests.cpp:24:30: note: to match this '{'
+#12 1.245    24 |     const std::string cases[]{"[]","[0,-0,+0,0e-999,-1e-999]","[3.4028235e38,-3.4028235e38]",
+#12 1.245       |                              ^
+#12 1.245 /src/tests/vector_literal_tests.cpp:28:80: error: expected ',' or ';' before ']' token
+#12 1.245    28 |       "[+-1]","[- 1]","[1e+]","[.]","[1.2.3]","[1]x","[1];","[1\v,2]","[1,2",""];
+#12 1.245       |                                                                                ^
+#12 1.245 ninja: job failed: /usr/bin/c++  -I/src/include -O3 -DNDEBUG -std=c++20 -MD -MT CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o -MF CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o.d -o CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o -c /src/tests/vector_literal_tests.cpp
+#12 1.267 ninja: subcommand failed
+#12 ERROR: process "/bin/sh -c cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2" did not complete successfully: exit code: 1
+------
+ > [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2:
+1.245    28 |       "[+-1]","[- 1]","[1e+]","[.]","[1.2.3]","[1]x","[1];","[1\v,2]","[1,2",""];
+1.245       |                                                                                ^
+1.245 /src/tests/vector_literal_tests.cpp:24:30: note: to match this '{'
+1.245    24 |     const std::string cases[]{"[]","[0,-0,+0,0e-999,-1e-999]","[3.4028235e38,-3.4028235e38]",
+1.245       |                              ^
+1.245 /src/tests/vector_literal_tests.cpp:28:80: error: expected ',' or ';' before ']' token
+1.245    28 |       "[+-1]","[- 1]","[1e+]","[.]","[1.2.3]","[1]x","[1];","[1\v,2]","[1,2",""];
+1.245       |                                                                                ^
+1.245 ninja: job failed: /usr/bin/c++  -I/src/include -O3 -DNDEBUG -std=c++20 -MD -MT CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o -MF CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o.d -o CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o -c /src/tests/vector_literal_tests.cpp
+1.267 ninja: subcommand failed
+------
+Dockerfile:9
+--------------------
+   7 |     COPY src ./src
+   8 |     COPY tests ./tests
+   9 | >>> RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+  10 |     
+  11 |     FROM build AS test
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2" did not complete successfully: exit code: 1

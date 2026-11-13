@@ -1,0 +1,20 @@
+Internal ctest changing into directory: /mnt/d/Codex/MiniVectorDB/build/row-cpu-core
+Test project /mnt/d/Codex/MiniVectorDB/build/row-cpu-core
+    Start  2: core_vector
+1/7 Test  #2: core_vector ......................   Passed    0.01 sec
+    Start 14: core_selective
+2/7 Test #14: core_selective ...................   Passed    3.51 sec
+    Start 17: core_profile
+3/7 Test #17: core_profile .....................   Passed    0.07 sec
+    Start 29: core_numeric_maximum
+4/7 Test #29: core_numeric_maximum .............   Passed    0.17 sec
+    Start 30: core_numeric_ties
+5/7 Test #30: core_numeric_ties ................   Passed    0.47 sec
+    Start 32: core_row_validation
+6/7 Test #32: core_row_validation ..............   Passed    3.12 sec
+    Start 33: core_row_allocation
+7/7 Test #33: core_row_allocation ..............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =   7.40 sec

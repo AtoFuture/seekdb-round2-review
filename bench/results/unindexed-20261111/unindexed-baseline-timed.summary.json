@@ -1,0 +1,42 @@
+{
+  "medians": {
+    "dense": {
+      "unindexed": {
+        "write_ms": 1308.091181,
+        "index_build_ms": 0,
+        "query_total_ms": 761.798202,
+        "query_unfiltered_ms": 447.434704,
+        "query_filtered_ms": 314.363498,
+        "first_query_ms": 12.574029,
+        "second_query_ms": 3.533766,
+        "snapshot_capacity": 0,
+        "snapshot_rows": 0,
+        "database_bytes": 31432704,
+        "churn_ms": 0,
+        "process_maxrss_kib": 32936,
+        "local_cgroup_peak_bytes": 65601536
+      },
+      "indexed": {
+        "write_ms": 1309.778397,
+        "index_build_ms": 59.4792,
+        "query_total_ms": 488.289943,
+        "query_unfiltered_ms": 309.033216,
+        "query_filtered_ms": 179.256727,
+        "first_query_ms": 94.192281,
+        "second_query_ms": 102.743473,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 2000000,
+        "database_bytes": 42831872,
+        "churn_ms": 0,
+        "process_maxrss_kib": 39208,
+        "local_cgroup_peak_bytes": 84742144
+      }
+    }
+  },
+  "samples": 6,
+  "validated_queries": 1200,
+  "reopen_checks": 6,
+  "diagnostic": false,
+  "no_official_score": true,
+  "profile_note": "table_scan and scan_consume are inclusive. Difference estimates traversal outside callbacks; do not sum enclosing and leaf timers."
+}

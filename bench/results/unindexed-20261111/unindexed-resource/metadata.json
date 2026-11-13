@@ -1,0 +1,37 @@
+{
+  "requested_image": "sha256:91fe268d07c2c0da849ef87dc00eebb96e5a9df5c2f4d9f41ac27b05ce6da856",
+  "image_id": "sha256:91fe268d07c2c0da849ef87dc00eebb96e5a9df5c2f4d9f41ac27b05ce6da856",
+  "entrypoint": [
+    "/usr/local/bin/minivectordb",
+    "--protocol",
+    "jsonl",
+    "--data-dir",
+    "/data"
+  ],
+  "config": {
+    "startup_timeout": 120,
+    "request_timeout": 120,
+    "case_timeout": 1800,
+    "max_response_bytes": 16777216,
+    "cpus": "2",
+    "memory": "64m",
+    "pids_limit": 128,
+    "abs_tol": 1e-05,
+    "rel_tol": 1e-05,
+    "error_codes": {}
+  },
+  "script_sha256": "30a2b748d6fccddcffb128ecedb1c2632f46932256e5d78a8ab76d1f786608c0",
+  "transport_sha256": "fb3a820105e6e94fc348167c7644ce23a270c63f57b026065f4b563d6ef0674f",
+  "official_config_sha256": "63fe51cac3aaaf45c3739b53b1de8420e5d001e8abb6cf88532d9f190d72d904",
+  "data_root": "/var/lib/minivectordb-unindexed-resource",
+  "data_filesystem": "ext2/ext3",
+  "output": "/mnt/d/Codex/MiniVectorDB/work/unindexed-resource",
+  "initial_rows": 1000,
+  "final_rows": 20000,
+  "body_bytes_per_row": 4096,
+  "index_created": false,
+  "snapshot_budget_assumed_from_default": 8388608,
+  "warm_snapshot_bytes_estimate": 4141000,
+  "large_text_bytes": 81920000,
+  "scope": "64 MiB runtime container; host generates input and checks answers. D-backed WSL backing is verified by the caller. Swap settings and observed usage are reported; this is not official resource admission or a direct measurement of internal cache state."
+}

@@ -1,0 +1,287 @@
+{
+  "source": "b7eb52b4bb8fbc25e3209d0933182e57e41afdd8",
+  "rows": 10000,
+  "queries": 40,
+  "rounds": 1,
+  "diagnostic": true,
+  "medians": {
+    "standard": {
+      "packed0-scan0": {
+        "write_ms": 1337.943195,
+        "query_total_ms": 1242.622602,
+        "write_cpu_ms": 482.254,
+        "query_cpu_ms": 1242.699,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 62152704,
+        "insert_file_growth_bytes": 62005248,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 15412,
+        "local_cgroup_peak_bytes": 82063360,
+        "write_profile": {
+          "pread": {
+            "calls": 5513,
+            "bytes": 22581248,
+            "nanoseconds": 6665648
+          },
+          "pwrite": {
+            "calls": 15238,
+            "bytes": 62414848,
+            "nanoseconds": 47313407
+          },
+          "fsync": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 875916444
+          },
+          "page_checksum": {
+            "calls": 20751,
+            "bytes": 0,
+            "nanoseconds": 30834603
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 165887,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 400480,
+            "bytes": 1640366080,
+            "nanoseconds": 397870501
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 400480,
+            "bytes": 0,
+            "nanoseconds": 571803300
+          },
+          "row_validation": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 90276582
+          },
+          "row_materialization": {
+            "calls": 820800,
+            "bytes": 0,
+            "nanoseconds": 25568572
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 220000,
+            "bytes": 0,
+            "nanoseconds": 21503742
+          },
+          "page_read_branch": {
+            "calls": 9240,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 400480,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      },
+      "packed1-scan1048576": {
+        "write_ms": 1235.296786,
+        "query_total_ms": 663.371934,
+        "write_cpu_ms": 403.416,
+        "query_cpu_ms": 663.414,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 31432704,
+        "insert_file_growth_bytes": 31285248,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 15504,
+        "local_cgroup_peak_bytes": 47771648,
+        "write_profile": {
+          "pread": {
+            "calls": 5497,
+            "bytes": 22515712,
+            "nanoseconds": 5819174
+          },
+          "pwrite": {
+            "calls": 7738,
+            "bytes": 31694848,
+            "nanoseconds": 24842485
+          },
+          "fsync": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 846712166
+          },
+          "page_checksum": {
+            "calls": 13235,
+            "bytes": 0,
+            "nanoseconds": 19514711
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 165887,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 161840,
+            "bytes": 662896640,
+            "nanoseconds": 151788122
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 161840,
+            "bytes": 0,
+            "nanoseconds": 235567827
+          },
+          "row_validation": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 92308664
+          },
+          "row_materialization": {
+            "calls": 820800,
+            "bytes": 0,
+            "nanoseconds": 26121289
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 220000,
+            "bytes": 0,
+            "nanoseconds": 22405594
+          },
+          "page_read_branch": {
+            "calls": 9240,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 238960,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      }
+    }
+  },
+  "validated_queries": 80,
+  "reopen_checks": 2
+}

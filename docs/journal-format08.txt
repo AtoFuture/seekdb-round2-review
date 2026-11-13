@@ -1,0 +1,15 @@
+Experimental append-record backend (baseline f62ce8a7)
+
+Production CLI selects this backend only for newly created databases. Library Options.journal_store explicitly selects it. Existing formats 02 through 07 are auto-detected and continue using the original backend. JSONL requests, response schemas, errors, newlines, flushes and exact distances are unchanged.
+
+Commit roots occupy offsets 0 and 4096, each 4096 bytes. Magic MVDBJL08; little-endian uint64 generation at 8, logical head offset at 16, physical extent at 24; IEEE CRC32 at 32 with its own four bytes treated as zero. Choose the highest valid generation whose extent fits the file.
+
+Records begin at offsets >=8192. Header: JREC (4 bytes), uint32 flags (0 raw,1 lossless RLE/byte-plane payload,2 deletion), uint64 namespace, int64 key, uint64 previous logical record, uint64 encoded payload length, uint32 payload CRC32, uint32 CRC32 of the preceding44 header bytes. Payload follows the48-byte header. All fields are little-endian. Previous references strictly precede the current offset. There is no row quantization.
+
+An ordered in-memory map retains only namespace/key/record-offset triples. Recovery follows the committed logical chain, validates headers and bounds, then replays oldest to newest. Payload CRC and row validation occur on reads. Unreachable records are ignored, including failed/rolled-back transaction branches. No database bytes reside outside the configured data file.
+
+A batch validates and encodes all changes, reserves undo/directory storage, finishes its write loop, then publishes directory updates. Partial writes, EINTR and zero/error returns cannot publish a partial statement. Savepoints identify immutable chain heads; ancestor restoration uses undo entries, branch restoration reconstructs the directory. Scan callbacks own a snapshot of offsets, so rollback/new mutations cannot invalidate their record bytes.
+
+Commit writes a new checksummed root and fsyncs before acknowledging success. Ordered policy additionally fsyncs data before publishing the root; ProcessCrash has the same policy as the baseline. Commit failures poison the Store until reopen. Creation also syncs the parent directory. Deleted directory slots are reclaimed at transaction end. The bounded read cache invalidates only overlapping writes.
+
+Validation: all original legacy tests remain. Journal SQL fixtures preserve result/recovery assertions, but adapt file-growth/fault trigger assumptions: records need not be4096 bytes; short-write injection uses less than the actual call length; single-row and batch storage have the same dense byte representation. Native T/B/M comparison is required before selection. No official score or doubling claim is implied.

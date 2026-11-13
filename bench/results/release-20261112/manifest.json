@@ -1,0 +1,362 @@
+{
+  "schema": "release-evidence-v1",
+  "date": "2026-11-12",
+  "formal_baseline": "ff117199f8077de7a6e3e1f91a611397bb6641a0",
+  "formal_E_user_report": 2576.778405,
+  "measured_engine_commit": "4ffb3656db65e708e72d2a206a0987e77274c051",
+  "native_run": "https://github.com/juanzhi-gcb/seekdb/actions/runs/43231201624",
+  "native_pass": {
+    "internal_tests_per_host": 70,
+    "public_tests_per_host": 20,
+    "hosts": 2
+  },
+  "measured_test_paths": [
+    "tests/adversarial_sql_tests.py",
+    "tests/adversarial_storage_tests.cpp",
+    "tests/batch_tests.cpp",
+    "tests/bounded_screen_tests.cpp",
+    "tests/byteplane_tests.cpp",
+    "tests/cache_admission_tests.cpp",
+    "tests/certified_block_tests.cpp",
+    "tests/checksum_slicing_tests.cpp",
+    "tests/checksum_tests.cpp",
+    "tests/cli_tests.py",
+    "tests/commit_policy_tests.cpp",
+    "tests/compressed_path_tests.cpp",
+    "tests/contract_benchmark_tests.py",
+    "tests/core_tests.cpp",
+    "tests/data_cache_sql_tests.cpp",
+    "tests/data_cache_tests.cpp",
+    "tests/float32_literals_tests.py",
+    "tests/index_cache_tests.cpp",
+    "tests/int8_bound_tests.cpp",
+    "tests/journal_adversarial_fixture.cpp",
+    "tests/journal_adversarial_tests.cpp",
+    "tests/journal_harness.hpp",
+    "tests/journal_sql_fixture.cpp",
+    "tests/journal_sql_tests.cpp",
+    "tests/journal_storage_tests.cpp",
+    "tests/json_string_tests.cpp",
+    "tests/jsonl_buffer_tests.py",
+    "tests/jsonl_tests.py",
+    "tests/mixed_filter_cache_tests.cpp",
+    "tests/mutation_prefix_tests.cpp",
+    "tests/namespace_tests.cpp",
+    "tests/numeric_sql_tests.cpp",
+    "tests/packed_codec_tests.cpp",
+    "tests/packed_pointer_tests.cpp",
+    "tests/packed_sql_tests.cpp",
+    "tests/packed_storage_tests.cpp",
+    "tests/paired_scan_tests.cpp",
+    "tests/profile_tests.cpp",
+    "tests/projection_cache_tests.cpp",
+    "tests/projection_probation_tests.cpp",
+    "tests/protocol_adversarial_tests.py",
+    "tests/reference_index_tests.cpp",
+    "tests/row_allocation_tests.cpp",
+    "tests/row_encoding_tests.cpp",
+    "tests/row_validation_tests.cpp",
+    "tests/runtime_smoke.py",
+    "tests/scan_snapshot_tests.cpp",
+    "tests/selective_tests.cpp",
+    "tests/sql_tests.cpp",
+    "tests/submission_contract_tests.py",
+    "tests/text_scan_tests.cpp",
+    "tests/text_validation_tests.cpp",
+    "tests/typed_scan_tests.cpp",
+    "tests/unindexed_snapshot_tests.cpp",
+    "tests/validated_snapshot_tests.cpp",
+    "tests/validated_vector_tests.cpp",
+    "tests/vector_index_tests.cpp",
+    "tests/vector_literal_tests.cpp",
+    "tests/vector_scratch_tests.cpp"
+  ],
+  "artifacts": [
+    {
+      "name": "probation-1.zip",
+      "id": 13950472644,
+      "bytes": 1739225,
+      "sha256": "bd1e0f6555bd14216bd439683add6592858b12cfd7698df0b58d93fba6bf68c6"
+    },
+    {
+      "name": "probation-2.zip",
+      "id": 13951806252,
+      "bytes": 1783771,
+      "sha256": "1a99fa77342107f4741e783c4a6fb691c3476bbc962d79b6180623bfa133d0e0"
+    },
+    {
+      "name": "responsecheck-1.zip",
+      "id": 13951495639,
+      "bytes": 1750949,
+      "sha256": "bc271a9e002e20908b86a32cf8a0e259547f68bfce007e06e659007e3c8176d0"
+    },
+    {
+      "name": "responsecheck-2.zip",
+      "id": 13948895633,
+      "bytes": 1706748,
+      "sha256": "d97aaed7cb855da8915da2d082b3534a356b01b197e70aecaaec59a8ab2748ca"
+    },
+    {
+      "name": "responsecheck-failed-1.zip",
+      "id": 13947668411,
+      "bytes": 8102761,
+      "sha256": "d28c822c395fa32b2d291357e221883498523613b97ab3533ee2bd45579ac4f5"
+    }
+  ],
+  "files": {
+    ".github/workflows/release-material-check.yml": {
+      "bytes": 1423,
+      "sha256": "3c42213e73a8dc5f9cdeb494ebb993db8cf5cc75512c2f7848cd535762e3779e"
+    },
+    "README.md": {
+      "bytes": 4057,
+      "sha256": "692ca459573b65c656579dd92a477c98e4935d3b231e7533f886afea3636f087"
+    },
+    "agent/README.md": {
+      "bytes": 1310,
+      "sha256": "86de832256c41b83a3abd1851feaedc076f916f8456eb064266c77c802edcf34"
+    },
+    "agent/conversation.json": {
+      "bytes": 118518,
+      "sha256": "7c4346cc8e2b23279ad1bc97c447b07b05a9a3e4942509437e5d949c8b42cfc0"
+    },
+    "agent/material-digest.json": {
+      "bytes": 3976,
+      "sha256": "0daec5469a7284fe72a28260d67ea32af40b1c995956438f5e22c2f0bc991e67"
+    },
+    "bench/results/release-20261112/journal-comparison.json": {
+      "bytes": 26618,
+      "sha256": "52cc7c5a7e6166c69fd1d9ef297d5823df2c80dd4aa216641e6da89a4fbcffdf"
+    },
+    "bench/results/release-20261112/native-1/baseline-commit.txt": {
+      "bytes": 41,
+      "sha256": "e5cc983a320bc84c0dee75eb389df759d69580efd1c6b4b61d602c2a93cc624c"
+    },
+    "bench/results/release-20261112/native-1/bounds.json": {
+      "bytes": 124,
+      "sha256": "e4583f223230597f77987e0d1143eb7589b94600c579bb5960c4fd77f2ad1229"
+    },
+    "bench/results/release-20261112/native-1/candidate-commit.txt": {
+      "bytes": 41,
+      "sha256": "a639c7671db041fbe332898813abbdbe52a14280eb7e2f7dfa3a7ce260cab278"
+    },
+    "bench/results/release-20261112/native-1/capacity-bigint.json": {
+      "bytes": 65191,
+      "sha256": "f59f1ad3790209d4021437f565279282b095784f0651ad41fbb2f22c43ca3c5f"
+    },
+    "bench/results/release-20261112/native-1/capacity-varchar.json": {
+      "bytes": 65182,
+      "sha256": "9471b5ae664f420159968c1ed2b493c7c30ab46ddb194291da52cc2213eb71b6"
+    },
+    "bench/results/release-20261112/native-1/ctest.log": {
+      "bytes": 21896,
+      "sha256": "4247bf0f5c2aba87eaaaea114c87c73aed3fa5dd3b48ba39fe571114b005b25d"
+    },
+    "bench/results/release-20261112/native-1/formal-bigint.json": {
+      "bytes": 107470,
+      "sha256": "373903033ae24636bed92e5725ee3025775c328603cb54ffc9a1144ec0bd3ce1"
+    },
+    "bench/results/release-20261112/native-1/formal-varchar.json": {
+      "bytes": 107444,
+      "sha256": "0b4e58d225c1f934777f5ba709aee04c5f69a8e8195ecaee9949bfad9980b3f2"
+    },
+    "bench/results/release-20261112/native-1/general-bigint.json": {
+      "bytes": 38874,
+      "sha256": "4455e80c36da5c9c344b8c7f280d03dda375342d70eb6416b8aca6f422a2334e"
+    },
+    "bench/results/release-20261112/native-1/general-varchar.json": {
+      "bytes": 38867,
+      "sha256": "8372aa6c1d30e469c176901b4ee26ff5fa1f3c146eee84e09209ab23912493b6"
+    },
+    "bench/results/release-20261112/native-1/image-identities.txt": {
+      "bytes": 216,
+      "sha256": "ff23bc56b47b5550711476b3c2becbb5e0c81a69358c8e1ca7bcf2a3543911e8"
+    },
+    "bench/results/release-20261112/native-1/lscpu.txt": {
+      "bytes": 3362,
+      "sha256": "0535bb1480e83c69fe356e41634e13a277dab7414cf5d563975b02388982cb37"
+    },
+    "bench/results/release-20261112/native-1/previous-bigint.json": {
+      "bytes": 107330,
+      "sha256": "1153e06992dd937533b262084366678583b77e870c1c70d59827408609e2396c"
+    },
+    "bench/results/release-20261112/native-1/previous-commit.txt": {
+      "bytes": 41,
+      "sha256": "0322267c3a5cf8371fcf81ea12d580e11e699e74575be4717e04081056974503"
+    },
+    "bench/results/release-20261112/native-1/previous-varchar.json": {
+      "bytes": 107365,
+      "sha256": "d7c11a5c1bbab58388bfb6edb8e474168a00e3cb24d104cc30b74951bb3241d1"
+    },
+    "bench/results/release-20261112/native-1/probe-1-off.json": {
+      "bytes": 2452,
+      "sha256": "c66e7bd03758278c1673ea5159bc011485744dbfccca54f3083c822eaba78577"
+    },
+    "bench/results/release-20261112/native-1/probe-1-on.json": {
+      "bytes": 2455,
+      "sha256": "ac4dea7141be3ecf796e07fbb2f0c675155d789edae764ab31e4a3a904784efc"
+    },
+    "bench/results/release-20261112/native-1/probe-2-off.json": {
+      "bytes": 2451,
+      "sha256": "507abc87816fa0644c65acd739e410f6866e5f5123307ebe510ed19756231c50"
+    },
+    "bench/results/release-20261112/native-1/probe-2-on.json": {
+      "bytes": 2454,
+      "sha256": "56be22caa2d6faef4bbe0906386527db7032213072e9e16153c546741c497c6e"
+    },
+    "bench/results/release-20261112/native-1/probe-3-off.json": {
+      "bytes": 2449,
+      "sha256": "1a2bd837fa719b7d553678bdba4e0207c5c7dab9b60761290f6a592f0b686b51"
+    },
+    "bench/results/release-20261112/native-1/probe-3-on.json": {
+      "bytes": 2455,
+      "sha256": "019423b3c51908bcc55c37b72d6b8510c24a4c6cc1d1370d626647530a1e0c80"
+    },
+    "bench/results/release-20261112/native-1/public-result.json": {
+      "bytes": 2488,
+      "sha256": "301e126e4e7f465618c91db0b61b61727dcfd6cf7006d725bb106e62f481d62a"
+    },
+    "bench/results/release-20261112/native-2/baseline-commit.txt": {
+      "bytes": 41,
+      "sha256": "e5cc983a320bc84c0dee75eb389df759d69580efd1c6b4b61d602c2a93cc624c"
+    },
+    "bench/results/release-20261112/native-2/bounds.json": {
+      "bytes": 124,
+      "sha256": "e4583f223230597f77987e0d1143eb7589b94600c579bb5960c4fd77f2ad1229"
+    },
+    "bench/results/release-20261112/native-2/candidate-commit.txt": {
+      "bytes": 41,
+      "sha256": "a639c7671db041fbe332898813abbdbe52a14280eb7e2f7dfa3a7ce260cab278"
+    },
+    "bench/results/release-20261112/native-2/capacity-bigint.json": {
+      "bytes": 65171,
+      "sha256": "be473f61f1f73e2df38fd6957a7223a9fadd3d6140d79e8badf8bc39d20eecc3"
+    },
+    "bench/results/release-20261112/native-2/capacity-varchar.json": {
+      "bytes": 65195,
+      "sha256": "66c3d46426e5fbac2e81b2513f5e09de9bb429f92f9f4a8108db40654b63bde2"
+    },
+    "bench/results/release-20261112/native-2/ctest.log": {
+      "bytes": 21896,
+      "sha256": "4cea8b93d2952eee5504719a4e978d35f956f8902e6b8858b7aa3091a2eae81d"
+    },
+    "bench/results/release-20261112/native-2/formal-bigint.json": {
+      "bytes": 107472,
+      "sha256": "0fadb63f525528332eade0dc186d0958be8057f3f4eb217ee92ab6e79851ddcc"
+    },
+    "bench/results/release-20261112/native-2/formal-varchar.json": {
+      "bytes": 107465,
+      "sha256": "304c7aa2ee8ff64f0d68ab526dfc20966b70f9ce1e66bfabaa8b72a8360c158f"
+    },
+    "bench/results/release-20261112/native-2/general-bigint.json": {
+      "bytes": 39180,
+      "sha256": "2b09868693f87d0b4c7901ef07d1537f0054515a48c8a3f9896ff30c8b70e67d"
+    },
+    "bench/results/release-20261112/native-2/general-varchar.json": {
+      "bytes": 39183,
+      "sha256": "84052e760d2a68e88fafdd0103e860eeb54ccede9e0f6841bcdc61d970ce9ceb"
+    },
+    "bench/results/release-20261112/native-2/image-identities.txt": {
+      "bytes": 216,
+      "sha256": "e19bce6148cd15a449ea009741d34c87ca97cce3b98ef85a71aa63a426557ffa"
+    },
+    "bench/results/release-20261112/native-2/lscpu.txt": {
+      "bytes": 3465,
+      "sha256": "f38c284de93cf88e87dc8b774cf4cfe31ab58e2cd46b3ffd8ff524d4385640d9"
+    },
+    "bench/results/release-20261112/native-2/previous-bigint.json": {
+      "bytes": 107370,
+      "sha256": "5fbeeb2420ed2e7843ef3077cf90ab287303c31b0e43a9e3856957bf63a9e165"
+    },
+    "bench/results/release-20261112/native-2/previous-commit.txt": {
+      "bytes": 41,
+      "sha256": "0322267c3a5cf8371fcf81ea12d580e11e699e74575be4717e04081056974503"
+    },
+    "bench/results/release-20261112/native-2/previous-varchar.json": {
+      "bytes": 107430,
+      "sha256": "ad7d48a5a8e5ecdaf84ac9841135021df5b6132a4128ec56826ffc54aab0e084"
+    },
+    "bench/results/release-20261112/native-2/probe-1-off.json": {
+      "bytes": 2453,
+      "sha256": "022fa072c6d9df2b48adcda8c1b680ef7f5f436acb9daac98b2f8914980da20a"
+    },
+    "bench/results/release-20261112/native-2/probe-1-on.json": {
+      "bytes": 2457,
+      "sha256": "18de0ec0f23369ac009ea572ba536bdac7263902ebee40061f3c38ac1bd4ba00"
+    },
+    "bench/results/release-20261112/native-2/probe-2-off.json": {
+      "bytes": 2453,
+      "sha256": "31d19a76f602422c31a3f402b6136aa5f9ca8e96c879a70bf7bf81a190e4236b"
+    },
+    "bench/results/release-20261112/native-2/probe-2-on.json": {
+      "bytes": 2455,
+      "sha256": "0f874dc1588182f4d5cd260b6835ce074d8278508e6871107bc9a6e98789d16c"
+    },
+    "bench/results/release-20261112/native-2/probe-3-off.json": {
+      "bytes": 2453,
+      "sha256": "f65903bd2d0b6b5aa10cc29e26f8031dd7b2abc5fad0847a51069b87868f4f11"
+    },
+    "bench/results/release-20261112/native-2/probe-3-on.json": {
+      "bytes": 2457,
+      "sha256": "4e7fdfc612d9832cc54391d1ef7b71336cb58e8dba0f9db3675ddb5e954f1950"
+    },
+    "bench/results/release-20261112/native-2/public-result.json": {
+      "bytes": 2488,
+      "sha256": "4de640ebaa29185981a8689c3ed48c6d58a688353a1c7ae961f3598d42dcb62b"
+    },
+    "bench/results/release-20261112/probation-comparison.json": {
+      "bytes": 26050,
+      "sha256": "fb0e7588d398bf02ec761d304006ca90bda05ec734f67229b2ab842b77830816"
+    },
+    "bench/results/release-20261112/query-latency-diagnostic.json": {
+      "bytes": 15747,
+      "sha256": "c9f000751f6d03d641e5d1eef6bd3a5c7db7339f7453afc116f287952b14771b"
+    },
+    "bench/results/release-20261112/responsearena-comparison.json": {
+      "bytes": 10696,
+      "sha256": "5d4f8908f394de1b8621dd996377ab02eb08e84d8f200ecfece95ca6bfa945f2"
+    },
+    "bench/results/release-20261112/responsearena-cpu.json": {
+      "bytes": 2514,
+      "sha256": "9d10521f580ae702483b36c110556dcb7e9607b7e159c4596f6c0b672f1f98c3"
+    },
+    "bench/results/release-20261112/responsecheck-comparison.json": {
+      "bytes": 19326,
+      "sha256": "cb92d36e1391bb293d74b81df6c2e7407c0430444a45893dccb2fa54e4f8a1ba"
+    },
+    "bench/results/release-20261112/write-outlier-followup.json": {
+      "bytes": 5260,
+      "sha256": "ceeaeb6e9c91037373e715e04cd3d57a137151ec2346ee862e9f55c57a5e559b"
+    },
+    "bench/results/score-next-20261112/iteration-records-appendix.json": {
+      "bytes": 23625,
+      "sha256": "dd7f612805f19095729485eb653293746de827032a7ae0e97cc129a7a6a9fc84"
+    },
+    "conversation.json": {
+      "bytes": 118518,
+      "sha256": "7c4346cc8e2b23279ad1bc97c447b07b05a9a3e4942509437e5d949c8b42cfc0"
+    },
+    "scripts/check-learning-material.py": {
+      "bytes": 14540,
+      "sha256": "b265f941e3542cf5e87e707e2a970082a7411b2d0f44ca989977c3be63b6cbb4"
+    },
+    "scripts/check-release-evidence.py": {
+      "bytes": 1136,
+      "sha256": "224b45896a11b39793bce4ef036e5699923e1daaddb075fde59b7a019a2f1b6f"
+    },
+    "tests/learning_selection_tests.py": {
+      "bytes": 3575,
+      "sha256": "ca78fee394a766d357a65c89fed8e7f0a2bc05c27fbdf8ef98830f87cbea128e"
+    }
+  },
+  "caveats": [
+    "Generated workloads; no official E conversion.",
+    "Formal Prompt invalid reason unknown; local packaging checks do not guarantee score.",
+    "Original capacity write outlier not reproduced; precise wait cause unconfirmed."
+  ],
+  "preflight_first_attempt": {
+    "run": 43237490170,
+    "commit": "e426a6b47b90868373eab80c664b635493b3246a",
+    "result": "Material packaging/provenance and7selection tests passed.23CLI unit cases could not initialize /data/tmp on host runner. Set TMPDIR to RUNNER_TEMP, keep production code and test assertions unchanged."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "medians": {
+    "dense": {
+      "reference": {
+        "write_ms": 1274.2727985000001,
+        "index_build_ms": 0.0,
+        "query_total_ms": 429.4702995,
+        "query_unfiltered_ms": 258.312427,
+        "query_filtered_ms": 171.1578725,
+        "first_query_ms": 11.355086,
+        "second_query_ms": 10.457845500000001,
+        "snapshot_capacity": 8388608.0,
+        "snapshot_rows": 2000000.0,
+        "database_bytes": 31432704.0,
+        "churn_ms": 0.0,
+        "query_and_mutation_ms": 429.4702995,
+        "typed_rows": 0.0,
+        "typed_capacity": 0.0,
+        "warm_resident_bytes": 40519680.0,
+        "invalidated_resident_bytes": 0.0,
+        "query_and_mutation_minor_faults": 985.0,
+        "process_maxrss_kib": 39616.0,
+        "local_cgroup_peak_bytes": 72644608.0
+      },
+      "typed": {
+        "write_ms": 1268.2980765,
+        "index_build_ms": 0.0,
+        "query_total_ms": 128.7199835,
+        "query_unfiltered_ms": 105.3239025,
+        "query_filtered_ms": 23.396081000000002,
+        "first_query_ms": 12.304134000000001,
+        "second_query_ms": 8.763803,
+        "snapshot_capacity": 0.0,
+        "snapshot_rows": 0.0,
+        "database_bytes": 31432704.0,
+        "churn_ms": 0.0,
+        "query_and_mutation_ms": 128.7199835,
+        "typed_rows": 2000000.0,
+        "typed_capacity": 8388352.0,
+        "warm_resident_bytes": 37584896.0,
+        "invalidated_resident_bytes": 0.0,
+        "query_and_mutation_minor_faults": 983.0,
+        "process_maxrss_kib": 36826.0,
+        "local_cgroup_peak_bytes": 69521408.0
+      }
+    }
+  },
+  "samples": 12,
+  "validated_queries": 2400,
+  "reopen_checks": 12,
+  "diagnostic": false,
+  "no_official_score": true,
+  "order": "rotating positions, reverse each full block",
+  "profile_note": "table_scan and scan_consume are inclusive. Difference estimates traversal outside callbacks; do not sum enclosing and leaf timers."
+}

@@ -1,0 +1,1 @@
+{"passed": true, "scope": "independent JSONL Docker model/crash diagnostic", "model_checks": 273, "mutations": 150, "modes": ["exact", "ann"], "crash_restarts": 2}

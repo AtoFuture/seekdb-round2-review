@@ -1,0 +1,39 @@
+{
+  "medians": {
+    "dense": {
+      "reference": {
+        "write_ms": 1340.625923,
+        "index_build_ms": 59.8155,
+        "query_total_ms": 552.46275,
+        "query_unfiltered_ms": 337.156137,
+        "query_filtered_ms": 215.306613,
+        "first_query_ms": 14.125472,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 2000000,
+        "database_bytes": 42831872,
+        "churn_ms": 0,
+        "process_maxrss_kib": 39468,
+        "local_cgroup_peak_bytes": 84897792
+      },
+      "batched": {
+        "write_ms": 1347.404979,
+        "index_build_ms": 56.6793,
+        "query_total_ms": 540.497464,
+        "query_unfiltered_ms": 335.018489,
+        "query_filtered_ms": 205.478975,
+        "first_query_ms": 14.841632,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 2000000,
+        "database_bytes": 42831872,
+        "churn_ms": 0,
+        "process_maxrss_kib": 39968,
+        "local_cgroup_peak_bytes": 84127744
+      }
+    }
+  },
+  "samples": 6,
+  "validated_queries": 1200,
+  "reopen_checks": 6,
+  "diagnostic": false,
+  "no_official_score": true
+}

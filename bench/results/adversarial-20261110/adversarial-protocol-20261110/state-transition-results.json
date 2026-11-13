@@ -1,0 +1,93 @@
+[
+  {
+    "sql": "BEGIN;",
+    "id_length": 65518,
+    "response": {
+      "ok": false,
+      "error": {
+        "code": "EXECUTION",
+        "message": "cannot create JSON response spool"
+      }
+    }
+  },
+  {
+    "sql": "INSERT INTO t VALUES(1);",
+    "id_length": 0,
+    "response": {
+      "ok": true,
+      "affected_rows": 1
+    }
+  },
+  {
+    "sql": "ROLLBACK;",
+    "id_length": 0,
+    "response": {
+      "ok": true,
+      "affected_rows": 0
+    }
+  },
+  {
+    "sql": "SELECT id FROM t;",
+    "id_length": 0,
+    "response": {
+      "ok": true,
+      "columns": [
+        "id"
+      ],
+      "rows": []
+    }
+  },
+  {
+    "sql": "BEGIN;",
+    "id_length": 0,
+    "response": {
+      "ok": true,
+      "affected_rows": 0
+    }
+  },
+  {
+    "sql": "INSERT INTO t VALUES(2);",
+    "id_length": 0,
+    "response": {
+      "ok": true,
+      "affected_rows": 1
+    }
+  },
+  {
+    "sql": "COMMIT;",
+    "id_length": 65518,
+    "response": {
+      "ok": false,
+      "error": {
+        "code": "EXECUTION",
+        "message": "cannot create JSON response spool"
+      }
+    }
+  },
+  {
+    "sql": "ROLLBACK;",
+    "id_length": 0,
+    "response": {
+      "ok": false,
+      "error": {
+        "code": "TRANSACTION",
+        "message": "no active transaction"
+      }
+    }
+  },
+  {
+    "sql": "SELECT id FROM t;",
+    "id_length": 0,
+    "response": {
+      "ok": true,
+      "columns": [
+        "id"
+      ],
+      "rows": [
+        [
+          2
+        ]
+      ]
+    }
+  }
+]

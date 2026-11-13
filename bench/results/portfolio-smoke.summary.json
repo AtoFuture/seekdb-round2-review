@@ -1,0 +1,155 @@
+{
+  "source": "65423b15609b858e20ebd6123c9158ab4db9cd17+working",
+  "rows": 100,
+  "queries": 4,
+  "rounds": 1,
+  "diagnostic": false,
+  "medians": {
+    "bytewise-cache0": {
+      "write_ms": 20.891615,
+      "query_total_ms": 10.049157,
+      "write_cpu_ms": 12.34,
+      "query_cpu_ms": 9.909,
+      "database_bytes": 622592,
+      "insert_file_growth_bytes": 475136,
+      "process_maxrss_kib": 10768,
+      "local_cgroup_peak_bytes": 8175616,
+      "write_cache": {
+        "hits": 0,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 0,
+        "resident_pages": 0
+      },
+      "query_cache": {
+        "hits": 0,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 0,
+        "resident_pages": 0
+      }
+    },
+    "bytewise-cache1048576": {
+      "write_ms": 13.945069,
+      "query_total_ms": 3.923669,
+      "write_cpu_ms": 6.183,
+      "query_cpu_ms": 3.929,
+      "database_bytes": 622592,
+      "insert_file_growth_bytes": 475136,
+      "process_maxrss_kib": 10768,
+      "local_cgroup_peak_bytes": 6053888,
+      "write_cache": {
+        "hits": 808,
+        "misses": 16,
+        "evictions": 0,
+        "capacity_bytes": 1048560,
+        "resident_pages": 32
+      },
+      "query_cache": {
+        "hits": 768,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 1048560,
+        "resident_pages": 48
+      }
+    },
+    "bytewise-cache262144": {
+      "write_ms": 14.639697,
+      "query_total_ms": 4.885949,
+      "write_cpu_ms": 6.537,
+      "query_cpu_ms": 4.892,
+      "database_bytes": 622592,
+      "insert_file_growth_bytes": 475136,
+      "process_maxrss_kib": 10768,
+      "local_cgroup_peak_bytes": 4939776,
+      "write_cache": {
+        "hits": 808,
+        "misses": 16,
+        "evictions": 0,
+        "capacity_bytes": 259056,
+        "resident_pages": 32
+      },
+      "query_cache": {
+        "hits": 720,
+        "misses": 48,
+        "evictions": 48,
+        "capacity_bytes": 259056,
+        "resident_pages": 33
+      }
+    },
+    "slicing8-cache0": {
+      "write_ms": 15.173906,
+      "query_total_ms": 4.018473,
+      "write_cpu_ms": 6.643,
+      "query_cpu_ms": 4.024,
+      "database_bytes": 622592,
+      "insert_file_growth_bytes": 475136,
+      "process_maxrss_kib": 11280,
+      "local_cgroup_peak_bytes": 5713920,
+      "write_cache": {
+        "hits": 0,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 0,
+        "resident_pages": 0
+      },
+      "query_cache": {
+        "hits": 0,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 0,
+        "resident_pages": 0
+      }
+    },
+    "slicing8-cache1048576": {
+      "write_ms": 12.337698,
+      "query_total_ms": 1.514292,
+      "write_cpu_ms": 4.495,
+      "query_cpu_ms": 1.517,
+      "database_bytes": 622592,
+      "insert_file_growth_bytes": 475136,
+      "process_maxrss_kib": 11024,
+      "local_cgroup_peak_bytes": 5525504,
+      "write_cache": {
+        "hits": 808,
+        "misses": 16,
+        "evictions": 0,
+        "capacity_bytes": 1048560,
+        "resident_pages": 32
+      },
+      "query_cache": {
+        "hits": 768,
+        "misses": 0,
+        "evictions": 0,
+        "capacity_bytes": 1048560,
+        "resident_pages": 48
+      }
+    },
+    "slicing8-cache262144": {
+      "write_ms": 13.2951,
+      "query_total_ms": 1.709765,
+      "write_cpu_ms": 4.657,
+      "query_cpu_ms": 1.714,
+      "database_bytes": 622592,
+      "insert_file_growth_bytes": 475136,
+      "process_maxrss_kib": 10768,
+      "local_cgroup_peak_bytes": 5210112,
+      "write_cache": {
+        "hits": 808,
+        "misses": 16,
+        "evictions": 0,
+        "capacity_bytes": 259056,
+        "resident_pages": 32
+      },
+      "query_cache": {
+        "hits": 720,
+        "misses": 48,
+        "evictions": 48,
+        "capacity_bytes": 259056,
+        "resident_pages": 33
+      }
+    }
+  },
+  "validated_queries": 24,
+  "reopen_checks": 6
+}

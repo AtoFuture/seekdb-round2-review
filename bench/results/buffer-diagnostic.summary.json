@@ -1,0 +1,774 @@
+{
+  "source": "250375570ff8b4f4db747b6ab6dc5b667163b9e1",
+  "rows": 10000,
+  "queries": 40,
+  "rounds": 1,
+  "diagnostic": true,
+  "medians": {
+    "standard": {
+      "data0-scan1048576": {
+        "write_ms": 1271.596896,
+        "query_total_ms": 689.115737,
+        "first_query_ms": 23.150033,
+        "write_cpu_ms": 429.254,
+        "query_cpu_ms": 689.199,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 31432704,
+        "insert_file_growth_bytes": 31285248,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 14952,
+        "local_cgroup_peak_bytes": 46895104,
+        "write_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        },
+        "query_data_cache": {
+          "hits": 0,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 0,
+          "resident_pages": 0
+        },
+        "write_profile": {
+          "pread": {
+            "calls": 5497,
+            "bytes": 22515712,
+            "nanoseconds": 8204038
+          },
+          "pwrite": {
+            "calls": 7738,
+            "bytes": 31694848,
+            "nanoseconds": 26891139
+          },
+          "fsync": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 858661391
+          },
+          "page_checksum": {
+            "calls": 13235,
+            "bytes": 0,
+            "nanoseconds": 20498902
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 165887,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 161840,
+            "bytes": 662896640,
+            "nanoseconds": 162245277
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 161840,
+            "bytes": 0,
+            "nanoseconds": 232093787
+          },
+          "row_validation": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 90052387
+          },
+          "row_materialization": {
+            "calls": 820800,
+            "bytes": 0,
+            "nanoseconds": 24814826
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 220000,
+            "bytes": 0,
+            "nanoseconds": 21858248
+          },
+          "page_read_branch": {
+            "calls": 9240,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 238960,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      },
+      "data1048576-scan0": {
+        "write_ms": 1286.569452,
+        "query_total_ms": 558.139486,
+        "first_query_ms": 16.522965,
+        "write_cpu_ms": 431.387,
+        "query_cpu_ms": 558.216,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 31432704,
+        "insert_file_growth_bytes": 31285248,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 16032,
+        "local_cgroup_peak_bytes": 48111616,
+        "write_data_cache": {
+          "hits": 198,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 1036224,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 289484,
+          "misses": 110996,
+          "evictions": 110996,
+          "capacity_bytes": 1036224,
+          "resident_pages": 252
+        },
+        "write_profile": {
+          "pread": {
+            "calls": 5299,
+            "bytes": 21704704,
+            "nanoseconds": 7563245
+          },
+          "pwrite": {
+            "calls": 7738,
+            "bytes": 31694848,
+            "nanoseconds": 26993516
+          },
+          "fsync": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 872861913
+          },
+          "page_checksum": {
+            "calls": 13037,
+            "bytes": 0,
+            "nanoseconds": 20609397
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 165887,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 111316,
+            "bytes": 455950336,
+            "nanoseconds": 120103081
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 111316,
+            "bytes": 0,
+            "nanoseconds": 159315119
+          },
+          "row_validation": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 90722394
+          },
+          "row_materialization": {
+            "calls": 820800,
+            "bytes": 0,
+            "nanoseconds": 24740104
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 220000,
+            "bytes": 0,
+            "nanoseconds": 21706240
+          },
+          "page_read_branch": {
+            "calls": 9240,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      },
+      "data16777216-scan0": {
+        "write_ms": 1308.795789,
+        "query_total_ms": 290.395254,
+        "first_query_ms": 17.414994,
+        "write_cpu_ms": 455.614,
+        "query_cpu_ms": 290.507,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 31432704,
+        "insert_file_growth_bytes": 31285248,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 31828,
+        "local_cgroup_peak_bytes": 63930368,
+        "write_data_cache": {
+          "hits": 198,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 400480,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2502
+        },
+        "write_profile": {
+          "pread": {
+            "calls": 5299,
+            "bytes": 21704704,
+            "nanoseconds": 8084797
+          },
+          "pwrite": {
+            "calls": 7738,
+            "bytes": 31694848,
+            "nanoseconds": 27530259
+          },
+          "fsync": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 870023799
+          },
+          "page_checksum": {
+            "calls": 13037,
+            "bytes": 0,
+            "nanoseconds": 20342793
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 165887,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 320,
+            "bytes": 1310720,
+            "nanoseconds": 641488
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 320,
+            "bytes": 0,
+            "nanoseconds": 565864
+          },
+          "row_validation": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 92178775
+          },
+          "row_materialization": {
+            "calls": 820800,
+            "bytes": 0,
+            "nanoseconds": 25256299
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 220000,
+            "bytes": 0,
+            "nanoseconds": 22346567
+          },
+          "page_read_branch": {
+            "calls": 9240,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      },
+      "data16777216-scan1048576": {
+        "write_ms": 1296.098667,
+        "query_total_ms": 345.611093,
+        "first_query_ms": 20.191252,
+        "write_cpu_ms": 437.373,
+        "query_cpu_ms": 345.667,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 31432704,
+        "insert_file_growth_bytes": 31285248,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 31836,
+        "local_cgroup_peak_bytes": 63811584,
+        "write_data_cache": {
+          "hits": 198,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 161520,
+          "misses": 0,
+          "evictions": 0,
+          "capacity_bytes": 16776960,
+          "resident_pages": 2502
+        },
+        "write_profile": {
+          "pread": {
+            "calls": 5299,
+            "bytes": 21704704,
+            "nanoseconds": 7218411
+          },
+          "pwrite": {
+            "calls": 7738,
+            "bytes": 31694848,
+            "nanoseconds": 26112010
+          },
+          "fsync": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 876418649
+          },
+          "page_checksum": {
+            "calls": 13037,
+            "bytes": 0,
+            "nanoseconds": 20515982
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 165887,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 320,
+            "bytes": 1310720,
+            "nanoseconds": 637333
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 320,
+            "bytes": 0,
+            "nanoseconds": 595877
+          },
+          "row_validation": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 100048455
+          },
+          "row_materialization": {
+            "calls": 820800,
+            "bytes": 0,
+            "nanoseconds": 27862252
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 220000,
+            "bytes": 0,
+            "nanoseconds": 25511750
+          },
+          "page_read_branch": {
+            "calls": 9240,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 238960,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      },
+      "data4194304-scan0": {
+        "write_ms": 1324.390167,
+        "query_total_ms": 626.22633,
+        "first_query_ms": 17.575013,
+        "write_cpu_ms": 419.623,
+        "query_cpu_ms": 626.325,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 31432704,
+        "insert_file_growth_bytes": 31285248,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 19512,
+        "local_cgroup_peak_bytes": 50896896,
+        "write_data_cache": {
+          "hits": 198,
+          "misses": 2,
+          "evictions": 0,
+          "capacity_bytes": 4194240,
+          "resident_pages": 2
+        },
+        "query_data_cache": {
+          "hits": 300322,
+          "misses": 100158,
+          "evictions": 100158,
+          "capacity_bytes": 4194240,
+          "resident_pages": 1020
+        },
+        "write_profile": {
+          "pread": {
+            "calls": 5299,
+            "bytes": 21704704,
+            "nanoseconds": 8048800
+          },
+          "pwrite": {
+            "calls": 7738,
+            "bytes": 31694848,
+            "nanoseconds": 26384277
+          },
+          "fsync": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 921870890
+          },
+          "page_checksum": {
+            "calls": 13037,
+            "bytes": 0,
+            "nanoseconds": 19861458
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 165887,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 200,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 100478,
+            "bytes": 411557888,
+            "nanoseconds": 129915287
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 100478,
+            "bytes": 0,
+            "nanoseconds": 159229938
+          },
+          "row_validation": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 101537582
+          },
+          "row_materialization": {
+            "calls": 820800,
+            "bytes": 0,
+            "nanoseconds": 27985211
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 220000,
+            "bytes": 0,
+            "nanoseconds": 23720164
+          },
+          "page_read_branch": {
+            "calls": 9240,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 400400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      }
+    }
+  },
+  "validated_queries": 200,
+  "reopen_checks": 5,
+  "first_query_checks": 5
+}

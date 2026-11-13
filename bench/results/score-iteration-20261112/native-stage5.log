@@ -1,0 +1,666 @@
+﻿2026-11-11T23:39:16.5341015Z Current runner version: '2.338.2'
+2026-11-11T23:39:16.5379377Z ##[group]Runner Image Provisioner
+2026-11-11T23:39:16.5380531Z Hosted Compute Agent
+2026-11-11T23:39:16.5381401Z Version: 20261028.624
+2026-11-11T23:39:16.5382243Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-11T23:39:16.5383349Z Build Date: 2026-10-28T21:51:42Z
+2026-11-11T23:39:16.5384345Z Worker ID: {cf694a74-4b92-4f49-8b42-b49fc81c7a77}
+2026-11-11T23:39:16.5385313Z Region: eastus2
+2026-11-11T23:39:16.5386137Z Cloud: Azure
+2026-11-11T23:39:16.5386868Z ##[endgroup]
+2026-11-11T23:39:16.5389251Z ##[group]Operating System
+2026-11-11T23:39:16.5390160Z Ubuntu
+2026-11-11T23:39:16.5390838Z 24.04.5
+2026-11-11T23:39:16.5391601Z LTS
+2026-11-11T23:39:16.5392312Z ##[endgroup]
+2026-11-11T23:39:16.5393149Z ##[group]Runner Image
+2026-11-11T23:39:16.5394025Z Image: ubuntu-24.04
+2026-11-11T23:39:16.5394797Z Version: 20261101.360.1
+2026-11-11T23:39:16.5396647Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-11T23:39:16.5399571Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+2026-11-11T23:39:16.5400974Z ##[endgroup]
+2026-11-11T23:39:16.5402542Z ##[group]GITHUB_TOKEN Permissions
+2026-11-11T23:39:16.5405768Z Contents: read
+2026-11-11T23:39:16.5406619Z Metadata: read
+2026-11-11T23:39:16.5407526Z ##[endgroup]
+2026-11-11T23:39:16.5410815Z Secret source: Actions
+2026-11-11T23:39:16.5412303Z Cache mode: write
+2026-11-11T23:39:16.5413569Z Prepare workflow directory
+2026-11-11T23:39:16.5880792Z Prepare all required actions
+2026-11-11T23:39:16.5954078Z Getting action download info
+2026-11-11T23:39:16.8492549Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-11T23:39:17.1374433Z Complete job name: compare
+2026-11-11T23:39:17.2090776Z ##[group]Run set -euo pipefail
+2026-11-11T23:39:17.2091688Z [36;1mset -euo pipefail[0m
+2026-11-11T23:39:17.2092367Z [36;1mgit init .[0m
+2026-11-11T23:39:17.2093312Z [36;1mgit remote add origin https://github.com/juanzhi-gcb/seekdb.git[0m
+2026-11-11T23:39:17.2094422Z [36;1mgit fetch --depth=1 origin "$GITHUB_SHA"[0m
+2026-11-11T23:39:17.2095148Z [36;1mgit checkout --detach FETCH_HEAD[0m
+2026-11-11T23:39:17.2095935Z [36;1mtest "$(git rev-parse HEAD)" = "$GITHUB_SHA"[0m
+2026-11-11T23:39:17.2115531Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-11T23:39:17.2116542Z ##[endgroup]
+2026-11-11T23:39:17.2392209Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-11T23:39:17.2393988Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-11T23:39:17.2395110Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-11T23:39:17.2396391Z hint: call:
+2026-11-11T23:39:17.2397043Z hint:
+2026-11-11T23:39:17.2397892Z hint: 	git config --global init.defaultBranch <name>
+2026-11-11T23:39:17.2398613Z hint:
+2026-11-11T23:39:17.2399272Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-11T23:39:17.2400290Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-11T23:39:17.2401110Z hint:
+2026-11-11T23:39:17.2401604Z hint: 	git branch -m <name>
+2026-11-11T23:39:17.2402174Z hint:
+2026-11-11T23:39:17.2402885Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-11T23:39:17.2403923Z Initialized empty Git repository in /home/runner/work/seekdb/seekdb/.git/
+2026-11-11T23:39:18.8164789Z From https://github.com/juanzhi-gcb/seekdb
+2026-11-11T23:39:18.8167405Z  * branch            cc9da5265c4b5f9817fa9c314537dcaa7da53c13 -> FETCH_HEAD
+2026-11-11T23:39:18.9298807Z HEAD is now at cc9da52 Compare bulk quoted-token scanning with full native resource accounting
+2026-11-11T23:39:18.9487227Z ##[group]Run bash bench/run_native_contract.sh
+2026-11-11T23:39:18.9489397Z [36;1mbash bench/run_native_contract.sh[0m
+2026-11-11T23:39:18.9506419Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-11T23:39:18.9508678Z ##[endgroup]
+2026-11-11T23:39:18.9621348Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-11T23:39:18.9624015Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-11T23:39:18.9626587Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-11T23:39:18.9628761Z hint: call:
+2026-11-11T23:39:18.9629914Z hint:
+2026-11-11T23:39:18.9631203Z hint: 	git config --global init.defaultBranch <name>
+2026-11-11T23:39:18.9632768Z hint:
+2026-11-11T23:39:18.9634281Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-11T23:39:18.9636615Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-11T23:39:18.9638874Z hint:
+2026-11-11T23:39:18.9639970Z hint: 	git branch -m <name>
+2026-11-11T23:39:18.9641236Z hint:
+2026-11-11T23:39:18.9642912Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-11T23:39:18.9645711Z Initialized empty Git repository in /home/runner/work/_temp/mvdb-frozen-base/.git/
+2026-11-11T23:39:20.8923342Z From https://github.com/juanzhi-gcb/seekdb
+2026-11-11T23:39:20.8924091Z  * branch            aea69813bb6cfb1b0abea3d892db0d4c32517829 -> FETCH_HEAD
+2026-11-11T23:39:21.0049314Z HEAD is now at aea6981 Optimize MiniVectorDB query reuse and T/B/M; include Prompt and validation evidence
+2026-11-11T23:39:25.5354555Z #0 building with "default" instance using docker driver
+2026-11-11T23:39:25.5355085Z 
+2026-11-11T23:39:25.5355411Z #1 [internal] load build definition from Dockerfile
+2026-11-11T23:39:25.5356170Z #1 transferring dockerfile: 978B 0.0s done
+2026-11-11T23:39:25.5356789Z #1 DONE 0.0s
+2026-11-11T23:39:25.5357168Z 
+2026-11-11T23:39:25.5357591Z #2 [auth] library/alpine:pull token for registry-1.docker.io
+2026-11-11T23:39:25.6861523Z #2 DONE 0.0s
+2026-11-11T23:39:25.6861976Z 
+2026-11-11T23:39:25.6863011Z #3 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:39:25.9440405Z #3 DONE 0.5s
+2026-11-11T23:39:26.0761032Z 
+2026-11-11T23:39:26.0762564Z #4 [internal] load .dockerignore
+2026-11-11T23:39:26.0763338Z #4 transferring context: 81B done
+2026-11-11T23:39:26.0763766Z #4 DONE 0.0s
+2026-11-11T23:39:26.0764134Z 
+2026-11-11T23:39:26.0764402Z #5 [internal] load build context
+2026-11-11T23:39:26.0764891Z #5 transferring context: 510.32kB done
+2026-11-11T23:39:26.0765347Z #5 DONE 0.0s
+2026-11-11T23:39:26.0765535Z 
+2026-11-11T23:39:26.0766251Z #6 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:39:26.0767537Z #6 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+2026-11-11T23:39:26.0768771Z #6 sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f 9.22kB / 9.22kB done
+2026-11-11T23:39:26.0769898Z #6 sha256:9db2934886712d877c932e07249c75a59e6ca27adfbccc05261987a17bef2d63 1.02kB / 1.02kB done
+2026-11-11T23:39:26.0770933Z #6 sha256:812e99317af7009fea987b5ad913e63f8494c2d6e596b59b6ac8b8f91f7766e8 611B / 611B done
+2026-11-11T23:39:26.0771803Z #6 sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 3.79MB / 3.79MB 0.1s
+2026-11-11T23:39:26.1891843Z #6 sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 3.79MB / 3.79MB 0.1s done
+2026-11-11T23:39:26.1892910Z #6 extracting sha256:710f3da1112f360bed5d2908205aeee86b9d04ecd471354cf7049a2f0bdb5c72 0.1s done
+2026-11-11T23:39:26.1893454Z #6 DONE 0.2s
+2026-11-11T23:39:26.3409171Z 
+2026-11-11T23:39:26.3409858Z #7 [runtime 2/4] RUN apk add --no-cache libstdc++=14.2.0-r6
+2026-11-11T23:39:26.5959569Z #7 0.162 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+2026-11-11T23:39:26.5960863Z #7 0.255 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+2026-11-11T23:39:26.8359226Z #7 0.537 (1/2) Installing libgcc (14.2.0-r6)
+2026-11-11T23:39:26.8359738Z #7 0.545 (2/2) Installing libstdc++ (14.2.0-r6)
+2026-11-11T23:39:26.8360149Z #7 0.569 OK: 10 MiB in 18 packages
+2026-11-11T23:39:28.2344347Z #7 DONE 2.0s
+2026-11-11T23:39:28.2345343Z 
+2026-11-11T23:39:28.2346572Z #8 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+2026-11-11T23:39:28.2347599Z #8 0.160 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+2026-11-11T23:39:28.2348828Z #8 0.241 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+2026-11-11T23:39:28.2349566Z #8 0.519 (1/43) Installing libgcc (14.2.0-r6)
+2026-11-11T23:39:28.2350195Z #8 0.527 (2/43) Installing jansson (2.14.1-r0)
+2026-11-11T23:39:28.2351052Z #8 0.534 (3/43) Installing libstdc++ (14.2.0-r6)
+2026-11-11T23:39:28.2351702Z #8 0.560 (4/43) Installing zstd-libs (1.5.7-r0)
+2026-11-11T23:39:28.2352489Z #8 0.574 (5/43) Installing binutils (2.44-r3)
+2026-11-11T23:39:28.2353159Z #8 0.646 (6/43) Installing libmagic (5.46-r2)
+2026-11-11T23:39:28.2353902Z #8 0.671 (7/43) Installing file (5.46-r2)
+2026-11-11T23:39:28.2354479Z #8 0.678 (8/43) Installing libgomp (14.2.0-r6)
+2026-11-11T23:39:28.2355190Z #8 0.688 (9/43) Installing libatomic (14.2.0-r6)
+2026-11-11T23:39:28.2355894Z #8 0.697 (10/43) Installing gmp (6.3.0-r3)
+2026-11-11T23:39:28.2356575Z #8 0.707 (11/43) Installing isl26 (0.26-r1)
+2026-11-11T23:39:28.2357211Z #8 0.728 (12/43) Installing mpfr4 (4.2.1_p1-r0)
+2026-11-11T23:39:28.2358004Z #8 0.741 (13/43) Installing mpc1 (1.3.1-r1)
+2026-11-11T23:39:28.2358905Z #8 0.748 (14/43) Installing gcc (14.2.0-r6)
+2026-11-11T23:39:28.2359546Z #8 1.634 (15/43) Installing libstdc++-dev (14.2.0-r6)
+2026-11-11T23:39:28.2360292Z #8 1.768 (16/43) Installing musl-dev (1.2.5-r13)
+2026-11-11T23:39:28.2360918Z #8 1.829 (17/43) Installing g++ (14.2.0-r6)
+2026-11-11T23:39:28.3409886Z #8 2.112 (18/43) Installing make (4.4.1-r3)
+2026-11-11T23:39:28.3410384Z #8 2.121 (19/43) Installing fortify-headers (1.1-r5)
+2026-11-11T23:39:28.3410913Z #8 2.127 (20/43) Installing patch (2.8-r0)
+2026-11-11T23:39:28.3411322Z #8 2.135 (21/43) Installing build-base (0.5-r3)
+2026-11-11T23:39:28.3411716Z #8 2.135 (22/43) Installing acl-libs (2.3.2-r1)
+2026-11-11T23:39:28.3412119Z #8 2.142 (23/43) Installing libbz2 (1.0.8-r6)
+2026-11-11T23:39:28.3412537Z #8 2.151 (24/43) Installing libexpat (2.10.0-r0)
+2026-11-11T23:39:28.5457143Z #8 2.159 (25/43) Installing lz4-libs (1.10.0-r0)
+2026-11-11T23:39:28.5458249Z #8 2.167 (26/43) Installing xz-libs (5.8.4-r0)
+2026-11-11T23:39:28.5458882Z #8 2.175 (27/43) Installing libarchive (3.8.11-r0)
+2026-11-11T23:39:28.5459562Z #8 2.187 (28/43) Installing rhash-libs (1.4.5-r0)
+2026-11-11T23:39:28.5460221Z #8 2.197 (29/43) Installing libuv (1.51.0-r0)
+2026-11-11T23:39:28.5460844Z #8 2.205 (30/43) Installing cmake (3.31.7-r1)
+2026-11-11T23:39:28.9042279Z #8 2.714 (31/43) Installing libffi (3.4.8-r0)
+2026-11-11T23:39:29.1364072Z #8 2.722 (32/43) Installing gdbm (1.24-r0)
+2026-11-11T23:39:29.1364800Z #8 2.732 (33/43) Installing mpdecimal (4.0.1-r0)
+2026-11-11T23:39:29.1365697Z #8 2.740 (34/43) Installing ncurses-terminfo-base (6.5_p20250503-r0)
+2026-11-11T23:39:29.1366418Z #8 2.748 (35/43) Installing libncursesw (6.5_p20250503-r0)
+2026-11-11T23:39:29.1367060Z #8 2.757 (36/43) Installing libpanelw (6.5_p20250503-r0)
+2026-11-11T23:39:29.1367864Z #8 2.767 (37/43) Installing readline (8.2.13-r1)
+2026-11-11T23:39:29.1368469Z #8 2.776 (38/43) Installing sqlite-libs (3.49.2-r1)
+2026-11-11T23:39:29.1369114Z #8 2.796 (39/43) Installing python3 (3.12.16-r0)
+2026-11-11T23:39:29.1431105Z #8 2.953 (40/43) Installing python3-pycache-pyc0 (3.12.16-r0)
+2026-11-11T23:39:29.2536152Z #8 3.050 (41/43) Installing pyc (3.12.16-r0)
+2026-11-11T23:39:29.2536826Z #8 3.050 (42/43) Installing python3-pyc (3.12.16-r0)
+2026-11-11T23:39:29.2537951Z #8 3.050 (43/43) Installing samurai (1.2-r7)
+2026-11-11T23:39:29.2538603Z #8 3.063 Executing busybox-1.37.0-r20.trigger
+2026-11-11T23:39:29.4104139Z #8 3.070 OK: 334 MiB in 59 packages
+2026-11-11T23:39:31.0658438Z #8 DONE 4.9s
+2026-11-11T23:39:31.2951696Z 
+2026-11-11T23:39:31.2952854Z #9 [build 3/8] WORKDIR /src
+2026-11-11T23:39:31.2953517Z #9 DONE 0.0s
+2026-11-11T23:39:31.2953758Z 
+2026-11-11T23:39:31.2953977Z #10 [build 4/8] COPY CMakeLists.txt ./
+2026-11-11T23:39:31.2954541Z #10 DONE 0.0s
+2026-11-11T23:39:31.2954794Z 
+2026-11-11T23:39:31.2955032Z #11 [build 5/8] COPY include ./include
+2026-11-11T23:39:31.2955505Z #11 DONE 0.0s
+2026-11-11T23:39:31.2955769Z 
+2026-11-11T23:39:31.2955929Z #12 [build 6/8] COPY src ./src
+2026-11-11T23:39:31.2956373Z #12 DONE 0.0s
+2026-11-11T23:39:31.2956571Z 
+2026-11-11T23:39:31.2956752Z #13 [build 7/8] COPY tests ./tests
+2026-11-11T23:39:31.2957108Z #13 DONE 0.0s
+2026-11-11T23:39:31.2957249Z 
+2026-11-11T23:39:31.2957928Z #14 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+2026-11-11T23:39:31.3104169Z #14 0.165 -- The CXX compiler identification is GNU 14.2.0
+2026-11-11T23:39:31.5357510Z #14 0.177 -- Detecting CXX compiler ABI info
+2026-11-11T23:39:31.5358421Z #14 0.221 -- Detecting CXX compiler ABI info - done
+2026-11-11T23:39:31.5361086Z #14 0.239 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+2026-11-11T23:39:31.5361850Z #14 0.239 -- Detecting CXX compile features
+2026-11-11T23:39:31.5363812Z #14 0.240 -- Detecting CXX compile features - done
+2026-11-11T23:39:31.5455635Z #14 0.401 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+2026-11-11T23:39:31.7885672Z #14 0.404 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+2026-11-11T23:39:31.7887090Z #14 0.453 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+2026-11-11T23:39:31.7888144Z #14 0.455 -- Found Threads: TRUE
+2026-11-11T23:39:31.7889045Z #14 0.458 -- Configuring done (0.3s)
+2026-11-11T23:39:31.7889754Z #14 0.480 -- Generating done (0.0s)
+2026-11-11T23:39:31.7890649Z #14 0.480 -- Build files have been written to: /build
+2026-11-11T23:39:31.7892131Z #14 0.493 [1/73] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+2026-11-11T23:39:31.7893866Z #14 0.493 [2/73] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+2026-11-11T23:39:33.5364875Z #14 2.391 [3/73] Building CXX object CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o
+2026-11-11T23:39:34.5345277Z #14 3.389 [4/73] Building CXX object CMakeFiles/compressed_path_tests.dir/tests/compressed_path_tests.cpp.o
+2026-11-11T23:39:35.2299827Z #14 4.085 [5/73] Building CXX object CMakeFiles/commit_policy_tests.dir/tests/commit_policy_tests.cpp.o
+2026-11-11T23:39:37.8669768Z #14 6.722 [6/73] Building CXX object CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o
+2026-11-11T23:39:38.0809851Z #14 6.785 [7/73] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+2026-11-11T23:39:42.2185979Z #14 11.07 [8/73] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+2026-11-11T23:39:45.6442138Z #14 14.50 [9/73] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+2026-11-11T23:39:46.8089399Z #14 15.66 [10/73] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+2026-11-11T23:39:49.5798904Z #14 18.43 [11/73] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+2026-11-11T23:39:50.8488146Z #14 19.70 [12/73] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+2026-11-11T23:39:51.1278157Z #14 19.98 [13/73] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+2026-11-11T23:39:52.6416500Z #14 21.50 [14/73] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+2026-11-11T23:39:54.9082856Z #14 23.76 [15/73] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+2026-11-11T23:39:55.0962567Z #14 23.80 [16/73] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+2026-11-11T23:39:57.6949912Z #14 26.55 [17/73] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+2026-11-11T23:39:58.5412569Z #14 27.40 [18/73] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+2026-11-11T23:40:00.0793369Z #14 28.93 [19/73] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+2026-11-11T23:40:02.6771089Z #14 31.53 [20/73] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+2026-11-11T23:40:03.7385434Z #14 32.59 [21/73] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+2026-11-11T23:40:06.4000777Z #14 35.26 [22/73] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+2026-11-11T23:40:07.5758828Z #14 36.43 [23/73] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+2026-11-11T23:40:08.6062305Z #14 37.46 [24/73] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+2026-11-11T23:40:10.1370741Z #14 38.99 [25/73] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+2026-11-11T23:40:10.8256009Z #14 39.68 [26/73] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+2026-11-11T23:40:12.2919732Z #14 41.15 [27/73] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+2026-11-11T23:40:13.6231242Z #14 42.48 [28/73] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+2026-11-11T23:40:15.1142147Z #14 43.97 [29/73] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+2026-11-11T23:40:16.6911811Z #14 45.55 [30/73] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+2026-11-11T23:40:17.6842774Z #14 46.54 [31/73] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+2026-11-11T23:40:19.7744656Z #14 48.63 [32/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+2026-11-11T23:40:20.4640861Z #14 49.32 [33/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+2026-11-11T23:40:23.4603746Z #14 52.32 [34/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+2026-11-11T23:40:25.2671611Z #14 54.12 [35/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+2026-11-11T23:40:26.8466998Z #14 55.70 [36/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+2026-11-11T23:40:28.1409268Z #14 57.00 [37/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+2026-11-11T23:40:28.3572142Z #14 57.06 [38/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+2026-11-11T23:40:30.0453038Z #14 58.90 [39/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+2026-11-11T23:40:30.8691418Z #14 59.72 [40/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+2026-11-11T23:40:32.5637926Z #14 61.42 [41/73] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+2026-11-11T23:40:35.0258101Z #14 63.88 [42/73] Linking CXX static library libminivectordb_core.a
+2026-11-11T23:40:35.1419188Z #14 63.90 [43/73] Linking CXX executable validated_snapshot_tests
+2026-11-11T23:40:35.1439544Z #14 63.90 [44/73] Linking CXX executable validated_vector_tests
+2026-11-11T23:40:35.1440478Z #14 63.92 [45/73] Linking CXX executable vector_literal_tests
+2026-11-11T23:40:35.1441436Z #14 63.93 [46/73] Linking CXX executable compressed_path_tests
+2026-11-11T23:40:35.1442267Z #14 63.94 [47/73] Linking CXX executable commit_policy_tests
+2026-11-11T23:40:35.1443174Z #14 63.95 [48/73] Linking CXX executable mixed_filter_cache_tests
+2026-11-11T23:40:35.1444298Z #14 63.96 [49/73] Linking CXX executable typed_scan_tests
+2026-11-11T23:40:35.1445117Z #14 63.98 [50/73] Linking CXX executable vector_scratch_tests
+2026-11-11T23:40:35.1445956Z #14 64.00 [51/73] Linking CXX executable unindexed_snapshot_tests
+2026-11-11T23:40:35.2491077Z #14 64.01 [52/73] Linking CXX executable adversarial_storage_tests
+2026-11-11T23:40:35.2491852Z #14 64.03 [53/73] Linking CXX executable row_allocation_tests
+2026-11-11T23:40:35.2492715Z #14 64.04 [54/73] Linking CXX executable row_validation_tests
+2026-11-11T23:40:35.2493363Z #14 64.06 [55/73] Linking CXX executable text_validation_tests
+2026-11-11T23:40:35.2494065Z #14 64.07 [56/73] Linking CXX executable numeric_sql_tests
+2026-11-11T23:40:35.2494763Z #14 64.07 [57/73] Linking CXX executable scan_snapshot_tests
+2026-11-11T23:40:35.2495414Z #14 64.10 [58/73] Linking CXX executable paired_scan_tests
+2026-11-11T23:40:35.2496074Z #14 64.10 [59/73] Linking CXX executable vector_index_tests
+2026-11-11T23:40:35.3589410Z #14 64.13 [60/73] Linking CXX executable data_cache_sql_tests
+2026-11-11T23:40:35.3590843Z #14 64.13 [61/73] Linking CXX executable data_cache_tests
+2026-11-11T23:40:35.3591748Z #14 64.15 [62/73] Linking CXX executable packed_sql_tests
+2026-11-11T23:40:35.3592603Z #14 64.15 [63/73] Linking CXX executable packed_storage_tests
+2026-11-11T23:40:35.3593497Z #14 64.18 [64/73] Linking CXX executable checksum_slicing_tests
+2026-11-11T23:40:35.3594340Z #14 64.18 [65/73] Linking CXX executable index_cache_tests
+2026-11-11T23:40:35.3595217Z #14 64.20 [66/73] Linking CXX executable profile_tests
+2026-11-11T23:40:35.3596096Z #14 64.21 [67/73] Linking CXX executable checksum_tests
+2026-11-11T23:40:35.5898323Z #14 64.22 [68/73] Linking CXX executable batch_tests
+2026-11-11T23:40:35.5898859Z #14 64.24 [69/73] Linking CXX executable selective_tests
+2026-11-11T23:40:35.5899303Z #14 64.25 [70/73] Linking CXX executable minivectordb
+2026-11-11T23:40:35.5899735Z #14 64.26 [71/73] Linking CXX executable sql_tests
+2026-11-11T23:40:35.5900209Z #14 64.27 [72/73] Linking CXX executable namespace_tests
+2026-11-11T23:40:35.5900631Z #14 64.29 [73/73] Linking CXX executable core_tests
+2026-11-11T23:40:35.5982501Z #14 DONE 64.5s
+2026-11-11T23:40:35.7970913Z 
+2026-11-11T23:40:35.7971977Z #15 [runtime 3/4] COPY --from=build /build/minivectordb /usr/local/bin/minivectordb
+2026-11-11T23:40:35.7972514Z #15 DONE 0.0s
+2026-11-11T23:40:35.7972690Z 
+2026-11-11T23:40:35.7972970Z #16 [runtime 4/4] WORKDIR /data
+2026-11-11T23:40:35.7973323Z #16 DONE 0.0s
+2026-11-11T23:40:35.7973503Z 
+2026-11-11T23:40:35.7973646Z #17 exporting to image
+2026-11-11T23:40:35.7974038Z #17 exporting layers
+2026-11-11T23:40:36.0113568Z #17 exporting layers 0.4s done
+2026-11-11T23:40:36.0342264Z #17 writing image sha256:a3355c0acd3922c47615107d2cc54cfbb5609c9f512f2816df9a7dfc6b9b5fd9 done
+2026-11-11T23:40:36.0343472Z #17 naming to docker.io/library/mvdb:native-reference done
+2026-11-11T23:40:36.0346218Z #17 DONE 0.4s
+2026-11-11T23:40:36.4204815Z #0 building with "default" instance using docker driver
+2026-11-11T23:40:36.4205216Z 
+2026-11-11T23:40:36.4205717Z #1 [internal] load build definition from Dockerfile
+2026-11-11T23:40:36.4206394Z #1 transferring dockerfile: 978B done
+2026-11-11T23:40:36.4206731Z #1 DONE 0.0s
+2026-11-11T23:40:36.4206970Z 
+2026-11-11T23:40:36.4207403Z #2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:40:36.4208493Z #2 DONE 0.0s
+2026-11-11T23:40:36.4208656Z 
+2026-11-11T23:40:36.4208881Z #3 [internal] load .dockerignore
+2026-11-11T23:40:36.4209231Z #3 transferring context: 81B done
+2026-11-11T23:40:36.4209546Z #3 DONE 0.0s
+2026-11-11T23:40:36.4209702Z 
+2026-11-11T23:40:36.4210116Z #4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:40:36.4210689Z #4 DONE 0.0s
+2026-11-11T23:40:36.4210874Z 
+2026-11-11T23:40:36.4211018Z #5 [internal] load build context
+2026-11-11T23:40:36.4211382Z #5 transferring context: 531.96kB done
+2026-11-11T23:40:36.4211940Z #5 DONE 0.0s
+2026-11-11T23:40:36.4212122Z 
+2026-11-11T23:40:36.4212500Z #6 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+2026-11-11T23:40:36.4213168Z #6 CACHED
+2026-11-11T23:40:36.4213304Z 
+2026-11-11T23:40:36.4213473Z #7 [build 3/8] WORKDIR /src
+2026-11-11T23:40:36.4213801Z #7 CACHED
+2026-11-11T23:40:36.4213937Z 
+2026-11-11T23:40:36.4214106Z #8 [build 4/8] COPY CMakeLists.txt ./
+2026-11-11T23:40:36.4214480Z #8 DONE 0.0s
+2026-11-11T23:40:36.4214652Z 
+2026-11-11T23:40:36.4214808Z #9 [build 5/8] COPY include ./include
+2026-11-11T23:40:36.4215124Z #9 DONE 0.0s
+2026-11-11T23:40:36.4215337Z 
+2026-11-11T23:40:36.4215461Z #10 [build 6/8] COPY src ./src
+2026-11-11T23:40:36.4215819Z #10 DONE 0.0s
+2026-11-11T23:40:36.4215940Z 
+2026-11-11T23:40:36.4216133Z #11 [build 7/8] COPY tests ./tests
+2026-11-11T23:40:36.4216485Z #11 DONE 0.0s
+2026-11-11T23:40:36.4216624Z 
+2026-11-11T23:40:36.4216975Z #12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+2026-11-11T23:40:36.4503996Z #12 0.181 -- The CXX compiler identification is GNU 14.2.0
+2026-11-11T23:40:36.6767988Z #12 0.192 -- Detecting CXX compiler ABI info
+2026-11-11T23:40:36.6768727Z #12 0.236 -- Detecting CXX compiler ABI info - done
+2026-11-11T23:40:36.6769437Z #12 0.255 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+2026-11-11T23:40:36.6770085Z #12 0.255 -- Detecting CXX compile features
+2026-11-11T23:40:36.6770671Z #12 0.256 -- Detecting CXX compile features - done
+2026-11-11T23:40:36.6934281Z #12 0.424 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+2026-11-11T23:40:36.9396324Z #12 0.426 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+2026-11-11T23:40:36.9397211Z #12 0.475 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+2026-11-11T23:40:36.9398319Z #12 0.478 -- Found Threads: TRUE
+2026-11-11T23:40:36.9398974Z #12 0.480 -- Configuring done (0.4s)
+2026-11-11T23:40:36.9399562Z #12 0.505 -- Generating done (0.0s)
+2026-11-11T23:40:36.9400282Z #12 0.506 -- Build files have been written to: /build
+2026-11-11T23:40:36.9401279Z #12 0.519 [1/75] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+2026-11-11T23:40:36.9402680Z #12 0.519 [2/75] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+2026-11-11T23:40:39.5758983Z #12 3.306 [3/75] Building CXX object CMakeFiles/vector_literal_tests.dir/tests/vector_literal_tests.cpp.o
+2026-11-11T23:40:40.3749989Z #12 4.105 [4/75] Building CXX object CMakeFiles/compressed_path_tests.dir/tests/compressed_path_tests.cpp.o
+2026-11-11T23:40:41.3588912Z #12 5.089 [5/75] Building CXX object CMakeFiles/commit_policy_tests.dir/tests/commit_policy_tests.cpp.o
+2026-11-11T23:40:43.7313106Z #12 7.461 [6/75] Building CXX object CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o
+2026-11-11T23:40:44.0654033Z #12 7.795 [7/75] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+2026-11-11T23:40:47.7282090Z #12 11.46 [8/75] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+2026-11-11T23:40:51.6462678Z #12 15.38 [9/75] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+2026-11-11T23:40:52.1910005Z #12 15.92 [10/75] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+2026-11-11T23:40:54.9766268Z #12 18.71 [11/75] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+2026-11-11T23:40:56.2098352Z #12 19.94 [12/75] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+2026-11-11T23:40:57.1095536Z #12 20.84 [13/75] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+2026-11-11T23:40:58.6128549Z #12 22.34 [14/75] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+2026-11-11T23:41:00.2228815Z #12 23.95 [15/75] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+2026-11-11T23:41:00.9521790Z #12 24.68 [16/75] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+2026-11-11T23:41:03.0660258Z #12 26.80 [17/75] Building CXX object CMakeFiles/reference_index_tests.dir/tests/reference_index_tests.cpp.o
+2026-11-11T23:41:04.6129737Z #12 28.34 [18/75] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+2026-11-11T23:41:05.3013749Z #12 29.03 [19/75] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+2026-11-11T23:41:07.0597557Z #12 30.79 [20/75] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+2026-11-11T23:41:09.5411250Z #12 33.27 [21/75] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+2026-11-11T23:41:10.7221259Z #12 34.45 [22/75] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+2026-11-11T23:41:13.3148080Z #12 37.04 [23/75] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+2026-11-11T23:41:14.5052912Z #12 38.24 [24/75] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+2026-11-11T23:41:15.5227096Z #12 39.25 [25/75] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+2026-11-11T23:41:17.0009348Z #12 40.73 [26/75] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+2026-11-11T23:41:17.7458593Z #12 41.48 [27/75] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+2026-11-11T23:41:19.1067094Z #12 42.84 [28/75] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+2026-11-11T23:41:20.4916514Z #12 44.22 [29/75] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+2026-11-11T23:41:21.9343300Z #12 45.66 [30/75] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+2026-11-11T23:41:23.6030995Z #12 47.33 [31/75] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+2026-11-11T23:41:24.6005821Z #12 48.33 [32/75] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+2026-11-11T23:41:26.4455582Z #12 50.18 [33/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+2026-11-11T23:41:27.4085892Z #12 51.14 [34/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+2026-11-11T23:41:30.4664224Z #12 54.20 [35/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+2026-11-11T23:41:32.0501108Z #12 55.78 [36/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+2026-11-11T23:41:33.8149466Z #12 57.55 [37/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+2026-11-11T23:41:34.9420566Z #12 58.67 [38/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+2026-11-11T23:41:35.1262300Z #12 58.86 [39/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+2026-11-11T23:41:36.8242548Z #12 60.55 [40/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+2026-11-11T23:41:37.7076271Z #12 61.44 [41/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+2026-11-11T23:41:39.7240948Z #12 63.45 [42/75] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+2026-11-11T23:41:41.7908384Z #12 65.52 [43/75] Linking CXX static library libminivectordb_core.a
+2026-11-11T23:41:41.9005142Z #12 65.54 [44/75] Linking CXX executable validated_snapshot_tests
+2026-11-11T23:41:41.9006020Z #12 65.54 [45/75] Linking CXX executable validated_vector_tests
+2026-11-11T23:41:41.9006673Z #12 65.56 [46/75] Linking CXX executable vector_literal_tests
+2026-11-11T23:41:41.9007328Z #12 65.57 [47/75] Linking CXX executable compressed_path_tests
+2026-11-11T23:41:41.9008314Z #12 65.58 [48/75] Linking CXX executable commit_policy_tests
+2026-11-11T23:41:41.9009276Z #12 65.59 [49/75] Linking CXX executable mixed_filter_cache_tests
+2026-11-11T23:41:41.9009947Z #12 65.60 [50/75] Linking CXX executable typed_scan_tests
+2026-11-11T23:41:41.9010578Z #12 65.62 [51/75] Linking CXX executable vector_scratch_tests
+2026-11-11T23:41:41.9011419Z #12 65.63 [52/75] Linking CXX executable unindexed_snapshot_tests
+2026-11-11T23:41:42.0260791Z #12 65.65 [53/75] Linking CXX executable adversarial_storage_tests
+2026-11-11T23:41:42.0261510Z #12 65.66 [54/75] Linking CXX executable row_allocation_tests
+2026-11-11T23:41:42.0262084Z #12 65.68 [55/75] Linking CXX executable row_validation_tests
+2026-11-11T23:41:42.0262530Z #12 65.68 [56/75] Linking CXX executable text_validation_tests
+2026-11-11T23:41:42.0262985Z #12 65.70 [57/75] Linking CXX executable numeric_sql_tests
+2026-11-11T23:41:42.0263416Z #12 65.70 [58/75] Linking CXX executable scan_snapshot_tests
+2026-11-11T23:41:42.0263835Z #12 65.73 [59/75] Linking CXX executable paired_scan_tests
+2026-11-11T23:41:42.0264334Z #12 65.73 [60/75] Linking CXX executable reference_index_tests
+2026-11-11T23:41:42.0264761Z #12 65.76 [61/75] Linking CXX executable vector_index_tests
+2026-11-11T23:41:42.1285471Z #12 65.76 [62/75] Linking CXX executable data_cache_sql_tests
+2026-11-11T23:41:42.1286428Z #12 65.79 [63/75] Linking CXX executable data_cache_tests
+2026-11-11T23:41:42.1287075Z #12 65.79 [64/75] Linking CXX executable packed_sql_tests
+2026-11-11T23:41:42.1287966Z #12 65.81 [65/75] Linking CXX executable packed_storage_tests
+2026-11-11T23:41:42.1288740Z #12 65.82 [66/75] Linking CXX executable checksum_slicing_tests
+2026-11-11T23:41:42.1289446Z #12 65.83 [67/75] Linking CXX executable index_cache_tests
+2026-11-11T23:41:42.1290135Z #12 65.84 [68/75] Linking CXX executable profile_tests
+2026-11-11T23:41:42.1290749Z #12 65.86 [69/75] Linking CXX executable checksum_tests
+2026-11-11T23:41:42.3393479Z #12 65.86 [70/75] Linking CXX executable batch_tests
+2026-11-11T23:41:42.3413138Z #12 65.88 [71/75] Linking CXX executable selective_tests
+2026-11-11T23:41:42.3415564Z #12 65.88 [72/75] Linking CXX executable minivectordb
+2026-11-11T23:41:42.3416384Z #12 65.91 [73/75] Linking CXX executable sql_tests
+2026-11-11T23:41:42.3416900Z #12 65.91 [74/75] Linking CXX executable namespace_tests
+2026-11-11T23:41:42.3417927Z #12 65.93 [75/75] Linking CXX executable core_tests
+2026-11-11T23:41:42.3418573Z #12 DONE 66.1s
+2026-11-11T23:41:42.5140010Z 
+2026-11-11T23:41:42.5141372Z #13 [test 1/1] WORKDIR /build
+2026-11-11T23:41:42.5142106Z #13 DONE 0.0s
+2026-11-11T23:41:42.5142490Z 
+2026-11-11T23:41:42.5143121Z #14 exporting to image
+2026-11-11T23:41:42.5143598Z #14 exporting layers
+2026-11-11T23:41:43.8715052Z #14 exporting layers 1.5s done
+2026-11-11T23:41:43.8937408Z #14 writing image sha256:d0b114a3bc59dd923782ff8485dd4cc1f6552e580e5a93ca4b38c7d7015732b4 done
+2026-11-11T23:41:43.8938664Z #14 naming to docker.io/library/mvdb:native-test done
+2026-11-11T23:41:43.8939226Z #14 DONE 1.5s
+2026-11-11T23:41:44.0571753Z Test project /build
+2026-11-11T23:41:44.0587814Z       Start  1: core_types
+2026-11-11T23:41:44.0610795Z  1/48 Test  #1: core_types .......................   Passed    0.00 sec
+2026-11-11T23:41:44.0612982Z       Start  2: core_vector
+2026-11-11T23:41:44.0634923Z  2/48 Test  #2: core_vector ......................   Passed    0.00 sec
+2026-11-11T23:41:44.0638943Z       Start  3: core_storage
+2026-11-11T23:41:45.7868420Z  3/48 Test  #3: core_storage .....................   Passed    1.72 sec
+2026-11-11T23:41:45.7869415Z       Start  4: core_storage_failure
+2026-11-11T23:41:45.7926330Z  4/48 Test  #4: core_storage_failure .............   Passed    0.01 sec
+2026-11-11T23:41:45.7927309Z       Start  5: core_namespaces
+2026-11-11T23:41:45.7999251Z  5/48 Test  #5: core_namespaces ..................   Passed    0.01 sec
+2026-11-11T23:41:45.8001308Z       Start  6: core_codec
+2026-11-11T23:41:45.8026311Z  6/48 Test  #6: core_codec .......................   Passed    0.00 sec
+2026-11-11T23:41:45.8027059Z       Start  7: core_sql
+2026-11-11T23:41:45.8172107Z  7/48 Test  #7: core_sql .........................   Passed    0.01 sec
+2026-11-11T23:41:45.8172728Z       Start  8: core_sort
+2026-11-11T23:41:45.8418741Z  8/48 Test  #8: core_sort ........................   Passed    0.02 sec
+2026-11-11T23:41:45.8420402Z       Start  9: core_sql_crash
+2026-11-11T23:41:45.8518506Z  9/48 Test  #9: core_sql_crash ...................   Passed    0.01 sec
+2026-11-11T23:41:45.8521427Z       Start 10: core_sql_edges
+2026-11-11T23:41:45.8646577Z 10/48 Test #10: core_sql_edges ...................   Passed    0.01 sec
+2026-11-11T23:41:45.8648496Z       Start 11: core_sql_failure
+2026-11-11T23:41:45.8975860Z 11/48 Test #11: core_sql_failure .................   Passed    0.03 sec
+2026-11-11T23:41:45.8977313Z       Start 12: core_sql_batch
+2026-11-11T23:41:46.0406192Z 12/48 Test #12: core_sql_batch ...................   Passed    0.14 sec
+2026-11-11T23:41:46.0406907Z       Start 13: cli
+2026-11-11T23:41:46.2178936Z 13/48 Test #13: cli ..............................   Passed    0.18 sec
+2026-11-11T23:41:46.2179710Z       Start 14: core_selective
+2026-11-11T23:41:46.6178301Z 14/48 Test #14: core_selective ...................   Passed    0.40 sec
+2026-11-11T23:41:46.6179998Z       Start 15: core_batches
+2026-11-11T23:41:46.7446774Z 15/48 Test #15: core_batches .....................   Passed    0.13 sec
+2026-11-11T23:41:46.7447419Z       Start 16: core_checksum
+2026-11-11T23:41:47.1400737Z 16/48 Test #16: core_checksum ....................   Passed    0.40 sec
+2026-11-11T23:41:47.1401906Z       Start 17: core_profile
+2026-11-11T23:41:47.1490932Z 17/48 Test #17: core_profile .....................   Passed    0.01 sec
+2026-11-11T23:41:47.1492810Z       Start 18: core_index_cache
+2026-11-11T23:41:47.3256007Z 18/48 Test #18: core_index_cache .................   Passed    0.18 sec
+2026-11-11T23:41:47.3260673Z       Start 19: core_checksum_slicing
+2026-11-11T23:41:48.1569115Z 19/48 Test #19: core_checksum_slicing ............   Passed    0.83 sec
+2026-11-11T23:41:48.1570234Z       Start 20: core_packed_storage
+2026-11-11T23:41:48.2667080Z 20/48 Test #20: core_packed_storage ..............   Passed    0.11 sec
+2026-11-11T23:41:48.2667599Z       Start 21: core_packed_sql
+2026-11-11T23:41:51.1033937Z 21/48 Test #21: core_packed_sql ..................   Passed    2.84 sec
+2026-11-11T23:41:51.1034469Z       Start 22: core_data_cache
+2026-11-11T23:41:51.2626947Z 22/48 Test #22: core_data_cache ..................   Passed    0.16 sec
+2026-11-11T23:41:51.2628419Z       Start 23: core_data_cache_sql
+2026-11-11T23:41:51.9005971Z 23/48 Test #23: core_data_cache_sql ..............   Passed    0.64 sec
+2026-11-11T23:41:51.9006868Z       Start 24: jsonl
+2026-11-11T23:41:52.0428782Z 24/48 Test #24: jsonl ............................   Passed    0.14 sec
+2026-11-11T23:41:52.0429430Z       Start 25: core_vector_index
+2026-11-11T23:41:52.2012870Z 25/48 Test #25: core_vector_index ................   Passed    0.16 sec
+2026-11-11T23:41:52.2013880Z       Start 26: core_reference_index
+2026-11-11T23:41:52.3285494Z 26/48 Test #26: core_reference_index .............   Passed    0.13 sec
+2026-11-11T23:41:52.3286218Z       Start 27: core_float32_literals
+2026-11-11T23:41:52.3939941Z 27/48 Test #27: core_float32_literals ............   Passed    0.06 sec
+2026-11-11T23:41:52.3940530Z       Start 28: core_paired_scan
+2026-11-11T23:41:52.7610295Z 28/48 Test #28: core_paired_scan .................   Passed    0.37 sec
+2026-11-11T23:41:52.7611522Z       Start 29: core_scan_snapshot
+2026-11-11T23:41:53.0336688Z 29/48 Test #29: core_scan_snapshot ...............   Passed    0.27 sec
+2026-11-11T23:41:53.0338029Z       Start 30: core_numeric_maximum
+2026-11-11T23:41:53.0487775Z 30/48 Test #30: core_numeric_maximum .............   Passed    0.01 sec
+2026-11-11T23:41:53.0489046Z       Start 31: core_numeric_ties
+2026-11-11T23:41:53.0728460Z 31/48 Test #31: core_numeric_ties ................   Passed    0.02 sec
+2026-11-11T23:41:53.0729754Z       Start 32: core_text_validation
+2026-11-11T23:41:54.6614360Z 32/48 Test #32: core_text_validation .............   Passed    1.59 sec
+2026-11-11T23:41:54.6615445Z       Start 33: core_row_validation
+2026-11-11T23:41:58.4501854Z 33/48 Test #33: core_row_validation ..............   Passed    3.79 sec
+2026-11-11T23:41:58.4502520Z       Start 34: core_row_allocation
+2026-11-11T23:41:58.4520789Z 34/48 Test #34: core_row_allocation ..............   Passed    0.00 sec
+2026-11-11T23:41:58.4522037Z       Start 35: protocol_adversarial
+2026-11-11T23:41:58.6801532Z 35/48 Test #35: protocol_adversarial .............   Passed    0.23 sec
+2026-11-11T23:41:58.6802267Z       Start 36: sql_adversarial
+2026-11-11T23:41:59.7661637Z 36/48 Test #36: sql_adversarial ..................   Passed    1.09 sec
+2026-11-11T23:41:59.7665875Z       Start 37: storage_adversarial
+2026-11-11T23:42:00.6366517Z 37/48 Test #37: storage_adversarial ..............   Passed    0.87 sec
+2026-11-11T23:42:00.6368299Z       Start 38: core_unindexed_snapshot
+2026-11-11T23:42:01.8435724Z 38/48 Test #38: core_unindexed_snapshot ..........   Passed    1.21 sec
+2026-11-11T23:42:01.8436550Z       Start 39: core_vector_scratch
+2026-11-11T23:42:02.0516428Z 39/48 Test #39: core_vector_scratch ..............   Passed    0.21 sec
+2026-11-11T23:42:02.0520797Z       Start 40: core_typed_scan
+2026-11-11T23:42:02.4281457Z 40/48 Test #40: core_typed_scan ..................   Passed    0.38 sec
+2026-11-11T23:42:02.4282589Z       Start 41: core_mixed_filter_cache
+2026-11-11T23:42:02.5696083Z 41/48 Test #41: core_mixed_filter_cache ..........   Passed    0.14 sec
+2026-11-11T23:42:02.5696892Z       Start 42: core_commit_policy
+2026-11-11T23:42:04.1758361Z 42/48 Test #42: core_commit_policy ...............   Passed    1.61 sec
+2026-11-11T23:42:04.1758938Z       Start 43: core_commit_policy_compressed
+2026-11-11T23:42:04.8338286Z 43/48 Test #43: core_commit_policy_compressed ....   Passed    0.66 sec
+2026-11-11T23:42:04.8339010Z       Start 44: core_compressed_paths
+2026-11-11T23:42:14.2152001Z 44/48 Test #44: core_compressed_paths ............   Passed    9.38 sec
+2026-11-11T23:42:14.2152984Z       Start 45: core_packed_sql_compressed
+2026-11-11T23:42:15.3024608Z 45/48 Test #45: core_packed_sql_compressed .......   Passed    1.09 sec
+2026-11-11T23:42:15.3025807Z       Start 46: core_vector_literals
+2026-11-11T23:42:15.6100951Z 46/48 Test #46: core_vector_literals .............   Passed    0.31 sec
+2026-11-11T23:42:15.6101760Z       Start 47: core_validated_vector
+2026-11-11T23:42:15.6504151Z 47/48 Test #47: core_validated_vector ............   Passed    0.04 sec
+2026-11-11T23:42:15.6504833Z       Start 48: core_validated_snapshot
+2026-11-11T23:42:16.9621635Z 48/48 Test #48: core_validated_snapshot ..........   Passed    1.31 sec
+2026-11-11T23:42:16.9627174Z 
+2026-11-11T23:42:16.9627947Z 100% tests passed, 0 tests failed out of 48
+2026-11-11T23:42:16.9628264Z 
+2026-11-11T23:42:16.9628602Z Total Test time (real) =  32.91 sec
+2026-11-11T23:42:17.3401874Z #0 building with "default" instance using docker driver
+2026-11-11T23:42:17.3402260Z 
+2026-11-11T23:42:17.3402697Z #1 [internal] load build definition from Dockerfile
+2026-11-11T23:42:17.3403337Z #1 transferring dockerfile: 978B done
+2026-11-11T23:42:17.3403908Z #1 DONE 0.0s
+2026-11-11T23:42:17.3404105Z 
+2026-11-11T23:42:17.3404780Z #2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:42:17.3405632Z #2 DONE 0.0s
+2026-11-11T23:42:17.3405857Z 
+2026-11-11T23:42:17.3405987Z #3 [internal] load .dockerignore
+2026-11-11T23:42:17.3406348Z #3 transferring context: 81B done
+2026-11-11T23:42:17.3406769Z #3 DONE 0.0s
+2026-11-11T23:42:17.3406905Z 
+2026-11-11T23:42:17.3407309Z #4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+2026-11-11T23:42:17.3408138Z #4 DONE 0.0s
+2026-11-11T23:42:17.3408298Z 
+2026-11-11T23:42:17.3408474Z #5 [internal] load build context
+2026-11-11T23:42:17.3408823Z #5 transferring context: 3.47kB done
+2026-11-11T23:42:17.3409185Z #5 DONE 0.0s
+2026-11-11T23:42:17.3409369Z 
+2026-11-11T23:42:17.3409787Z #6 [build 7/8] COPY tests ./tests
+2026-11-11T23:42:17.3410121Z #6 CACHED
+2026-11-11T23:42:17.3410300Z 
+2026-11-11T23:42:17.3410484Z #7 [build 5/8] COPY include ./include
+2026-11-11T23:42:17.3410963Z #7 CACHED
+2026-11-11T23:42:17.3411097Z 
+2026-11-11T23:42:17.3411267Z #8 [build 4/8] COPY CMakeLists.txt ./
+2026-11-11T23:42:17.3411612Z #8 CACHED
+2026-11-11T23:42:17.3411745Z 
+2026-11-11T23:42:17.3411910Z #9 [build 6/8] COPY src ./src
+2026-11-11T23:42:17.3412246Z #9 CACHED
+2026-11-11T23:42:17.3412491Z 
+2026-11-11T23:42:17.3412613Z #10 [build 3/8] WORKDIR /src
+2026-11-11T23:42:17.3412929Z #10 CACHED
+2026-11-11T23:42:17.3413131Z 
+2026-11-11T23:42:17.3413443Z #11 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+2026-11-11T23:42:17.3413997Z #11 CACHED
+2026-11-11T23:42:17.3414111Z 
+2026-11-11T23:42:17.3414506Z #12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+2026-11-11T23:42:17.3415063Z #12 CACHED
+2026-11-11T23:42:17.3415198Z 
+2026-11-11T23:42:17.3415393Z #13 [runtime 2/4] RUN apk add --no-cache libstdc++=14.2.0-r6
+2026-11-11T23:42:17.3415812Z #13 CACHED
+2026-11-11T23:42:17.3415981Z 
+2026-11-11T23:42:17.3416223Z #14 [runtime 3/4] COPY --from=build /build/minivectordb /usr/local/bin/minivectordb
+2026-11-11T23:42:17.3416681Z #14 DONE 0.0s
+2026-11-11T23:42:17.3416871Z 
+2026-11-11T23:42:17.3417197Z #15 [runtime 4/4] WORKDIR /data
+2026-11-11T23:42:17.3417540Z #15 DONE 0.0s
+2026-11-11T23:42:17.3418000Z 
+2026-11-11T23:42:17.3418168Z #16 exporting to image
+2026-11-11T23:42:17.3418480Z #16 exporting layers
+2026-11-11T23:42:18.0070176Z #16 exporting layers 0.8s done
+2026-11-11T23:42:18.0266218Z #16 writing image sha256:1107bdf17d8c60a99d0e7ab45bcdd325b2ada519e870ce8f319872c163d946c7 done
+2026-11-11T23:42:18.0268090Z #16 naming to docker.io/library/mvdb:native-candidate done
+2026-11-11T23:42:18.0268673Z #16 DONE 0.8s
+2026-11-11T23:42:18.3360635Z sql_crud: PASS 
+2026-11-11T23:42:18.5513644Z sql_comparisons: PASS 
+2026-11-11T23:42:18.7697587Z sql_ordering: PASS 
+2026-11-11T23:42:18.9871777Z sql_empty: PASS 
+2026-11-11T23:42:19.2081569Z sql_primary_key: PASS 
+2026-11-11T23:42:19.4311558Z sql_unicode: PASS 
+2026-11-11T23:42:19.6483599Z sql_bigint: PASS 
+2026-11-11T23:42:19.8750282Z sql_unsupported: PASS 
+2026-11-11T23:42:20.2993798Z storage_restart: PASS 
+2026-11-11T23:42:20.5306888Z vector_euclidean: PASS 
+2026-11-11T23:42:20.7533431Z transaction_commit: PASS 
+2026-11-11T23:42:20.9757114Z transaction_rollback: PASS 
+2026-11-11T23:42:21.3930532Z storage_mutations: PASS 
+2026-11-11T23:42:21.8116599Z storage_multiple_tables: PASS 
+2026-11-11T23:42:22.0302590Z vector_ties_and_filter: PASS 
+2026-11-11T23:42:22.2551922Z vector_float32: PASS 
+2026-11-11T23:42:22.6673340Z vector_index_maintenance: PASS 
+2026-11-11T23:42:23.0705250Z transaction_failed_insert: PASS 
+2026-11-11T23:42:23.4801419Z transaction_autocommit_atomic: PASS 
+2026-11-11T23:42:23.8904320Z transaction_shutdown_rollback: PASS 
+2026-11-11T23:42:23.8911947Z Report: /home/runner/work/seekdb/seekdb/native-results/public/result.json
+2026-11-11T23:42:32.3389029Z {"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 945.273971, "B_bytes": 15753216, "M_bytes": 23498752, "passed": true}
+2026-11-11T23:42:35.4420806Z {"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 830.139075, "B_bytes": 15753216, "M_bytes": 23441408, "passed": true}
+2026-11-11T23:42:39.9398759Z {"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 1112.046429, "B_bytes": 15753216, "M_bytes": 28286976, "passed": true}
+2026-11-11T23:42:44.3842711Z {"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 1171.772064, "B_bytes": 15753216, "M_bytes": 28217344, "passed": true}
+2026-11-11T23:42:48.9829587Z {"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 1118.374607, "B_bytes": 22179840, "M_bytes": 34783232, "passed": true}
+2026-11-11T23:42:53.4667606Z {"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 1175.839355, "B_bytes": 16740352, "M_bytes": 29327360, "passed": true}
+2026-11-11T23:42:56.5579802Z {"round": 2, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 829.942882, "B_bytes": 15753216, "M_bytes": 23527424, "passed": true}
+2026-11-11T23:42:59.7566716Z {"round": 2, "version": "reference", "phase": "write", "indexed": false, "T_ms": 936.914638, "B_bytes": 15753216, "M_bytes": 23228416, "passed": true}
+2026-11-11T23:43:04.1459621Z {"round": 2, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 1160.572815, "B_bytes": 16740352, "M_bytes": 29286400, "passed": true}
+2026-11-11T23:43:08.7377869Z {"round": 2, "version": "reference", "phase": "query", "indexed": true, "T_ms": 1111.601153, "B_bytes": 22179840, "M_bytes": 35012608, "passed": true}
+2026-11-11T23:43:13.1359760Z {"round": 2, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 1151.166643, "B_bytes": 15753216, "M_bytes": 28270592, "passed": true}
+2026-11-11T23:43:17.5863051Z {"round": 2, "version": "reference", "phase": "query", "indexed": false, "T_ms": 1114.796543, "B_bytes": 15753216, "M_bytes": 28233728, "passed": true}
+2026-11-11T23:43:20.7899552Z {"round": 3, "version": "reference", "phase": "write", "indexed": false, "T_ms": 945.437608, "B_bytes": 15753216, "M_bytes": 23232512, "passed": true}
+2026-11-11T23:43:23.8422933Z {"round": 3, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 830.306917, "B_bytes": 15753216, "M_bytes": 23547904, "passed": true}
+2026-11-11T23:43:28.3121358Z {"round": 3, "version": "reference", "phase": "query", "indexed": false, "T_ms": 1107.796832, "B_bytes": 15753216, "M_bytes": 28196864, "passed": true}
+2026-11-11T23:43:32.6850740Z {"round": 3, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 1149.460291, "B_bytes": 15753216, "M_bytes": 28266496, "passed": true}
+2026-11-11T23:43:37.3196054Z {"round": 3, "version": "reference", "phase": "query", "indexed": true, "T_ms": 1130.034171, "B_bytes": 22179840, "M_bytes": 34852864, "passed": true}
+2026-11-11T23:43:41.6955727Z {"round": 3, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 1161.36954, "B_bytes": 16740352, "M_bytes": 29253632, "passed": true}
+2026-11-11T23:43:47.6038679Z {"round": 1, "version": "reference", "phase": "write", "indexed": false, "T_ms": 949.917903, "B_bytes": 15753216, "M_bytes": 23445504, "passed": true}
+2026-11-11T23:43:50.7785585Z {"round": 1, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 832.378804, "B_bytes": 15753216, "M_bytes": 23572480, "passed": true}
+2026-11-11T23:43:55.9529705Z {"round": 1, "version": "reference", "phase": "query", "indexed": false, "T_ms": 1755.72657, "B_bytes": 15753216, "M_bytes": 31219712, "passed": true}
+2026-11-11T23:44:00.9261451Z {"round": 1, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 1655.859938, "B_bytes": 15753216, "M_bytes": 31326208, "passed": true}
+2026-11-11T23:44:06.2212056Z {"round": 1, "version": "reference", "phase": "query", "indexed": true, "T_ms": 1759.292417, "B_bytes": 22179840, "M_bytes": 37900288, "passed": true}
+2026-11-11T23:44:11.2794787Z {"round": 1, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 1693.087156, "B_bytes": 16740352, "M_bytes": 32301056, "passed": true}
+2026-11-11T23:44:14.4029223Z {"round": 2, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 846.19817, "B_bytes": 15753216, "M_bytes": 23613440, "passed": true}
+2026-11-11T23:44:17.6327494Z {"round": 2, "version": "reference", "phase": "write", "indexed": false, "T_ms": 956.619153, "B_bytes": 15753216, "M_bytes": 23248896, "passed": true}
+2026-11-11T23:44:22.6097243Z {"round": 2, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 1655.910695, "B_bytes": 16740352, "M_bytes": 32256000, "passed": true}
+2026-11-11T23:44:27.8714937Z {"round": 2, "version": "reference", "phase": "query", "indexed": true, "T_ms": 1747.512003, "B_bytes": 22179840, "M_bytes": 37941248, "passed": true}
+2026-11-11T23:44:32.7884575Z {"round": 2, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 1651.050269, "B_bytes": 15753216, "M_bytes": 31252480, "passed": true}
+2026-11-11T23:44:37.9184527Z {"round": 2, "version": "reference", "phase": "query", "indexed": false, "T_ms": 1749.716902, "B_bytes": 15753216, "M_bytes": 31252480, "passed": true}
+2026-11-11T23:44:41.1620701Z {"round": 3, "version": "reference", "phase": "write", "indexed": false, "T_ms": 950.392936, "B_bytes": 15753216, "M_bytes": 23638016, "passed": true}
+2026-11-11T23:44:59.6296683Z {"round": 3, "version": "candidate", "phase": "write", "indexed": false, "T_ms": 831.52794, "B_bytes": 15753216, "M_bytes": 23449600, "passed": true}
+2026-11-11T23:45:04.7718549Z {"round": 3, "version": "reference", "phase": "query", "indexed": false, "T_ms": 1757.980095, "B_bytes": 15753216, "M_bytes": 31256576, "passed": true}
+2026-11-11T23:45:09.7076605Z {"round": 3, "version": "candidate", "phase": "query", "indexed": false, "T_ms": 1651.35419, "B_bytes": 15753216, "M_bytes": 31272960, "passed": true}
+2026-11-11T23:45:14.9813660Z {"round": 3, "version": "reference", "phase": "query", "indexed": true, "T_ms": 1766.49642, "B_bytes": 22179840, "M_bytes": 37937152, "passed": true}
+2026-11-11T23:45:19.9382945Z {"round": 3, "version": "candidate", "phase": "query", "indexed": true, "T_ms": 1664.351681, "B_bytes": 16740352, "M_bytes": 32215040, "passed": true}
+2026-11-11T23:45:20.0299870Z NATIVE_CONTRACT_RESULT {"bigint": {"metadata": {"reference_image": "sha256:a3355c0acd3922c47615107d2cc54cfbb5609c9f512f2816df9a7dfc6b9b5fd9", "candidate_image": "sha256:1107bdf17d8c60a99d0e7ab45bcdd325b2ada519e870ce8f319872c163d946c7", "output": "/home/runner/work/seekdb/seekdb/native-results/bigint", "data_root": "/home/runner/work/_temp/mvdb-native-data", "temp_root": "/home/runner/work/_temp/mvdb-native-tmp", "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle", "rounds": 3, "rows": 10000, "queries": 1000, "warmup": 10, "seed": 20261110, "filter_type": "bigint", "local_case_budget": 600, "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424", "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb", "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8", "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c", "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384", "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5", "official_config": {"startup_timeout": 120, "request_timeout": 60, "case_timeout": 600, "max_response_bytes": 16777216, "cpus": "2", "memory": "2g", "pids_limit": 128, "abs_tol": 1e-05, "rel_tol": 1e-05, "error_codes": {}}, "sql_workload_sha256": "cc2cb45e4458e8b572804f6b7ded0aa20bdf1cec2ccbe9de41b13d4326ddab0d", "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7", "local_workload": {"dimensions": 128, "batch": 100, "top_k": 10, "distribution": "integer uniform [-2048,2048] / 128", "half_filtered": true, "unfiltered_queries": 500, "filtered_queries": 500, "filter_group_count": 10, "payload_repeated_characters": 256, "search_mode": "exact"}, "limitations": ["Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.", "Reports per-metric medians and every round, no synthetic official E.", "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.", "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.", "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.", "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.", "Full query loop wall time includes host reply retention; isolated request sum is also reported.", "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."]}, "groups": {"reference/write/unindexed": {"median": {"T_ms": 945.273971, "B_bytes": 15753216, "M_bytes": 23232512}, "samples": [{"round": 1, "T_ms": 945.273971, "B_bytes": 15753216, "M_bytes": 23498752, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}, {"round": 2, "T_ms": 936.914638, "B_bytes": 15753216, "M_bytes": 23228416, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}, {"round": 3, "T_ms": 945.437608, "B_bytes": 15753216, "M_bytes": 23232512, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}]}, "candidate/write/unindexed": {"median": {"T_ms": 830.139075, "B_bytes": 15753216, "M_bytes": 23527424}, "samples": [{"round": 1, "T_ms": 830.139075, "B_bytes": 15753216, "M_bytes": 23441408, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}, {"round": 2, "T_ms": 829.942882, "B_bytes": 15753216, "M_bytes": 23527424, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}, {"round": 3, "T_ms": 830.306917, "B_bytes": 15753216, "M_bytes": 23547904, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}]}, "reference/query/unindexed": {"median": {"T_ms": 1112.046429, "B_bytes": 15753216, "M_bytes": 28233728}, "samples": [{"round": 1, "T_ms": 1112.046429, "B_bytes": 15753216, "M_bytes": 28286976, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 2, "T_ms": 1114.796543, "B_bytes": 15753216, "M_bytes": 28233728, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 3, "T_ms": 1107.796832, "B_bytes": 15753216, "M_bytes": 28196864, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}]}, "candidate/query/unindexed": {"median": {"T_ms": 1151.166643, "B_bytes": 15753216, "M_bytes": 28266496}, "samples": [{"round": 1, "T_ms": 1171.772064, "B_bytes": 15753216, "M_bytes": 28217344, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 2, "T_ms": 1151.166643, "B_bytes": 15753216, "M_bytes": 28270592, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 3, "T_ms": 1149.460291, "B_bytes": 15753216, "M_bytes": 28266496, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}]}, "reference/query/indexed": {"median": {"T_ms": 1118.374607, "B_bytes": 22179840, "M_bytes": 34852864}, "samples": [{"round": 1, "T_ms": 1118.374607, "B_bytes": 22179840, "M_bytes": 34783232, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 2, "T_ms": 1111.601153, "B_bytes": 22179840, "M_bytes": 35012608, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 3, "T_ms": 1130.034171, "B_bytes": 22179840, "M_bytes": 34852864, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}]}, "candidate/query/indexed": {"median": {"T_ms": 1161.36954, "B_bytes": 16740352, "M_bytes": 29286400}, "samples": [{"round": 1, "T_ms": 1175.839355, "B_bytes": 16740352, "M_bytes": 29327360, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 2, "T_ms": 1160.572815, "B_bytes": 16740352, "M_bytes": 29286400, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 3, "T_ms": 1161.36954, "B_bytes": 16740352, "M_bytes": 29253632, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}]}}}, "varchar": {"metadata": {"reference_image": "sha256:a3355c0acd3922c47615107d2cc54cfbb5609c9f512f2816df9a7dfc6b9b5fd9", "candidate_image": "sha256:1107bdf17d8c60a99d0e7ab45bcdd325b2ada519e870ce8f319872c163d946c7", "output": "/home/runner/work/seekdb/seekdb/native-results/varchar", "data_root": "/home/runner/work/_temp/mvdb-native-data", "temp_root": "/home/runner/work/_temp/mvdb-native-tmp", "oracle_bin": "/home/runner/work/_temp/mvdb-native-oracle", "rounds": 3, "rows": 10000, "queries": 1000, "warmup": 10, "seed": 20261110, "filter_type": "varchar", "local_case_budget": 600, "input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424", "truth_sha256": "fb9193111063cdecf4d36d3ce67ff77402efe8b74bc0f70e3b1bfad64d3d88eb", "oracle_binary_sha256": "182c26da95447ebffbc4afb2b51b5206b32e1aab6e9f27eebe57e274eb0178b8", "upstream_commit": "f4d4e26653af823a7601668802f80e374ad6643c", "vendor_lock_sha256": "8b7178250ea1effdcd7b666d30f0fab7031f047caad7fd224056054a46f2f384", "harness_sha256": "c5dadf680acbd3ffdea9c71112b8e18a255a48aeda44db9cff59ccc18e95d4c5", "official_config": {"startup_timeout": 120, "request_timeout": 60, "case_timeout": 600, "max_response_bytes": 16777216, "cpus": "2", "memory": "2g", "pids_limit": 128, "abs_tol": 1e-05, "rel_tol": 1e-05, "error_codes": {}}, "sql_workload_sha256": "c3b839f15ec921cd81ce9edf3f29e80bbb73e0aad43d6bf3f5c0a9eec2b7b431", "oracle_source_sha256": "d818386c615725b3f525b4c7b463decce16ee8c7d82a4f616ce832f081010ae7", "local_workload": {"dimensions": 128, "batch": 100, "top_k": 10, "distribution": "integer uniform [-2048,2048] / 128", "half_filtered": true, "unfiltered_queries": 500, "filtered_queries": 500, "filter_group_count": 10, "payload_repeated_characters": 256, "search_mode": "exact"}, "limitations": ["Local generated data, filter selectivity and warmup; no published frozen official generator or baseline.", "Reports per-metric medians and every round, no synthetic official E.", "No global cache reset: host page-cache and WSL environment differ from a frozen scoring host.", "Swap prohibition cannot be assumed from requested Docker memory-swap; observed swap is reported.", "Host-only fsync of owned database files closes the measured writeback window while DB remains alive.", "B/M include startup, data loading, index build and warmup; correctness checks follow the sample.", "Full query loop wall time includes host reply retention; isolated request sum is also reported.", "Resource drain ends before normal shutdown; measures acknowledged durable state, not subsequent shutdown housekeeping."]}, "groups": {"reference/write/unindexed": {"median": {"T_ms": 950.392936, "B_bytes": 15753216, "M_bytes": 23445504}, "samples": [{"round": 1, "T_ms": 949.917903, "B_bytes": 15753216, "M_bytes": 23445504, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}, {"round": 2, "T_ms": 956.619153, "B_bytes": 15753216, "M_bytes": 23248896, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}, {"round": 3, "T_ms": 950.392936, "B_bytes": 15753216, "M_bytes": 23638016, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}]}, "candidate/write/unindexed": {"median": {"T_ms": 832.378804, "B_bytes": 15753216, "M_bytes": 23572480}, "samples": [{"round": 1, "T_ms": 832.378804, "B_bytes": 15753216, "M_bytes": 23572480, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}, {"round": 2, "T_ms": 846.19817, "B_bytes": 15753216, "M_bytes": 23613440, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}, {"round": 3, "T_ms": 831.52794, "B_bytes": 15753216, "M_bytes": 23449600, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": false}]}, "reference/query/unindexed": {"median": {"T_ms": 1755.72657, "B_bytes": 15753216, "M_bytes": 31252480}, "samples": [{"round": 1, "T_ms": 1755.72657, "B_bytes": 15753216, "M_bytes": 31219712, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 2, "T_ms": 1749.716902, "B_bytes": 15753216, "M_bytes": 31252480, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 3, "T_ms": 1757.980095, "B_bytes": 15753216, "M_bytes": 31256576, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}]}, "candidate/query/unindexed": {"median": {"T_ms": 1651.35419, "B_bytes": 15753216, "M_bytes": 31272960}, "samples": [{"round": 1, "T_ms": 1655.859938, "B_bytes": 15753216, "M_bytes": 31326208, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 2, "T_ms": 1651.050269, "B_bytes": 15753216, "M_bytes": 31252480, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 3, "T_ms": 1651.35419, "B_bytes": 15753216, "M_bytes": 31272960, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}]}, "reference/query/indexed": {"median": {"T_ms": 1759.292417, "B_bytes": 22179840, "M_bytes": 37937152}, "samples": [{"round": 1, "T_ms": 1759.292417, "B_bytes": 22179840, "M_bytes": 37900288, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 2, "T_ms": 1747.512003, "B_bytes": 22179840, "M_bytes": 37941248, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 3, "T_ms": 1766.49642, "B_bytes": 22179840, "M_bytes": 37937152, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}]}, "candidate/query/indexed": {"median": {"T_ms": 1664.351681, "B_bytes": 16740352, "M_bytes": 32256000}, "samples": [{"round": 1, "T_ms": 1693.087156, "B_bytes": 16740352, "M_bytes": 32301056, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 2, "T_ms": 1655.910695, "B_bytes": 16740352, "M_bytes": 32256000, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}, {"round": 3, "T_ms": 1664.351681, "B_bytes": 16740352, "M_bytes": 32215040, "passed": true, "swap_bytes": 0, "full_rows_before_restart": true, "full_rows_after_restart": true, "restart_query_checked": true}]}}}}
+2026-11-11T23:45:20.0559477Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-11-11T23:45:20.0560065Z with:
+2026-11-11T23:45:20.0560460Z   name: native-contract-cc9da5265c4b5f9817fa9c314537dcaa7da53c13
+2026-11-11T23:45:20.0560936Z   path: native-results/
+2026-11-11T23:45:20.0561297Z   retention-days: 30
+2026-11-11T23:45:20.0561611Z   if-no-files-found: warn
+2026-11-11T23:45:20.0561942Z   compression-level: 6
+2026-11-11T23:45:20.0562274Z   overwrite: false
+2026-11-11T23:45:20.0562604Z   include-hidden-files: false
+2026-11-11T23:45:20.0562944Z ##[endgroup]
+2026-11-11T23:45:20.3751506Z (node:12895) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-11T23:45:20.3752666Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-11T23:45:20.4062073Z With the provided path, there will be 113 files uploaded
+2026-11-11T23:45:20.4063335Z Artifact name is valid!
+2026-11-11T23:45:20.4064411Z Root directory input is valid!
+2026-11-11T23:45:20.6590441Z Beginning upload of artifact content to blob storage
+2026-11-11T23:45:21.2143249Z (node:12895) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-11T23:45:21.4507238Z Uploaded bytes 6503746
+2026-11-11T23:45:21.4700697Z Finished uploading artifact content to blob storage!
+2026-11-11T23:45:21.4701427Z SHA256 digest of uploaded artifact zip is 0cff730773d50a1b8358517c677f49b02238e0d1e00e35f035baaac72b6280c8
+2026-11-11T23:45:21.4703239Z Finalizing artifact upload
+2026-11-11T23:45:21.8316645Z Artifact native-contract-cc9da5265c4b5f9817fa9c314537dcaa7da53c13.zip successfully finalized. Artifact ID 13900209159
+2026-11-11T23:45:21.8318853Z Artifact native-contract-cc9da5265c4b5f9817fa9c314537dcaa7da53c13 has been successfully uploaded! Final size is 6503746 bytes. Artifact ID is 13900209159
+2026-11-11T23:45:21.8324872Z Artifact download URL: https://github.com/juanzhi-gcb/seekdb/actions/runs/43121460919/artifacts/13900209159
+2026-11-11T23:45:21.8478963Z ##[group]Run echo 'Native x86_64 JSONL T/B/M comparison. Local generated data and shared runner; no official E or Prompt score. Competition branch remains unchanged.' >> "$GITHUB_STEP_SUMMARY"
+2026-11-11T23:45:21.8480284Z [36;1mecho 'Native x86_64 JSONL T/B/M comparison. Local generated data and shared runner; no official E or Prompt score. Competition branch remains unchanged.' >> "$GITHUB_STEP_SUMMARY"[0m
+2026-11-11T23:45:21.8495031Z shell: /usr/bin/bash -e {0}
+2026-11-11T23:45:21.8495471Z ##[endgroup]
+2026-11-11T23:45:21.8632313Z Cleaning up orphan processes
+2026-11-11T23:45:21.8984812Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

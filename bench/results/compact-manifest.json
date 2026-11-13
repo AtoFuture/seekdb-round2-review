@@ -1,0 +1,172 @@
+{
+  "files": [
+    {
+      "sha256": "fe5eac0ee7effee7e51ba17ff7917d47bed112ce93dc7f69be42af85d93e9624",
+      "bytes": 948,
+      "path": "Dockerfile"
+    },
+    {
+      "sha256": "0b7e6e2c17e818744be3c90c4230d1dd727ecc22c480b2d25f587e5f4fd1977a",
+      "bytes": 2506,
+      "path": "include/minivectordb/database.hpp"
+    },
+    {
+      "sha256": "3f79e3d3e09a155a609d63e026f7ae54ea9fda43582157ead2510f3ff812b0a3",
+      "bytes": 2958,
+      "path": "include/minivectordb/store.hpp"
+    },
+    {
+      "sha256": "eb865f68cffd31cd0938d3cf58e8c18366a4c81d01a274e935252b2c4b0da8bd",
+      "bytes": 20076,
+      "path": "src/storage/store.cpp"
+    },
+    {
+      "sha256": "c1df94eda57160e6980d9d8348d026edd4fb0478fa7d4e9aedde23cca4e6ed60",
+      "bytes": 12557,
+      "path": "src/sql/executor.cpp"
+    },
+    {
+      "sha256": "a877cddd330cade93bae8bd91cb7e971d4caabd063fc43ff69811bf7283ec3b4",
+      "bytes": 11823,
+      "path": "tests/packed_storage_tests.cpp"
+    },
+    {
+      "sha256": "1f813ca11dd030c8e78f777ced4ba7695bb72275c2d053d43c5fb0805b4af14b",
+      "bytes": 8634,
+      "path": "tests/packed_sql_tests.cpp"
+    },
+    {
+      "sha256": "3aee383414baab795fe0a769c0a4a625fd4155c45e4097a2280f75be6cdf0e44",
+      "bytes": 15259,
+      "path": "bench/compact.cpp"
+    },
+    {
+      "sha256": "caf1107e101b2a49a10213a57e1212400d23cd33aa66e1f00693d54eda05accb",
+      "bytes": 6102,
+      "path": "bench/run_compact.py"
+    },
+    {
+      "sha256": "de7998b2b88d370b0387655f33a022e88270c912d32ed690d0d4ccae624a75e7",
+      "bytes": 3180,
+      "path": "bench/run_append_log.py"
+    },
+    {
+      "sha256": "a8aa0a2602bdb969c579b6e082c34bacf0f9f1e5c56618900ab4474712f7666f",
+      "bytes": 13187,
+      "path": "experiments/append_log.cpp"
+    },
+    {
+      "sha256": "c68ce8541c7e405da2648316ed820e3c831dbb2846a0afdc05f278b53199a5e4",
+      "bytes": 31743,
+      "path": "agent/conversation.json"
+    },
+    {
+      "sha256": "c68ce8541c7e405da2648316ed820e3c831dbb2846a0afdc05f278b53199a5e4",
+      "bytes": 31743,
+      "path": "conversation.json"
+    },
+    {
+      "sha256": "7aaca093425ad612a0d04a1c2e30753e1f1ce1284e141e625527cb93ba5c0416",
+      "bytes": 12896,
+      "path": "bench/results/compact-diagnostic.jsonl"
+    },
+    {
+      "sha256": "7c2bc916c001f0e6ba41be66d4a9307fe5bb434fce73b343b21867a655f1e03c",
+      "bytes": 37226,
+      "path": "bench/results/compact-factorial.jsonl"
+    },
+    {
+      "sha256": "190c7ccde9bfa95e8ca54df3fda883e964dd3ddf3cf1a63e3486198c31df8950",
+      "bytes": 12294,
+      "path": "bench/results/compact-smoke.jsonl"
+    },
+    {
+      "sha256": "3854c7f8416c9b1b684344843854839bf5ef9cad013124a2b4454036da9d3953",
+      "bytes": 111785,
+      "path": "bench/results/compact-v2-default-varied.jsonl"
+    },
+    {
+      "sha256": "6cf4d8a5f8b35a79d3c7a790fbefd0054533d2bd217f97cd31278d3fd3cc0969",
+      "bytes": 12896,
+      "path": "bench/results/compact-v2-diagnostic.jsonl"
+    },
+    {
+      "sha256": "46cc744e9a2f6da273f0aa3e6d4bd0cb4b23d9dc22bb60ea61fdf01ec532f1fa",
+      "bytes": 37228,
+      "path": "bench/results/compact-v2-factorial.jsonl"
+    },
+    {
+      "sha256": "c55174bcd86f618fc27e698a82f32ffb2738986ada6f4b1ce34ac582eedf0c4e",
+      "bytes": 37619,
+      "path": "bench/results/compact-v2-large.jsonl"
+    },
+    {
+      "sha256": "304b67805a1037c4bd3dcc6432c207037d31b383cc905d598ed2850e046bd03c",
+      "bytes": 111727,
+      "path": "bench/results/compact-v2-varied.jsonl"
+    },
+    {
+      "sha256": "af5cdcdb065f5cbca4eee1a99fbd0ed44fb3b084268b311e5d99522a747f0496",
+      "bytes": 111739,
+      "path": "bench/results/compact-varied.jsonl"
+    },
+    {
+      "sha256": "9f32a3e70e655a44da4f1acfafde22b904d0dd8a9ccbc307ec02ce0d52e2e60f",
+      "bytes": 14091,
+      "path": "bench/results/compact-diagnostic.summary.json"
+    },
+    {
+      "sha256": "c6574a06829a1929870ab0a79be46f39d4b6e0727cf012bd9b90ffb5f9c52e87",
+      "bytes": 1905,
+      "path": "bench/results/compact-factorial.summary.json"
+    },
+    {
+      "sha256": "09b0318ba6cb3de5ddd5c560cdfe318c5ab5823fa4096e38ce1adb2ec1f160e1",
+      "bytes": 1875,
+      "path": "bench/results/compact-smoke.summary.json"
+    },
+    {
+      "sha256": "139943d4f0bf69679a1aa63e47b7f5d47f095820b5262783a2a3ea8ee5c697fa",
+      "bytes": 5422,
+      "path": "bench/results/compact-v2-default-varied.summary.json"
+    },
+    {
+      "sha256": "24659a65225d3b8e72ad13139e8a77e3ffebb2a19e38a28d21f2b2d4edd0bde7",
+      "bytes": 14090,
+      "path": "bench/results/compact-v2-diagnostic.summary.json"
+    },
+    {
+      "sha256": "f44455dcb4a86c6c43d04bdec18ee55595e981fb287d7f838047514dbec6350a",
+      "bytes": 1907,
+      "path": "bench/results/compact-v2-factorial.summary.json"
+    },
+    {
+      "sha256": "4e01e6b852ed5225232b15d70c35c63938333d936a51bd09e5627cc8f2a67d3a",
+      "bytes": 1931,
+      "path": "bench/results/compact-v2-large.summary.json"
+    },
+    {
+      "sha256": "301bcaae16c0c5f2315cb378ebfa4c6bb7f2dc48292644d2f5dab091ba28ae5e",
+      "bytes": 5414,
+      "path": "bench/results/compact-v2-varied.summary.json"
+    },
+    {
+      "sha256": "bd9d4a7484d11589e2ef3520cc85e6be2e7d780eff782ed04c0da1b0122c7e03",
+      "bytes": 5416,
+      "path": "bench/results/compact-varied.summary.json"
+    },
+    {
+      "sha256": "bf979d2b594abe993db7db9c6cfeead3b5ebceba0ab460d2b2cd9a93769e6167",
+      "bytes": 4149,
+      "path": "bench/results/append-log-main.jsonl"
+    },
+    {
+      "sha256": "13a08d09fd58181942bf50683d03d6e8f429ca7809248ad3b72d1bc61c994e41",
+      "bytes": 592,
+      "path": "bench/results/append-log-main.summary.json"
+    }
+  ],
+  "date": "2026-11-10",
+  "measured_core": "b7eb52b4bb8fbc25e3209d0933182e57e41afdd8",
+  "final_change": "SQL defaults packed=true and scan cache1MiB; benchmark fields explicit"
+}

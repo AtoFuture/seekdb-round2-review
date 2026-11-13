@@ -1,0 +1,611 @@
+UpdateCTestConfiguration  from :/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/build/DartConfiguration.tcl
+Test project /build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+      Start  1: core_types
+
+1: Test command: /build/core_tests "types"
+1: Working Directory: /build
+1: Test timeout computed to be: 10000000
+1: PASS types
+ 1/70 Test  #1: core_types .......................   Passed    0.00 sec
+test 2
+      Start  2: core_vector
+
+2: Test command: /build/core_tests "vector"
+2: Working Directory: /build
+2: Test timeout computed to be: 10000000
+2: PASS vector
+ 2/70 Test  #2: core_vector ......................   Passed    0.00 sec
+test 3
+      Start  3: core_storage
+
+3: Test command: /build/core_tests "storage"
+3: Working Directory: /build
+3: Test timeout computed to be: 180
+3: PASS storage
+ 3/70 Test  #3: core_storage .....................   Passed    1.49 sec
+test 4
+      Start  4: core_storage_failure
+
+4: Test command: /build/core_tests "storage_failure"
+4: Working Directory: /build
+4: Test timeout computed to be: 180
+4: PASS storage_failure
+ 4/70 Test  #4: core_storage_failure .............   Passed    0.00 sec
+test 5
+      Start  5: core_namespaces
+
+5: Test command: /build/namespace_tests
+5: Working Directory: /build
+5: Test timeout computed to be: 180
+5: PASS namespaces
+ 5/70 Test  #5: core_namespaces ..................   Passed    0.01 sec
+test 6
+      Start  6: core_codec
+
+6: Test command: /build/sql_tests "codec"
+6: Working Directory: /build
+6: Test timeout computed to be: 120
+6: PASS codec
+ 6/70 Test  #6: core_codec .......................   Passed    0.00 sec
+test 7
+      Start  7: core_sql
+
+7: Test command: /build/sql_tests "sql"
+7: Working Directory: /build
+7: Test timeout computed to be: 120
+7: PASS sql
+ 7/70 Test  #7: core_sql .........................   Passed    0.01 sec
+test 8
+      Start  8: core_sort
+
+8: Test command: /build/sql_tests "sort"
+8: Working Directory: /build
+8: Test timeout computed to be: 120
+8: PASS sort
+ 8/70 Test  #8: core_sort ........................   Passed    0.02 sec
+test 9
+      Start  9: core_sql_crash
+
+9: Test command: /build/sql_tests "sql_crash"
+9: Working Directory: /build
+9: Test timeout computed to be: 120
+9: PASS sql_crash
+ 9/70 Test  #9: core_sql_crash ...................   Passed    0.00 sec
+test 10
+      Start 10: core_sql_edges
+
+10: Test command: /build/sql_tests "sql_edges"
+10: Working Directory: /build
+10: Test timeout computed to be: 120
+10: PASS sql_edges
+10/70 Test #10: core_sql_edges ...................   Passed    0.01 sec
+test 11
+      Start 11: core_sql_failure
+
+11: Test command: /build/sql_tests "sql_failure"
+11: Working Directory: /build
+11: Test timeout computed to be: 120
+11: PASS sql_failure
+11/70 Test #11: core_sql_failure .................   Passed    0.02 sec
+test 12
+      Start 12: core_sql_batch
+
+12: Test command: /build/sql_tests "sql_batch"
+12: Working Directory: /build
+12: Test timeout computed to be: 120
+12: PASS sql_batch
+12/70 Test #12: core_sql_batch ...................   Passed    0.12 sec
+test 13
+      Start 13: cli
+
+13: Test command: /usr/bin/python3.12 "/src/tests/cli_tests.py" "/build/minivectordb"
+13: Working Directory: /build
+13: Test timeout computed to be: 120
+13: .......
+13: ----------------------------------------------------------------------
+13: Ran 7 tests in 0.045s
+13: 
+13: OK
+13/70 Test #13: cli ..............................   Passed    0.10 sec
+test 14
+      Start 14: core_selective
+
+14: Test command: /build/selective_tests
+14: Working Directory: /build
+14: Test timeout computed to be: 180
+14: PASS selective
+14/70 Test #14: core_selective ...................   Passed    0.16 sec
+test 15
+      Start 15: core_batches
+
+15: Test command: /build/batch_tests
+15: Working Directory: /build
+15: Test timeout computed to be: 180
+15: growth bytes single=6963200 batch=475136
+15: PASS batches
+15/70 Test #15: core_batches .....................   Passed    0.09 sec
+test 16
+      Start 16: core_checksum
+
+16: Test command: /build/checksum_tests
+16: Working Directory: /build
+16: Test timeout computed to be: 30
+16: PASS checksum
+16/70 Test #16: core_checksum ....................   Passed    0.28 sec
+test 17
+      Start 17: core_profile
+
+17: Test command: /build/profile_tests
+17: Working Directory: /build
+17: Test timeout computed to be: 60
+17: profile tests passed
+17/70 Test #17: core_profile .....................   Passed    0.00 sec
+test 18
+      Start 18: core_index_cache
+
+18: Test command: /build/index_cache_tests
+18: Working Directory: /build
+18: Test timeout computed to be: 120
+18: index cache tests passed
+18/70 Test #18: core_index_cache .................   Passed    0.12 sec
+test 19
+      Start 19: core_checksum_slicing
+
+19: Test command: /build/checksum_slicing_tests
+19: Working Directory: /build
+19: Test timeout computed to be: 120
+19: PASS checksum_slicing
+19/70 Test #19: core_checksum_slicing ............   Passed    0.58 sec
+test 20
+      Start 20: core_packed_storage
+
+20: Test command: /build/packed_storage_tests
+20: Working Directory: /build
+20: Test timeout computed to be: 180
+20: packed storage tests passed
+20/70 Test #20: core_packed_storage ..............   Passed    0.08 sec
+test 21
+      Start 21: core_packed_sql
+
+21: Test command: /build/packed_sql_tests
+21: Working Directory: /build
+21: Test timeout computed to be: 180
+21: PASS packed SQL
+21/70 Test #21: core_packed_sql ..................   Passed    2.27 sec
+test 22
+      Start 22: core_data_cache
+
+22: Test command: /build/data_cache_tests
+22: Working Directory: /build
+22: Test timeout computed to be: 180
+22: data cache tests passed
+22/70 Test #22: core_data_cache ..................   Passed    0.13 sec
+test 23
+      Start 23: core_data_cache_sql
+
+23: Test command: /build/data_cache_sql_tests
+23: Working Directory: /build
+23: Test timeout computed to be: 180
+23: PASS data cache SQL
+23/70 Test #23: core_data_cache_sql ..............   Passed    0.51 sec
+test 24
+      Start 24: jsonl
+
+24: Test command: /usr/bin/python3.12 "/src/tests/jsonl_tests.py" "/build/minivectordb"
+24: Working Directory: /build
+24: Test timeout computed to be: 120
+24: .....
+24: ----------------------------------------------------------------------
+24: Ran 5 tests in 0.054s
+24: 
+24: OK
+24/70 Test #24: jsonl ............................   Passed    0.11 sec
+test 25
+      Start 25: core_vector_index
+
+25: Test command: /build/vector_index_tests
+25: Working Directory: /build
+25: Test timeout computed to be: 180
+25: vector index tests passed
+25/70 Test #25: core_vector_index ................   Passed    0.11 sec
+test 26
+      Start 26: core_reference_index
+
+26: Test command: /build/reference_index_tests
+26: Working Directory: /build
+26: Test timeout computed to be: 120
+26: reference and legacy vector indexes agree; rollback, restart and corruption checks passed
+26/70 Test #26: core_reference_index .............   Passed    0.06 sec
+test 27
+      Start 27: core_float32_literals
+
+27: Test command: /usr/bin/python3.12 "/src/tests/float32_literals_tests.py" "/build/minivectordb"
+27: Working Directory: /build
+27: Test timeout computed to be: 120
+27: PASS extreme literals: signed underflow, true overflow rejection, index, transaction rollback, reopen
+27/70 Test #27: core_float32_literals ............   Passed    0.04 sec
+test 28
+      Start 28: core_paired_scan
+
+28: Test command: /build/paired_scan_tests
+28: Working Directory: /build
+28: Test timeout computed to be: 180
+28: paired scan tests passed
+28/70 Test #28: core_paired_scan .................   Passed    0.26 sec
+test 29
+      Start 29: core_scan_snapshot
+
+29: Test command: /build/scan_snapshot_tests
+29: Working Directory: /build
+29: Test timeout computed to be: 180
+29: scan snapshot tests passed
+29/70 Test #29: core_scan_snapshot ...............   Passed    0.11 sec
+test 30
+      Start 30: core_numeric_maximum
+
+30: Test command: /build/numeric_sql_tests "maximum"
+30: Working Directory: /build
+30: Test timeout computed to be: 120
+30: PASS numeric maximum
+30/70 Test #30: core_numeric_maximum .............   Passed    0.01 sec
+test 31
+      Start 31: core_numeric_ties
+
+31: Test command: /build/numeric_sql_tests "ties"
+31: Working Directory: /build
+31: Test timeout computed to be: 120
+31: PASS numeric ties
+31/70 Test #31: core_numeric_ties ................   Passed    0.01 sec
+test 32
+      Start 32: core_text_validation
+
+32: Test command: /build/text_validation_tests
+32: Working Directory: /build
+32: Test timeout computed to be: 60
+32: PASS text validation 321404 comparisons per mode
+32/70 Test #32: core_text_validation .............   Passed    0.78 sec
+test 33
+      Start 33: core_row_validation
+
+33: Test command: /build/row_validation_tests
+33: Working Directory: /build
+33: Test timeout computed to be: 120
+33: PASS row validation 354944 comparisons
+33/70 Test #33: core_row_validation ..............   Passed    2.88 sec
+test 34
+      Start 34: core_row_allocation
+
+34: Test command: /build/row_allocation_tests
+34: Working Directory: /build
+34: Test timeout computed to be: 30
+34: PASS short-schema row metadata: zero allocations for 1..8 columns
+34/70 Test #34: core_row_allocation ..............   Passed    0.00 sec
+test 35
+      Start 35: core_row_encoding
+
+35: Test command: /build/row_encoding_tests
+35: Working Directory: /build
+35: Test timeout computed to be: 60
+35: PASS row encoding: 1802 golden/scalar byte and error-order comparisons
+35/70 Test #35: core_row_encoding ................   Passed    0.02 sec
+test 36
+      Start 36: protocol_adversarial
+
+36: Test command: /usr/bin/python3.12 "/src/tests/protocol_adversarial_tests.py" "/build/minivectordb"
+36: Working Directory: /build
+36: Test timeout computed to be: 120
+36: ......
+36: ----------------------------------------------------------------------
+36: Ran 6 tests in 0.074s
+36: 
+36: OK
+36/70 Test #36: protocol_adversarial .............   Passed    0.13 sec
+test 37
+      Start 37: sql_adversarial
+
+37: Test command: /usr/bin/python3.12 "/src/tests/adversarial_sql_tests.py" "/build/minivectordb"
+37: Working Directory: /build
+37: Test timeout computed to be: 180
+37: {"status": "PASS", "seed": 548219, "checks": 1344, "rows_initial": 584, "transaction_cycles": 56, "coverage": ["4096-byte spill sort", "multi-distance expressions", "distance ties", "INT64 extreme keys", "LIMIT extremes", "Unicode/control VARCHAR", "quoted identifiers", "2 indexes/table", "cross-table snapshots", "index/table rollback/recreation", "failed multirow inserts", "failed DDL", "snapshot invalidation", "shutdown rollback", "reopen"]}
+37/70 Test #37: sql_adversarial ..................   Passed    0.82 sec
+test 38
+      Start 38: storage_adversarial
+
+38: Test command: /build/adversarial_storage_tests
+38: Working Directory: /build
+38: Test timeout computed to be: 360
+38: store kind=0 writepoints=19
+38: store kind=1 writepoints=20
+38: store kind=2 writepoints=16
+38: UPDATE t SET n='new',v=[999,0] writepoints=13
+38: DELETE FROM t writepoints=5
+38: CREATE VECTOR INDEX third ON t(v) writepoints=8
+38: PASS adversarial storage cases=258
+38/70 Test #38: storage_adversarial ..............   Passed    0.73 sec
+test 39
+      Start 39: core_unindexed_snapshot
+
+39: Test command: /build/unindexed_snapshot_tests
+39: Working Directory: /build
+39: Test timeout computed to be: 180
+39: unindexed snapshot tests passed
+39/70 Test #39: core_unindexed_snapshot ..........   Passed    0.61 sec
+test 40
+      Start 40: core_vector_scratch
+
+40: Test command: /build/vector_scratch_tests
+40: Working Directory: /build
+40: Test timeout computed to be: 60
+40: vector scratch tests passed
+40/70 Test #40: core_vector_scratch ..............   Passed    0.12 sec
+test 41
+      Start 41: core_typed_scan
+
+41: Test command: /build/typed_scan_tests
+41: Working Directory: /build
+41: Test timeout computed to be: 180
+41: typed scan tests passed
+41/70 Test #41: core_typed_scan ..................   Passed    0.39 sec
+test 42
+      Start 42: core_text_scan
+
+42: Test command: /build/text_scan_tests
+42: Working Directory: /build
+42: Test timeout computed to be: 180
+42: text snapshot tests passed
+42/70 Test #42: core_text_scan ...................   Passed    0.07 sec
+test 43
+      Start 43: core_mixed_filter_cache
+
+43: Test command: /build/mixed_filter_cache_tests
+43: Working Directory: /build
+43: Test timeout computed to be: 180
+43: mixed filter cache tests passed
+43/70 Test #43: core_mixed_filter_cache ..........   Passed    0.08 sec
+test 44
+      Start 44: core_commit_policy
+
+44: Test command: /build/commit_policy_tests
+44: Working Directory: /build
+44: Test timeout computed to be: 180
+44: PASS commit policy cases=441 (SIGKILL and injected return errors; not media-fault proof)
+44/70 Test #44: core_commit_policy ...............   Passed    1.26 sec
+test 45
+      Start 45: core_commit_policy_compressed
+
+45: Test command: /build/commit_policy_tests "--compressed"
+45: Working Directory: /build
+45: Test timeout computed to be: 180
+45: PASS commit policy cases=441 (SIGKILL and injected return errors; not media-fault proof)
+45/70 Test #45: core_commit_policy_compressed ....   Passed    0.51 sec
+test 46
+      Start 46: core_compressed_paths
+
+46: Test command: /build/compressed_path_tests
+46: Working Directory: /build
+46: Test timeout computed to be: 180
+46: model cache=0 packed=0 old_bytes=92360704 new_bytes=17702912
+46: model cache=0 packed=1 old_bytes=78598144 new_bytes=3940352
+46: model cache=1 packed=0 old_bytes=92360704 new_bytes=17702912
+46: model cache=1 packed=1 old_bytes=78598144 new_bytes=3940352
+46: PASS compressed paths
+46/70 Test #46: core_compressed_paths ............   Passed    7.61 sec
+test 47
+      Start 47: core_packed_sql_compressed
+
+47: Test command: /build/packed_sql_tests "--compressed"
+47: Working Directory: /build
+47: Test timeout computed to be: 180
+47: PASS packed SQL
+47/70 Test #47: core_packed_sql_compressed .......   Passed    0.61 sec
+test 48
+      Start 48: core_vector_literals
+
+48: Test command: /build/vector_literal_tests
+48: Working Directory: /build
+48: Test timeout computed to be: 60
+48: PASS vector literal differential: 6150 cases, bitwise values and identical errors; 256 quoted-token round trips and 256 unterminated checks
+48/70 Test #48: core_vector_literals .............   Passed    0.18 sec
+test 49
+      Start 49: core_validated_vector
+
+49: Test command: /build/validated_vector_tests
+49: Working Directory: /build
+49: Test timeout computed to be: 90
+49: validated vector kernel: 1249 bitwise cases and validation boundaries passed
+49/70 Test #49: core_validated_vector ............   Passed    0.11 sec
+test 50
+      Start 50: core_validated_snapshot
+
+50: Test command: /build/validated_snapshot_tests
+50: Working Directory: /build
+50: Test timeout computed to be: 120
+50/70 Test #50: core_validated_snapshot ..........   Passed    0.90 sec
+test 51
+      Start 51: core_certified_blocks
+
+51: Test command: /build/certified_block_tests
+51: Working Directory: /build
+51: Test timeout computed to be: 90
+51: PASS independent full-sort certified-block checks; blocks=256
+51/70 Test #51: core_certified_blocks ............   Passed    0.14 sec
+test 52
+      Start 52: core_bounded_screen
+
+52: Test command: /build/bounded_screen_tests
+52: Working Directory: /build
+52: Test timeout computed to be: 90
+52: {"avx2_supported":true,"avx512_supported":true,"lower_bound_lane_checks":36864,"screened_lanes":5056,"rejected_lanes":3986}
+52/70 Test #52: core_bounded_screen ..............   Passed    0.05 sec
+test 53
+      Start 53: core_mutation_prefix
+
+53: Test command: /build/mutation_prefix_tests
+53: Working Directory: /build
+53: Test timeout computed to be: 120
+53: PASS mutation-prefix model: four formats/layouts, all 16 first-fork bytes, empty/delete/reinsert, prefix replacement/restore, single and reversed batch writes, sign/namespace boundaries, restore/rollback/reopen
+53/70 Test #53: core_mutation_prefix .............   Passed    0.54 sec
+test 54
+      Start 54: core_cache_admission
+
+54: Test command: /build/cache_admission_tests
+54: Working Directory: /build
+54: Test timeout computed to be: 180
+54: PASS cache pre-admission: no rejected-arena allocation, full-scan oracle, encoded-byte boundaries, identity/transaction/failure invalidation
+54/70 Test #54: core_cache_admission .............   Passed    0.22 sec
+test 55
+      Start 55: core_packed_codec
+
+55: Test command: /build/packed_codec_tests
+55: Working Directory: /build
+55: Test timeout computed to be: 90
+55: PASS bounded byte-codec, malformed inputs, map/SQL oracle, SIGKILL recovery, checksum rejection and old-format preservation
+55/70 Test #55: core_packed_codec ................   Passed    0.09 sec
+test 56
+      Start 56: jsonl_buffered_frames
+
+56: Test command: /usr/bin/python3.12 "/src/tests/jsonl_buffer_tests.py" "/build/minivectordb"
+56: Working Directory: /build
+56: Test timeout computed to be: 90
+56: ...
+56: ----------------------------------------------------------------------
+56: Ran 3 tests in 0.107s
+56: 
+56: OK
+56/70 Test #56: jsonl_buffered_frames ............   Passed    0.16 sec
+test 57
+      Start 57: json_string_boundaries
+
+57: Test command: /build/json_string_tests
+57: Working Directory: /build
+57: Test timeout computed to be: 90
+57: PASS JSON byte-prefix/escaping oracle, UTF-8 controls and borrowed lexemes: 1050576 cases
+57/70 Test #57: json_string_boundaries ...........   Passed    0.12 sec
+test 58
+      Start 58: packed_pointer_boundaries
+
+58: Test command: /build/packed_pointer_tests
+58: Working Directory: /build
+58: Test timeout computed to be: 90
+58: PASS 300000 tagged-pointer round trips, boundaries/malformed encodings, format06 model/recovery and format05 preservation
+58/70 Test #58: packed_pointer_boundaries ........   Passed    3.75 sec
+test 59
+      Start 59: int8_bound_exactness
+
+59: Test command: /build/int8_bound_tests
+59: Working Directory: /build
+59: Test timeout computed to be: 180
+59: {"native_vnni":true,"native_avx2":true,"compared":117168,"rejected":49690,"native_mask_checks":80640}
+59/70 Test #59: int8_bound_exactness .............   Passed    0.60 sec
+test 60
+      Start 60: byteplane_lossless
+
+60: Test command: /build/byteplane_tests
+60: Working Directory: /build
+60: Test timeout computed to be: 60
+60: byte-plane cases=20500 packed=15823 shuffled=9872
+60: PASS generic lossless planes, malformed frames, format07 recovery/rollback and format06 preservation
+60/70 Test #60: byteplane_lossless ...............   Passed    1.38 sec
+test 61
+      Start 61: projection_cache_equivalence
+
+61: Test command: /build/projection_cache_tests
+61: Working Directory: /build
+61: Test timeout computed to be: 120
+61: projection cache equivalence, rollback, large-row fallback and reopen passed
+61/70 Test #61: projection_cache_equivalence .....   Passed    0.07 sec
+test 62
+      Start 62: journal_sql
+
+62: Test command: /build/journal_sql_tests "sql"
+62: Working Directory: /build
+62: Test timeout computed to be: 180
+62: PASS sql
+62/70 Test #62: journal_sql ......................   Passed    0.00 sec
+test 63
+      Start 63: journal_sort
+
+63: Test command: /build/journal_sql_tests "sort"
+63: Working Directory: /build
+63: Test timeout computed to be: 180
+63: PASS sort
+63/70 Test #63: journal_sort .....................   Passed    0.01 sec
+test 64
+      Start 64: journal_sql_crash
+
+64: Test command: /build/journal_sql_tests "sql_crash"
+64: Working Directory: /build
+64: Test timeout computed to be: 180
+64: PASS sql_crash
+64/70 Test #64: journal_sql_crash ................   Passed    0.00 sec
+test 65
+      Start 65: journal_sql_edges
+
+65: Test command: /build/journal_sql_tests "sql_edges"
+65: Working Directory: /build
+65: Test timeout computed to be: 180
+65: PASS sql_edges
+65/70 Test #65: journal_sql_edges ................   Passed    0.00 sec
+test 66
+      Start 66: journal_sql_failure
+
+66: Test command: /build/journal_sql_tests "sql_failure"
+66: Working Directory: /build
+66: Test timeout computed to be: 180
+66: PASS sql_failure
+66/70 Test #66: journal_sql_failure ..............   Passed    0.01 sec
+test 67
+      Start 67: journal_sql_batch
+
+67: Test command: /build/journal_sql_tests "sql_batch"
+67: Working Directory: /build
+67: Test timeout computed to be: 180
+67: PASS sql_batch
+67/70 Test #67: journal_sql_batch ................   Passed    0.03 sec
+test 68
+      Start 68: journal_adversarial
+
+68: Test command: /build/journal_adversarial_tests
+68: Working Directory: /build
+68: Test timeout computed to be: 180
+68: store kind=0 writepoints=1
+68: store kind=1 writepoints=1
+68: store kind=2 writepoints=1
+68: UPDATE t SET n='new',v=[999,0] writepoints=6
+68: DELETE FROM t writepoints=6
+68: CREATE VECTOR INDEX third ON t(v) writepoints=4
+68: PASS adversarial storage cases=40
+68/70 Test #68: journal_adversarial ..............   Passed    0.06 sec
+test 69
+      Start 69: journal_storage_model
+
+69: Test command: /build/journal_storage_tests
+69: Working Directory: /build
+69: Test timeout computed to be: 180
+69: journal random model, savepoint branches, snapshot mutation, orphan recovery and corruption passed
+69/70 Test #69: journal_storage_model ............   Passed    0.38 sec
+test 70
+      Start 70: core_projection_probation
+
+70: Test command: /build/projection_probation_tests
+70: Working Directory: /build
+70: Test timeout computed to be: 120
+70: projection_bytes=4398 typed_bytes=3108
+70: projection_bytes=4398 typed_bytes=3108
+70: projection_bytes=4438 typed_bytes=3108
+70: projection_bytes=4398 typed_bytes=3108
+70: projection_bytes=4354 typed_bytes=3077
+70: alternating VARCHAR probation, exact output, invalidation, rollback and index passed
+70/70 Test #70: core_projection_probation ........   Passed    0.05 sec
+
+100% tests passed, 0 tests failed out of 70
+
+Total Test time (real) =  32.20 sec

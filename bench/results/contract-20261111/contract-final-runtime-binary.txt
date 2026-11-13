@@ -1,0 +1,1 @@
+a2216d15152bd259bf14073913149e36df42f059d8879e2643d5f15bb2faa6fa  /usr/local/bin/minivectordb

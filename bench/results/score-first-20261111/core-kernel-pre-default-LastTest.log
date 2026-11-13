@@ -1,0 +1,83 @@
+Start testing: Nov 11 03:07 UTC
+----------------------------------------------------------
+29/41 Testing: core_numeric_maximum
+29/41 Test: core_numeric_maximum
+Command: "/mnt/d/Codex/MiniVectorDB/build/score-first-core/numeric_sql_tests" "maximum"
+Directory: /mnt/d/Codex/MiniVectorDB/build/score-first-core
+"core_numeric_maximum" start time: Nov 11 03:07 UTC
+Output:
+----------------------------------------------------------
+PASS numeric maximum
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"core_numeric_maximum" end time: Nov 11 03:07 UTC
+"core_numeric_maximum" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/41 Testing: core_numeric_ties
+30/41 Test: core_numeric_ties
+Command: "/mnt/d/Codex/MiniVectorDB/build/score-first-core/numeric_sql_tests" "ties"
+Directory: /mnt/d/Codex/MiniVectorDB/build/score-first-core
+"core_numeric_ties" start time: Nov 11 03:07 UTC
+Output:
+----------------------------------------------------------
+PASS numeric ties
+<end of output>
+Test time =   0.38 sec
+----------------------------------------------------------
+Test Passed.
+"core_numeric_ties" end time: Nov 11 03:07 UTC
+"core_numeric_ties" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/41 Testing: core_typed_scan
+39/41 Test: core_typed_scan
+Command: "/mnt/d/Codex/MiniVectorDB/build/score-first-core/typed_scan_tests"
+Directory: /mnt/d/Codex/MiniVectorDB/build/score-first-core
+"core_typed_scan" start time: Nov 11 03:07 UTC
+Output:
+----------------------------------------------------------
+typed scan tests passed
+<end of output>
+Test time =   8.20 sec
+----------------------------------------------------------
+Test Passed.
+"core_typed_scan" end time: Nov 11 03:07 UTC
+"core_typed_scan" time elapsed: 00:00:08
+----------------------------------------------------------
+
+40/41 Testing: core_commit_policy
+40/41 Test: core_commit_policy
+Command: "/mnt/d/Codex/MiniVectorDB/build/score-first-core/commit_policy_tests"
+Directory: /mnt/d/Codex/MiniVectorDB/build/score-first-core
+"core_commit_policy" start time: Nov 11 03:07 UTC
+Output:
+----------------------------------------------------------
+PASS commit policy cases=441 (SIGKILL and injected return errors; not media-fault proof)
+<end of output>
+Test time =  43.18 sec
+----------------------------------------------------------
+Test Passed.
+"core_commit_policy" end time: Nov 11 03:08 UTC
+"core_commit_policy" time elapsed: 00:00:43
+----------------------------------------------------------
+
+41/41 Testing: core_validated_vector
+41/41 Test: core_validated_vector
+Command: "/mnt/d/Codex/MiniVectorDB/build/score-first-core/validated_vector_tests"
+Directory: /mnt/d/Codex/MiniVectorDB/build/score-first-core
+"core_validated_vector" start time: Nov 11 03:08 UTC
+Output:
+----------------------------------------------------------
+validated vector kernel: 931 bitwise cases and validation boundaries passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"core_validated_vector" end time: Nov 11 03:08 UTC
+"core_validated_vector" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 11 03:08 UTC

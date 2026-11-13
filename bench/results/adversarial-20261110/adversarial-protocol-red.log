@@ -1,0 +1,80 @@
+FFFFFFF..
+======================================================================
+FAIL: test_failed_statement_retains_earlier_transaction_work (__main__.AdversarialProtocolTests.test_failed_statement_retains_earlier_transaction_work)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 128, in test_failed_statement_retains_earlier_transaction_work
+    self.query('COMMIT;', ident)
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 76, in query
+    self.assertIs(response.get('ok'), ok, repr(response.get('error')))
+AssertionError: False is not True : {'code': 'EXECUTION', 'message': 'cannot create JSON response spool'}
+
+======================================================================
+FAIL: test_long_ids_do_not_change_mutation_or_commit_outcome (__main__.AdversarialProtocolTests.test_long_ids_do_not_change_mutation_or_commit_outcome) (id_length=65510)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 99, in test_long_ids_do_not_change_mutation_or_commit_outcome
+    response = self.query('INSERT INTO t VALUES(%d);' % key, 'x' * length)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 76, in query
+    self.assertIs(response.get('ok'), ok, repr(response.get('error')))
+AssertionError: False is not True : {'code': 'EXECUTION', 'message': 'cannot create JSON response spool'}
+
+======================================================================
+FAIL: test_long_ids_do_not_change_mutation_or_commit_outcome (__main__.AdversarialProtocolTests.test_long_ids_do_not_change_mutation_or_commit_outcome) (id_length=65515)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 99, in test_long_ids_do_not_change_mutation_or_commit_outcome
+    response = self.query('INSERT INTO t VALUES(%d);' % key, 'x' * length)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 76, in query
+    self.assertIs(response.get('ok'), ok, repr(response.get('error')))
+AssertionError: False is not True : {'code': 'EXECUTION', 'message': 'cannot create JSON response spool'}
+
+======================================================================
+FAIL: test_long_ids_do_not_change_mutation_or_commit_outcome (__main__.AdversarialProtocolTests.test_long_ids_do_not_change_mutation_or_commit_outcome) (id_length=65520)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 99, in test_long_ids_do_not_change_mutation_or_commit_outcome
+    response = self.query('INSERT INTO t VALUES(%d);' % key, 'x' * length)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 76, in query
+    self.assertIs(response.get('ok'), ok, repr(response.get('error')))
+AssertionError: False is not True : {'code': 'EXECUTION', 'message': 'cannot create JSON response spool'}
+
+======================================================================
+FAIL: test_long_ids_do_not_change_mutation_or_commit_outcome (__main__.AdversarialProtocolTests.test_long_ids_do_not_change_mutation_or_commit_outcome) (id_length=65525)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 99, in test_long_ids_do_not_change_mutation_or_commit_outcome
+    response = self.query('INSERT INTO t VALUES(%d);' % key, 'x' * length)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 76, in query
+    self.assertIs(response.get('ok'), ok, repr(response.get('error')))
+AssertionError: False is not True : {'code': 'EXECUTION', 'message': 'cannot create JSON response spool'}
+
+======================================================================
+FAIL: test_long_ids_do_not_change_mutation_or_commit_outcome (__main__.AdversarialProtocolTests.test_long_ids_do_not_change_mutation_or_commit_outcome)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 102, in test_long_ids_do_not_change_mutation_or_commit_outcome
+    self.query('BEGIN;', 'b' * 65518)
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 76, in query
+    self.assertIs(response.get('ok'), ok, repr(response.get('error')))
+AssertionError: False is not True : {'code': 'EXECUTION', 'message': 'cannot create JSON response spool'}
+
+======================================================================
+FAIL: test_long_shutdown_ack_rolls_back_and_exits (__main__.AdversarialProtocolTests.test_long_shutdown_ack_rolls_back_and_exits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 115, in test_long_shutdown_ack_rolls_back_and_exits
+    self.shutdown('s' * 65518)
+  File "/mnt/d/Codex/MiniVectorDB/repo/tests/protocol_adversarial_tests.py", line 83, in shutdown
+    self.assertEqual(response, dict(id=ident, ok=True))
+AssertionError: {'id'[65525 chars]ok': False, 'error': {'code': 'EXECUTION', 'me[40 chars]ol'}} != {'id'[65525 chars]ok': True}
+Diff is 131186 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.580s
+
+FAILED (failures=7)

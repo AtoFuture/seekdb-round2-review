@@ -1,0 +1,176 @@
+{
+  "metadata": {
+    "commit": "unindexed-final-working-tree",
+    "runtime": "sha256:91fe268d07c2c0da849ef87dc00eebb96e5a9df5c2f4d9f41ac27b05ce6da856",
+    "rows": 10000,
+    "dimensions": 128,
+    "queries_per_round": 1000,
+    "rounds": 1,
+    "batch": 100,
+    "seed": 20261110,
+    "payload_chars": 256,
+    "top_k": 10,
+    "half_filtered_group_selectivity": 0.1,
+    "search_mode": "exact",
+    "index_creation": "after insertion",
+    "warmup_queries": 10,
+    "timing": "Session.request includes JSON serialization, pipe/Docker transport, server execution, response parsing; excludes dataset/oracle generation and answer verification",
+    "oracle_input_sha256": "9c7a1ae137870b946a9251c2c6549f2c17e723dad1da29898e4c2660713f5424",
+    "constraints": {
+      "startup_timeout": 120,
+      "request_timeout": 120,
+      "case_timeout": 14400,
+      "max_response_bytes": 16777216,
+      "cpus": "2",
+      "memory": "2g",
+      "pids_limit": 128,
+      "abs_tol": 1e-05,
+      "rel_tol": 1e-05,
+      "error_codes": {}
+    },
+    "swap_caveat": "WSL SwapLimit=false; requested --memory-swap=2g not enforceable; global settings unchanged",
+    "official_score": null,
+    "index_order_offset": 1,
+    "oracle_binary_sha256": "21af986044fa1b5252da5f9169aa816c588454444cc195708d559962f80c4477"
+  },
+  "samples": [
+    {
+      "round": 1,
+      "indexed": true,
+      "tag": "round1-indexed",
+      "resources_ready": {
+        "memory.peak": "5038080",
+        "memory.current": "2965504",
+        "memory.swap.current": "0",
+        "io.stat": "8:48 rbytes=0 wbytes=8192 rios=0 wios=1 dbytes=0 dios=0",
+        "cpu.stat": "usage_usec 24964\nuser_usec 16643\nsystem_usec 8321\nnr_periods 1\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      },
+      "create_table_ms": 9.38004,
+      "write_ms": 1740.388485,
+      "files_after_write": {
+        "database.mvdb": 31379456
+      },
+      "index_build_ms": 69.232628,
+      "files_after_index": {
+        "database.mvdb": 42778624
+      },
+      "resources_after_load": {
+        "memory.peak": "64360448",
+        "memory.current": "63918080",
+        "memory.swap.current": "0",
+        "io.stat": "8:48 rbytes=0 wbytes=43196416 rios=0 wios=222 dbytes=0 dios=0",
+        "cpu.stat": "usage_usec 853188\nuser_usec 412027\nsystem_usec 441160\nnr_periods 19\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      },
+      "warmup_request_ms": [
+        16.248518,
+        18.027174,
+        3.352195,
+        2.392819,
+        3.508874,
+        2.913876,
+        3.727039,
+        2.344397,
+        3.16542,
+        2.237944
+      ],
+      "resources_before_queries": {
+        "memory.peak": "72392704",
+        "memory.current": "72339456",
+        "memory.swap.current": "0",
+        "io.stat": "8:48 rbytes=0 wbytes=43196416 rios=0 wios=222 dbytes=0 dios=0",
+        "cpu.stat": "usage_usec 905146\nuser_usec 463985\nsystem_usec 441160\nnr_periods 20\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      },
+      "query_ms": 2886.490912,
+      "unfiltered_query_ms": 1654.356434,
+      "filtered_query_ms": 1232.134478,
+      "resources_after_queries": {
+        "memory.peak": "72392704",
+        "memory.current": "72232960",
+        "memory.swap.current": "0",
+        "io.stat": "8:48 rbytes=0 wbytes=43196416 rios=0 wios=222 dbytes=0 dios=0",
+        "cpu.stat": "usage_usec 3175729\nuser_usec 2618158\nsystem_usec 557570\nnr_periods 49\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      },
+      "files_final": {
+        "database.mvdb": 42778624
+      },
+      "ann_extra_checks": 4,
+      "correct_queries": 1000,
+      "restart_check": true,
+      "passed": true
+    },
+    {
+      "round": 1,
+      "indexed": false,
+      "tag": "round1-unindexed",
+      "resources_ready": {
+        "memory.peak": "5496832",
+        "memory.current": "2445312",
+        "memory.swap.current": "0",
+        "io.stat": "8:48 rbytes=0 wbytes=8192 rios=0 wios=1 dbytes=0 dios=0",
+        "cpu.stat": "usage_usec 26683\nuser_usec 10673\nsystem_usec 16010\nnr_periods 1\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      },
+      "create_table_ms": 9.365877,
+      "write_ms": 1719.810742,
+      "files_after_write": {
+        "database.mvdb": 31379456
+      },
+      "index_build_ms": null,
+      "files_after_index": {
+        "database.mvdb": 31379456
+      },
+      "resources_after_load": {
+        "memory.peak": "53178368",
+        "memory.current": "52084736",
+        "memory.swap.current": "0",
+        "io.stat": "8:48 rbytes=0 wbytes=31793152 rios=0 wios=211 dbytes=0 dios=0",
+        "cpu.stat": "usage_usec 791643\nuser_usec 422483\nsystem_usec 369160\nnr_periods 18\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      },
+      "warmup_request_ms": [
+        12.964066,
+        9.234781,
+        3.566388,
+        2.921377,
+        4.460571,
+        2.725893,
+        3.542688,
+        2.369661,
+        3.24463,
+        2.461355
+      ],
+      "resources_before_queries": {
+        "memory.peak": "60473344",
+        "memory.current": "60301312",
+        "memory.swap.current": "0",
+        "io.stat": "8:48 rbytes=0 wbytes=31793152 rios=0 wios=211 dbytes=0 dios=0",
+        "cpu.stat": "usage_usec 832233\nuser_usec 453196\nsystem_usec 379037\nnr_periods 19\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      },
+      "query_ms": 2948.738576,
+      "unfiltered_query_ms": 1699.09801,
+      "filtered_query_ms": 1249.640566,
+      "resources_after_queries": {
+        "memory.peak": "60620800",
+        "memory.current": "60223488",
+        "memory.swap.current": "0",
+        "io.stat": "8:48 rbytes=0 wbytes=31793152 rios=0 wios=211 dbytes=0 dios=0",
+        "cpu.stat": "usage_usec 3155493\nuser_usec 2685356\nsystem_usec 470136\nnr_periods 49\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+      },
+      "files_final": {
+        "database.mvdb": 31379456
+      },
+      "ann_extra_checks": 4,
+      "correct_queries": 1000,
+      "restart_check": true,
+      "passed": true
+    }
+  ],
+  "unindexed": {
+    "median_write_ms": 1719.810742,
+    "median_query_ms": 2948.738576,
+    "median_index_build_ms": null
+  },
+  "indexed": {
+    "median_write_ms": 1740.388485,
+    "median_query_ms": 2886.490912,
+    "median_index_build_ms": 69.232628
+  }
+}

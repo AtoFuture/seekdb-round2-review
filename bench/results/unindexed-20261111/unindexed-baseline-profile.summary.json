@@ -1,0 +1,42 @@
+{
+  "medians": {
+    "dense": {
+      "unindexed": {
+        "write_ms": 1308.452799,
+        "index_build_ms": 0.0,
+        "query_total_ms": 316.44283299999995,
+        "query_unfiltered_ms": 174.6926635,
+        "query_filtered_ms": 141.7501695,
+        "first_query_ms": 13.537590000000002,
+        "second_query_ms": 4.883074499999999,
+        "snapshot_capacity": 0.0,
+        "snapshot_rows": 0.0,
+        "database_bytes": 31432704.0,
+        "churn_ms": 0.0,
+        "process_maxrss_kib": 32532.0,
+        "local_cgroup_peak_bytes": 65515520.0
+      },
+      "indexed": {
+        "write_ms": 1321.151965,
+        "index_build_ms": 64.117,
+        "query_total_ms": 216.84704499999998,
+        "query_unfiltered_ms": 124.78832,
+        "query_filtered_ms": 92.058725,
+        "first_query_ms": 90.9013955,
+        "second_query_ms": 100.06149500000001,
+        "snapshot_capacity": 8388608.0,
+        "snapshot_rows": 600000.0,
+        "database_bytes": 42831872.0,
+        "churn_ms": 0.0,
+        "process_maxrss_kib": 37970.0,
+        "local_cgroup_peak_bytes": 84592640.0
+      }
+    }
+  },
+  "samples": 4,
+  "validated_queries": 240,
+  "reopen_checks": 4,
+  "diagnostic": true,
+  "no_official_score": true,
+  "profile_note": "table_scan and scan_consume are inclusive. Difference estimates traversal outside callbacks; do not sum enclosing and leaf timers."
+}

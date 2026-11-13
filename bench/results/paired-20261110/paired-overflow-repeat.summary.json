@@ -1,0 +1,35 @@
+{
+  "medians": {
+    "overflow": {
+      "False": {
+        "write_ms": 347.322517,
+        "index_build_ms": 38.5085,
+        "query_total_ms": 584.380905,
+        "query_unfiltered_ms": 293.804674,
+        "query_filtered_ms": 290.722221,
+        "first_query_ms": 15.213417,
+        "database_bytes": 22433792,
+        "churn_ms": 0,
+        "process_maxrss_kib": 36372,
+        "local_cgroup_peak_bytes": 58404864
+      },
+      "True": {
+        "write_ms": 350.491856,
+        "index_build_ms": 38.5406,
+        "query_total_ms": 598.335002,
+        "query_unfiltered_ms": 298.831134,
+        "query_filtered_ms": 299.503868,
+        "first_query_ms": 14.896763,
+        "database_bytes": 22433792,
+        "churn_ms": 0,
+        "process_maxrss_kib": 36108,
+        "local_cgroup_peak_bytes": 58331136
+      }
+    }
+  },
+  "samples": 14,
+  "validated_queries": 560,
+  "reopen_checks": 14,
+  "diagnostic": false,
+  "no_official_score": true
+}

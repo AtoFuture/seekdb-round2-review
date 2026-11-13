@@ -1,0 +1,252 @@
+{
+  "repository": "oceanbase/seekdb",
+  "commit": "f4d4e26653af823a7601668802f80e374ad6643c",
+  "scope": "Unmodified public functional protocol/cases; no official performance baseline or Prompt evaluator included.",
+  "files": {
+    "STDIO_PROTOCOL.md": {
+      "git_blob": "de488832a0952d5a1c3a93bd316eff69dc946158",
+      "bytes": 12241,
+      "sha256": "ca85bd31ab8dc61df50b44dedfe427764820aa84faa9036b3c00001b40c39f46"
+    },
+    "mysqltest/README.md": {
+      "git_blob": "091ba7c9016e102d0fc8eba25d0c6f03a19ed2b8",
+      "bytes": 6157,
+      "sha256": "be0f15ff7ce4cce4ff2b9fae4992a8dc4f34f7c2cc998172764c2f8fbb0284c9"
+    },
+    "mysqltest/cases/sql_bigint.result": {
+      "git_blob": "6ecc046cc46f1a6b0fed60b9047a6fe5661f00bf",
+      "bytes": 188,
+      "sha256": "ec2f19a62ffeb7241142324f9ba46855e3d5046204274d5d2b7627f52937864b"
+    },
+    "mysqltest/cases/sql_bigint.test": {
+      "git_blob": "bfffab303b48f92593e50461e30c6dcd092644db",
+      "bytes": 148,
+      "sha256": "85131b29d94827de64c31055bd4e4169c65639ee86a2fda2efda2fb62db839bf"
+    },
+    "mysqltest/cases/sql_comparisons.result": {
+      "git_blob": "e9870d3a08deac364f3852de42e14510ca02f2fc",
+      "bytes": 221,
+      "sha256": "91042d560debd503a0499a39febcb736bc032d3c502cfee6a3513712de76a829"
+    },
+    "mysqltest/cases/sql_comparisons.test": {
+      "git_blob": "a4b458bc17046b476ba9ba0c8107201bc952c8bb",
+      "bytes": 200,
+      "sha256": "bfff03b3f18ca0012369730cd202d2313eab305e819b5d577f9158a701effb60"
+    },
+    "mysqltest/cases/sql_crud.result": {
+      "git_blob": "2dd16e9fd062ecffdb65435beafde0544d70f299",
+      "bytes": 391,
+      "sha256": "241a4249157f7674dcb08d38d444b36aaa930581495d9ee909302f38bbe7eb98"
+    },
+    "mysqltest/cases/sql_crud.test": {
+      "git_blob": "0b8e7120d955d823356aede11f2115baa249adb5",
+      "bytes": 260,
+      "sha256": "2dbdc8c792d0a137c4d9654d24e758edc4c07287e5561151d78e9efec87667ae"
+    },
+    "mysqltest/cases/sql_empty.result": {
+      "git_blob": "2e0abd1713c47f7f20aa54e7e4aed15d15d4e181",
+      "bytes": 100,
+      "sha256": "1f7145867144221c28ac55035b4732866e351e18c49f3776726fa541ffe408c3"
+    },
+    "mysqltest/cases/sql_empty.test": {
+      "git_blob": "dfe3d8d7143406cfe380336f066a9f6fe589b8cb",
+      "bytes": 116,
+      "sha256": "91c62c80dd6ff9ff1169603b21fb813e96b1ba7ed855946716b8c63f6be04edd"
+    },
+    "mysqltest/cases/sql_ordering.result": {
+      "git_blob": "5e082b94a132875c140fd06ac67484ca5008cc1d",
+      "bytes": 302,
+      "sha256": "43824b4e189a5551d0d5f53095a0d8901e235ee3e3a646e826554d409ae2d645"
+    },
+    "mysqltest/cases/sql_ordering.test": {
+      "git_blob": "012881efb1ea8a88a46f5b89ea76bee3cbb02d56",
+      "bytes": 193,
+      "sha256": "8f6cf80f87365799cfd43604dfa987bb83a450dcef1e5ef815ac59a74633cefd"
+    },
+    "mysqltest/cases/sql_primary_key.result": {
+      "git_blob": "102ce3ce5b21768c9aa2fb4932e99d165ff4383a",
+      "bytes": 204,
+      "sha256": "1749b095cfc531e2ecf6ccce06747058930e7eed14c526c99d1170768cea3170"
+    },
+    "mysqltest/cases/sql_primary_key.test": {
+      "git_blob": "a28864c330fe80dd1cf540addaaac8a8b67434d3",
+      "bytes": 172,
+      "sha256": "76296f841f5a5105fffbe0985ae2a7e847e2291f75ea86cdf8d9e624d551ef04"
+    },
+    "mysqltest/cases/sql_unicode.result": {
+      "git_blob": "2945f951a68d1a584ef394cc2f5737ae5c447f5c",
+      "bytes": 143,
+      "sha256": "9b6c4b01f9a753f4b0e87dd6531e5df40614cfd31c2e6c92d795815bdffcc70b"
+    },
+    "mysqltest/cases/sql_unicode.test": {
+      "git_blob": "c3a4abb027fcf78c9bcc06b241138794833da709",
+      "bytes": 142,
+      "sha256": "5de827789e19e96bb22bfaf65f06d14647e444baa7589318e6ba139e5a3bd520"
+    },
+    "mysqltest/cases/sql_unsupported.result": {
+      "git_blob": "264b951e6002eb580751805b2ccdecadbe2270a1",
+      "bytes": 108,
+      "sha256": "7b003c2f63419fccd23c981beefcf8e7c36ff6d8051ad5bc823f614934e41dbe"
+    },
+    "mysqltest/cases/sql_unsupported.test": {
+      "git_blob": "d1269e3044d8d2da5ea74b5c97bc581958664e8b",
+      "bytes": 120,
+      "sha256": "6cf9a1de73a4e8eafa4595874908c26d8d795b53270211b2e5acbf620434e3f6"
+    },
+    "mysqltest/cases/storage_multiple_tables.result": {
+      "git_blob": "dca4167669c27829af7855e4df3e15820185f221",
+      "bytes": 344,
+      "sha256": "6a97f61f52656e83d07ea14781dbf1348d5c751411899fdf9a360173ab79fdb8"
+    },
+    "mysqltest/cases/storage_multiple_tables.test": {
+      "git_blob": "94a65af054a6e0a224b909633095acdbe88002c8",
+      "bytes": 333,
+      "sha256": "e4343a4644c4f5ff1033ab013ad0c254dc4b1cf24b12d6fe65c948adfe1d7144"
+    },
+    "mysqltest/cases/storage_mutations.result": {
+      "git_blob": "bbf450939fc751344569d5f44cf1217009ee1e07",
+      "bytes": 433,
+      "sha256": "6c9c49dc99f3e07937d5d2155694289734c85b7d3564f52763e104a51c69808b"
+    },
+    "mysqltest/cases/storage_mutations.test": {
+      "git_blob": "60fd5639a2aa9c5b8ea28256442d110c2a8b6566",
+      "bytes": 464,
+      "sha256": "6ddc9d796c7c76f3987e388cb04674475c85967bb60d20450053f8b4e39e0c6a"
+    },
+    "mysqltest/cases/storage_restart.result": {
+      "git_blob": "d74d5c0349475bb402829c021223edfe693efb7e",
+      "bytes": 166,
+      "sha256": "eb8eeb26f8b3db5c9d2da07340679dd4b1ae1fdc02bb83e9df8b493544577881"
+    },
+    "mysqltest/cases/storage_restart.test": {
+      "git_blob": "928e40baab02a31a2fe64c120e9f4b84b39f8c52",
+      "bytes": 143,
+      "sha256": "700f0026d5fef88421a303454d837fa22011dc3e8759f72b3449cd6046045f80"
+    },
+    "mysqltest/cases/transaction_autocommit_atomic.result": {
+      "git_blob": "f28f32eedec8cdcc77a279bee185df8a946485d5",
+      "bytes": 228,
+      "sha256": "7df96d20e24bbd6361544cc1b01c905288d41e3c51e2de33cc526ae2a305fb12"
+    },
+    "mysqltest/cases/transaction_autocommit_atomic.test": {
+      "git_blob": "16fee288fb7e1302d76df532930917b7ef7ea06d",
+      "bytes": 334,
+      "sha256": "d976bfaa3dbad67f0a6b515103ada46b985cdbaf79a53f0c367210910c5263e8"
+    },
+    "mysqltest/cases/transaction_commit.result": {
+      "git_blob": "8dc780ffa64ebe9ef719de7cb3a9021a974d656b",
+      "bytes": 210,
+      "sha256": "8641156ace82031439b95cafae6a78bce6256b96c11a9e41b95220c0a2cb8832"
+    },
+    "mysqltest/cases/transaction_commit.test": {
+      "git_blob": "55b7d096ecea04bcd3f3950681e5a26c49d70f21",
+      "bytes": 197,
+      "sha256": "873543181bbaa96b4b3cced4cf8e9a3fba5b447522644d98be7509490dce9cd3"
+    },
+    "mysqltest/cases/transaction_failed_insert.result": {
+      "git_blob": "80d8bee1333a850fd08e06a69ad81edf9ed4f2a7",
+      "bytes": 476,
+      "sha256": "1f29ab65a1589d3aced189c6ffdeaa0dd4dad14d107a589b3da54a30f52f4964"
+    },
+    "mysqltest/cases/transaction_failed_insert.test": {
+      "git_blob": "60e3f2224b7ebed85b0ebe50681b1982b46a64b8",
+      "bytes": 442,
+      "sha256": "3fdf65810ba864714dc67abb6142452eb944bdab09c86728e5a69a6d76f3532c"
+    },
+    "mysqltest/cases/transaction_rollback.result": {
+      "git_blob": "5ccb3706aa46289a972a6a431915d62c38aeeb48",
+      "bytes": 210,
+      "sha256": "f8d6992bc3e0d62fe4a3e77d62305693840a29fc9685cde7adb2951acccd2e60"
+    },
+    "mysqltest/cases/transaction_rollback.test": {
+      "git_blob": "e9cdc26ce7e2e3aa961c143b01270f70e078d16a",
+      "bytes": 199,
+      "sha256": "7fd2bf54a143d248f4f6c727fb79f79aab9c4490119730ee22c45f97f5dc4df2"
+    },
+    "mysqltest/cases/transaction_shutdown_rollback.result": {
+      "git_blob": "429b70bec7223df41749c0758d158192aa415760",
+      "bytes": 223,
+      "sha256": "feca1c43740cc2dac0c5f7b178611cf255ef5022f4479d00dfb65c3386e181d3"
+    },
+    "mysqltest/cases/transaction_shutdown_rollback.test": {
+      "git_blob": "89d010d7cf7dd110b98dbbb88bd4a73500dfe009",
+      "bytes": 248,
+      "sha256": "6f72115a099d8dfee36255e09beafbacd96df03f2f04e107dcd28d493e193f54"
+    },
+    "mysqltest/cases/vector_euclidean.result": {
+      "git_blob": "f526641848f1258ab8ae66ccf53786c10318e253",
+      "bytes": 162,
+      "sha256": "548b1ec06db7aaa97c62c775ce03b47d219915f6cb484722c8fb303f95d1fde8"
+    },
+    "mysqltest/cases/vector_euclidean.test": {
+      "git_blob": "88eb0aab4fce745f33c1da11d61e7b27d635d77a",
+      "bytes": 194,
+      "sha256": "6a5981471416a5cc2ce9ba73ceaa3e714bead80ff767f8f89f15e0dac3c5c39d"
+    },
+    "mysqltest/cases/vector_float32.result": {
+      "git_blob": "e645cb4163169a315268d5c2ae998b062ac8cde8",
+      "bytes": 202,
+      "sha256": "77866950b550e15ee08b57b73a052aa34a97cc2b82586fce062661ae2a731452"
+    },
+    "mysqltest/cases/vector_float32.test": {
+      "git_blob": "e657c904819e42393a86a84fa448dce758877813",
+      "bytes": 284,
+      "sha256": "f7bceae16b250b1cb2ac69108633819352126b8c6b2a6d1d46381572a1885b87"
+    },
+    "mysqltest/cases/vector_index_maintenance.result": {
+      "git_blob": "d3b5503b869e3bd3c130b9de8490c959a2e76dbb",
+      "bytes": 746,
+      "sha256": "080799d103aa68b3674042278db499c29c8a759cdffd30453b43094b66b05f97"
+    },
+    "mysqltest/cases/vector_index_maintenance.test": {
+      "git_blob": "c758c0a9d6995bd4091d1ee3503eb4ab61d5e14e",
+      "bytes": 699,
+      "sha256": "d8315fc0147cc4c389a1f1b1d4a8d9376c8d4ff51df5356b4f9d66835218bfb9"
+    },
+    "mysqltest/cases/vector_ties_and_filter.result": {
+      "git_blob": "6da58e33138023edfb401527e6f4f12ddbbeeeba",
+      "bytes": 400,
+      "sha256": "44bed5f7f34874c13846a75089b185a9aeb778ac0c7cf32368817762bd6f02b0"
+    },
+    "mysqltest/cases/vector_ties_and_filter.test": {
+      "git_blob": "c404195496dbd9374412ebf3a22b9cf35febb061",
+      "bytes": 585,
+      "sha256": "2b0ebf0f09eddf7caa20fa2acc1a90196d0380695e2a3d42663607eff6605296"
+    },
+    "mysqltest/manifest.json": {
+      "git_blob": "f1b7a9a5718da89c0da66f1c95a230440e96b888",
+      "bytes": 3893,
+      "sha256": "a05fc8ff810affb8c899df4a2c1e31c35450178635d62b3efd6ae6ac15056aae"
+    },
+    "protocol_check/README.md": {
+      "git_blob": "093da810ce20f399f842c5822210460186b559d0",
+      "bytes": 3568,
+      "sha256": "9044224f625f3e5ab2948755aefc624084d70f0d6ebe1c37a7bdb408f799cb3f"
+    },
+    "protocol_check/_assertions.py": {
+      "git_blob": "3dba7b59f98550473959f4a9efef2330ffa56bfe",
+      "bytes": 2091,
+      "sha256": "e39367c70d689b2cd7927df6d10296127ff8f2f5fed0763ca6262881d5ea4a28"
+    },
+    "protocol_check/_transport.py": {
+      "git_blob": "e49c13b3d6946256b818cd473d268de531d51b4f",
+      "bytes": 7799,
+      "sha256": "fb3a820105e6e94fc348167c7644ce23a270c63f57b026065f4b563d6ef0674f"
+    },
+    "protocol_check/config.json": {
+      "git_blob": "6a3aa78d8cd723ab6dee4c04a602850e2d4a304d",
+      "bytes": 226,
+      "sha256": "63fe51cac3aaaf45c3739b53b1de8420e5d001e8abb6cf88532d9f190d72d904"
+    },
+    "protocol_check/example_stdio.py": {
+      "git_blob": "33526ccdeb9a373513a54b519eaa80ab158cf6ab",
+      "bytes": 1582,
+      "sha256": "b37cb26ff9a4253d6785c2e63ebb3139e4817949368291360ab5ca12b569216a"
+    },
+    "protocol_check/run.py": {
+      "git_blob": "fd06abddea5b95be9abf8d54598caaefecbd5f6a",
+      "bytes": 5719,
+      "sha256": "4e8c6ead177da7f9222b36bc04e819c777507e21f6adbe24eb679e238f02f513"
+    }
+  }
+}

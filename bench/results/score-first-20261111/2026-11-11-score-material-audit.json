@@ -1,0 +1,64 @@
+{
+  "checked_on": "2026-11-11 Asia/Shanghai",
+  "commit": "524133baf0a4ed947805236c02cce9cecffc0be3",
+  "files": {
+    "conversation.json": {
+      "bytes": 103281,
+      "sha256": "5255100105aa4e6d4217c149f85e7c5c5aac369745736d565b5c924617138bb3",
+      "strict_json": true,
+      "worktree_equal": true
+    },
+    "agent/conversation.json": {
+      "bytes": 103281,
+      "sha256": "5255100105aa4e6d4217c149f85e7c5c5aac369745736d565b5c924617138bb3",
+      "strict_json": true,
+      "worktree_equal": true
+    }
+  },
+  "largest_sections_compact_utf8": [
+    [
+      "experiments",
+      44319
+    ],
+    [
+      "agent_observations",
+      11663
+    ],
+    [
+      "case_studies",
+      8423
+    ],
+    [
+      "review_navigation",
+      8111
+    ],
+    [
+      "conversations",
+      5770
+    ],
+    [
+      "prompt_requirement_evolution",
+      3865
+    ],
+    [
+      "material_overview",
+      2026
+    ],
+    [
+      "future_task_prompt",
+      1761
+    ],
+    [
+      "historical_boundaries",
+      1695
+    ],
+    [
+      "performance_caveats",
+      1480
+    ]
+  ],
+  "user_records": 38,
+  "experiments": 62,
+  "agent_observations": 30,
+  "external_evaluation": "No evaluator output was available; this is packaging verification only."
+}

@@ -1,0 +1,175 @@
+﻿2026-11-11T23:58:01.7774975Z Current runner version: '2.338.2'
+2026-11-11T23:58:01.7793821Z ##[group]Runner Image Provisioner
+2026-11-11T23:58:01.7794391Z Hosted Compute Agent
+2026-11-11T23:58:01.7794888Z Version: 20261028.624
+2026-11-11T23:58:01.7795290Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-11T23:58:01.7795727Z Build Date: 2026-10-28T21:51:42Z
+2026-11-11T23:58:01.7796213Z Worker ID: {363623a3-30af-4a12-a621-f9d3212d51ee}
+2026-11-11T23:58:01.7796657Z Region: centralus
+2026-11-11T23:58:01.7797034Z Cloud: Azure
+2026-11-11T23:58:01.7797431Z ##[endgroup]
+2026-11-11T23:58:01.7798461Z ##[group]Operating System
+2026-11-11T23:58:01.7798900Z Ubuntu
+2026-11-11T23:58:01.7799237Z 24.04.5
+2026-11-11T23:58:01.7799624Z LTS
+2026-11-11T23:58:01.7799971Z ##[endgroup]
+2026-11-11T23:58:01.7800324Z ##[group]Runner Image
+2026-11-11T23:58:01.7800751Z Image: ubuntu-24.04
+2026-11-11T23:58:01.7801113Z Version: 20261101.360.1
+2026-11-11T23:58:01.7801982Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-11T23:58:01.7803185Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+2026-11-11T23:58:01.7804088Z ##[endgroup]
+2026-11-11T23:58:01.7804754Z ##[group]GITHUB_TOKEN Permissions
+2026-11-11T23:58:01.7806338Z Contents: read
+2026-11-11T23:58:01.7806707Z Metadata: read
+2026-11-11T23:58:01.7807120Z ##[endgroup]
+2026-11-11T23:58:01.7808578Z Secret source: Actions
+2026-11-11T23:58:01.7809253Z Cache mode: write
+2026-11-11T23:58:01.7809707Z Prepare workflow directory
+2026-11-11T23:58:01.8051031Z Prepare all required actions
+2026-11-11T23:58:01.8090462Z Getting action download info
+2026-11-11T23:58:02.0356986Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-11-11T23:58:02.2744674Z Complete job name: compare (1)
+2026-11-11T23:58:02.3343733Z ##[group]Run set -euo pipefail
+2026-11-11T23:58:02.3344154Z [36;1mset -euo pipefail[0m
+2026-11-11T23:58:02.3344464Z [36;1mgit init .[0m
+2026-11-11T23:58:02.3344848Z [36;1mgit remote add origin https://github.com/juanzhi-gcb/seekdb.git[0m
+2026-11-11T23:58:02.3345297Z [36;1mgit fetch --depth=1 origin "$GITHUB_SHA"[0m
+2026-11-11T23:58:02.3345651Z [36;1mgit checkout --detach FETCH_HEAD[0m
+2026-11-11T23:58:02.3346009Z [36;1mtest "$(git rev-parse HEAD)" = "$GITHUB_SHA"[0m
+2026-11-11T23:58:02.3364985Z shell: /usr/bin/bash -e {0}
+2026-11-11T23:58:02.3365377Z ##[endgroup]
+2026-11-11T23:58:02.3630162Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-11T23:58:02.3630823Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-11T23:58:02.3631343Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-11T23:58:02.3631757Z hint: call:
+2026-11-11T23:58:02.3631989Z hint:
+2026-11-11T23:58:02.3632398Z hint: 	git config --global init.defaultBranch <name>
+2026-11-11T23:58:02.3632752Z hint:
+2026-11-11T23:58:02.3633078Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-11T23:58:02.3633899Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-11T23:58:02.3634308Z hint:
+2026-11-11T23:58:02.3634549Z hint: 	git branch -m <name>
+2026-11-11T23:58:02.3634816Z hint:
+2026-11-11T23:58:02.3635170Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-11T23:58:02.3636011Z Initialized empty Git repository in /home/runner/work/seekdb/seekdb/.git/
+2026-11-11T23:58:04.0012128Z From https://github.com/juanzhi-gcb/seekdb
+2026-11-11T23:58:04.0013933Z  * branch            5cc205f48f51d650bf6207179c9e2377bcbb8850 -> FETCH_HEAD
+2026-11-11T23:58:04.0979597Z HEAD is now at 5cc205f Cross-check scalar, lane widths and exact SIMD on additional native hosts
+2026-11-11T23:58:04.1121455Z ##[group]Run bash bench/run_kernel_selection.sh
+2026-11-11T23:58:04.1122606Z [36;1mbash bench/run_kernel_selection.sh[0m
+2026-11-11T23:58:04.1141337Z shell: /usr/bin/bash -e {0}
+2026-11-11T23:58:04.1142374Z ##[endgroup]
+2026-11-11T23:58:04.1252026Z Architecture:                            x86_64
+2026-11-11T23:58:04.1253619Z CPU op-mode(s):                          32-bit, 64-bit
+2026-11-11T23:58:04.1254914Z Address sizes:                           48 bits physical, 48 bits virtual
+2026-11-11T23:58:04.1256048Z Byte Order:                              Little Endian
+2026-11-11T23:58:04.1257088Z CPU(s):                                  4
+2026-11-11T23:58:04.1257972Z On-line CPU(s) list:                     0-3
+2026-11-11T23:58:04.1258898Z Vendor ID:                               AuthenticAMD
+2026-11-11T23:58:04.1259957Z Model name:                              AMD EPYC 9V45 96-Core Processor
+2026-11-11T23:58:04.1261000Z CPU family:                              26
+2026-11-11T23:58:04.1261910Z Model:                                   2
+2026-11-11T23:58:04.1262761Z Thread(s) per core:                      2
+2026-11-11T23:58:04.1263870Z Core(s) per socket:                      2
+2026-11-11T23:58:04.1264734Z Socket(s):                               1
+2026-11-11T23:58:04.1265564Z Stepping:                                1
+2026-11-11T23:58:04.1266446Z BogoMIPS:                                5192.24
+2026-11-11T23:58:04.1277575Z Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves user_shstk avx_vnni avx512_bf16 clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm avx512_vp2intersect
+2026-11-11T23:58:04.1286161Z Virtualization:                          AMD-V
+2026-11-11T23:58:04.1287089Z Hypervisor vendor:                       Microsoft
+2026-11-11T23:58:04.1288024Z Virtualization type:                     full
+2026-11-11T23:58:04.1288999Z L1d cache:                               96 KiB (2 instances)
+2026-11-11T23:58:04.1290014Z L1i cache:                               64 KiB (2 instances)
+2026-11-11T23:58:04.1291018Z L2 cache:                                2 MiB (2 instances)
+2026-11-11T23:58:04.1292037Z L3 cache:                                32 MiB (1 instance)
+2026-11-11T23:58:04.1293001Z NUMA node(s):                            1
+2026-11-11T23:58:04.1294240Z NUMA node0 CPU(s):                       0-3
+2026-11-11T23:58:04.1295529Z Vulnerability Gather data sampling:      Not affected
+2026-11-11T23:58:04.1296590Z Vulnerability Ghostwrite:                Not affected
+2026-11-11T23:58:04.1297638Z Vulnerability Indirect target selection: Not affected
+2026-11-11T23:58:04.1298797Z Vulnerability Itlb multihit:             Not affected
+2026-11-11T23:58:04.1299827Z Vulnerability L1tf:                      Not affected
+2026-11-11T23:58:04.1300823Z Vulnerability Mds:                       Not affected
+2026-11-11T23:58:04.1301812Z Vulnerability Meltdown:                  Not affected
+2026-11-11T23:58:04.1302801Z Vulnerability Mmio stale data:           Not affected
+2026-11-11T23:58:04.1303929Z Vulnerability Old microcode:             Not affected
+2026-11-11T23:58:04.1304927Z Vulnerability Reg file data sampling:    Not affected
+2026-11-11T23:58:04.1305919Z Vulnerability Retbleed:                  Not affected
+2026-11-11T23:58:04.1307302Z Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+2026-11-11T23:58:04.1308457Z Vulnerability Spec store bypass:         Vulnerable
+2026-11-11T23:58:04.1309822Z Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+2026-11-11T23:58:04.1311990Z Vulnerability Spectre v2:                Mitigation; Retpolines; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+2026-11-11T23:58:04.1313745Z Vulnerability Srbds:                     Not affected
+2026-11-11T23:58:04.1314699Z Vulnerability Tsa:                       Not affected
+2026-11-11T23:58:04.1315657Z Vulnerability Tsx async abort:           Not affected
+2026-11-11T23:58:04.1316614Z Vulnerability Vmscape:                   Not affected
+2026-11-11T23:59:08.1452931Z validated vector kernel: 1117 bitwise cases and validation boundaries passed
+2026-11-11T23:59:15.5946109Z validated vector kernel: 1117 bitwise cases and validation boundaries passed
+2026-11-11T23:59:23.3789365Z validated vector kernel: 1117 bitwise cases and validation boundaries passed
+2026-11-11T23:59:28.4358537Z write complete 478.999 ms; query warm-up
+2026-11-11T23:59:30.7388647Z write complete 451.114 ms; query warm-up
+2026-11-11T23:59:33.2987764Z write complete 444.487 ms; query warm-up
+2026-11-11T23:59:35.4990464Z write complete 463.432 ms; query warm-up
+2026-11-11T23:59:37.9420051Z write complete 458.196 ms; query warm-up
+2026-11-11T23:59:40.1924858Z write complete 539.025 ms; query warm-up
+2026-11-11T23:59:42.6275969Z write complete 461.292 ms; query warm-up
+2026-11-11T23:59:44.7747474Z write complete 435.539 ms; query warm-up
+2026-11-11T23:59:47.1661667Z write complete 441.665 ms; query warm-up
+2026-11-11T23:59:49.2599599Z write complete 435.039 ms; query warm-up
+2026-11-11T23:59:51.5706606Z write complete 451.175 ms; query warm-up
+2026-11-11T23:59:53.7293003Z write complete 435.97 ms; query warm-up
+2026-11-11T23:59:56.0055076Z write complete 425.9 ms; query warm-up
+2026-11-11T23:59:58.2073402Z write complete 457.463 ms; query warm-up
+2026-11-12T00:00:00.5826544Z write complete 401.136 ms; query warm-up
+2026-11-12T00:00:02.6884160Z write complete 390.888 ms; query warm-up
+2026-11-12T00:00:05.0648328Z write complete 412.197 ms; query warm-up
+2026-11-12T00:00:07.2250235Z write complete 408.334 ms; query warm-up
+2026-11-12T00:00:09.6032748Z write complete 420.107 ms; query warm-up
+2026-11-12T00:00:11.9743198Z write complete 518.456 ms; query warm-up
+2026-11-12T00:00:14.4409345Z write complete 395.234 ms; query warm-up
+2026-11-12T00:00:16.7100474Z write complete 418.078 ms; query warm-up
+2026-11-12T00:00:19.1718645Z write complete 398.277 ms; query warm-up
+2026-11-12T00:00:21.3874489Z write complete 415.298 ms; query warm-up
+2026-11-12T00:00:23.7378448Z write complete 413.331 ms; query warm-up
+2026-11-12T00:00:25.9810656Z write complete 422.949 ms; query warm-up
+2026-11-12T00:00:28.4196266Z write complete 415.147 ms; query warm-up
+2026-11-12T00:00:30.5480918Z write complete 405.137 ms; query warm-up
+2026-11-12T00:00:32.9026684Z write complete 408.82 ms; query warm-up
+2026-11-12T00:00:34.9916529Z write complete 395.763 ms; query warm-up
+2026-11-12T00:00:36.3914795Z KERNEL_SUMMARY {"filter": "bigint", "variant": "scalar", "query_ms": [482.380925, 481.566628, 479.512749], "median_ms": 481.566628, "relative_percent": 0.0, "exact_results_agree": true}
+2026-11-12T00:00:36.3916054Z KERNEL_SUMMARY {"filter": "bigint", "variant": "batch4", "query_ms": [389.17608, 376.851732, 383.577829], "median_ms": 383.577829, "relative_percent": -20.34792140953754, "exact_results_agree": true}
+2026-11-12T00:00:36.3916992Z KERNEL_SUMMARY {"filter": "bigint", "variant": "batch8", "query_ms": [371.489867, 383.185039, 420.697625], "median_ms": 383.185039, "relative_percent": -20.429486446888912, "exact_results_agree": true}
+2026-11-12T00:00:36.3918446Z KERNEL_SUMMARY {"filter": "bigint", "variant": "batch16", "query_ms": [365.727344, 387.564923, 364.838638], "median_ms": 365.727344, "relative_percent": -24.05467432016488, "exact_results_agree": true}
+2026-11-12T00:00:36.3919463Z KERNEL_SUMMARY {"filter": "bigint", "variant": "avx2_transposed", "query_ms": [353.824375, 360.933013, 358.263308], "median_ms": 358.263308, "relative_percent": -25.60462308447171, "exact_results_agree": true}
+2026-11-12T00:00:36.3920611Z KERNEL_SUMMARY {"filter": "varchar", "variant": "scalar", "query_ms": [696.095029, 690.167043, 690.79815], "median_ms": 690.79815, "relative_percent": 0.0, "exact_results_agree": true}
+2026-11-12T00:00:36.3921568Z KERNEL_SUMMARY {"filter": "varchar", "variant": "batch4", "query_ms": [596.097147, 594.973391, 577.691151], "median_ms": 594.973391, "relative_percent": -13.87160040888934, "exact_results_agree": true}
+2026-11-12T00:00:36.3922554Z KERNEL_SUMMARY {"filter": "varchar", "variant": "batch8", "query_ms": [627.454778, 584.220912, 612.37397], "median_ms": 612.37397, "relative_percent": -11.352691086390433, "exact_results_agree": true}
+2026-11-12T00:00:36.3923738Z KERNEL_SUMMARY {"filter": "varchar", "variant": "batch16", "query_ms": [571.476087, 582.735048, 560.528932], "median_ms": 571.476087, "relative_percent": -17.27307217021353, "exact_results_agree": true}
+2026-11-12T00:00:36.3924492Z KERNEL_SUMMARY {"filter": "varchar", "variant": "avx2_transposed", "query_ms": [517.863871, 529.325042, 540.910987], "median_ms": 529.325042, "relative_percent": -23.374861093649415, "exact_results_agree": true}
+2026-11-12T00:00:36.4044614Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+2026-11-12T00:00:36.4044852Z with:
+2026-11-12T00:00:36.4045040Z   name: native-kernels-1-5cc205f48f51d650bf6207179c9e2377bcbb8850
+2026-11-12T00:00:36.4045241Z   path: kernel-results/
+2026-11-12T00:00:36.4045379Z   retention-days: 30
+2026-11-12T00:00:36.4045502Z   if-no-files-found: warn
+2026-11-12T00:00:36.4045630Z   compression-level: 6
+2026-11-12T00:00:36.4045749Z   overwrite: false
+2026-11-12T00:00:36.4045868Z   include-hidden-files: false
+2026-11-12T00:00:36.4046008Z ##[endgroup]
+2026-11-12T00:00:36.6747030Z (node:5126) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-12T00:00:36.6747641Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-12T00:00:36.6840594Z With the provided path, there will be 35 files uploaded
+2026-11-12T00:00:36.6844953Z Artifact name is valid!
+2026-11-12T00:00:36.6845311Z Root directory input is valid!
+2026-11-12T00:00:36.9914446Z Beginning upload of artifact content to blob storage
+2026-11-12T00:00:37.0303991Z (node:5126) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-12T00:00:37.2329158Z Uploaded bytes 25095
+2026-11-12T00:00:37.2787632Z Finished uploading artifact content to blob storage!
+2026-11-12T00:00:37.2788019Z SHA256 digest of uploaded artifact zip is b3e5e57e904991f63c0e94a5c99df9ded743452fc991ca751a49e70d31738309
+2026-11-12T00:00:37.2789156Z Finalizing artifact upload
+2026-11-12T00:00:37.6495129Z Artifact native-kernels-1-5cc205f48f51d650bf6207179c9e2377bcbb8850.zip successfully finalized. Artifact ID 13902835050
+2026-11-12T00:00:37.6495832Z Artifact native-kernels-1-5cc205f48f51d650bf6207179c9e2377bcbb8850 has been successfully uploaded! Final size is 25095 bytes. Artifact ID is 13902835050
+2026-11-12T00:00:37.6500087Z Artifact download URL: https://github.com/juanzhi-gcb/seekdb/actions/runs/43123762296/artifacts/13902835050
+2026-11-12T00:00:37.6668778Z Cleaning up orphan processes
+2026-11-12T00:00:37.7005372Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

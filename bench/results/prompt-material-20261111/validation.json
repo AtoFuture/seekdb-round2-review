@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "bytes": 103281,
+  "sha256": "5255100105aa4e6d4217c149f85e7c5c5aac369745736d565b5c924617138bb3",
+  "reference_checks": 88,
+  "preserved_user_records": 35,
+  "preserved_experiments": 62,
+  "source_hashes": 82,
+  "evidence_hashes": 168,
+  "platform_evaluation": "not performed"
+}

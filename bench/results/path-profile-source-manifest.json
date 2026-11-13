@@ -1,0 +1,5 @@
+{
+  "measured_source_sha256": "8a1a85b5cbe9f711415f8962f9861a390893023b2c7bf509ea5dd775320a64a1",
+  "archived_source_sha256": "542fb1539955449b2f0acf2d2fcd89032b3b0b3cb0d21356ef25b4b7b9025870",
+  "change": "Only CRLF to LF normalization after measurement; original raw samples retained unchanged."
+}

@@ -1,0 +1,561 @@
+{
+  "source": "b7eb52b4bb8fbc25e3209d0933182e57e41afdd8",
+  "rows": 2000,
+  "queries": 40,
+  "rounds": 1,
+  "diagnostic": true,
+  "medians": {
+    "standard": {
+      "packed0-scan0": {
+        "write_ms": 258.631312,
+        "query_total_ms": 234.444672,
+        "write_cpu_ms": 83.434,
+        "query_cpu_ms": 234.493,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 10223616,
+        "insert_file_growth_bytes": 10076160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 11024,
+        "local_cgroup_peak_bytes": 17293312,
+        "write_profile": {
+          "pread": {
+            "calls": 514,
+            "bytes": 2105344,
+            "nanoseconds": 622565
+          },
+          "pwrite": {
+            "calls": 2480,
+            "bytes": 10158080,
+            "nanoseconds": 7347368
+          },
+          "fsync": {
+            "calls": 40,
+            "bytes": 0,
+            "nanoseconds": 178881915
+          },
+          "page_checksum": {
+            "calls": 2994,
+            "bytes": 0,
+            "nanoseconds": 4323348
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 31965,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 40,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 80480,
+            "bytes": 329646080,
+            "nanoseconds": 64977293
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 80480,
+            "bytes": 0,
+            "nanoseconds": 113774057
+          },
+          "row_validation": {
+            "calls": 80400,
+            "bytes": 0,
+            "nanoseconds": 17636596
+          },
+          "row_materialization": {
+            "calls": 164800,
+            "bytes": 0,
+            "nanoseconds": 5136098
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 44000,
+            "bytes": 0,
+            "nanoseconds": 4236982
+          },
+          "page_read_branch": {
+            "calls": 7960,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80480,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      },
+      "packed1-scan0": {
+        "write_ms": 240.767539,
+        "query_total_ms": 237.323472,
+        "write_cpu_ms": 74.015,
+        "query_cpu_ms": 237.347,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 4079616,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 11280,
+        "local_cgroup_peak_bytes": 11530240,
+        "write_profile": {
+          "pread": {
+            "calls": 504,
+            "bytes": 2064384,
+            "nanoseconds": 548305
+          },
+          "pwrite": {
+            "calls": 980,
+            "bytes": 4014080,
+            "nanoseconds": 3047223
+          },
+          "fsync": {
+            "calls": 40,
+            "bytes": 0,
+            "nanoseconds": 169451624
+          },
+          "page_checksum": {
+            "calls": 1484,
+            "bytes": 0,
+            "nanoseconds": 2505902
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 31965,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 40,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 80480,
+            "bytes": 329646080,
+            "nanoseconds": 63393765
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 80480,
+            "bytes": 0,
+            "nanoseconds": 115524228
+          },
+          "row_validation": {
+            "calls": 80400,
+            "bytes": 0,
+            "nanoseconds": 18168803
+          },
+          "row_materialization": {
+            "calls": 164800,
+            "bytes": 0,
+            "nanoseconds": 5288968
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 44000,
+            "bytes": 0,
+            "nanoseconds": 4377104
+          },
+          "page_read_branch": {
+            "calls": 7960,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 80400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      },
+      "packed1-scan1048576": {
+        "write_ms": 240.366882,
+        "query_total_ms": 129.931001,
+        "write_cpu_ms": 73.349,
+        "query_cpu_ms": 129.88,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 4079616,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 10768,
+        "local_cgroup_peak_bytes": 11378688,
+        "write_profile": {
+          "pread": {
+            "calls": 504,
+            "bytes": 2064384,
+            "nanoseconds": 656180
+          },
+          "pwrite": {
+            "calls": 980,
+            "bytes": 4014080,
+            "nanoseconds": 3113956
+          },
+          "fsync": {
+            "calls": 40,
+            "bytes": 0,
+            "nanoseconds": 169457760
+          },
+          "page_checksum": {
+            "calls": 1484,
+            "bytes": 0,
+            "nanoseconds": 2119689
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 31965,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 40,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 21720,
+            "bytes": 88965120,
+            "nanoseconds": 20270717
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 21720,
+            "bytes": 0,
+            "nanoseconds": 33670862
+          },
+          "row_validation": {
+            "calls": 80400,
+            "bytes": 0,
+            "nanoseconds": 18946185
+          },
+          "row_materialization": {
+            "calls": 164800,
+            "bytes": 0,
+            "nanoseconds": 5713389
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 44000,
+            "bytes": 0,
+            "nanoseconds": 4584634
+          },
+          "page_read_branch": {
+            "calls": 7960,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 80400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 58760,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      },
+      "packed1-scan262144": {
+        "write_ms": 240.234502,
+        "query_total_ms": 106.92723,
+        "write_cpu_ms": 74.102,
+        "query_cpu_ms": 106.921,
+        "churn_ms": 0,
+        "churn_cpu_ms": 0,
+        "database_bytes": 4079616,
+        "insert_file_growth_bytes": 3932160,
+        "churn_file_growth_bytes": 0,
+        "process_maxrss_kib": 10768,
+        "local_cgroup_peak_bytes": 11677696,
+        "write_profile": {
+          "pread": {
+            "calls": 504,
+            "bytes": 2064384,
+            "nanoseconds": 547940
+          },
+          "pwrite": {
+            "calls": 980,
+            "bytes": 4014080,
+            "nanoseconds": 3080686
+          },
+          "fsync": {
+            "calls": 40,
+            "bytes": 0,
+            "nanoseconds": 168486484
+          },
+          "page_checksum": {
+            "calls": 1484,
+            "bytes": 0,
+            "nanoseconds": 2153691
+          },
+          "row_validation": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_materialization": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_branch": {
+            "calls": 31965,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 40,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        },
+        "query_profile": {
+          "pread": {
+            "calls": 22400,
+            "bytes": 91750400,
+            "nanoseconds": 18208758
+          },
+          "pwrite": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "fsync": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_checksum": {
+            "calls": 22400,
+            "bytes": 0,
+            "nanoseconds": 32080179
+          },
+          "row_validation": {
+            "calls": 80400,
+            "bytes": 0,
+            "nanoseconds": 18436741
+          },
+          "row_materialization": {
+            "calls": 164800,
+            "bytes": 0,
+            "nanoseconds": 5047366
+          },
+          "row_decode": {
+            "calls": 0,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "vector_distance": {
+            "calls": 44000,
+            "bytes": 0,
+            "nanoseconds": 4472945
+          },
+          "page_read_branch": {
+            "calls": 7960,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_overflow": {
+            "calls": 80,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "page_read_packed": {
+            "calls": 80400,
+            "bytes": 0,
+            "nanoseconds": 0
+          },
+          "packed_cache_hit": {
+            "calls": 58080,
+            "bytes": 0,
+            "nanoseconds": 0
+          }
+        }
+      }
+    }
+  },
+  "validated_queries": 160,
+  "reopen_checks": 4
+}

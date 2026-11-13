@@ -1,0 +1,1 @@
+{"avx2_supported":true,"avx512_supported":true,"lower_bound_lane_checks":36864,"screened_lanes":5056,"rejected_lanes":3986}

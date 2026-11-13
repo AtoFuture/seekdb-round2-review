@@ -1,0 +1,240 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 978B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#2 DONE 0.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 81B done
+#3 DONE 0.0s
+
+#4 [build 1/8] FROM docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f
+#4 resolve docker.io/library/alpine:3.22.8@sha256:49340b346798875b5592e5d420241f2f9cfba5f47e62ebb1446a1b34734e898f done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 76.64kB 0.0s done
+#5 DONE 0.0s
+
+#6 [build 2/8] RUN apk add --no-cache build-base=0.5-r3 cmake=3.31.7-r1 samurai=1.2-r7 python3=3.12.16-r0
+#6 CACHED
+
+#7 [build 3/8] WORKDIR /src
+#7 CACHED
+
+#8 [build 4/8] COPY CMakeLists.txt ./
+#8 DONE 0.0s
+
+#9 [build 5/8] COPY include ./include
+#9 DONE 0.0s
+
+#10 [build 6/8] COPY src ./src
+#10 DONE 0.0s
+
+#11 [build 7/8] COPY tests ./tests
+#11 DONE 0.0s
+
+#12 [build 8/8] RUN cmake -S . -B /build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build /build --parallel 2
+#12 0.068 -- The CXX compiler identification is GNU 14.2.0
+#12 0.071 -- Detecting CXX compiler ABI info
+#12 0.088 -- Detecting CXX compiler ABI info - done
+#12 0.094 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#12 0.094 -- Detecting CXX compile features
+#12 0.094 -- Detecting CXX compile features - done
+#12 0.150 -- Found Python3: /usr/bin/python3.12 (found version "3.12.16") found components: Interpreter
+#12 0.151 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+#12 0.169 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+#12 0.170 -- Found Threads: TRUE
+#12 0.171 -- Configuring done (0.1s)
+#12 0.177 -- Generating done (0.0s)
+#12 0.177 -- Build files have been written to: /build
+#12 0.181 [1/69] Building CXX object CMakeFiles/validated_snapshot_tests.dir/tests/validated_snapshot_tests.cpp.o
+#12 0.181 [2/69] Building CXX object CMakeFiles/validated_vector_tests.dir/tests/validated_vector_tests.cpp.o
+#12 0.861 [3/69] Building CXX object CMakeFiles/commit_policy_tests.dir/tests/commit_policy_tests.cpp.o
+#12 1.211 [4/69] Building CXX object CMakeFiles/mixed_filter_cache_tests.dir/tests/mixed_filter_cache_tests.cpp.o
+#12 1.923 [5/69] Building CXX object CMakeFiles/typed_scan_tests.dir/tests/typed_scan_tests.cpp.o
+#12 2.821 [6/69] Building CXX object CMakeFiles/vector_scratch_tests.dir/tests/vector_scratch_tests.cpp.o
+#12 4.619 [7/69] Building CXX object CMakeFiles/unindexed_snapshot_tests.dir/tests/unindexed_snapshot_tests.cpp.o
+#12 5.084 [8/69] Building CXX object CMakeFiles/adversarial_storage_tests.dir/tests/adversarial_storage_tests.cpp.o
+#12 6.176 [9/69] Building CXX object CMakeFiles/row_allocation_tests.dir/tests/row_allocation_tests.cpp.o
+#12 6.635 [10/69] Building CXX object CMakeFiles/row_validation_tests.dir/tests/row_validation_tests.cpp.o
+#12 6.963 [11/69] Building CXX object CMakeFiles/text_validation_tests.dir/tests/text_validation_tests.cpp.o
+#12 7.557 [12/69] Building CXX object CMakeFiles/numeric_sql_tests.dir/tests/numeric_sql_tests.cpp.o
+#12 8.241 [13/69] Building CXX object CMakeFiles/scan_snapshot_tests.dir/tests/scan_snapshot_tests.cpp.o
+#12 8.471 [14/69] Building CXX object CMakeFiles/paired_scan_tests.dir/tests/paired_scan_tests.cpp.o
+#12 9.416 [15/69] Building CXX object CMakeFiles/vector_index_tests.dir/tests/vector_index_tests.cpp.o
+#12 9.852 [16/69] Building CXX object CMakeFiles/data_cache_sql_tests.dir/tests/data_cache_sql_tests.cpp.o
+#12 10.40 [17/69] Building CXX object CMakeFiles/data_cache_tests.dir/tests/data_cache_tests.cpp.o
+#12 11.56 [18/69] Building CXX object CMakeFiles/packed_sql_tests.dir/tests/packed_sql_tests.cpp.o
+#12 11.96 [19/69] Building CXX object CMakeFiles/packed_storage_tests.dir/tests/packed_storage_tests.cpp.o
+#12 13.14 [20/69] Building CXX object CMakeFiles/checksum_slicing_tests.dir/tests/checksum_slicing_tests.cpp.o
+#12 13.56 [21/69] Building CXX object CMakeFiles/index_cache_tests.dir/tests/index_cache_tests.cpp.o
+#12 14.08 [22/69] Building CXX object CMakeFiles/profile_tests.dir/tests/profile_tests.cpp.o
+#12 14.68 [23/69] Building CXX object CMakeFiles/checksum_tests.dir/tests/checksum_tests.cpp.o
+#12 14.95 [24/69] Building CXX object CMakeFiles/batch_tests.dir/tests/batch_tests.cpp.o
+#12 15.54 [25/69] Building CXX object CMakeFiles/selective_tests.dir/tests/selective_tests.cpp.o
+#12 16.14 [26/69] Building CXX object CMakeFiles/minivectordb.dir/src/main.cpp.o
+#12 16.68 [27/69] Building CXX object CMakeFiles/sql_tests.dir/tests/sql_tests.cpp.o
+#12 17.31 [28/69] Building CXX object CMakeFiles/namespace_tests.dir/tests/namespace_tests.cpp.o
+#12 17.70 [29/69] Building CXX object CMakeFiles/core_tests.dir/tests/core_tests.cpp.o
+#12 18.64 [30/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/executor.cpp.o
+#12 18.98 [31/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/sorter.cpp.o
+#12 20.19 [32/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/binder.cpp.o
+#12 20.70 [33/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/parser.cpp.o
+#12 21.09 [34/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/sql/lexer.cpp.o
+#12 21.51 [35/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/catalog/catalog.cpp.o
+#12 21.57 [36/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/row_codec.cpp.o
+#12 22.24 [37/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/storage/store.cpp.o
+#12 22.55 [38/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/vector/exact.cpp.o
+#12 23.18 [39/69] Building CXX object CMakeFiles/minivectordb_core.dir/src/types/value.cpp.o
+#12 23.71 [40/69] Linking CXX static library libminivectordb_core.a
+#12 23.72 [41/69] Linking CXX executable validated_snapshot_tests
+#12 23.72 [42/69] Linking CXX executable validated_vector_tests
+#12 23.72 [43/69] Linking CXX executable commit_policy_tests
+#12 23.73 [44/69] Linking CXX executable mixed_filter_cache_tests
+#12 23.73 [45/69] Linking CXX executable typed_scan_tests
+#12 23.74 [46/69] Linking CXX executable vector_scratch_tests
+#12 23.74 [47/69] Linking CXX executable unindexed_snapshot_tests
+#12 23.75 [48/69] Linking CXX executable adversarial_storage_tests
+#12 23.75 [49/69] Linking CXX executable row_allocation_tests
+#12 23.76 [50/69] Linking CXX executable row_validation_tests
+#12 23.76 [51/69] Linking CXX executable text_validation_tests
+#12 23.77 [52/69] Linking CXX executable numeric_sql_tests
+#12 23.77 [53/69] Linking CXX executable scan_snapshot_tests
+#12 23.78 [54/69] Linking CXX executable paired_scan_tests
+#12 23.78 [55/69] Linking CXX executable vector_index_tests
+#12 23.79 [56/69] Linking CXX executable data_cache_sql_tests
+#12 23.79 [57/69] Linking CXX executable data_cache_tests
+#12 23.80 [58/69] Linking CXX executable packed_sql_tests
+#12 23.80 [59/69] Linking CXX executable packed_storage_tests
+#12 23.81 [60/69] Linking CXX executable checksum_slicing_tests
+#12 23.81 [61/69] Linking CXX executable index_cache_tests
+#12 23.81 [62/69] Linking CXX executable profile_tests
+#12 23.82 [63/69] Linking CXX executable checksum_tests
+#12 23.83 [64/69] Linking CXX executable batch_tests
+#12 23.83 [65/69] Linking CXX executable selective_tests
+#12 23.83 [66/69] Linking CXX executable minivectordb
+#12 23.84 [67/69] Linking CXX executable sql_tests
+#12 23.84 [68/69] Linking CXX executable namespace_tests
+#12 23.85 [69/69] Linking CXX executable core_tests
+#12 DONE 23.9s
+
+#13 [test 1/1] WORKDIR /build
+#13 DONE 0.0s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 0.3s done
+#14 exporting manifest sha256:8013829cd3be4a9e2e2a22f6d00feb3687f713473cb957cd9124a27edc2aaa2f done
+#14 exporting config sha256:082e865dce378b397a490052def9e6d7eb173d149facfee4da8c758c91724709 done
+#14 exporting attestation manifest sha256:1f1f5351ed2bb3ecdcbd05acd7e7ad26dfe05ab97e2806b8354c59ad948cbd5b done
+#14 exporting manifest list sha256:1898f0f8b87264e627e41b7f31f96695b7af46ccf7e231b8f3d225a4ca1d4f88 done
+#14 naming to docker.io/library/mvdb:optimized-test-arm64 done
+#14 unpacking to docker.io/library/mvdb:optimized-test-arm64 0.1s done
+#14 DONE 0.4s
+Test project /build
+      Start  1: core_types
+ 1/43 Test  #1: core_types .......................   Passed    0.00 sec
+      Start  2: core_vector
+ 2/43 Test  #2: core_vector ......................   Passed    0.00 sec
+      Start  3: core_storage
+ 3/43 Test  #3: core_storage .....................   Passed    0.68 sec
+      Start  4: core_storage_failure
+ 4/43 Test  #4: core_storage_failure .............   Passed    0.00 sec
+      Start  5: core_namespaces
+ 5/43 Test  #5: core_namespaces ..................   Passed    0.00 sec
+      Start  6: core_codec
+ 6/43 Test  #6: core_codec .......................   Passed    0.00 sec
+      Start  7: core_sql
+ 7/43 Test  #7: core_sql .........................   Passed    0.01 sec
+      Start  8: core_sort
+ 8/43 Test  #8: core_sort ........................   Passed    0.03 sec
+      Start  9: core_sql_crash
+ 9/43 Test  #9: core_sql_crash ...................   Passed    0.00 sec
+      Start 10: core_sql_edges
+10/43 Test #10: core_sql_edges ...................   Passed    0.01 sec
+      Start 11: core_sql_failure
+11/43 Test #11: core_sql_failure .................   Passed    0.02 sec
+      Start 12: core_sql_batch
+12/43 Test #12: core_sql_batch ...................   Passed    0.18 sec
+      Start 13: cli
+13/43 Test #13: cli ..............................   Passed    0.11 sec
+      Start 14: core_selective
+14/43 Test #14: core_selective ...................   Passed    0.13 sec
+      Start 15: core_batches
+15/43 Test #15: core_batches .....................   Passed    0.04 sec
+      Start 16: core_checksum
+16/43 Test #16: core_checksum ....................   Passed    0.23 sec
+      Start 17: core_profile
+17/43 Test #17: core_profile .....................***Failed    0.00 sec
+filtered.row_validation.calls==6 && filtered.vector_distance.calls==3
+
+      Start 18: core_index_cache
+18/43 Test #18: core_index_cache .................   Passed    0.05 sec
+      Start 19: core_checksum_slicing
+19/43 Test #19: core_checksum_slicing ............   Passed    0.49 sec
+      Start 20: core_packed_storage
+20/43 Test #20: core_packed_storage ..............   Passed    0.05 sec
+      Start 21: core_packed_sql
+21/43 Test #21: core_packed_sql ..................   Passed    0.72 sec
+      Start 22: core_data_cache
+22/43 Test #22: core_data_cache ..................   Passed    0.06 sec
+      Start 23: core_data_cache_sql
+23/43 Test #23: core_data_cache_sql ..............   Passed    0.40 sec
+      Start 24: jsonl
+24/43 Test #24: jsonl ............................   Passed    0.06 sec
+      Start 25: core_vector_index
+25/43 Test #25: core_vector_index ................   Passed    0.16 sec
+      Start 26: core_float32_literals
+26/43 Test #26: core_float32_literals ............   Passed    0.03 sec
+      Start 27: core_paired_scan
+27/43 Test #27: core_paired_scan .................   Passed    0.42 sec
+      Start 28: core_scan_snapshot
+28/43 Test #28: core_scan_snapshot ...............   Passed    0.14 sec
+      Start 29: core_numeric_maximum
+29/43 Test #29: core_numeric_maximum .............   Passed    0.01 sec
+      Start 30: core_numeric_ties
+30/43 Test #30: core_numeric_ties ................   Passed    0.01 sec
+      Start 31: core_text_validation
+31/43 Test #31: core_text_validation .............   Passed    0.71 sec
+      Start 32: core_row_validation
+32/43 Test #32: core_row_validation ..............   Passed    1.91 sec
+      Start 33: core_row_allocation
+33/43 Test #33: core_row_allocation ..............   Passed    0.00 sec
+      Start 34: protocol_adversarial
+34/43 Test #34: protocol_adversarial .............   Passed    0.10 sec
+      Start 35: sql_adversarial
+35/43 Test #35: sql_adversarial ..................   Passed    0.66 sec
+      Start 36: storage_adversarial
+36/43 Test #36: storage_adversarial ..............   Passed    4.15 sec
+      Start 37: core_unindexed_snapshot
+37/43 Test #37: core_unindexed_snapshot ..........   Passed    0.65 sec
+      Start 38: core_vector_scratch
+38/43 Test #38: core_vector_scratch ..............***Failed    0.03 sec
+r.info.vector_values_materialized==scan_cells+(lazy?0:r.rows.size()) line 133
+
+      Start 39: core_typed_scan
+39/43 Test #39: core_typed_scan ..................***Failed    0.09 sec
+validations(r)==items.size()+r.rows.size() line 143
+
+      Start 40: core_mixed_filter_cache
+40/43 Test #40: core_mixed_filter_cache ..........   Passed    0.08 sec
+      Start 41: core_commit_policy
+41/43 Test #41: core_commit_policy ...............   Passed    0.79 sec
+      Start 42: core_validated_vector
+42/43 Test #42: core_validated_vector ............   Passed    0.01 sec
+      Start 43: core_validated_snapshot
+43/43 Test #43: core_validated_snapshot ..........   Passed    0.39 sec
+
+93% tests passed, 3 tests failed out of 43
+
+Total Test time (real) =  13.62 sec
+
+The following tests FAILED:
+	 17 - core_profile (Failed)
+	 38 - core_vector_scratch (Failed)
+	 39 - core_typed_scan (Failed)
+Errors while running CTest

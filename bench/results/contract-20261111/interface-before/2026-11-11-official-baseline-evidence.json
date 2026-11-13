@@ -1,0 +1,906 @@
+{
+  "checked_date": "2026-11-11",
+  "official_tree": {
+    "sha": "f4d4e26653af823a7601668802f80e374ad6643c",
+    "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/f4d4e26653af823a7601668802f80e374ad6643c",
+    "tree": [
+      {
+        "path": ".agents",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6c5a71af15045e4137bcf299c963fd183479be16",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/6c5a71af15045e4137bcf299c963fd183479be16"
+      },
+      {
+        "path": ".agents/skills",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d510d5b2c7a6c7c651416a138cd8c19cec6dcc33",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/d510d5b2c7a6c7c651416a138cd8c19cec6dcc33"
+      },
+      {
+        "path": ".agents/skills/code-review",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a0405ef6ea6945ff1ae1b7293c3316e8951343f9",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/a0405ef6ea6945ff1ae1b7293c3316e8951343f9"
+      },
+      {
+        "path": ".agents/skills/code-review/SKILL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c406b5b0339a28a9fd46260dad41123b624f7a0c",
+        "size": 8396,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/c406b5b0339a28a9fd46260dad41123b624f7a0c"
+      },
+      {
+        "path": ".akfarm",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bcfe4e9459ebd65c47e25c407a3995c3fb9e031d",
+        "size": 280,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/bcfe4e9459ebd65c47e25c407a3995c3fb9e031d"
+      },
+      {
+        "path": ".akperformancetest",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2a2f09be6ddb22abc7fc4568d763515628bc26a8",
+        "size": 71,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/2a2f09be6ddb22abc7fc4568d763515628bc26a8"
+      },
+      {
+        "path": ".bazelrc",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "901b56747680759ab8821a1ef0d377438470859e",
+        "size": 729,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/901b56747680759ab8821a1ef0d377438470859e"
+      },
+      {
+        "path": ".bazelversion",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2b0aa21219df8fcc057961e80a1c8cd5dfaa7708",
+        "size": 6,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/2b0aa21219df8fcc057961e80a1c8cd5dfaa7708"
+      },
+      {
+        "path": ".devcontainer",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "30fbd76130eda7af37493adc1620c489da169ffe",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/30fbd76130eda7af37493adc1620c489da169ffe"
+      },
+      {
+        "path": ".devcontainer/Dockerfile",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "af052305562d9fef69e630a377f48d6df4cbada2",
+        "size": 417,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/af052305562d9fef69e630a377f48d6df4cbada2"
+      },
+      {
+        "path": ".devcontainer/devcontainer.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "91a571a2dd96963c8f3da9568b911800e40183be",
+        "size": 371,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/91a571a2dd96963c8f3da9568b911800e40183be"
+      },
+      {
+        "path": ".gitattributes",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1043c5751722d25027216b05f48688671af5c156",
+        "size": 296,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/1043c5751722d25027216b05f48688671af5c156"
+      },
+      {
+        "path": ".github",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0d29ff3bfbee23046942ff699c3124188864fdb7",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/0d29ff3bfbee23046942ff699c3124188864fdb7"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c9c8641c34ccb9d175741e8965482c83f9bbe04c",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/c9c8641c34ccb9d175741e8965482c83f9bbe04c"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f242ebd24959ddb2a70aa792be5b0862de6b78d0",
+        "size": 756,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/f242ebd24959ddb2a70aa792be5b0862de6b78d0"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/enhancement.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ad6b71cd1a8541b1e629d8baa25f48e99876bc5e",
+        "size": 162,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/ad6b71cd1a8541b1e629d8baa25f48e99876bc5e"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "11f80a5153f1c4446ac5287cfb17e54b49d69a6a",
+        "size": 596,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/11f80a5153f1c4446ac5287cfb17e54b49d69a6a"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/question.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5442b580b249dc65509803bc6b11111823e39a73",
+        "size": 506,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/5442b580b249dc65509803bc6b11111823e39a73"
+      },
+      {
+        "path": ".github/actions",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2bc8154769ccf1c1f2dffd8720cbfa3168ed615c",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/2bc8154769ccf1c1f2dffd8720cbfa3168ed615c"
+      },
+      {
+        "path": ".github/actions/setup-rust",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6608d86d4851a6dae0c4cc7bc03e4352834a47ed",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/6608d86d4851a6dae0c4cc7bc03e4352834a47ed"
+      },
+      {
+        "path": ".github/actions/setup-rust/action.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cefb4480b5eb73520f598a070c5bf2b2fa1e6d2b",
+        "size": 3992,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/cefb4480b5eb73520f598a070c5bf2b2fa1e6d2b"
+      },
+      {
+        "path": ".github/copilot-instructions.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6f7c062fb332fa663b5c67e4cb44b9d34da032e5",
+        "size": 100,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/6f7c062fb332fa663b5c67e4cb44b9d34da032e5"
+      },
+      {
+        "path": ".github/pull_request_template.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a8114d7ca7541dd003a99e8af8b230daa2e2842b",
+        "size": 808,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/a8114d7ca7541dd003a99e8af8b230daa2e2842b"
+      },
+      {
+        "path": ".github/script",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d771276591f6a88db58aadadd00baafd7ec47cb5",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/d771276591f6a88db58aadadd00baafd7ec47cb5"
+      },
+      {
+        "path": ".github/script/seekdb",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "0b51fecc1f59e0aff1bdd58b41636c91733cd8fe",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/0b51fecc1f59e0aff1bdd58b41636c91733cd8fe"
+      },
+      {
+        "path": ".github/script/seekdb/cache.sh",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a4948f75735e73400198df1c592fac47bd542be2",
+        "size": 19933,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/a4948f75735e73400198df1c592fac47bd542be2"
+      },
+      {
+        "path": ".github/script/seekdb/compile.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "3226fb223c9154d6de0963968f8964dc5cb423ed",
+        "size": 3319,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/3226fb223c9154d6de0963968f8964dc5cb423ed"
+      },
+      {
+        "path": ".github/script/seekdb/mysqltest_for_seekdb.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "0969486af5707c468a84ef8bc37b1ffbff44f4f1",
+        "size": 23453,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/0969486af5707c468a84ef8bc37b1ffbff44f4f1"
+      },
+      {
+        "path": ".github/script/seekdb/mysqltest_slice.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "93f8a5cfb19ceb247a8cdf3edc7b7685c6846fa4",
+        "size": 1122,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/93f8a5cfb19ceb247a8cdf3edc7b7685c6846fa4"
+      },
+      {
+        "path": ".github/script/seekdb/prepare.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "4aac14b9ee4114fcceb1c6c4711ebc03dab616ab",
+        "size": 765,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/4aac14b9ee4114fcceb1c6c4711ebc03dab616ab"
+      },
+      {
+        "path": ".github/script/seekdb/scripts",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "5f05af051cdb94d5e8edc5b8fe980481643f9041",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/5f05af051cdb94d5e8edc5b8fe980481643f9041"
+      },
+      {
+        "path": ".github/script/seekdb/scripts/farm_compile.sh",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "0f8ea0be74d500637d7ee29dd3fab887e938842b",
+        "size": 434,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/0f8ea0be74d500637d7ee29dd3fab887e938842b"
+      },
+      {
+        "path": ".github/script/seekdb/sdb.py",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "e8d86cd3318a395529a9ff3875b8ad92ae6fe291",
+        "size": 16968,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/e8d86cd3318a395529a9ff3875b8ad92ae6fe291"
+      },
+      {
+        "path": ".github/workflows",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8ebe192d3c79b4db8d8e10696472b16c1507dcc0",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/8ebe192d3c79b4db8d8e10696472b16c1507dcc0"
+      },
+      {
+        "path": ".github/workflows/buildbase",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "484371e283074c00d9ba6e4e04f1e0d6f7836ea5",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/484371e283074c00d9ba6e4e04f1e0d6f7836ea5"
+      },
+      {
+        "path": ".github/workflows/buildbase/action.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d1eb4517a7f0f26f04ae5063319d0c83dfcc4be1",
+        "size": 1152,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/d1eb4517a7f0f26f04ae5063319d0c83dfcc4be1"
+      },
+      {
+        "path": ".github/workflows/codeql.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8f332e50c11a29ce514d0687e49e7335b123c6bc",
+        "size": 1478,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/8f332e50c11a29ce514d0687e49e7335b123c6bc"
+      },
+      {
+        "path": ".github/workflows/compile.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3b510dc9c16f0224ddb38db7b57dc1edcb012093",
+        "size": 1736,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/3b510dc9c16f0224ddb38db7b57dc1edcb012093"
+      },
+      {
+        "path": ".github/workflows/license-header.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7f0ee425b37d3e596dc1560f7ad8112b374ab123",
+        "size": 1276,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/7f0ee425b37d3e596dc1560f7ad8112b374ab123"
+      },
+      {
+        "path": ".github/workflows/mkdocs.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "98b02ae5cae378805c6ea3e8b098ba69a77083eb",
+        "size": 963,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/98b02ae5cae378805c6ea3e8b098ba69a77083eb"
+      },
+      {
+        "path": ".github/workflows/rust-checks.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d8aeb0267b72400086b39a531b20075cbd3db061",
+        "size": 1952,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/d8aeb0267b72400086b39a531b20075cbd3db061"
+      },
+      {
+        "path": ".github/workflows/seekdb.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "22d219a2b80710596d0226637f6917ea57241c81",
+        "size": 16809,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/22d219a2b80710596d0226637f6917ea57241c81"
+      },
+      {
+        "path": ".github/workflows/translate.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8e7982f0743e6446b5d2962b0cb3aae6b2a1ec89",
+        "size": 1690,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/8e7982f0743e6446b5d2962b0cb3aae6b2a1ec89"
+      },
+      {
+        "path": ".github/workflows/vldb-benchmark-comment.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1a4837cf6df56032a355d1f39c270446e21855d6",
+        "size": 8418,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/1a4837cf6df56032a355d1f39c270446e21855d6"
+      },
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b63003c738948397c7b8608608531b11ab3406ed",
+        "size": 10569,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/b63003c738948397c7b8608608531b11ab3406ed"
+      },
+      {
+        "path": ".gitlab-ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "871ae17f8d54ab926cf083d964ba01918d46b97d",
+        "size": 2638,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/871ae17f8d54ab926cf083d964ba01918d46b97d"
+      },
+      {
+        "path": ".secignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ef3b3335bcda9d587e902260e419e3238dae1220",
+        "size": 23169,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/ef3b3335bcda9d587e902260e419e3238dae1220"
+      },
+      {
+        "path": ".secignore.opensource",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a0d976632093b65af655360bc0e50fa8918cc730",
+        "size": 12842,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/a0d976632093b65af655360bc0e50fa8918cc730"
+      },
+      {
+        "path": "Dockerfile",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "size": 0,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "STDIO_PROTOCOL.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "de488832a0952d5a1c3a93bd316eff69dc946158",
+        "size": 12241,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/de488832a0952d5a1c3a93bd316eff69dc946158"
+      },
+      {
+        "path": "conversation.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "size": 0,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "mysqltest",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a9728ae644576d0464359f0485d6dc903ab01791",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/a9728ae644576d0464359f0485d6dc903ab01791"
+      },
+      {
+        "path": "mysqltest/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "091ba7c9016e102d0fc8eba25d0c6f03a19ed2b8",
+        "size": 6157,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/091ba7c9016e102d0fc8eba25d0c6f03a19ed2b8"
+      },
+      {
+        "path": "mysqltest/cases",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "cf762938642d53c20956453f14394c82a62cee90",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/cf762938642d53c20956453f14394c82a62cee90"
+      },
+      {
+        "path": "mysqltest/cases/sql_bigint.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6ecc046cc46f1a6b0fed60b9047a6fe5661f00bf",
+        "size": 188,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/6ecc046cc46f1a6b0fed60b9047a6fe5661f00bf"
+      },
+      {
+        "path": "mysqltest/cases/sql_bigint.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bfffab303b48f92593e50461e30c6dcd092644db",
+        "size": 148,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/bfffab303b48f92593e50461e30c6dcd092644db"
+      },
+      {
+        "path": "mysqltest/cases/sql_comparisons.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e9870d3a08deac364f3852de42e14510ca02f2fc",
+        "size": 221,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/e9870d3a08deac364f3852de42e14510ca02f2fc"
+      },
+      {
+        "path": "mysqltest/cases/sql_comparisons.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a4b458bc17046b476ba9ba0c8107201bc952c8bb",
+        "size": 200,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/a4b458bc17046b476ba9ba0c8107201bc952c8bb"
+      },
+      {
+        "path": "mysqltest/cases/sql_crud.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2dd16e9fd062ecffdb65435beafde0544d70f299",
+        "size": 391,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/2dd16e9fd062ecffdb65435beafde0544d70f299"
+      },
+      {
+        "path": "mysqltest/cases/sql_crud.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0b8e7120d955d823356aede11f2115baa249adb5",
+        "size": 260,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/0b8e7120d955d823356aede11f2115baa249adb5"
+      },
+      {
+        "path": "mysqltest/cases/sql_empty.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2e0abd1713c47f7f20aa54e7e4aed15d15d4e181",
+        "size": 100,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/2e0abd1713c47f7f20aa54e7e4aed15d15d4e181"
+      },
+      {
+        "path": "mysqltest/cases/sql_empty.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dfe3d8d7143406cfe380336f066a9f6fe589b8cb",
+        "size": 116,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/dfe3d8d7143406cfe380336f066a9f6fe589b8cb"
+      },
+      {
+        "path": "mysqltest/cases/sql_ordering.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5e082b94a132875c140fd06ac67484ca5008cc1d",
+        "size": 302,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/5e082b94a132875c140fd06ac67484ca5008cc1d"
+      },
+      {
+        "path": "mysqltest/cases/sql_ordering.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "012881efb1ea8a88a46f5b89ea76bee3cbb02d56",
+        "size": 193,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/012881efb1ea8a88a46f5b89ea76bee3cbb02d56"
+      },
+      {
+        "path": "mysqltest/cases/sql_primary_key.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "102ce3ce5b21768c9aa2fb4932e99d165ff4383a",
+        "size": 204,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/102ce3ce5b21768c9aa2fb4932e99d165ff4383a"
+      },
+      {
+        "path": "mysqltest/cases/sql_primary_key.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a28864c330fe80dd1cf540addaaac8a8b67434d3",
+        "size": 172,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/a28864c330fe80dd1cf540addaaac8a8b67434d3"
+      },
+      {
+        "path": "mysqltest/cases/sql_unicode.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2945f951a68d1a584ef394cc2f5737ae5c447f5c",
+        "size": 143,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/2945f951a68d1a584ef394cc2f5737ae5c447f5c"
+      },
+      {
+        "path": "mysqltest/cases/sql_unicode.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c3a4abb027fcf78c9bcc06b241138794833da709",
+        "size": 142,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/c3a4abb027fcf78c9bcc06b241138794833da709"
+      },
+      {
+        "path": "mysqltest/cases/sql_unsupported.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "264b951e6002eb580751805b2ccdecadbe2270a1",
+        "size": 108,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/264b951e6002eb580751805b2ccdecadbe2270a1"
+      },
+      {
+        "path": "mysqltest/cases/sql_unsupported.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d1269e3044d8d2da5ea74b5c97bc581958664e8b",
+        "size": 120,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/d1269e3044d8d2da5ea74b5c97bc581958664e8b"
+      },
+      {
+        "path": "mysqltest/cases/storage_multiple_tables.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dca4167669c27829af7855e4df3e15820185f221",
+        "size": 344,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/dca4167669c27829af7855e4df3e15820185f221"
+      },
+      {
+        "path": "mysqltest/cases/storage_multiple_tables.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "94a65af054a6e0a224b909633095acdbe88002c8",
+        "size": 333,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/94a65af054a6e0a224b909633095acdbe88002c8"
+      },
+      {
+        "path": "mysqltest/cases/storage_mutations.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bbf450939fc751344569d5f44cf1217009ee1e07",
+        "size": 433,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/bbf450939fc751344569d5f44cf1217009ee1e07"
+      },
+      {
+        "path": "mysqltest/cases/storage_mutations.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "60fd5639a2aa9c5b8ea28256442d110c2a8b6566",
+        "size": 464,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/60fd5639a2aa9c5b8ea28256442d110c2a8b6566"
+      },
+      {
+        "path": "mysqltest/cases/storage_restart.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d74d5c0349475bb402829c021223edfe693efb7e",
+        "size": 166,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/d74d5c0349475bb402829c021223edfe693efb7e"
+      },
+      {
+        "path": "mysqltest/cases/storage_restart.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "928e40baab02a31a2fe64c120e9f4b84b39f8c52",
+        "size": 143,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/928e40baab02a31a2fe64c120e9f4b84b39f8c52"
+      },
+      {
+        "path": "mysqltest/cases/transaction_autocommit_atomic.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f28f32eedec8cdcc77a279bee185df8a946485d5",
+        "size": 228,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/f28f32eedec8cdcc77a279bee185df8a946485d5"
+      },
+      {
+        "path": "mysqltest/cases/transaction_autocommit_atomic.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "16fee288fb7e1302d76df532930917b7ef7ea06d",
+        "size": 334,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/16fee288fb7e1302d76df532930917b7ef7ea06d"
+      },
+      {
+        "path": "mysqltest/cases/transaction_commit.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8dc780ffa64ebe9ef719de7cb3a9021a974d656b",
+        "size": 210,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/8dc780ffa64ebe9ef719de7cb3a9021a974d656b"
+      },
+      {
+        "path": "mysqltest/cases/transaction_commit.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "55b7d096ecea04bcd3f3950681e5a26c49d70f21",
+        "size": 197,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/55b7d096ecea04bcd3f3950681e5a26c49d70f21"
+      },
+      {
+        "path": "mysqltest/cases/transaction_failed_insert.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "80d8bee1333a850fd08e06a69ad81edf9ed4f2a7",
+        "size": 476,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/80d8bee1333a850fd08e06a69ad81edf9ed4f2a7"
+      },
+      {
+        "path": "mysqltest/cases/transaction_failed_insert.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "60e3f2224b7ebed85b0ebe50681b1982b46a64b8",
+        "size": 442,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/60e3f2224b7ebed85b0ebe50681b1982b46a64b8"
+      },
+      {
+        "path": "mysqltest/cases/transaction_rollback.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5ccb3706aa46289a972a6a431915d62c38aeeb48",
+        "size": 210,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/5ccb3706aa46289a972a6a431915d62c38aeeb48"
+      },
+      {
+        "path": "mysqltest/cases/transaction_rollback.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e9cdc26ce7e2e3aa961c143b01270f70e078d16a",
+        "size": 199,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/e9cdc26ce7e2e3aa961c143b01270f70e078d16a"
+      },
+      {
+        "path": "mysqltest/cases/transaction_shutdown_rollback.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "429b70bec7223df41749c0758d158192aa415760",
+        "size": 223,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/429b70bec7223df41749c0758d158192aa415760"
+      },
+      {
+        "path": "mysqltest/cases/transaction_shutdown_rollback.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "89d010d7cf7dd110b98dbbb88bd4a73500dfe009",
+        "size": 248,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/89d010d7cf7dd110b98dbbb88bd4a73500dfe009"
+      },
+      {
+        "path": "mysqltest/cases/vector_euclidean.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f526641848f1258ab8ae66ccf53786c10318e253",
+        "size": 162,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/f526641848f1258ab8ae66ccf53786c10318e253"
+      },
+      {
+        "path": "mysqltest/cases/vector_euclidean.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "88eb0aab4fce745f33c1da11d61e7b27d635d77a",
+        "size": 194,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/88eb0aab4fce745f33c1da11d61e7b27d635d77a"
+      },
+      {
+        "path": "mysqltest/cases/vector_float32.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e645cb4163169a315268d5c2ae998b062ac8cde8",
+        "size": 202,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/e645cb4163169a315268d5c2ae998b062ac8cde8"
+      },
+      {
+        "path": "mysqltest/cases/vector_float32.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e657c904819e42393a86a84fa448dce758877813",
+        "size": 284,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/e657c904819e42393a86a84fa448dce758877813"
+      },
+      {
+        "path": "mysqltest/cases/vector_index_maintenance.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d3b5503b869e3bd3c130b9de8490c959a2e76dbb",
+        "size": 746,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/d3b5503b869e3bd3c130b9de8490c959a2e76dbb"
+      },
+      {
+        "path": "mysqltest/cases/vector_index_maintenance.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c758c0a9d6995bd4091d1ee3503eb4ab61d5e14e",
+        "size": 699,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/c758c0a9d6995bd4091d1ee3503eb4ab61d5e14e"
+      },
+      {
+        "path": "mysqltest/cases/vector_ties_and_filter.result",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6da58e33138023edfb401527e6f4f12ddbbeeeba",
+        "size": 400,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/6da58e33138023edfb401527e6f4f12ddbbeeeba"
+      },
+      {
+        "path": "mysqltest/cases/vector_ties_and_filter.test",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c404195496dbd9374412ebf3a22b9cf35febb061",
+        "size": 585,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/c404195496dbd9374412ebf3a22b9cf35febb061"
+      },
+      {
+        "path": "mysqltest/manifest.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f1b7a9a5718da89c0da66f1c95a230440e96b888",
+        "size": 3893,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/f1b7a9a5718da89c0da66f1c95a230440e96b888"
+      },
+      {
+        "path": "protocol_check",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "984401b7109c6215eb2c7d9e76502d796a6c3a6a",
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/trees/984401b7109c6215eb2c7d9e76502d796a6c3a6a"
+      },
+      {
+        "path": "protocol_check/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "093da810ce20f399f842c5822210460186b559d0",
+        "size": 3568,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/093da810ce20f399f842c5822210460186b559d0"
+      },
+      {
+        "path": "protocol_check/_assertions.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3dba7b59f98550473959f4a9efef2330ffa56bfe",
+        "size": 2091,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/3dba7b59f98550473959f4a9efef2330ffa56bfe"
+      },
+      {
+        "path": "protocol_check/_transport.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e49c13b3d6946256b818cd473d268de531d51b4f",
+        "size": 7799,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/e49c13b3d6946256b818cd473d268de531d51b4f"
+      },
+      {
+        "path": "protocol_check/config.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6a3aa78d8cd723ab6dee4c04a602850e2d4a304d",
+        "size": 226,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/6a3aa78d8cd723ab6dee4c04a602850e2d4a304d"
+      },
+      {
+        "path": "protocol_check/example_stdio.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "33526ccdeb9a373513a54b519eaa80ab158cf6ab",
+        "size": 1582,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/33526ccdeb9a373513a54b519eaa80ab158cf6ab"
+      },
+      {
+        "path": "protocol_check/run.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fd06abddea5b95be9abf8d54598caaefecbd5f6a",
+        "size": 5719,
+        "url": "https://api.github.com/repos/oceanbase/seekdb/git/blobs/fd06abddea5b95be9abf8d54598caaefecbd5f6a"
+      }
+    ],
+    "truncated": false
+  },
+  "official_sources": {
+    ".akperformancetest": {
+      "content": "sysbench_obp\nbmsqltest_obp\nsysbench_prepare\nobstresslocality\nbigtrx\n\n \n",
+      "encoding": "utf-8",
+      "sha": "2a2f09be6ddb22abc7fc4568d763515628bc26a8",
+      "display_url": "https://github.com/oceanbase/seekdb/blob/f4d4e26653af823a7601668802f80e374ad6643c/.akperformancetest",
+      "display_title": ".akperformancetest"
+    },
+    ".akfarm": {
+      "content": "pretest\nmysqltest_for_standalone\nsysbench_for_standalone\nbmsqltest_for_standalone\n!vostest\nddlmigrate_lite\nddltest_duomo\nmulti_modal_test\nstress_duomo\n!bigtrans_lite\nobtrade_lite\nps5_lite\nobrqg_lite\npass_pl_lite\npquery\nsqlancer_lite\nobstress_job\nbatch_dml_lite\nobtest\n!objdbctest\n",
+      "encoding": "utf-8",
+      "sha": "bcfe4e9459ebd65c47e25c407a3995c3fb9e031d",
+      "display_url": "https://github.com/oceanbase/seekdb/blob/f4d4e26653af823a7601668802f80e374ad6643c/.akfarm",
+      "display_title": ".akfarm"
+    },
+    ".github/workflows/vldb-benchmark-comment.yml": {
+      "content": "name: VLDB Benchmark Comment\n\non:\n  workflow_run:\n    workflows: [VLDB CI]\n    types: [completed]\n\npermissions:\n  actions: read\n  contents: read\n  issues: write\n  pull-requests: read\n\njobs:\n  comment:\n    name: comment-fts-benchmark\n    if: ${{ github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success' }}\n    runs-on: ubuntu-latest\n    steps:\n      - name: Download FTS benchmark artifact\n        id: download\n        uses: actions/download-artifact@v8\n        continue-on-error: true\n        with:\n          name: vldb-fts-large-benchmark\n          path: ${{ runner.temp }}/vldb-fts-large-benchmark\n          run-id: ${{ github.event.workflow_run.id }}\n          github-token: ${{ secrets.GITHUB_TOKEN }}\n\n      - name: Comment FTS benchmark report on PR\n        if: ${{ always() }}\n        shell: bash\n        env:\n          GH_TOKEN: ${{ secrets.VLDB_PR_COMMENT_TOKEN || github.token }}\n          GH_REPO: ${{ github.repository }}\n          PR_NUMBER_FROM_EVENT: ${{ github.event.workflow_run.pull_requests[0].number }}\n          WORKFLOW_HEAD_REPO: ${{ github.event.workflow_run.head_repository.full_name }}\n          WORKFLOW_HEAD_SHA: ${{ github.event.workflow_run.head_sha }}\n          RUN_URL: ${{ github.event.workflow_run.html_url }}\n          ARTIFACT_DIR: ${{ runner.temp }}/vldb-fts-large-benchmark\n        run: |\n          set -euo pipefail\n\n          REPORT_PATH=\"$ARTIFACT_DIR/report.txt\"\n          SCORE_PATH=\"$ARTIFACT_DIR/score.txt\"\n          AI_FUNCS_SCORE_PATH=\"$ARTIFACT_DIR/ai_funcs_score.txt\"\n          if [[ ! -f \"$REPORT_PATH\" && ! -f \"$AI_FUNCS_SCORE_PATH\" ]]; then\n            echo \"comment artifact has neither benchmark report nor ai_funcs score, skip PR comment\"\n            exit 0\n          fi\n\n          PR_NUMBER=\"$PR_NUMBER_FROM_EVENT\"\n          if [[ ! \"$PR_NUMBER\" =~ ^[0-9]+$ ]]; then\n            PR_NUMBER_PATH=\"$ARTIFACT_DIR/pr_number\"\n            if [[ ! -f \"$PR_NUMBER_PATH\" ]]; then\n              echo \"::warning::PR number missing from workflow_run event and artifact, skip PR comment\"\n              exit 0\n            fi\n            PR_NUMBER=\"$(tr -d '[:space:]' < \"$PR_NUMBER_PATH\")\"\n            echo \"workflow_run event did not include PR number, using artifact PR number: $PR_NUMBER\"\n          fi\n          if [[ ! \"$PR_NUMBER\" =~ ^[0-9]+$ ]]; then\n            echo \"invalid PR number: $PR_NUMBER\"\n            exit 1\n          fi\n\n          MARKER=\"<!-- seekdb-vldb-fts-large-benchmark -->\"\n          COMMENTS_API=\"https://api.github.com/repos/${GH_REPO}/issues/${PR_NUMBER}/comments\"\n          COMMENT_BODY=\"$RUNNER_TEMP/vldb_fts_benchmark_comment.json\"\n          COMMENTS_JSON=\"$RUNNER_TEMP/vldb_fts_benchmark_comments.json\"\n          RESPONSE_JSON=\"$RUNNER_TEMP/vldb_fts_benchmark_response.json\"\n          PR_JSON=\"$RUNNER_TEMP/vldb_fts_benchmark_pr.json\"\n\n          http_code=\"$(curl -sS -L -w '%{http_code}' -o \"$PR_JSON\" \\\n            -H \"Accept: application/vnd.github+json\" \\\n            -H \"Authorization: Bearer ${GH_TOKEN}\" \\\n            -H \"X-GitHub-Api-Version: 2022-11-28\" \\\n            \"https://api.github.com/repos/${GH_REPO}/pulls/${PR_NUMBER}\" || true)\"\n          if [[ \"$http_code\" == \"401\" || \"$http_code\" == \"403\" ]]; then\n            echo \"::warning::skip PR comment: token cannot read pull request\"\n            cat \"$PR_JSON\" 2>/dev/null || true\n            exit 0\n          fi\n          if [[ ! \"$http_code\" =~ ^2 ]]; then\n            echo \"::warning::skip PR comment: failed to read pull request, HTTP $http_code\"\n            cat \"$PR_JSON\" 2>/dev/null || true\n            exit 0\n          fi\n\n          python3 - \"$PR_JSON\" \"$WORKFLOW_HEAD_REPO\" \"$WORKFLOW_HEAD_SHA\" <<'PY'\n          import json\n          import sys\n\n          pr_path, workflow_head_repo, workflow_head_sha = sys.argv[1:4]\n          with open(pr_path, encoding=\"utf-8\") as f:\n              pr = json.load(f)\n\n          pr_head_repo = (pr.get(\"head\", {}).get(\"repo\") or {}).get(\"full_name\") or \"\"\n          pr_head_sha = pr.get(\"head\", {}).get(\"sha\") or \"\"\n          if workflow_head_repo and pr_head_repo and workflow_head_repo != pr_head_repo:\n              raise SystemExit(\n                  f\"PR head repo mismatch: workflow_run={workflow_head_repo}, pr={pr_head_repo}\"\n              )\n          if workflow_head_sha and pr_head_sha and workflow_head_sha != pr_head_sha:\n              print(\n                  f\"::warning::PR head sha differs from workflow_run head_sha: \"\n                  f\"workflow_run={workflow_head_sha}, pr={pr_head_sha}\"\n              )\n          PY\n\n          python3 - \"$REPORT_PATH\" \"$SCORE_PATH\" \"$AI_FUNCS_SCORE_PATH\" \"$RUN_URL\" \"$MARKER\" > \"$COMMENT_BODY\" <<'PY'\n          import html\n          import json\n          from pathlib import Path\n          import sys\n\n          report_path, score_path, ai_funcs_score_path, run_url, marker = sys.argv[1:6]\n\n          def read_optional(path):\n              if path and Path(path).is_file():\n                  return Path(path).read_text(encoding=\"utf-8\").strip()\n              return \"\"\n\n          report = read_optional(report_path)\n          score = read_optional(score_path)\n          ai_funcs_score = read_optional(ai_funcs_score_path)\n\n          parts = [marker]\n          if ai_funcs_score:\n              parts += [\n                  \"### Document AI & IK Custom Dictionary Score\",\n                  \"\",\n                  \"<pre>\",\n                  html.escape(ai_funcs_score),\n                  \"</pre>\",\n                  \"\",\n              ]\n          if report:\n              parts += [\n                  \"### FTS Large Benchmark Score\",\n                  \"\",\n                  \"<pre>\",\n                  html.escape(score or \"score output not found\"),\n                  \"</pre>\",\n                  \"\",\n                  \"### FTS Large Benchmark Report\",\n                  \"\",\n                  \"<pre>\",\n                  html.escape(report),\n                  \"</pre>\",\n                  \"\",\n              ]\n          parts.append(f\"[Workflow run]({run_url})\")\n          body = \"\\n\".join(parts)\n          print(json.dumps({\"body\": body}, ensure_ascii=False))\n          PY\n\n          http_code=\"$(curl -sS -L -w '%{http_code}' -o \"$COMMENTS_JSON\" \\\n            -H \"Accept: application/vnd.github+json\" \\\n            -H \"Authorization: Bearer ${GH_TOKEN}\" \\\n            -H \"X-GitHub-Api-Version: 2022-11-28\" \\\n            \"$COMMENTS_API\" || true)\"\n          if [[ \"$http_code\" == \"401\" || \"$http_code\" == \"403\" ]]; then\n            echo \"::warning::skip PR comment: token cannot read comments\"\n            cat \"$COMMENTS_JSON\" 2>/dev/null || true\n            exit 0\n          fi\n          if [[ ! \"$http_code\" =~ ^2 ]]; then\n            echo \"::warning::skip PR comment: failed to list comments, HTTP $http_code\"\n            cat \"$COMMENTS_JSON\" 2>/dev/null || true\n            exit 0\n          fi\n\n          comment_id=\"$(python3 - \"$COMMENTS_JSON\" \"$MARKER\" <<'PY'\n          import json\n          import sys\n\n          comments_path, marker = sys.argv[1:3]\n          with open(comments_path, encoding=\"utf-8\") as f:\n              comments = json.load(f)\n          for comment in comments:\n              if marker in (comment.get(\"body\") or \"\"):\n                  print(comment[\"id\"])\n                  break\n          PY\n          )\"\n\n          if [[ -n \"$comment_id\" ]]; then\n            METHOD=\"PATCH\"\n            COMMENT_API=\"https://api.github.com/repos/${GH_REPO}/issues/comments/${comment_id}\"\n          else\n            METHOD=\"POST\"\n            COMMENT_API=\"$COMMENTS_API\"\n          fi\n\n          http_code=\"$(curl -sS -L -w '%{http_code}' -o \"$RESPONSE_JSON\" \\\n            -X \"$METHOD\" \\\n            -H \"Accept: application/vnd.github+json\" \\\n            -H \"Authorization: Bearer ${GH_TOKEN}\" \\\n            -H \"X-GitHub-Api-Version: 2022-11-28\" \\\n            --data-binary @\"$COMMENT_BODY\" \\\n            \"$COMMENT_API\" || true)\"\n          if [[ \"$http_code\" == \"401\" || \"$http_code\" == \"403\" ]]; then\n            echo \"::warning::skip PR comment: token cannot write comments\"\n            cat \"$RESPONSE_JSON\" 2>/dev/null || true\n            exit 0\n          fi\n          if [[ ! \"$http_code\" =~ ^2 ]]; then\n            echo \"::warning::skip PR comment: failed to write comment, HTTP $http_code\"\n            cat \"$RESPONSE_JSON\" 2>/dev/null || true\n            exit 0\n          fi\n\n          echo \"FTS benchmark PR comment posted\"\n",
+      "encoding": "utf-8",
+      "sha": "1a4837cf6df56032a355d1f39c270446e21855d6",
+      "display_url": "https://github.com/oceanbase/seekdb/blob/f4d4e26653af823a7601668802f80e374ad6643c/.github/workflows/vldb-benchmark-comment.yml",
+      "display_title": "vldb-benchmark-comment.yml"
+    },
+    ".github/workflows/seekdb.yml": {
+      "content": "# SeekDB CI - 执行下沉版（Native）\n# setup 单次 checkout 并准备源码与 seekdb → 4 个并行 mysqltest job（各独立容器）→ collect 合并结果\nname: SeekDB CI\n\non:\n  workflow_call:\n  workflow_dispatch:\n  pull_request:\n    branches: [master, develop]\n    types: [opened, reopened, synchronize, ready_for_review]\n    paths-ignore:\n      - 'docs/**'\n      - '.github/ISSUE_TEMPLATE/**'\n      - '.github/pull_request_template.md'\n      - 'README.md'\n      - 'README_CN.md'\n      - 'CONTRIBUTING.md'\n  schedule:\n    - cron: '30 9 * * *'\n\npermissions:\n  contents: read\n\nenv:\n  MYSQLTEST_SLICES: \"4\"\n  SEEKDB_BINARY_PATH: build_release/src/observer/seekdb\n  SEEKDB_RESULT_NFS_ROOT: /data/storage/jenkins_on_k8s/results/seekdb\n  # V1 integrity checks detect corruption but do not authenticate NFS writers.\n  SEEKDB_CACHE_NFS_ROOT: /data/storage/jenkins_on_k8s/results/seekdb/_cache\n  SEEKDB_CCACHE_MAX_SIZE: \"3G\"\n  SEEKDB_PR_CACHE_MAX_BYTES: \"3221225472\"\n  SEEKDB_PR_CACHE_GLOBAL_MAX_BYTES: \"32212254720\"\n  SEEKDB_PR_CACHE_TTL_DAYS: \"7\"\n\njobs:\n  seekdb-setup:\n    name: setup\n    if: ${{ github.repository_owner == 'oceanbase' && (github.event_name != 'pull_request' || !github.event.pull_request.draft) }}\n    runs-on: arc-runner-k8s-ci-org\n    container:\n      image: harbor.oceanbase-dev.com/obrde-test/ob-actions-runner-worker:0.0.2\n    steps:\n      - name: Checkout source\n        shell: bash\n        env:\n          SSH_PRIVATE_KEY: ${{ secrets.SEEKDB_CI_CHECKOUT_KEY }}\n        run: |\n          set -euo pipefail\n\n          if [[ -n \"${SSH_PRIVATE_KEY:-}\" ]]; then\n            KEY_FILE=\"${RUNNER_TEMP}/seekdb-ci-checkout-key\"\n            trap 'rm -f \"$KEY_FILE\"' EXIT\n            umask 077\n            printf '%s\\n' \"$SSH_PRIVATE_KEY\" | tr -d '\\r' > \"$KEY_FILE\"\n            export GIT_SSH_COMMAND=\"/usr/bin/ssh -i $KEY_FILE -o BatchMode=yes -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null\"\n            REMOTE_URL=\"ssh://git@ssh.github.com:443/${GITHUB_REPOSITORY}.git\"\n            echo \"SEEKDB_CI_CHECKOUT_KEY is available; using SSH checkout\"\n          else\n            REMOTE_URL=\"${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git\"\n            echo \"SEEKDB_CI_CHECKOUT_KEY is unavailable; using HTTPS checkout\"\n          fi\n\n          git init \"$GITHUB_WORKSPACE\"\n          git -C \"$GITHUB_WORKSPACE\" remote remove origin 2>/dev/null || true\n          git -C \"$GITHUB_WORKSPACE\" remote add origin \"$REMOTE_URL\"\n          for attempt in 1 2 3; do\n            if git -C \"$GITHUB_WORKSPACE\" fetch --no-tags --depth=1 origin \"$GITHUB_SHA\"; then\n              break\n            fi\n            if [[ \"$attempt\" -eq 3 ]]; then\n              echo \"checkout fetch failed after $attempt attempts\" >&2\n              exit 1\n            fi\n            delay=$((attempt * 5))\n            echo \"checkout fetch attempt $attempt failed; retrying in ${delay}s\" >&2\n            sleep \"$delay\"\n          done\n          git -C \"$GITHUB_WORKSPACE\" checkout --force --detach FETCH_HEAD\n          git -C \"$GITHUB_WORKSPACE\" clean -ffdx\n\n      # Source 与 run_attempt 无关：下游 job 重跑时直接复用同一提交的快照。\n      - name: Persist source snapshot to NFS\n        shell: bash\n        run: |\n          set -euo pipefail\n          RUN_ROOT=\"${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}\"\n          DEST_DIR=\"$RUN_ROOT/setup\"\n          SOURCE_ARCHIVE=\"${RUNNER_TEMP:-/tmp}/seekdb-ci-source.tar.zst\"\n          tar -C \"$GITHUB_WORKSPACE\" --exclude='./.git' -cf - . \\\n            | zstd -f -q -T0 -o \"$SOURCE_ARCHIVE\"\n          mkdir -p \"$DEST_DIR\"\n          cp -f \"$SOURCE_ARCHIVE\" \"$DEST_DIR/seekdb-ci-source.tar.zst\"\n          echo \"source snapshot saved to $DEST_DIR/seekdb-ci-source.tar.zst\"\n\n      - name: Configure local cache paths\n        shell: bash\n        env:\n          PR_NUMBER: ${{ github.event.pull_request.number }}\n          SOURCE_SHA: ${{ github.event.pull_request.head.sha || github.sha }}\n        run: |\n          set -euo pipefail\n          CACHE_ROOT=\"${RUNNER_TEMP:-/tmp}/seekdb-ci-cache\"\n          RUST_ROOT=\"${RUNNER_TEMP:-/tmp}/seekdb-rust\"\n          mkdir -p \"$CACHE_ROOT/deps\" \"$CACHE_ROOT/ccache\" \"$CACHE_ROOT/ccache-tmp\"\n          mkdir -p \"$RUST_ROOT/cargo\" \"$RUST_ROOT/rustup\"\n          {\n            echo \"SEEKDB_CACHE_LOCAL_ROOT=$CACHE_ROOT\"\n            echo \"SEEKDB_RUST_CACHE_ROOT=$RUST_ROOT\"\n            echo \"SEEKDB_PR_NUMBER=${PR_NUMBER:-}\"\n            echo \"SEEKDB_SOURCE_SHA=$SOURCE_SHA\"\n            echo \"DEP_CACHE_DIR=$CACHE_ROOT/deps\"\n            echo \"CCACHE_DIR=$CACHE_ROOT/ccache\"\n            echo \"CCACHE_TEMPDIR=$CACHE_ROOT/ccache-tmp\"\n            echo \"CCACHE_BASEDIR=$GITHUB_WORKSPACE\"\n            echo \"CCACHE_COMPILERCHECK=content\"\n            echo \"CARGO_HOME=$RUST_ROOT/cargo\"\n            echo \"RUSTUP_HOME=$RUST_ROOT/rustup\"\n          } >> \"$GITHUB_ENV\"\n          echo \"$RUST_ROOT/cargo/bin\" >> \"$GITHUB_PATH\"\n\n      - name: Restore build caches from NFS\n        shell: bash\n        run: |\n          set -u\n          for kind in deps rustup cargo ccache; do\n            if ! bash .github/script/seekdb/cache.sh restore \"$kind\"; then\n              echo \"cache restore failed for $kind; continuing with a cold cache\"\n            fi\n          done\n        continue-on-error: true\n\n      - name: Setup Rust\n        uses: ./.github/actions/setup-rust\n        with:\n          # The rustup mirror below covers only rustup; this routes the crates\n          # `cargo build --locked` downloads through the same mirror.\n          crates-mirror: 'true'\n          cache: 'false'\n        env:\n          RUSTUP_INIT_URL: https://rsproxy.cn/rustup-init.sh\n          RUSTUP_DIST_SERVER: https://rsproxy.cn\n          RUSTUP_UPDATE_ROOT: https://rsproxy.cn/rustup\n\n      - name: Publish master Rust toolchain cache\n        if: >-\n          ${{ success() &&\n              github.repository == 'oceanbase/seekdb' &&\n              github.ref == 'refs/heads/master' &&\n              (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}\n        shell: bash\n        run: bash .github/script/seekdb/cache.sh publish-master rustup\n        continue-on-error: true\n\n      - name: Prepare (jobargs, run_jobs)\n        shell: bash\n        run: |\n          chmod +x .github/script/seekdb/prepare.sh\n          export GITHUB_RUN_ID=\"${{ github.run_id }}\"\n          export MYSQLTEST_SLICES=\"${{ env.MYSQLTEST_SLICES }}\"\n          export SEEKDB_TASK_DIR=\"$GITHUB_WORKSPACE/seekdb_build/${{ github.run_id }}\"\n          .github/script/seekdb/prepare.sh\n\n      - name: Compile\n        id: compile\n        shell: bash\n        run: |\n          chmod +x .github/script/seekdb/compile.sh\n          export GITHUB_RUN_ID=\"${{ github.run_id }}\"\n          WS=\"${{ github.workspace }}\"\n          if [[ ! -f \"$WS/build.sh\" ]] && [[ -f \"$(pwd)/build.sh\" ]]; then\n            export GITHUB_WORKSPACE=\"$(pwd)\"\n          else\n            export GITHUB_WORKSPACE=\"$WS\"\n          fi\n          export SEEKDB_TASK_DIR=\"$GITHUB_WORKSPACE/seekdb_build/${{ github.run_id }}\"\n          export FORWARDING_HOST=\"${{ vars.FORWARDING_HOST || '' }}\"\n          export PATH=\"$GITHUB_WORKSPACE/deps/3rd/usr/local/oceanbase/devtools/bin:$PATH\"\n          .github/script/seekdb/compile.sh\n\n      - name: Publish master build caches\n        if: >-\n          ${{ always() &&\n              github.repository == 'oceanbase/seekdb' &&\n              github.ref == 'refs/heads/master' &&\n              (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}\n        shell: bash\n        run: |\n          set -u\n          for kind in deps cargo ccache; do\n            bash .github/script/seekdb/cache.sh publish-master \"$kind\" || true\n          done\n        continue-on-error: true\n\n      - name: Publish PR ccache delta\n        if: >-\n          ${{ always() &&\n              github.event_name == 'pull_request' &&\n              github.event.pull_request.number != null }}\n        shell: bash\n        run: bash .github/script/seekdb/cache.sh publish-pr-ccache\n        continue-on-error: true\n\n      - name: Garbage collect shared caches\n        if: >-\n          ${{ always() &&\n              github.repository == 'oceanbase/seekdb' &&\n              github.ref == 'refs/heads/master' &&\n              github.event_name == 'schedule' }}\n        shell: bash\n        run: bash .github/script/seekdb/cache.sh gc\n        continue-on-error: true\n\n      - name: Prepare mysqltest runtime\n        shell: bash\n        run: |\n          set -euo pipefail\n          SEEKDB_BINARY=\"${SEEKDB_BINARY_PATH:?}\"\n          if [[ ! -x \"$SEEKDB_BINARY\" ]]; then\n            echo \"seekdb missing or not executable: $SEEKDB_BINARY\"\n            exit 1\n          fi\n          CLIENT_ROOT=\"deps/3rd/u01/obclient\"\n          if [[ ! -x \"$CLIENT_ROOT/bin/obclient\" || ! -x \"$CLIENT_ROOT/bin/mysqltest\" ]]; then\n            echo \"obclient or mysqltest missing under $CLIENT_ROOT/bin\"\n            exit 1\n          fi\n          RUNTIME_DIR=\"${RUNNER_TEMP:-/tmp}/seekdb-mysqltest-runtime-${GITHUB_RUN_ID}\"\n          mkdir -p \"$RUNTIME_DIR/obclient\"\n          cp -L -f \"$SEEKDB_BINARY\" \"$RUNTIME_DIR/seekdb\"\n          cp -a \"$CLIENT_ROOT/.\" \"$RUNTIME_DIR/obclient/\"\n          tar -C \"$RUNTIME_DIR\" -cf - seekdb obclient | zstd -f -q -T0 -o seekdb-mysqltest-runtime.tar.zst\n          echo \"runtime size: $(stat -c%s seekdb-mysqltest-runtime.tar.zst 2>/dev/null || stat -f%z seekdb-mysqltest-runtime.tar.zst 2>/dev/null) bytes\"\n      # Runtime 与 run_attempt 无关：仅重跑失败 job 时 setup 可能跳过，因此优先使用稳定路径。\n      - name: Persist mysqltest runtime to NFS\n        shell: bash\n        run: |\n          RUN_ROOT=\"${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}\"\n          DEST_DIR=\"$RUN_ROOT/setup\"\n          mkdir -p \"$DEST_DIR\"\n          cp -f seekdb-mysqltest-runtime.tar.zst \"$DEST_DIR/\"\n          echo \"mysqltest runtime saved to $DEST_DIR/seekdb-mysqltest-runtime.tar.zst\"\n  seekdb-mysqltest:\n    name: mysqltest-slice-${{ matrix.slice }}\n    needs: seekdb-setup\n    runs-on: arc-runner-k8s-ci-org\n    container:\n      image: harbor.oceanbase-dev.com/obrde-test/ob-actions-runner-worker:0.0.2\n    strategy:\n      fail-fast: false\n      matrix:\n        slice: [0, 1, 2, 3]\n    steps:\n      - name: Restore source snapshot (from NFS)\n        shell: bash\n        run: |\n          set -euo pipefail\n          SOURCE_ARCHIVE=\"${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}/setup/seekdb-ci-source.tar.zst\"\n          if [[ ! -f \"$SOURCE_ARCHIVE\" ]]; then\n            echo \"source snapshot not found: $SOURCE_ARCHIVE\"\n            exit 1\n          fi\n          mkdir -p \"$GITHUB_WORKSPACE\"\n          zstd -d -q -c \"$SOURCE_ARCHIVE\" | tar -xf - -C \"$GITHUB_WORKSPACE\"\n\n      - name: Place mysqltest runtime (from NFS)\n        shell: bash\n        run: |\n          set -eo pipefail\n          RUN_ROOT=\"${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}\"\n          ATT=\"${{ github.run_attempt }}\"\n          RUNTIME_ARCHIVE=\"\"\n          if [[ -f \"$RUN_ROOT/setup/seekdb-mysqltest-runtime.tar.zst\" ]]; then\n            RUNTIME_ARCHIVE=\"$RUN_ROOT/setup/seekdb-mysqltest-runtime.tar.zst\"\n          elif [[ -f \"$RUN_ROOT/attempt-${ATT}/setup/seekdb-mysqltest-runtime.tar.zst\" ]]; then\n            RUNTIME_ARCHIVE=\"$RUN_ROOT/attempt-${ATT}/setup/seekdb-mysqltest-runtime.tar.zst\"\n          else\n            shopt -s nullglob\n            _fb=( \"$RUN_ROOT\"/attempt-*/setup/seekdb-mysqltest-runtime.tar.zst )\n            shopt -u nullglob\n            if (( ${#_fb[@]} > 0 )); then\n              RUNTIME_ARCHIVE=$(printf '%s\\n' \"${_fb[@]}\" | xargs ls -t | head -1)\n            fi\n          fi\n          if [[ -n \"$RUNTIME_ARCHIVE\" && -f \"$RUNTIME_ARCHIVE\" ]]; then\n            echo \"Using runtime: $RUNTIME_ARCHIVE\"\n            mkdir -p .seekdb_runtime\n            zstd -d -q -c \"$RUNTIME_ARCHIVE\" | tar -xf - -C .seekdb_runtime\n          else\n            echo \"mysqltest runtime not found on NFS under $RUN_ROOT\"\n            exit 1\n          fi\n          test -x .seekdb_runtime/seekdb\n          test -x .seekdb_runtime/obclient/bin/obclient\n          test -x .seekdb_runtime/obclient/bin/mysqltest\n      - name: Run mysqltest slice\n        shell: bash\n        run: |\n          chmod +x .github/script/seekdb/mysqltest_slice.sh\n          export GITHUB_RUN_ID=\"${{ github.run_id }}\"\n          export SEEKDB_TASK_DIR=\"$GITHUB_WORKSPACE/seekdb_build/${{ github.run_id }}/slice_${{ matrix.slice }}\"\n          export SLICE_IDX=${{ matrix.slice }} SLICES=\"${{ env.MYSQLTEST_SLICES }}\"\n          export SEEKDB_RUNTIME_DIR=\"$GITHUB_WORKSPACE/.seekdb_runtime\"\n          export SEEKDB_BINARY=\"$SEEKDB_RUNTIME_DIR/seekdb\"\n          mkdir -p \"$SEEKDB_TASK_DIR\"\n          .github/script/seekdb/mysqltest_slice.sh\n\n      - name: Persist slice result to NFS\n        if: always()\n        shell: bash\n        run: |\n          TASK_DIR=\"$GITHUB_WORKSPACE/seekdb_build/${{ github.run_id }}/slice_${{ matrix.slice }}\"\n          DEST_DIR=\"${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}/attempt-${{ github.run_attempt }}/slices/slice_${{ matrix.slice }}\"\n          mkdir -p \"$DEST_DIR\"\n          if [[ -f \"$TASK_DIR/seekdb_result.json\" ]]; then\n            cp -f \"$TASK_DIR/seekdb_result.json\" \"$DEST_DIR/\"\n          else\n            echo \"skip copying slice result: seekdb_result.json not found\"\n          fi\n          if [[ -d \"$TASK_DIR/failures\" ]]; then\n            mkdir -p \"$DEST_DIR/failures\"\n            cp -a \"$TASK_DIR/failures/.\" \"$DEST_DIR/failures/\"\n          fi\n        continue-on-error: true\n\n      - name: Job summary (logs hint)\n        if: always()\n        shell: bash\n        run: |\n          TASK_DIR=\"$GITHUB_WORKSPACE/seekdb_build/${{ github.run_id }}/slice_${{ matrix.slice }}\"\n          if [[ -d \"$TASK_DIR/failures\" ]]; then\n            echo \"### Slice ${{ matrix.slice }} failure diagnostics saved\" >> \"$GITHUB_STEP_SUMMARY\"\n            echo \"Saved under \\`${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}/attempt-${{ github.run_attempt }}/slices/slice_${{ matrix.slice }}/failures/\\`.\" >> \"$GITHUB_STEP_SUMMARY\"\n          fi\n  seekdb-collect:\n    # 仅在 4 个 mysqltest slice 都跑完（成功或失败）时执行；若 mysqltest 被 skip 则不跑\n    if: ${{ always() && needs.seekdb-mysqltest.result != 'skipped' }}\n    name: collect\n    needs: seekdb-mysqltest\n    runs-on: arc-runner-k8s-ci-org\n    container:\n      image: harbor.oceanbase-dev.com/obrde-test/ob-actions-runner-worker:0.0.2\n    steps:\n      - name: Restore source snapshot (from NFS)\n        shell: bash\n        run: |\n          set -euo pipefail\n          SOURCE_ARCHIVE=\"${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}/setup/seekdb-ci-source.tar.zst\"\n          if [[ ! -f \"$SOURCE_ARCHIVE\" ]]; then\n            echo \"source snapshot not found: $SOURCE_ARCHIVE\"\n            exit 1\n          fi\n          mkdir -p \"$GITHUB_WORKSPACE\"\n          zstd -d -q -c \"$SOURCE_ARCHIVE\" | tar -xf - -C \"$GITHUB_WORKSPACE\"\n\n      - name: Collect slice results from NFS\n        shell: bash\n        run: |\n          RUN_ROOT=\"${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}\"\n          ATT=\"${{ github.run_attempt }}\"\n          SLICES=\"${{ env.MYSQLTEST_SLICES }}\"\n          mkdir -p slice_results\n          for (( slice=0; slice<SLICES; slice++ )); do\n            SOURCE_RESULT=\"\"\n            SOURCE_ATTEMPT=\"\"\n            for (( attempt=ATT; attempt>=1; attempt-- )); do\n              CANDIDATE=\"$RUN_ROOT/attempt-$attempt/slices/slice_$slice/seekdb_result.json\"\n              if [[ -f \"$CANDIDATE\" ]]; then\n                SOURCE_RESULT=\"$CANDIDATE\"\n                SOURCE_ATTEMPT=\"$attempt\"\n                break\n              fi\n            done\n            if [[ -n \"$SOURCE_RESULT\" ]]; then\n              mkdir -p \"slice_results/slice_$slice\"\n              cp -f \"$SOURCE_RESULT\" \"slice_results/slice_$slice/seekdb_result.json\"\n              echo \"slice $slice result loaded from attempt-$SOURCE_ATTEMPT\"\n            else\n              echo \"slice $slice result not found under $RUN_ROOT/attempt-*\"\n            fi\n          done\n      - name: Merge results and persist\n        shell: bash\n        run: |\n          set +e\n          python3 .github/script/seekdb/mysqltest_for_seekdb.py merge \\\n            --results-dir slice_results \\\n            --slice-count \"${{ env.MYSQLTEST_SLICES }}\" \\\n            --run-id \"${{ github.run_id }}\" \\\n            --output seekdb_result.json\n          MERGE_RET=$?\n          set -e\n          DEST_DIR=\"${{ env.SEEKDB_RESULT_NFS_ROOT }}/${{ github.run_id }}/attempt-${{ github.run_attempt }}/collect\"\n          mkdir -p \"$DEST_DIR\"\n          cp -f seekdb_result.json \"$DEST_DIR/\"\n          echo \"seekdb_result.json saved to $DEST_DIR/seekdb_result.json\"\n          exit \"$MERGE_RET\"\n",
+      "encoding": "utf-8",
+      "sha": "22d219a2b80710596d0226637f6917ea57241c81",
+      "display_url": "https://github.com/oceanbase/seekdb/blob/f4d4e26653af823a7601668802f80e374ad6643c/.github/workflows/seekdb.yml",
+      "display_title": "seekdb.yml"
+    },
+    "mysqltest/README.md": {
+      "content": "# MiniVectorDB 公开自测题包\n\n适用于 `2026-competition-round2`。本包共 **20 个公开样例、95 条 SQL**，统一放在 `cases/` 目录，按清单顺序从简单操作逐步验证持久化、索引和事务能力。\n\n## 公开用例\n\n| 用例 | 检查目标 |\n| --- | --- |\n| sql_crud | 一条记录的插入、查询、更新与删除 |\n| sql_comparisons | 整数比较和 AND 条件 |\n| sql_ordering | 无并列项的升降序与 LIMIT |\n| sql_empty | 空表查询、空表删除 |\n| sql_primary_key | 拒绝重复主键，保留原记录 |\n| sql_unicode | 中文字符串写入与读取，不混入长度边界和字符排序 |\n| sql_bigint | 超过 JavaScript 安全整数范围的 BIGINT 精确读写，不混入溢出 |\n| sql_unsupported | 对题目不支持的 ALTER TABLE 返回错误 |\n| storage_restart | 一条自动提交记录在正常重启后保留 |\n| vector_euclidean | 单条二维向量的欧氏距离，不混入更新、过滤或索引 |\n| transaction_commit | 普通表事务修改提交后可见，不依赖向量或重启 |\n| transaction_rollback | 普通表事务修改回滚后恢复，不依赖向量或重启 |\n| storage_mutations | 更新、删除和向量修改在重启后保持一致 |\n| storage_multiple_tables | 多表定义和记录的持久化 |\n| vector_ties_and_filter | 先过滤后 TopK，距离并列按主键排序 |\n| vector_float32 | 存储与距离计算的 float32 语义 |\n| vector_index_maintenance | 建索引后增删改、重启及模式切换 |\n| transaction_failed_insert | 事务中多行插入失败的原子性及后续提交 |\n| transaction_autocommit_atomic | 自动提交语句失败不能留下部分数据 |\n| transaction_shutdown_rollback | 正常关闭时回滚未提交事务 |\n\n## 格式与执行约定\n\n这是 **mysqltest 风格的 SQL/预期断言题包**，不是 MySQL 官方 mysqltest 的原生可执行格式，不要求 MySQL 网络服务。\n\n- `manifest.json`：每个样例的 id、类别及 test/result 相对路径。\n- `cases/*.test`：UTF-8，每个非空行是一条完整 SQL 或驱动指令。\n- 同名 `.result`：JSON 数组，只与 SQL 按顺序一一对应，驱动指令不占断言位置。\n\n每个用例从独立的空数据库和数据目录开始，不能把全部文件拼成一次执行。用例内 `--restart` 必须复用原数据目录；不要因重启清空数据。\n\n| 驱动指令 | 含义 |\n| --- | --- |\n| `--restart` | 正常关闭并等待退出，再用相同数据目录启动；关闭须回滚未提交事务 |\n| `--mode ann` | 后续向量请求采用 ann 模式；每个用例最初为 exact |\n\n指令不是 SQL。本包没有强杀指令。ANN 小数据样例按对应 result 的明确结果检查，不等于正式随机 ANN 的完整召回率验证。进程通信采用标准输入/输出 JSONL 协议；详见根目录 STDIO_PROTOCOL.md。配套公开自测驱动位于 protocol_check/run.py。\n\n断言规则：\n\n- `{}`：SQL 必须成功，不额外要求特定结果字段；不表示可以忽略错误。\n- `error`：SQL 必须失败，值是错误语义名，如 `duplicate_key`。当前未冻结错误码映射的配置至少要求非空错误码；正式映射以题包为准。预期错误后继续执行后续语句。\n- `affected_rows`：受影响记录数，精确比较。\n- `columns`：查询列名及其顺序，精确比较。\n- `rows`：按顺序比较查询结果；`unordered: true` 时改用多重集合比较，重复行不可丢失。\n\n整数、字符串精确匹配；浮点比较绝对/相对容差均为 `1e-5`。向量先存为 float32，L2_DISTANCE 返回欧氏距离而非距离平方，例如 `[3,4]` 与 `[0,0]` 的距离为 5。\n\n本包不提供数据库实现。请实现正常执行与错误处理，而非预存样例答案。基础样例已简化，不能用评测仓库中的同名正式用例替代它们，须读取本目录中的实际文件。\n\n## 正式验收要求仍然公开\n\n公开样例通过不代表完整功能准入通过。正式用例共 29 个，全部通过才进入性能与 Agent 评分；组织方另保留 9 个用例的具体输入、操作序列、数据生成参数和预期结果。正式评测并非只运行保留的 9 个。\n\n以下功能仍属于正式要求，不能因本包没有相应完整用例而省略：\n\n- 拒绝 NaN、Infinity、维度错误、float32 溢出等非法向量。\n- 失败语句不能部分生效；显式事务之前的成功修改仍可提交或回滚。\n- 已确认提交在进程强杀后保留，未提交修改不部分生效；恢复途中再次退出仍能恢复。\n- 能处理超过内存限额的数据，不能只依赖全量常驻内存。\n- ANN 必须满足过滤、有效 ID、无重复及题包规定的召回率，索引更新不能破坏事务语义。\n\n隐藏的是测试数据，而非功能要求。正式题目的完整语法、资源预算和冻结配置以统一题包为准。\n\n\n## JSON 通信协议与自测入口\n\n请先阅读 [STDIO_PROTOCOL.md](../STDIO_PROTOCOL.md) 和 [协议自测说明](../protocol_check/README.md)。\n容器必须主动输出一行 `{\"type\":\"ready\"}`，随后逐行读取 execute/shutdown JSON 请求，\n逐行返回含相同 id 和布尔 ok 的响应。每条输出须换行并 flush；日志写 stderr。\n纯文本 READY、直接输入 SQL、文本表格均不符合正式协议。\n\n本目录 .test 是待执行 SQL/.result 是预期断言，不是实际通信报文；驱动负责封装请求。\n公开断言中的 `{}` 也要求成功响应含 id、ok:true。\n\n在仓库根目录先运行握手检查，再运行公开用例（替换镜像名）：\n\n```bash\nexport VECTORDB_IMAGE='你的镜像名:标签'\npython3 protocol_check/run.py --image \"$VECTORDB_IMAGE\" --handshake-only --output \"protocol-results/handshake-$(date +%Y%m%d-%H%M%S)\"\npython3 protocol_check/run.py --image \"$VECTORDB_IMAGE\" --output \"protocol-results/public-$(date +%Y%m%d-%H%M%S)\"\n```\n\n每次使用新的产物目录。握手通过不代表SQL正确；公开用例通过不等于正式功能准入通过。\nexample_stdio.py仅提供通信骨架，SQL执行尚未实现，不可作为数据库实现直接提交。\n",
+      "encoding": "utf-8",
+      "sha": "091ba7c9016e102d0fc8eba25d0c6f03a19ed2b8",
+      "display_url": "https://github.com/oceanbase/seekdb/blob/f4d4e26653af823a7601668802f80e374ad6643c/mysqltest/README.md",
+      "display_title": "README.md"
+    }
+  },
+  "protocol_readme": {
+    "content": "# JSON 协议自测工具\n\nPython 3.9+，无需 pip 依赖。Docker 测试需本机 Docker 权限。\n本目录随题包提供，不依赖组织方评测仓库，不包含隐藏测试、基线、评分、平台凭据或回执接口。\n完整协议见根目录 `STDIO_PROTOCOL.md`。\n\n## 第一步：只检查启动和关闭\n\n在题包根目录执行，替换为自己的已构建镜像：\n\n```bash\nexport VECTORDB_IMAGE='你的镜像名:标签'\npython3 protocol_check/run.py --image \"$VECTORDB_IMAGE\" \\\n  --handshake-only --output \"protocol-results/handshake-$(date +%Y%m%d-%H%M%S)\"\n```\n\n工具先启动容器，等待程序主动输出 ready，再发送 shutdown。它不会先发送 SQL 来诱导程序输出 ready，\n因此能发现“等输入才 ready”、没有换行或没有 flush 等问题。\n解析失败时显示 stdout 错误行前240字节，stderr 单独保存；不要在协议输出中打印密钥等敏感信息。\n\n## 第二步：运行一个公开用例\n\n```bash\npython3 protocol_check/run.py --image \"$VECTORDB_IMAGE\" \\\n  --case sql_crud --output \"protocol-results/crud-$(date +%Y%m%d-%H%M%S)\"\n```\n\n## 第三步：运行题包中全部公开用例\n\n```bash\npython3 protocol_check/run.py --image \"$VECTORDB_IMAGE\" \\\n  --output \"protocol-results/public-$(date +%Y%m%d-%H%M%S)\"\n```\n\n工具读取当前题包 `mysqltest/manifest.json` 与其中列出的 test/result 文件；不拿内部同名用例替代公开用例。\n每个用例独立数据卷，同一用例的 `--restart` 复用卷，`--mode ann` 改变后续请求模式。\n第一个超时后停止执行剩余用例，标记 SKIPPED；清理容器、保留报告和日志。\n\n输出目录必须是新目录。`result.json` 中 `passed=true` 才表示本次选中的检查通过；进程退出码0表示通过，1表示失败。\n只检查握手通过不代表 SQL 正确；公开用例通过不代表正式29个用例或性能/Agent评审通过。\n\n`config.json` 使用当前判题资源与基础比较参数：启动120秒、单请求60秒、普通用例600秒，\n2 CPU、2 GiB、128 PID，绝对/相对浮点容差均为1e-5。正式平台配置更新时应同步题包。\n本地可用 `--config` 指定配置，但放宽本地参数不能改变正式判题要求。\n\n## 通信层骨架\n\n`example_stdio.py` 演示序列化、flush、请求分发、错误响应和shutdown。\n它**没有实现数据库**：execute总是返回NOT_IMPLEMENTED，不能用于通过SQL用例，更不是参考数据库答案。\n请接入自己的恢复、SQL执行、事务回滚和持久化逻辑；stdout不输出调试日志。\n\n可用可信本地进程演示握手：\n\n```bash\npython3 protocol_check/run.py \\\n  --command '[\"python3\",\"protocol_check/example_stdio.py\"]' \\\n  --handshake-only --output \"protocol-results/example-$(date +%Y%m%d-%H%M%S)\"\n```\n\n`--command` 不提供容器隔离，只用于自己的可信程序。需要临时数据目录时，在 argv 中使用 `{data_dir}` 占位符。\n正式提交前必须再测实际Docker镜像，检查默认启动参数、依赖和只读根文件系统下的行为。\n\n## 公开断言与实际响应的区别\n\n`.test` 的SQL必须包装成execute JSON；`.result` 只是结果断言，不是完整通信报文。\n断言 `{}` 仍要求 `ok:true`；断言包含 `error` 时要求 `ok:false` 和非空 `error.code`。\nBIGINT必须保持整数精度，列顺序/行数/重复行不能丢失，向量使用float32语义。\n\n本工具复用了当前判题器的通信和结果比较语义。工具不会帮学生把READY或纯SQL协议自动转换成JSON协议。\n",
+    "encoding": "utf-8",
+    "sha": "093da810ce20f399f842c5822210460186b559d0",
+    "display_url": "https://github.com/oceanbase/seekdb/blob/f4d4e26653af823a7601668802f80e374ad6643c/protocol_check/README.md",
+    "display_title": "README.md"
+  },
+  "protocol_config": {
+    "content": "{\n  \"startup_timeout\": 120,\n  \"request_timeout\": 60,\n  \"case_timeout\": 600,\n  \"max_response_bytes\": 16777216,\n  \"cpus\": \"2\",\n  \"memory\": \"2g\",\n  \"pids_limit\": 128,\n  \"abs_tol\": 1e-05,\n  \"rel_tol\": 1e-05,\n  \"error_codes\": {}\n}\n",
+    "encoding": "utf-8",
+    "sha": "6a3aa78d8cd723ab6dee4c04a602850e2d4a304d",
+    "display_url": "https://github.com/oceanbase/seekdb/blob/f4d4e26653af823a7601668802f80e374ad6643c/protocol_check/config.json",
+    "display_title": "config.json"
+  },
+  "powercontext": {
+    "master": {
+      "sha": "31ecdd61beadb7ac8de5da20998dead9a9e07845",
+      "count": 3326,
+      "truncated": false
+    },
+    "competition": {
+      "sha": "7065787f39f265f44d683d00c657669230ae4879",
+      "count": 2335,
+      "truncated": false,
+      "readme": {
+        "content": "# PowerContext 2026 参赛与公开自测\n\n从本分支的产品代码开始实现题目。代码基线为 `9db1753434162c0aa7c9f1189a1722e617880a52`（PowerContext v1.2.0）；`competition/` 提供题面、公开样例和公开行为测试。实现仍放在产品的 `src/` 中。\n\n## 选择题目\n\n| 赛题 | 分值 | 题面 | 本地自测 |\n| --- | ---: | --- | --- |\n| 一：准备 PowerContext 参赛仓库 | 10 | [仓库准备](challenges/setup-00-repository-fork/instruction.md) | `make check-baseline` |\n| 二：CSV 行级采集与原始记录回查 | 20 | [CSV](challenges/source-01-table-evidence/instruction.md) | `make test-csv` |\n| 三：Pi 会话分支采集与断点恢复 | 20 | [Pi](challenges/source-02-pi-history/instruction.md) | `make test-pi` |\n| 四：财报 PDF 全文解析与证据页检索 | 50 | [PDF](challenges/source-03-pdf-retrieval/instruction.md) | `make test-pdf` |\n| 五：HTTP 重排服务接入与跨批次排序 | 20 | [HTTP 重排](challenges/retrieval-01-reranking/instruction.md) | `make test-rerank` |\n| 六：上下文增量传输与完整重建 | 20 | [增量上下文](challenges/context-02-incremental-pack/instruction.md) | `make test-incremental` |\n| 七：按新增来源条目数触发记忆处理 | 20 | [数量触发](challenges/processing-01-count-trigger/instruction.md) | `make test-count-trigger` |\n| 八：Embedding 并发请求合并与向量缓存 | 20 | [Embedding](challenges/memory-02-embedding-batches/instruction.md) | `make test-embedding` |\n| 九：来源撤回后的记忆停用与恢复 | 20 | [来源生命周期](challenges/memory-01-source-lifecycle/instruction.md) | `make test-lifecycle` |\n| 十：按查询和预算选择原文证据 | 20 | [证据选择](challenges/context-01-evidence-selection/instruction.md) | `make test-evidence` |\n| 十一：seekdb 混合检索的单 SQL 候选查询 | 20 | [混合检索](challenges/retrieval-02-hybrid-search/instruction.md) | `make test-hybrid` |\n| 合计 | **240** | | |\n\n表中的命令在 `competition/` 运行。每道代码题按完整验收是否通过计分。本地命令只给出公开测试结果，不生成或上报比赛成绩，公开测试通过也不代表已经满足题面全部质量与性能要求。\n\n## 在本机运行公开测试\n\n环境要求为 Linux x86_64、Python 3.12 和 uv。所有测试依赖固定在 [requirements.txt](requirements.txt)，不需要模型 API Key、平台 Token。seekdb 测试使用嵌入式 pylibseekdb，无需另行部署数据库服务。\n\n从产品仓库根目录执行：\n\n```bash\nmake -C competition install\nmake -C competition check-baseline\nmake -C competition test-csv\n```\n\n安装依赖需要网络；测试使用本地样例、固定响应和临时数据库，不调用在线模型。数量触发题会运行本地 HTTP 测试服务，并包含等待与恢复场景，执行时间较长，期间不要中断进程。\n\n运行全部公开代码题测试，各题使用独立 Python 进程，避免嵌入式数据库的进程内状态相互影响；某题失败后仍继续运行其余题，最后返回非零状态：\n\n```bash\nmake -C competition test\n```\n\n如需对另一个产品 checkout 运行测试，只切换产品目录：\n\n```bash\nmake -C competition test-pi PRODUCT=/absolute/path/to/product\n```\n\n测试从该目录的 `src/` 加载实现，不从已安装的其他 PowerContext 版本加载。pytest 输出 `FAILED` 或导入错误都表示本轮自测未通过；基线尚未实现的接口出现导入错误属于预期起点。不要通过跳过测试或改动测试文件消除失败。\n\n## 使用统一 Docker 环境\n\n宿主不便准备 Python 依赖时，在安装 Docker 与 Compose 后执行：\n\n```bash\nmake -C competition docker-build\nmake -C competition docker-test\n```\n\n构建阶段下载固定依赖，运行阶段关闭外部网络。启动脚本为嵌入式 seekdb 配置仅容器内可用的虚拟地址，随后切换为普通用户执行测试，不连接外部网络。容器配额为 1 CPU、2 GiB，产品源码和公开测试均只读挂载，数据库及临时文件写入容器临时目录。Docker 环境支持 Linux x86_64；跨架构模拟的耗时不能用于判断性能是否达标。\n\n只运行某一题也可直接使用 pytest：\n\n```bash\ncd competition\ndocker compose run --rm selftest python -m pytest -q \\\n  -c /selftest/pytest.ini --confcutdir=/selftest \\\n  /selftest/challenges/source-01-table-evidence/acceptance\n```\n\n## 准备提测\n\n按参赛指南导入 PowerContext 并保留提交历史，私有仓库须授予平台读取权限；已有公开 Fork 也可使用。仓库准备题接受任一分支包含冻结基线，不要求新建特定名称的分支。`check-baseline` 只检查本地历史，不证明 GitHub 权限或仓库归属，也不覆盖官方 Fork 关联这一替代条件。\n\n一次提测可以包含全部代码题的实现。提交实际仓库、分支及 commit；未指定版本时，平台将使用默认分支的实际版本。提交前确认默认分支包含自己的实现。代码题只加载 `src/`，不能通过修改本目录的测试、数据或依赖改变评测结果。\n\n公开包中的 PDF、CSV、SciFact 和会话数据保留各自来源、归属和许可，见对应 `workload/` 文件。样例中的代码、链接及历史命令只作为输入文字，不需要执行。\n",
+        "encoding": "utf-8",
+        "sha": "7827f77af752d82b436fd530d2fc0a44663ecac9",
+        "display_url": "https://github.com/juanzhi-gcb/powercontext/blob/7065787f39f265f44d683d00c657669230ae4879/competition/README.md",
+        "display_title": "README.md"
+      },
+      "baseline": {
+        "content": "repository = \"https://github.com/oceanbase/powercontext.git\"\nrepository_id = 1093180734\nref = \"refs/tags/powercontext-v1.2.0\"\ncommit = \"9db1753434162c0aa7c9f1189a1722e617880a52\"\npython = \"3.12\"\n",
+        "encoding": "utf-8",
+        "sha": "c75967f0d802ba8e0a535e319b0e29ae22d2d84f",
+        "display_url": "https://github.com/juanzhi-gcb/powercontext/blob/7065787f39f265f44d683d00c657669230ae4879/competition/baseline.toml",
+        "display_title": "baseline.toml"
+      }
+    },
+    "ecosystem": {
+      "sha": "28c0f6d08d3f86beee0fdf839c075af7c54f1df0",
+      "count": 309,
+      "truncated": false
+    },
+    "performance_readme": {
+      "content": "# Performance and capacity benchmarks\n\nThese suites measure runtime latency, throughput, storage costs, and capacity limits.\nRun their commands from the repository root with the root Python environment.\n\nAdd load, stress, and capacity suites here, keeping each workload in its own directory with its setup and measurement\ncontract. Put labeled-dataset quality evaluation in [memory](../memory/README.md).\n",
+      "encoding": "utf-8",
+      "sha": "d76f915ac668a6b4439bc3f5b5d5a1781551c760",
+      "display_url": "https://github.com/juanzhi-gcb/powercontext/blob/master/evaluation/performance/README.md",
+      "display_title": "README.md"
+    }
+  },
+  "protocol_run": {
+    "content": "#!/usr/bin/env python3\n\"\"\"Interactive JSONL handshake and public SQL checks; no platform callbacks.\"\"\"\nimport argparse\nimport json\nfrom pathlib import Path\nimport signal\nimport subprocess\nimport sys\nimport time\n\nfrom _transport import Session, strict_json\nfrom _assertions import assert_response\n\nROOT = Path(__file__).resolve().parent\n\n\ndef within(root, relative):\n    path = (root / relative).resolve(strict=True)\n    path.relative_to(root.resolve())\n    return path\n\n\ndef check_case(session, case, package, config):\n    expectations = strict_json(within(package, case['result']).read_text())\n    statements = within(package, case['test']).read_text().splitlines()\n    index, mode = 0, 'exact'\n    for line_number, text in enumerate(statements, 1):\n        sql = text.strip()\n        if not sql or sql.startswith('#'):\n            continue\n        if sql == '--restart':\n            session.shutdown()\n            session.start()\n        elif sql in ('--mode exact', '--mode ann'):\n            mode = sql.split()[1]\n        elif sql.startswith('--'):\n            raise ValueError(f'unsupported public directive: {sql}')\n        else:\n            if index >= len(expectations):\n                raise ValueError('missing expected result')\n            response = session.request(sql, mode)\n            try:\n                assert_response(response, expectations[index], config)\n            except AssertionError as exc:\n                raise AssertionError(f'line {line_number}: {sql}: {exc}') from exc\n            index += 1\n    if index != len(expectations):\n        raise ValueError('SQL/result count mismatch')\n\n\ndef main(argv=None):\n    parser = argparse.ArgumentParser(description=__doc__)\n    target = parser.add_mutually_exclusive_group(required=True)\n    target.add_argument('--image', help='built student Docker image (recommended)')\n    target.add_argument('--command', help='trusted local development only: JSON argv; {data_dir} placeholder supported')\n    parser.add_argument('--handshake-only', action='store_true', help='check ready and shutdown, without SQL')\n    parser.add_argument('--case', action='append', help='public case ID; repeat to select multiple cases')\n    parser.add_argument('--package', type=Path, default=ROOT.parent/'mysqltest')\n    parser.add_argument('--config', type=Path, default=ROOT/'config.json')\n    parser.add_argument('--output', type=Path, required=True, help='new directory for reports and stderr logs')\n    args = parser.parse_args(argv)\n    config = strict_json(args.config.read_text())\n    command = strict_json(args.command) if args.command else None\n    if command is not None and (not isinstance(command, list) or not command\n            or any(not isinstance(x, str) for x in command)):\n        parser.error('--command must be a nonempty JSON array of strings')\n    if args.handshake_only and args.case:\n        parser.error('--handshake-only and --case cannot be combined')\n    if args.handshake_only:\n        cases = [{'id': 'handshake'}]\n    else:\n        manifest = strict_json((args.package/'manifest.json').read_text())\n        cases = manifest['cases']\n        if args.case:\n            unknown = set(args.case) - {case['id'] for case in cases}\n            if unknown:\n                parser.error('unknown public case: '+', '.join(sorted(unknown)))\n            cases = [case for case in cases if case['id'] in args.case]\n    if not cases:\n        parser.error('no public cases selected')\n    args.output.mkdir(parents=True, exist_ok=False)\n    results, aborted = [], None\n    for case in cases:\n        if aborted:\n            results.append(dict(id=case['id'], status='SKIPPED', message=aborted))\n            continue\n        before = time.monotonic()\n        row = dict(id=case['id'], status='PASS', message='')\n        session = None\n        try:\n            session = Session(config, args.output/(case['id']+'.stderr.log'),\n                              image=args.image, command=command)\n            session.start()\n            if not args.handshake_only:\n                check_case(session, case, args.package, config)\n            session.shutdown()\n        except KeyboardInterrupt:\n            row.update(status='ERROR', message='interrupted by operator')\n            aborted = 'not run after interruption'\n        except (TimeoutError, subprocess.TimeoutExpired) as exc:\n            row.update(status='TIMEOUT', message=str(exc))\n            aborted = 'not run after first timeout'\n        except Exception as exc:\n            row.update(status='FAIL', message=str(exc))\n        finally:\n            if session is not None:\n                try:\n                    session.close()\n                except Exception as exc:\n                    row.update(status='ERROR', message=row['message']+'; cleanup failed: '+str(exc))\n                    aborted = 'not run after cleanup failure'\n        row['duration_ms'] = round((time.monotonic()-before)*1000)\n        results.append(row)\n        print(f\"{row['id']}: {row['status']} {row['message']}\", flush=True)\n        (args.output/'cases.json').write_text(json.dumps(results, ensure_ascii=False, indent=2)+'\\n')\n    passed = all(row['status']=='PASS' for row in results)\n    report = dict(scope='public-protocol-check', passed=passed, cases=results,\n                  note='Local diagnostic only; no performance/Agent scores or platform callbacks.')\n    (args.output/'result.json').write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\\n')\n    print(f\"Report: {args.output/'result.json'}\")\n    return 0 if passed else 1\n\n\nif __name__ == '__main__':\n    def terminate(signum, frame):\n        raise KeyboardInterrupt('terminated')\n    signal.signal(signal.SIGTERM, terminate)\n    sys.exit(main())\n",
+    "encoding": "utf-8",
+    "sha": "fd06abddea5b95be9abf8d54598caaefecbd5f6a",
+    "display_url": "https://github.com/oceanbase/seekdb/blob/f4d4e26653af823a7601668802f80e374ad6643c/protocol_check/run.py",
+    "display_title": "run.py"
+  }
+}

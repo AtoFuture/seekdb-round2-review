@@ -1,0 +1,69 @@
+{
+  "medians": {
+    "interleaved": {
+      "reference": {
+        "write_ms": 266.072406,
+        "index_build_ms": 0,
+        "query_total_ms": 42.476822,
+        "query_unfiltered_ms": 23.380031,
+        "query_filtered_ms": 18.748958,
+        "first_query_ms": 2.566861,
+        "second_query_ms": 0.601425,
+        "snapshot_capacity": 0,
+        "snapshot_rows": 0,
+        "database_bytes": 6864896,
+        "churn_ms": 330.265,
+        "query_and_mutation_ms": 372.249088,
+        "warm_resident_bytes": 23629824,
+        "invalidated_resident_bytes": 23691264,
+        "query_and_mutation_minor_faults": 454,
+        "process_maxrss_kib": 24384,
+        "local_cgroup_peak_bytes": 29753344
+      },
+      "release": {
+        "write_ms": 266.833423,
+        "index_build_ms": 0,
+        "query_total_ms": 42.104079,
+        "query_unfiltered_ms": 23.672492,
+        "query_filtered_ms": 18.431587,
+        "first_query_ms": 2.525807,
+        "second_query_ms": 1.563506,
+        "snapshot_capacity": 0,
+        "snapshot_rows": 0,
+        "database_bytes": 6864896,
+        "churn_ms": 328.87,
+        "query_and_mutation_ms": 371.635434,
+        "warm_resident_bytes": 25284608,
+        "invalidated_resident_bytes": 23691264,
+        "query_and_mutation_minor_faults": 454,
+        "process_maxrss_kib": 24492,
+        "local_cgroup_peak_bytes": 29593600
+      },
+      "reuse": {
+        "write_ms": 268.808774,
+        "index_build_ms": 0,
+        "query_total_ms": 41.45645,
+        "query_unfiltered_ms": 23.679492,
+        "query_filtered_ms": 18.798815,
+        "first_query_ms": 2.738463,
+        "second_query_ms": 1.450511,
+        "snapshot_capacity": 8388608,
+        "snapshot_rows": 0,
+        "database_bytes": 6864896,
+        "churn_ms": 329.95,
+        "query_and_mutation_ms": 370.265581,
+        "warm_resident_bytes": 25243648,
+        "invalidated_resident_bytes": 25305088,
+        "query_and_mutation_minor_faults": 454,
+        "process_maxrss_kib": 24488,
+        "local_cgroup_peak_bytes": 31174656
+      }
+    }
+  },
+  "samples": 15,
+  "validated_queries": 600,
+  "reopen_checks": 15,
+  "diagnostic": false,
+  "no_official_score": true,
+  "profile_note": "table_scan and scan_consume are inclusive. Difference estimates traversal outside callbacks; do not sum enclosing and leaf timers."
+}

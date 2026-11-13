@@ -1,0 +1,161 @@
+{
+  "image": "sha256:f0a0c5d5f89f0fbc444124084083dc504661eaadac729614d05d2eac1bece433",
+  "vector_conversion": [
+    {
+      "token": "3.4028234e38",
+      "reference": {
+        "finite": true,
+        "float32": 3.4028234663852886e+38
+      },
+      "actual": {
+        "id": 2,
+        "ok": true,
+        "affected_rows": 1
+      }
+    },
+    {
+      "token": "3.4028235e38",
+      "reference": {
+        "finite": true,
+        "float32": 3.4028234663852886e+38
+      },
+      "actual": {
+        "id": 3,
+        "ok": false,
+        "error": {
+          "code": "TYPE",
+          "message": "VECTOR component is not finite float32"
+        }
+      }
+    },
+    {
+      "token": "3.4028236e38",
+      "reference": {
+        "finite": false
+      },
+      "actual": {
+        "id": 4,
+        "ok": false,
+        "error": {
+          "code": "TYPE",
+          "message": "VECTOR component is not finite float32"
+        }
+      }
+    },
+    {
+      "token": "-3.4028235e38",
+      "reference": {
+        "finite": true,
+        "float32": -3.4028234663852886e+38
+      },
+      "actual": {
+        "id": 5,
+        "ok": false,
+        "error": {
+          "code": "TYPE",
+          "message": "VECTOR component is not finite float32"
+        }
+      }
+    },
+    {
+      "token": "1e-46",
+      "reference": {
+        "finite": true,
+        "float32": 0.0
+      },
+      "actual": {
+        "id": 6,
+        "ok": true,
+        "affected_rows": 1
+      }
+    },
+    {
+      "token": "1e-400",
+      "reference": {
+        "finite": true,
+        "float32": 0.0
+      },
+      "actual": {
+        "id": 7,
+        "ok": false,
+        "error": {
+          "code": "TYPE",
+          "message": "invalid finite VECTOR component"
+        }
+      }
+    }
+  ],
+  "own_vector_output_roundtrip": {
+    "projection": {
+      "id": 8,
+      "ok": true,
+      "columns": [
+        "v"
+      ],
+      "rows": [
+        [
+          [
+            3.4028235e+38,
+            0
+          ]
+        ]
+      ]
+    },
+    "insert_projected": {
+      "id": 9,
+      "ok": false,
+      "error": {
+        "code": "TYPE",
+        "message": "VECTOR component is not finite float32"
+      }
+    }
+  },
+  "rounded_distance_tie": {
+    "reference_float64_l2_sorted": [
+      [
+        1,
+        1.0
+      ],
+      [
+        2,
+        1.0
+      ]
+    ],
+    "unindexed": {
+      "id": 12,
+      "ok": true,
+      "columns": [
+        "id",
+        "d"
+      ],
+      "rows": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "indexed": {
+      "id": 14,
+      "ok": true,
+      "columns": [
+        "id",
+        "d"
+      ],
+      "rows": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "medians": {
+    "dense": {
+      "reference": {
+        "write_ms": 1318.5588695000001,
+        "index_build_ms": 0.0,
+        "query_total_ms": 306.0789955,
+        "query_unfiltered_ms": 169.179857,
+        "query_filtered_ms": 136.8991385,
+        "first_query_ms": 13.3439525,
+        "second_query_ms": 4.888666000000001,
+        "snapshot_capacity": 0.0,
+        "snapshot_rows": 0.0,
+        "database_bytes": 31432704.0,
+        "churn_ms": 0.0,
+        "query_and_mutation_ms": 306.0789955,
+        "process_maxrss_kib": 32198.0,
+        "local_cgroup_peak_bytes": 65050624.0
+      },
+      "snapshot": {
+        "write_ms": 1315.4872095,
+        "index_build_ms": 0.0,
+        "query_total_ms": 234.56400150000002,
+        "query_unfiltered_ms": 133.58391799999998,
+        "query_filtered_ms": 100.9800835,
+        "first_query_ms": 13.784118,
+        "second_query_ms": 9.5102375,
+        "snapshot_capacity": 8388608.0,
+        "snapshot_rows": 600000.0,
+        "database_bytes": 31432704.0,
+        "churn_ms": 0.0,
+        "query_and_mutation_ms": 234.56400150000002,
+        "process_maxrss_kib": 38684.0,
+        "local_cgroup_peak_bytes": 72050688.0
+      }
+    }
+  },
+  "samples": 4,
+  "validated_queries": 240,
+  "reopen_checks": 4,
+  "diagnostic": true,
+  "no_official_score": true,
+  "profile_note": "table_scan and scan_consume are inclusive. Difference estimates traversal outside callbacks; do not sum enclosing and leaf timers."
+}

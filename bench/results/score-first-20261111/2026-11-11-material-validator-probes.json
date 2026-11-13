@@ -1,0 +1,41 @@
+{
+  "probe_checks": 21,
+  "passed": true,
+  "checks": [
+    "strict_json_{\"bad\":NaN}",
+    "strict_json_{\"bad\":Infinity}",
+    "strict_json_{\"bad\":-Infinity}",
+    "strict_json_{\"bad\":1e999}",
+    "strict_json_{\"same\":1,\"same\":2}",
+    "appending_records_allowed",
+    "historical_prefix_conversations",
+    "historical_prefix_experiments",
+    "historical_prefix_agent_observations",
+    "RFC6901_valid_escapes",
+    "pointer_/rows/-1/text",
+    "pointer_/rows/00/text",
+    "pointer_/rows/1/text",
+    "pointer_/a~2b",
+    "pointer_/number",
+    "pointer_/missing",
+    "valid_reference",
+    "reference_{'pointer': '/rows/0/text', 'id': 'wrong'}",
+    "reference_{'pointer': '/rows/0/text', 'quote': 'invented'}",
+    "reference_{'pointer': '/rows/0/text', 'quote': ''}",
+    "reference_{'pointer': '/rows/0/text', 'quote': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'}"
+  ],
+  "material_validation": {
+    "passed": true,
+    "bytes": 108627,
+    "sha256": "8bc49c259ba30ca4d9b36bceb9c63d9c722a018b0ad0981990af1f0ccc453c4c",
+    "reference_checks": 94,
+    "preserved_user_records": 38,
+    "preserved_experiments": 62,
+    "preserved_agent_observations": 30,
+    "source_hashes": 82,
+    "evidence_hashes": 168,
+    "historical_source_commit": "524133baf0a4ed947805236c02cce9cecffc0be3",
+    "current_source_validation": "not performed by this script",
+    "platform_evaluation": "not performed by this script; user-reported result remains distinct"
+  }
+}

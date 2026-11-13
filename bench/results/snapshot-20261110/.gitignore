@@ -1,0 +1,2 @@
+# Retain the verification and negative-experiment logs as submission evidence.
+!*.log

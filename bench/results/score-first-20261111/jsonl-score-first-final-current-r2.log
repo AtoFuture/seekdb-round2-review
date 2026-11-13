@@ -1,0 +1,23 @@
+{"progress": "round1-indexed", "queries": 100, "elapsed_query_ms": 118.720477}
+{"progress": "round1-indexed", "queries": 200, "elapsed_query_ms": 240.84017599999999}
+{"progress": "round1-indexed", "queries": 300, "elapsed_query_ms": 359.42163}
+{"progress": "round1-indexed", "queries": 400, "elapsed_query_ms": 476.883454}
+{"progress": "round1-indexed", "queries": 500, "elapsed_query_ms": 595.839868}
+{"progress": "round1-indexed", "queries": 600, "elapsed_query_ms": 714.86386}
+{"progress": "round1-indexed", "queries": 700, "elapsed_query_ms": 832.146986}
+{"progress": "round1-indexed", "queries": 800, "elapsed_query_ms": 949.944782}
+{"progress": "round1-indexed", "queries": 900, "elapsed_query_ms": 1069.895555}
+{"progress": "round1-indexed", "queries": 1000, "elapsed_query_ms": 1190.594268}
+{"tag": "round1-indexed", "write_ms": 1323.932018, "index_build_ms": 55.51275, "query_ms": 1190.594268, "unfiltered_query_ms": 756.978384, "filtered_query_ms": 433.615884, "passed": true}
+{"progress": "round1-unindexed", "queries": 100, "elapsed_query_ms": 122.427704}
+{"progress": "round1-unindexed", "queries": 200, "elapsed_query_ms": 244.447846}
+{"progress": "round1-unindexed", "queries": 300, "elapsed_query_ms": 366.972565}
+{"progress": "round1-unindexed", "queries": 400, "elapsed_query_ms": 486.07176}
+{"progress": "round1-unindexed", "queries": 500, "elapsed_query_ms": 604.834352}
+{"progress": "round1-unindexed", "queries": 600, "elapsed_query_ms": 723.57134}
+{"progress": "round1-unindexed", "queries": 700, "elapsed_query_ms": 841.561364}
+{"progress": "round1-unindexed", "queries": 800, "elapsed_query_ms": 964.16712}
+{"progress": "round1-unindexed", "queries": 900, "elapsed_query_ms": 1080.413267}
+{"progress": "round1-unindexed", "queries": 1000, "elapsed_query_ms": 1196.347602}
+{"tag": "round1-unindexed", "write_ms": 1321.165807, "index_build_ms": null, "query_ms": 1196.347602, "unfiltered_query_ms": 759.848821, "filtered_query_ms": 436.498781, "passed": true}
+{"indexed": {"median_write_ms": 1323.932018, "median_query_ms": 1190.594268, "median_index_build_ms": 55.51275}, "unindexed": {"median_write_ms": 1321.165807, "median_query_ms": 1196.347602, "median_index_build_ms": null}}
